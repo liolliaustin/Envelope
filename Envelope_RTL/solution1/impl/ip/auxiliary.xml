@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="envelope" xd:componentRef="envelope" xd:initiationInterval="89" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="wave_in" xd:originalName="wave_in" xd:direction="in" xd:interfaceRef="wave_in_V" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="wave_out" xd:originalName="wave_out" xd:direction="out" xd:interfaceRef="wave_out_V" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="press" xd:originalName="press" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="attackDuration" xd:originalName="attackDuration" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="decayDuration" xd:originalName="decayDuration" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="sustainAmplitude" xd:originalName="sustainAmplitude" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="sustainDuration" xd:originalName="sustainDuration" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="releaseDuration" xd:originalName="releaseDuration" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x38" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="26" xd:worst-case="88" xd:average-case="58"/>
+  <xd:resourceEstimates xd:LUT="4732" xd:FF="4162" xd:BRAM="0" xd:DSP="5"/>
+</xd:acceleratorMap>

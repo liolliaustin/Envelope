@@ -3,20 +3,18 @@
 
 #include <hls_stream.h>
 
-float envelope(
+#define MAX_ATTACK 2
+
+void envelope(
 
 	hls::stream<float> & wave_in,
 	hls::stream<float> & wave_out,
 
 	int press,
-	int change,
-	float attackSlope,
-	int attackDuration, 
-	float decaySlope,
+	int attackDuration,
 	int decayDuration, 
 	int sustainAmplitude, 
-	int sustainDuration, 
-	float releaseSlope,
+	int sustainDuration,
 	int releaseDuration
 
 );

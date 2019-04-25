@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Envelope.cpp" path="/home/austin/ECE1373_GhostSynth/modules/Envelope/src/Envelope.cpp"/>
+    <originFiles name="Envelope.h" path="/home/austin/ECE1373_GhostSynth/modules/Envelope/src/Envelope.h"/>
+  </source>
+  <testbench>
+    <originFiles name="Envelope_test.cpp" path="/home/austin/ECE1373_GhostSynth/modules/Envelope/src/Envelope_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

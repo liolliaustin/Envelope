@@ -4,20 +4,16 @@
 #include <hls_stream.h>
 #include "Envelope.h"
 
-float envelope(
+void envelope(
 
 	hls::stream<float> & wave_in,
 	hls::stream<float> & wave_out,
 
 	int press,
-	int change,
-	float attackSlope,
-	int attackDuration, 
-	float decaySlope,
+	int attackDuration,
 	int decayDuration, 
 	int sustainAmplitude, 
-	int sustainDuration, 
-	float releaseSlope,
+	int sustainDuration,
 	int releaseDuration
 
 ){
@@ -29,27 +25,34 @@ float envelope(
 #pragma HLS INTERFACE axis register both port=wave_out
 
 #pragma HLS INTERFACE s_axilite port=press bundle=CTRL_BUS
-#pragma HLS INTERFACE s_axilite port=attackSlope bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=attackDuration bundle=CTRL_BUS
-#pragma HLS INTERFACE s_axilite port=decaySlope bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=decayDuration bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=sustainAmplitude bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=sustainDuration bundle=CTRL_BUS
-#pragma HLS INTERFACE s_axilite port=releaseSlope bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=releaseDuration bundle=CTRL_BUS
 
 	static int time = 0;
+	static float attackSlope = (float)MAX_ATTACK/attackDuration;
+	static float decaySlope = (float)(sustainAmplitude - MAX_ATTACK)/(decayDuration - attackDuration);
+	static float releaseSlope=(float)(0-sustainAmplitude)/(releaseDuration - sustainDuration);
 
 	float resultAmplitude;
 
+	static int releaseTime = releaseDuration;
+	static int sustainTime = sustainDuration;
+	static int wait = 0;
+
 	wave_in >> resultAmplitude;
 
-	if(press){
-		sustainDuration +=1;
-		releaseDuration +=1;
+	if(press)
+		wait = 0;
+
+	if(press >= 1 && time > decayDuration){
+		sustainTime += 1;
+		releaseTime += 1;
 	}
 
-	if(change){
+	if(wait){
 		time = 0;
 	}
 
@@ -58,19 +61,20 @@ float envelope(
 	}
 
 	else if(time < decayDuration){
-		resultAmplitude *=  decaySlope*attackDuration + attackSlope*attackDuration - decaySlope*time;
+		resultAmplitude *=  decaySlope*(time- attackDuration) + MAX_ATTACK ;
 	}
 
-	else if( time < sustainDuration){
+	else if( time < sustainTime){
 		resultAmplitude *= sustainAmplitude;
 	}
 
-	else if(time < releaseDuration){
-		resultAmplitude *= releaseSlope*sustainDuration + sustainAmplitude - releaseSlope*time;
+	else if(time < releaseTime){
+		resultAmplitude *= releaseSlope*(time - sustainTime) + sustainAmplitude;
 	}
 
 	else {
 		resultAmplitude = 0;
+		wait = 1;
 	}
 
 	time++;
