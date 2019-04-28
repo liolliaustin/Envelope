@@ -61,7 +61,7 @@ codeRepl1:                                        ; preds = %0
 
 ._crit_edge:                                      ; preds = %codeRepl1, %0
   %guard_variable_for_e_1 = load i1* @guard_variable_for_e_3, align 1
-  br i1 %guard_variable_for_e_1, label %._crit_edge6, label %codeRepl
+  br i1 %guard_variable_for_e_1, label %._crit_edge5, label %codeRepl
 
 codeRepl:                                         ; preds = %._crit_edge
   %tmp_4_i = add nsw i32 %sustainAmplitude_rea, -2
@@ -71,13 +71,13 @@ codeRepl:                                         ; preds = %._crit_edge
   %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
   store float %tmp_8_i, float* @decaySlope, align 4
   store i1 true, i1* @guard_variable_for_e_3, align 1
-  br label %._crit_edge6
+  br label %._crit_edge5
 
-._crit_edge6:                                     ; preds = %codeRepl, %._crit_edge
+._crit_edge5:                                     ; preds = %codeRepl, %._crit_edge
   %guard_variable_for_e_2 = load i1* @guard_variable_for_e_2, align 1
-  br i1 %guard_variable_for_e_2, label %._crit_edge7, label %codeRepl2
+  br i1 %guard_variable_for_e_2, label %._crit_edge6, label %codeRepl2
 
-codeRepl2:                                        ; preds = %._crit_edge6
+codeRepl2:                                        ; preds = %._crit_edge5
   %tmp_i = sub nsw i32 0, %sustainAmplitude_rea
   %tmp_10_i = sitofp i32 %tmp_i to float
   %tmp_11_i = sub nsw i32 %releaseDuration_read, %sustainDuration_read
@@ -85,119 +85,128 @@ codeRepl2:                                        ; preds = %._crit_edge6
   %tmp_13_i = fdiv float %tmp_10_i, %tmp_12_i
   store float %tmp_13_i, float* @releaseSlope, align 4
   store i1 true, i1* @guard_variable_for_e_2, align 1
-  br label %._crit_edge7
+  br label %._crit_edge6
 
-._crit_edge7:                                     ; preds = %codeRepl2, %._crit_edge6
+._crit_edge6:                                     ; preds = %codeRepl2, %._crit_edge5
   %guard_variable_for_e_3 = load i1* @guard_variable_for_e_1, align 1
   %releaseTime_load = load i32* @releaseTime, align 4
-  br i1 %guard_variable_for_e_3, label %._crit_edge8, label %codeRepl3
+  br i1 %guard_variable_for_e_3, label %._crit_edge7, label %codeRepl3
 
-codeRepl3:                                        ; preds = %._crit_edge7
+codeRepl3:                                        ; preds = %._crit_edge6
   store i1 true, i1* @guard_variable_for_e_1, align 1
-  br label %._crit_edge8
+  br label %._crit_edge7
 
-._crit_edge8:                                     ; preds = %codeRepl3, %._crit_edge7
-  %releaseTime_flag = phi i1 [ true, %codeRepl3 ], [ false, %._crit_edge7 ]
-  %releaseTime_loc = phi i32 [ %releaseDuration_read, %codeRepl3 ], [ %releaseTime_load, %._crit_edge7 ]
+._crit_edge7:                                     ; preds = %codeRepl3, %._crit_edge6
+  %releaseTime_flag = phi i1 [ true, %codeRepl3 ], [ false, %._crit_edge6 ]
+  %releaseTime_loc = phi i32 [ %releaseDuration_read, %codeRepl3 ], [ %releaseTime_load, %._crit_edge6 ]
   %guard_variable_for_e_4 = load i1* @guard_variable_for_e, align 1
   %sustainTime_load = load i32* @sustainTime, align 4
-  br i1 %guard_variable_for_e_4, label %._crit_edge9_ifconv, label %codeRepl4
+  br i1 %guard_variable_for_e_4, label %._crit_edge8_ifconv, label %codeRepl4
 
-codeRepl4:                                        ; preds = %._crit_edge8
+codeRepl4:                                        ; preds = %._crit_edge7
   store i1 true, i1* @guard_variable_for_e, align 1
-  br label %._crit_edge9_ifconv
+  br label %._crit_edge8_ifconv
 
-._crit_edge9_ifconv:                              ; preds = %codeRepl4, %._crit_edge8
-  %sustainTime_flag = phi i1 [ true, %codeRepl4 ], [ false, %._crit_edge8 ]
-  %sustainTime_loc = phi i32 [ %sustainDuration_read, %codeRepl4 ], [ %sustainTime_load, %._crit_edge8 ]
-  %tmp_22 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %wave_in_V)
+._crit_edge8_ifconv:                              ; preds = %codeRepl4, %._crit_edge7
+  %sustainTime_flag = phi i1 [ true, %codeRepl4 ], [ false, %._crit_edge7 ]
+  %sustainTime_loc = phi i32 [ %sustainDuration_read, %codeRepl4 ], [ %sustainTime_load, %._crit_edge7 ]
+  %tmp_25 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %wave_in_V)
+  %tmp_4 = icmp eq i32 %press_read, 0
   %wait_load = load i1* @wait_r, align 1
-  %not_tmp_4 = icmp ne i32 %press_read, 0
-  %tmp_5 = icmp sgt i32 %press_read, 0
   %time_load = load i32* @time_r, align 4
-  %tmp_6 = icmp sgt i32 %time_load, %decayDuration_read
-  %or_cond_2 = and i1 %tmp_5, %tmp_6
-  %tmp_7 = add nsw i32 %sustainTime_loc, 1
-  %tmp_8 = add nsw i32 %releaseTime_loc, 1
-  %releaseTime_flag_1 = or i1 %or_cond_2, %releaseTime_flag
-  %releaseTime_new_1 = select i1 %or_cond_2, i32 %tmp_8, i32 %releaseDuration_read
-  %releaseTime_loc_1 = select i1 %or_cond_2, i32 %tmp_8, i32 %releaseTime_loc
-  %sustainTime_flag_1 = or i1 %or_cond_2, %sustainTime_flag
-  %sustainTime_new_1 = select i1 %or_cond_2, i32 %tmp_7, i32 %sustainDuration_read
-  %sustainTime_loc_1 = select i1 %or_cond_2, i32 %tmp_7, i32 %sustainTime_loc
-  %tmp_4 = xor i1 %wait_load, true
-  %tmp_s = or i1 %not_tmp_4, %tmp_4
-  %time_load_s = select i1 %tmp_s, i32 %time_load, i32 0
-  %tmp_1 = icmp slt i32 %time_load_s, %attackDuration_read
-  br i1 %sustainTime_flag_1, label %mergeST5, label %._crit_edge11.new6
+  %tmp_5 = icmp slt i32 %time_load, %sustainTime_loc
+  %sustainTime_loc_time = select i1 %tmp_5, i32 %sustainTime_loc, i32 %time_load
+  %not_tmp_4 = xor i1 %tmp_4, true
+  %time_loc_1 = select i1 %tmp_4, i32 %sustainTime_loc_time, i32 %time_load
+  %tmp_6 = icmp sgt i32 %press_read, 0
+  %tmp_7 = add nsw i32 %sustainTime_loc, -1
+  %tmp_8 = icmp eq i32 %time_loc_1, %tmp_7
+  %tmp_s = add nsw i32 %sustainTime_loc, 1
+  %tmp_1 = add nsw i32 %releaseTime_loc, 1
+  %sel_tmp1 = and i1 %tmp_6, %tmp_8
+  %releaseTime_flag_1 = or i1 %releaseTime_flag, %sel_tmp1
+  %sel_tmp5 = select i1 %sel_tmp1, i32 %tmp_1, i32 %releaseDuration_read
+  %releaseTime_new_1 = select i1 %tmp_6, i32 %sel_tmp5, i32 %releaseDuration_read
+  %sel_tmp9 = select i1 %sel_tmp1, i32 %tmp_1, i32 %releaseTime_loc
+  %releaseTime_loc_1 = select i1 %tmp_6, i32 %sel_tmp9, i32 %releaseTime_loc
+  %sustainTime_flag_1 = or i1 %sustainTime_flag, %sel_tmp1
+  %sel_tmp = select i1 %sel_tmp1, i32 %tmp_s, i32 %sustainDuration_read
+  %sustainTime_new_1 = select i1 %tmp_6, i32 %sel_tmp, i32 %sustainDuration_read
+  %sel_tmp2 = select i1 %sel_tmp1, i32 %tmp_s, i32 %sustainTime_loc
+  %sustainTime_loc_1 = select i1 %tmp_6, i32 %sel_tmp2, i32 %sustainTime_loc
+  %tmp_2 = xor i1 %wait_load, true
+  %tmp_3 = or i1 %tmp_2, %not_tmp_4
+  br i1 %sustainTime_flag_1, label %mergeST5, label %._crit_edge10.new6
 
-mergeST:                                          ; preds = %._crit_edge11.new6
+mergeST:                                          ; preds = %._crit_edge10.new6
   store i32 %releaseTime_new_1, i32* @releaseTime, align 4
-  br label %._crit_edge11.new_ifconv
+  br label %._crit_edge10.new_ifconv
 
-._crit_edge11.new_ifconv:                         ; preds = %._crit_edge11.new6, %mergeST
+._crit_edge10.new_ifconv:                         ; preds = %._crit_edge10.new6, %mergeST
+  %time_loc_2 = select i1 %tmp_3, i32 %time_loc_1, i32 0
+  %tmp_9 = icmp slt i32 %time_loc_2, %attackDuration_read
   %attackSlope_load = load float* @attackSlope, align 4
-  %tmp_2 = sitofp i32 %time_load_s to float
-  %tmp_3 = fmul float %attackSlope_load, %tmp_2
-  %resultAmplitude_1 = fmul float %tmp_22, %tmp_3
-  %tmp_9 = icmp slt i32 %time_load_s, %decayDuration_read
+  %tmp_10 = sitofp i32 %time_loc_2 to float
+  %tmp_11 = fmul float %attackSlope_load, %tmp_10
+  %resultAmplitude_1 = fmul float %tmp_25, %tmp_11
+  %tmp_12 = icmp slt i32 %time_loc_2, %decayDuration_read
   %decaySlope_load = load float* @decaySlope, align 4
-  %tmp_10 = sub nsw i32 %time_load_s, %attackDuration_read
-  %tmp_11 = sitofp i32 %tmp_10 to float
-  %tmp_12 = fmul float %decaySlope_load, %tmp_11
-  %tmp_13 = fadd float %tmp_12, 2.000000e+00
-  %resultAmplitude_2 = fmul float %tmp_22, %tmp_13
-  %tmp_14 = icmp slt i32 %time_load_s, %sustainTime_loc_1
-  %tmp_15 = sitofp i32 %sustainAmplitude_rea to float
-  %resultAmplitude_3 = fmul float %tmp_22, %tmp_15
-  %tmp_16 = icmp slt i32 %time_load_s, %releaseTime_loc_1
+  %tmp_13 = sub nsw i32 %time_loc_2, %attackDuration_read
+  %tmp_14 = sitofp i32 %tmp_13 to float
+  %tmp_15 = fmul float %decaySlope_load, %tmp_14
+  %tmp_16 = fadd float %tmp_15, 2.000000e+00
+  %resultAmplitude_2 = fmul float %tmp_25, %tmp_16
+  %tmp_17 = icmp slt i32 %time_loc_2, %sustainTime_loc_1
+  %tmp_18 = sitofp i32 %sustainAmplitude_rea to float
+  %resultAmplitude_3 = fmul float %tmp_25, %tmp_18
+  %tmp_19 = icmp slt i32 %time_loc_2, %releaseTime_loc_1
   %releaseSlope_load = load float* @releaseSlope, align 4
-  %tmp_17 = sub nsw i32 %time_load_s, %sustainTime_loc_1
-  %tmp_18 = sitofp i32 %tmp_17 to float
-  %tmp_19 = fmul float %releaseSlope_load, %tmp_18
-  %tmp_20 = fadd float %tmp_19, %tmp_15
-  %resultAmplitude_4 = fmul float %tmp_22, %tmp_20
-  %not_tmp_s = xor i1 %tmp_1, true
-  %sel_tmp2 = and i1 %tmp_9, %not_tmp_s
-  %sel_tmp = xor i1 %sel_tmp2, %not_tmp_s
-  %sel_tmp6_demorgan = or i1 %tmp_1, %tmp_9
-  %tmp_19_not = xor i1 %tmp_14, true
-  %not_sel_tmp7 = or i1 %sel_tmp6_demorgan, %tmp_19_not
-  %sel_tmp13_demorgan = or i1 %sel_tmp6_demorgan, %tmp_14
-  %tmp_21_not = xor i1 %tmp_16, true
-  %not_sel_tmp = or i1 %sel_tmp13_demorgan, %tmp_21_not
-  %tmp1 = and i1 %not_sel_tmp7, %not_sel_tmp
-  %sel_tmp8 = and i1 %tmp1, %sel_tmp
-  %wait_flag_1 = or i1 %not_tmp_4, %sel_tmp8
-  %sel_tmp1 = xor i1 %sel_tmp6_demorgan, true
-  %sel_tmp3 = and i1 %tmp_14, %sel_tmp1
-  %sel_tmp4 = xor i1 %sel_tmp13_demorgan, true
-  %sel_tmp5 = and i1 %tmp_16, %sel_tmp4
-  %or_cond = or i1 %sel_tmp5, %sel_tmp3
-  %or_cond1 = or i1 %sel_tmp2, %tmp_1
+  %tmp_20 = sub nsw i32 %time_loc_2, %sustainTime_loc_1
+  %tmp_21 = sitofp i32 %tmp_20 to float
+  %tmp_22 = fmul float %releaseSlope_load, %tmp_21
+  %tmp_23 = fadd float %tmp_22, %tmp_18
+  %resultAmplitude_4 = fmul float %tmp_25, %tmp_23
+  %not_tmp_s = xor i1 %tmp_9, true
+  %sel_tmp3 = and i1 %tmp_12, %not_tmp_s
+  %sel_tmp4 = xor i1 %sel_tmp3, %not_tmp_s
+  %sel_tmp30_demorgan = or i1 %tmp_9, %tmp_12
+  %tmp_21_not = xor i1 %tmp_17, true
+  %not_sel_tmp = or i1 %sel_tmp30_demorgan, %tmp_21_not
+  %sel_tmp37_demorgan = or i1 %sel_tmp30_demorgan, %tmp_17
+  %tmp_23_not = xor i1 %tmp_19, true
+  %not_sel_tmp1 = or i1 %sel_tmp37_demorgan, %tmp_23_not
+  %tmp1 = and i1 %not_sel_tmp, %not_sel_tmp1
+  %sel_tmp6 = and i1 %tmp1, %sel_tmp4
+  %wait_flag_1 = or i1 %sel_tmp6, %not_tmp_4
+  %sel_tmp7 = xor i1 %sel_tmp30_demorgan, true
+  %sel_tmp8 = and i1 %tmp_17, %sel_tmp7
+  %sel_tmp10 = xor i1 %sel_tmp37_demorgan, true
+  %sel_tmp11 = and i1 %tmp_19, %sel_tmp10
+  %or_cond = or i1 %sel_tmp11, %sel_tmp8
+  %or_cond1 = or i1 %sel_tmp3, %tmp_9
   %or_cond2 = or i1 %or_cond, %or_cond1
   %not_or_cond = xor i1 %or_cond2, true
-  %resultAmplitude_5 = select i1 %tmp_1, float %resultAmplitude_1, float 0.000000e+00
-  %resultAmplitude_6 = select i1 %sel_tmp2, float %resultAmplitude_2, float %resultAmplitude_5
-  %resultAmplitude_7 = select i1 %sel_tmp3, float %resultAmplitude_3, float %resultAmplitude_6
-  %resultAmplitude = select i1 %sel_tmp5, float %resultAmplitude_4, float %resultAmplitude_7
-  %tmp_21 = add nsw i32 %time_load_s, 1
-  store i32 %tmp_21, i32* @time_r, align 4
+  %resultAmplitude_5 = select i1 %tmp_9, float %resultAmplitude_1, float 0.000000e+00
+  %resultAmplitude_6 = select i1 %sel_tmp3, float %resultAmplitude_2, float %resultAmplitude_5
+  %resultAmplitude_7 = select i1 %sel_tmp8, float %resultAmplitude_3, float %resultAmplitude_6
+  %resultAmplitude = select i1 %sel_tmp11, float %resultAmplitude_4, float %resultAmplitude_7
+  %tmp_24 = add nsw i32 %time_loc_2, 1
   call void @_ssdm_op_Write.axis.volatile.floatP(float* %wave_out_V, float %resultAmplitude)
+  store i32 %tmp_24, i32* @time_r, align 4
   br i1 %wait_flag_1, label %mergeST7, label %.new
 
-mergeST5:                                         ; preds = %._crit_edge9_ifconv
+mergeST5:                                         ; preds = %._crit_edge8_ifconv
   store i32 %sustainTime_new_1, i32* @sustainTime, align 4
-  br label %._crit_edge11.new6
+  br label %._crit_edge10.new6
 
-._crit_edge11.new6:                               ; preds = %mergeST5, %._crit_edge9_ifconv
-  br i1 %releaseTime_flag_1, label %mergeST, label %._crit_edge11.new_ifconv
+._crit_edge10.new6:                               ; preds = %mergeST5, %._crit_edge8_ifconv
+  br i1 %releaseTime_flag_1, label %mergeST, label %._crit_edge10.new_ifconv
 
-mergeST7:                                         ; preds = %._crit_edge11.new_ifconv
+mergeST7:                                         ; preds = %._crit_edge10.new_ifconv
   store i1 %not_or_cond, i1* @wait_r, align 1
   br label %.new
 
-.new:                                             ; preds = %mergeST7, %._crit_edge11.new_ifconv
+.new:                                             ; preds = %mergeST7, %._crit_edge10.new_ifconv
   ret void
 }
 

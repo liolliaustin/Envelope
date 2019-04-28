@@ -236,7 +236,7 @@
 			</item>
 		</ports>
 		<nodes class_id="8" tracking_level="0" version="0">
-			<count>124</count>
+			<count>133</count>
 			<item_version>0</item_version>
 			<item class_id="9" tracking_level="1" version="0" object_id="_9">
 				<Value>
@@ -261,8 +261,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>181</item>
-					<item>182</item>
+					<item>190</item>
+					<item>191</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -290,8 +290,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>183</item>
-					<item>184</item>
+					<item>192</item>
+					<item>193</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -319,8 +319,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>185</item>
-					<item>186</item>
+					<item>194</item>
+					<item>195</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -348,8 +348,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>187</item>
-					<item>188</item>
+					<item>196</item>
+					<item>197</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -377,8 +377,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>189</item>
-					<item>190</item>
+					<item>198</item>
+					<item>199</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -406,8 +406,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>191</item>
-					<item>192</item>
+					<item>200</item>
+					<item>201</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -435,7 +435,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>193</item>
+					<item>202</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -477,9 +477,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>194</item>
-					<item>195</item>
-					<item>196</item>
+					<item>203</item>
+					<item>204</item>
+					<item>205</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -521,7 +521,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>197</item>
+					<item>206</item>
 				</oprand_edges>
 				<opcode>sitofp</opcode>
 				<m_Display>0</m_Display>
@@ -563,8 +563,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>199</item>
-					<item>200</item>
+					<item>208</item>
+					<item>209</item>
 				</oprand_edges>
 				<opcode>fdiv</opcode>
 				<m_Display>0</m_Display>
@@ -606,8 +606,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>201</item>
-					<item>202</item>
+					<item>210</item>
+					<item>211</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -649,9 +649,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>204</item>
-					<item>205</item>
-					<item>638</item>
+					<item>213</item>
+					<item>214</item>
+					<item>672</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -679,7 +679,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>206</item>
+					<item>215</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -707,7 +707,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>207</item>
+					<item>216</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -749,9 +749,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>208</item>
-					<item>209</item>
-					<item>210</item>
+					<item>217</item>
+					<item>218</item>
+					<item>219</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -793,8 +793,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>211</item>
-					<item>213</item>
+					<item>220</item>
+					<item>222</item>
 				</oprand_edges>
 				<opcode>add</opcode>
 				<m_Display>0</m_Display>
@@ -836,7 +836,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>214</item>
+					<item>223</item>
 				</oprand_edges>
 				<opcode>sitofp</opcode>
 				<m_Display>0</m_Display>
@@ -878,8 +878,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>215</item>
-					<item>216</item>
+					<item>224</item>
+					<item>225</item>
 				</oprand_edges>
 				<opcode>sub</opcode>
 				<m_Display>0</m_Display>
@@ -921,7 +921,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>217</item>
+					<item>226</item>
 				</oprand_edges>
 				<opcode>sitofp</opcode>
 				<m_Display>0</m_Display>
@@ -963,8 +963,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>218</item>
-					<item>219</item>
+					<item>227</item>
+					<item>228</item>
 				</oprand_edges>
 				<opcode>fdiv</opcode>
 				<m_Display>0</m_Display>
@@ -1006,8 +1006,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>220</item>
-					<item>221</item>
+					<item>229</item>
+					<item>230</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -1049,9 +1049,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>222</item>
-					<item>223</item>
-					<item>640</item>
+					<item>231</item>
+					<item>232</item>
+					<item>674</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -1079,7 +1079,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>224</item>
+					<item>233</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -1107,7 +1107,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>225</item>
+					<item>234</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -1149,9 +1149,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>226</item>
-					<item>227</item>
-					<item>228</item>
+					<item>235</item>
+					<item>236</item>
+					<item>237</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -1193,8 +1193,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>230</item>
-					<item>231</item>
+					<item>239</item>
+					<item>240</item>
 				</oprand_edges>
 				<opcode>sub</opcode>
 				<m_Display>0</m_Display>
@@ -1236,7 +1236,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>232</item>
+					<item>241</item>
 				</oprand_edges>
 				<opcode>sitofp</opcode>
 				<m_Display>0</m_Display>
@@ -1278,8 +1278,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>233</item>
-					<item>234</item>
+					<item>242</item>
+					<item>243</item>
 				</oprand_edges>
 				<opcode>sub</opcode>
 				<m_Display>0</m_Display>
@@ -1321,7 +1321,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>235</item>
+					<item>244</item>
 				</oprand_edges>
 				<opcode>sitofp</opcode>
 				<m_Display>0</m_Display>
@@ -1363,8 +1363,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>236</item>
-					<item>237</item>
+					<item>245</item>
+					<item>246</item>
 				</oprand_edges>
 				<opcode>fdiv</opcode>
 				<m_Display>0</m_Display>
@@ -1406,8 +1406,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>238</item>
-					<item>239</item>
+					<item>247</item>
+					<item>248</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -1449,9 +1449,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>240</item>
-					<item>241</item>
-					<item>642</item>
+					<item>249</item>
+					<item>250</item>
+					<item>676</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -1479,7 +1479,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>242</item>
+					<item>251</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -1507,7 +1507,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>243</item>
+					<item>252</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -1520,7 +1520,7 @@
 						<name>releaseTime_load</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1535,7 +1535,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>52</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -1549,7 +1549,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>244</item>
+					<item>253</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -1591,9 +1591,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>245</item>
-					<item>246</item>
-					<item>247</item>
+					<item>254</item>
+					<item>255</item>
+					<item>256</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -1635,9 +1635,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>248</item>
-					<item>249</item>
-					<item>644</item>
+					<item>257</item>
+					<item>258</item>
+					<item>678</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -1665,7 +1665,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>250</item>
+					<item>259</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -1693,10 +1693,10 @@
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
-					<item>251</item>
-					<item>252</item>
-					<item>254</item>
-					<item>255</item>
+					<item>260</item>
+					<item>261</item>
+					<item>263</item>
+					<item>264</item>
 				</oprand_edges>
 				<opcode>phi</opcode>
 				<m_Display>0</m_Display>
@@ -1709,7 +1709,7 @@
 						<name>releaseTime_loc</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>52</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1724,7 +1724,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>52</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -1738,10 +1738,10 @@
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
-					<item>256</item>
-					<item>257</item>
-					<item>258</item>
-					<item>259</item>
+					<item>265</item>
+					<item>266</item>
+					<item>267</item>
+					<item>268</item>
 				</oprand_edges>
 				<opcode>phi</opcode>
 				<m_Display>0</m_Display>
@@ -1769,7 +1769,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>260</item>
+					<item>269</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -1782,7 +1782,7 @@
 						<name>sustainTime_load</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1797,7 +1797,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>51</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -1811,7 +1811,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>261</item>
+					<item>270</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -1853,9 +1853,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>262</item>
-					<item>263</item>
-					<item>264</item>
+					<item>271</item>
+					<item>272</item>
+					<item>273</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -1897,9 +1897,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>265</item>
-					<item>266</item>
-					<item>646</item>
+					<item>274</item>
+					<item>275</item>
+					<item>680</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -1927,7 +1927,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>267</item>
+					<item>276</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
@@ -1955,10 +1955,10 @@
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
-					<item>268</item>
-					<item>269</item>
-					<item>270</item>
-					<item>271</item>
+					<item>277</item>
+					<item>278</item>
+					<item>279</item>
+					<item>280</item>
 				</oprand_edges>
 				<opcode>phi</opcode>
 				<m_Display>0</m_Display>
@@ -1971,7 +1971,7 @@
 						<name>sustainTime_loc</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>49</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1986,7 +1986,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>51</second>
+										<second>49</second>
 									</item>
 								</second>
 							</item>
@@ -2000,10 +2000,10 @@
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
-					<item>272</item>
-					<item>273</item>
-					<item>274</item>
-					<item>275</item>
+					<item>281</item>
+					<item>282</item>
+					<item>283</item>
+					<item>284</item>
 				</oprand_edges>
 				<opcode>phi</opcode>
 				<m_Display>0</m_Display>
@@ -2013,7 +2013,7 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>tmp_22</name>
+						<name>tmp_25</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
 						<lineNumber>45</lineNumber>
@@ -2045,8 +2045,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>277</item>
-					<item>278</item>
+					<item>286</item>
+					<item>287</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -2056,6 +2056,49 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
+						<name>tmp_4</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>47</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>47</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>288</item>
+					<item>289</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_58">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>98</id>
 						<name>wait_load</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -2074,16 +2117,145 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>279</item>
+					<item>290</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_58">
+			<item class_id_reference="9" object_id="_59">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>98</id>
+						<id>99</id>
+						<name>time_load</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>49</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>49</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>291</item>
+				</oprand_edges>
+				<opcode>load</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_60">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>100</id>
+						<name>tmp_5</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>49</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>49</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>292</item>
+					<item>293</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_61">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>101</id>
+						<name>sustainTime_loc_time</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>49</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>49</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>294</item>
+					<item>295</item>
+					<item>296</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_62">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>102</id>
 						<name>not_tmp_4</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
@@ -2116,181 +2288,10 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>280</item>
-					<item>281</item>
+					<item>297</item>
+					<item>298</item>
 				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_59">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>99</id>
-						<name>tmp_5</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>50</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>50</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>282</item>
-					<item>283</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_60">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>100</id>
-						<name>time_load</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>50</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>50</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>284</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_61">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>101</id>
-						<name>tmp_6</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>50</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>50</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>285</item>
-					<item>286</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_62">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>102</id>
-						<name>or_cond_2</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>50</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>50</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>287</item>
-					<item>288</item>
-				</oprand_edges>
-				<opcode>and</opcode>
+				<opcode>xor</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_63">
@@ -2298,10 +2299,10 @@
 					<Obj>
 						<type>0</type>
 						<id>103</id>
-						<name>tmp_7</name>
+						<name>time_loc_1</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>51</lineNumber>
+						<lineNumber>47</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2316,7 +2317,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>51</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -2328,12 +2329,13 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>3</count>
 					<item_version>0</item_version>
-					<item>289</item>
-					<item>291</item>
+					<item>299</item>
+					<item>300</item>
+					<item>301</item>
 				</oprand_edges>
-				<opcode>add</opcode>
+				<opcode>select</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_64">
@@ -2341,7 +2343,50 @@
 					<Obj>
 						<type>0</type>
 						<id>104</id>
-						<name>tmp_8</name>
+						<name>tmp_6</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>52</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>52</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>302</item>
+					<item>303</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_65">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>105</id>
+						<name>tmp_7</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
 						<lineNumber>52</lineNumber>
@@ -2373,53 +2418,10 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>292</item>
-					<item>293</item>
+					<item>304</item>
+					<item>306</item>
 				</oprand_edges>
 				<opcode>add</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_65">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>105</id>
-						<name>releaseTime_flag_1</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>50</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>50</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>294</item>
-					<item>295</item>
-				</oprand_edges>
-				<opcode>or</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_66">
@@ -2427,10 +2429,10 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>releaseTime_new_1</name>
+						<name>tmp_8</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2445,7 +2447,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>50</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2454,16 +2456,15 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>1</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>3</count>
+					<count>2</count>
 					<item_version>0</item_version>
-					<item>296</item>
-					<item>297</item>
-					<item>298</item>
+					<item>307</item>
+					<item>308</item>
 				</oprand_edges>
-				<opcode>select</opcode>
+				<opcode>icmp</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_67">
@@ -2471,10 +2472,10 @@
 					<Obj>
 						<type>0</type>
 						<id>107</id>
-						<name>releaseTime_loc_1</name>
+						<name>tmp_s</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>53</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2489,7 +2490,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>50</second>
+										<second>53</second>
 									</item>
 								</second>
 							</item>
@@ -2501,13 +2502,12 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>3</count>
+					<count>2</count>
 					<item_version>0</item_version>
-					<item>299</item>
-					<item>300</item>
-					<item>301</item>
+					<item>309</item>
+					<item>311</item>
 				</oprand_edges>
-				<opcode>select</opcode>
+				<opcode>add</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_68">
@@ -2515,10 +2515,10 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>sustainTime_flag_1</name>
+						<name>tmp_1</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2533,50 +2533,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>50</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>302</item>
-					<item>303</item>
-				</oprand_edges>
-				<opcode>or</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_69">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>109</id>
-						<name>sustainTime_new_1</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>50</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>50</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -2586,137 +2543,6 @@
 						<coreName></coreName>
 					</Obj>
 					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>304</item>
-					<item>305</item>
-					<item>306</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_70">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>110</id>
-						<name>sustainTime_loc_1</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>50</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>50</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>307</item>
-					<item>308</item>
-					<item>309</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_71">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>111</id>
-						<name>tmp_4</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>55</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>55</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>310</item>
-					<item>311</item>
-				</oprand_edges>
-				<opcode>xor</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_72">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>112</id>
-						<name>tmp_s</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>55</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>55</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2724,18 +2550,18 @@
 					<item>312</item>
 					<item>313</item>
 				</oprand_edges>
-				<opcode>or</opcode>
+				<opcode>add</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_73">
+			<item class_id_reference="9" object_id="_69">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>113</id>
-						<name>time_load_s</name>
+						<id>109</id>
+						<name>sel_tmp1</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>55</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2750,7 +2576,93 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>55</second>
+										<second>52</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>314</item>
+					<item>315</item>
+				</oprand_edges>
+				<opcode>and</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_70">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>110</id>
+						<name>releaseTime_flag_1</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>52</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>52</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>316</item>
+					<item>317</item>
+				</oprand_edges>
+				<opcode>or</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_71">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>111</id>
+						<name>sel_tmp5</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>52</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2764,9 +2676,97 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>314</item>
-					<item>315</item>
-					<item>316</item>
+					<item>318</item>
+					<item>319</item>
+					<item>320</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_72">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>112</id>
+						<name>releaseTime_new_1</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>52</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>52</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>321</item>
+					<item>322</item>
+					<item>323</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_73">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>113</id>
+						<name>sel_tmp9</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>52</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>52</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>324</item>
+					<item>325</item>
+					<item>326</item>
 				</oprand_edges>
 				<opcode>select</opcode>
 				<m_Display>0</m_Display>
@@ -2776,10 +2776,10 @@
 					<Obj>
 						<type>0</type>
 						<id>114</id>
-						<name>tmp_1</name>
+						<name>releaseTime_loc_1</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>59</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2794,7 +2794,51 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>59</second>
+										<second>52</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>327</item>
+					<item>328</item>
+					<item>329</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_75">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>115</id>
+						<name>sustainTime_flag_1</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>52</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2808,21 +2852,21 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>317</item>
-					<item>318</item>
+					<item>330</item>
+					<item>331</item>
 				</oprand_edges>
-				<opcode>icmp</opcode>
+				<opcode>or</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_75">
+			<item class_id_reference="9" object_id="_76">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>115</id>
-						<name></name>
+						<id>116</id>
+						<name>sel_tmp</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2837,7 +2881,269 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>50</second>
+										<second>52</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>332</item>
+					<item>333</item>
+					<item>334</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_77">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>117</id>
+						<name>sustainTime_new_1</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>52</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>52</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>335</item>
+					<item>336</item>
+					<item>337</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_78">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>118</id>
+						<name>sel_tmp2</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>52</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>52</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>338</item>
+					<item>339</item>
+					<item>340</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_79">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>119</id>
+						<name>sustainTime_loc_1</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>52</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>52</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>341</item>
+					<item>342</item>
+					<item>343</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_80">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>120</id>
+						<name>tmp_2</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>57</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>57</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>344</item>
+					<item>345</item>
+				</oprand_edges>
+				<opcode>xor</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_81">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>121</id>
+						<name>tmp_3</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>57</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>57</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>346</item>
+					<item>347</item>
+				</oprand_edges>
+				<opcode>or</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_82">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>122</id>
+						<name></name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>52</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2851,18 +3157,18 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>319</item>
-					<item>320</item>
-					<item>321</item>
+					<item>348</item>
+					<item>349</item>
+					<item>350</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_76">
+			<item class_id_reference="9" object_id="_83">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>117</id>
+						<id>124</id>
 						<name></name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
@@ -2895,18 +3201,18 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>424</item>
-					<item>425</item>
-					<item>647</item>
+					<item>458</item>
+					<item>459</item>
+					<item>681</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_77">
+			<item class_id_reference="9" object_id="_84">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>118</id>
+						<id>125</id>
 						<name></name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -2925,20 +3231,20 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>426</item>
+					<item>460</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_78">
+			<item class_id_reference="9" object_id="_85">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>120</id>
+						<id>127</id>
 						<name></name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>50</lineNumber>
+						<lineNumber>52</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2953,7 +3259,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>50</second>
+										<second>52</second>
 									</item>
 								</second>
 							</item>
@@ -2967,18 +3273,18 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>427</item>
-					<item>428</item>
-					<item>429</item>
+					<item>461</item>
+					<item>462</item>
+					<item>463</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_79">
+			<item class_id_reference="9" object_id="_86">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>122</id>
+						<id>129</id>
 						<name></name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
@@ -3011,18 +3317,18 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>322</item>
-					<item>323</item>
-					<item>645</item>
+					<item>351</item>
+					<item>352</item>
+					<item>679</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_80">
+			<item class_id_reference="9" object_id="_87">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>123</id>
+						<id>130</id>
 						<name></name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -3041,309 +3347,9 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>324</item>
+					<item>353</item>
 				</oprand_edges>
 				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_81">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>125</id>
-						<name>attackSlope_load</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>60</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>60</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>325</item>
-					<item>639</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_82">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>126</id>
-						<name>tmp_2</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>60</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>60</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>1</count>
-					<item_version>0</item_version>
-					<item>326</item>
-				</oprand_edges>
-				<opcode>sitofp</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_83">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>127</id>
-						<name>tmp_3</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>60</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>60</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>327</item>
-					<item>328</item>
-				</oprand_edges>
-				<opcode>fmul</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_84">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>128</id>
-						<name>resultAmplitude_1</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>60</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>60</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>resultAmplitude</originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>329</item>
-					<item>330</item>
-				</oprand_edges>
-				<opcode>fmul</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_85">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>129</id>
-						<name>tmp_9</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>63</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>63</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>331</item>
-					<item>332</item>
-				</oprand_edges>
-				<opcode>icmp</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_86">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>130</id>
-						<name>decaySlope_load</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>64</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>64</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>333</item>
-					<item>641</item>
-				</oprand_edges>
-				<opcode>load</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_87">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>131</id>
-						<name>tmp_10</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>64</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>64</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>334</item>
-					<item>335</item>
-				</oprand_edges>
-				<opcode>sub</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_88">
@@ -3351,10 +3357,10 @@
 					<Obj>
 						<type>0</type>
 						<id>132</id>
-						<name>tmp_11</name>
+						<name>time_loc_2</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>57</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3369,7 +3375,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>64</second>
+										<second>57</second>
 									</item>
 								</second>
 							</item>
@@ -3381,11 +3387,13 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>1</count>
+					<count>3</count>
 					<item_version>0</item_version>
-					<item>336</item>
+					<item>354</item>
+					<item>355</item>
+					<item>356</item>
 				</oprand_edges>
-				<opcode>sitofp</opcode>
+				<opcode>select</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_89">
@@ -3393,10 +3401,10 @@
 					<Obj>
 						<type>0</type>
 						<id>133</id>
-						<name>tmp_12</name>
+						<name>tmp_9</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3411,7 +3419,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>64</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -3420,15 +3428,15 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>1</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>337</item>
-					<item>338</item>
+					<item>357</item>
+					<item>358</item>
 				</oprand_edges>
-				<opcode>fmul</opcode>
+				<opcode>icmp</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_90">
@@ -3436,10 +3444,10 @@
 					<Obj>
 						<type>0</type>
 						<id>134</id>
-						<name>tmp_13</name>
+						<name>attackSlope_load</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3454,7 +3462,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>64</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3468,10 +3476,10 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>339</item>
-					<item>340</item>
+					<item>359</item>
+					<item>673</item>
 				</oprand_edges>
-				<opcode>fadd</opcode>
+				<opcode>load</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_91">
@@ -3479,10 +3487,10 @@
 					<Obj>
 						<type>0</type>
 						<id>135</id>
-						<name>resultAmplitude_2</name>
+						<name>tmp_10</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3497,24 +3505,23 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>64</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>resultAmplitude</originalName>
+						<originalName></originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>1</count>
 					<item_version>0</item_version>
-					<item>341</item>
-					<item>342</item>
+					<item>360</item>
 				</oprand_edges>
-				<opcode>fmul</opcode>
+				<opcode>sitofp</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_92">
@@ -3522,10 +3529,10 @@
 					<Obj>
 						<type>0</type>
 						<id>136</id>
-						<name>tmp_14</name>
+						<name>tmp_11</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3540,7 +3547,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>67</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
@@ -3549,15 +3556,15 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>343</item>
-					<item>344</item>
+					<item>361</item>
+					<item>362</item>
 				</oprand_edges>
-				<opcode>icmp</opcode>
+				<opcode>fmul</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_93">
@@ -3565,10 +3572,10 @@
 					<Obj>
 						<type>0</type>
 						<id>137</id>
-						<name>tmp_15</name>
+						<name>resultAmplitude_1</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<lineNumber>62</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3583,23 +3590,24 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>68</second>
+										<second>62</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>resultAmplitude</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>1</count>
+					<count>2</count>
 					<item_version>0</item_version>
-					<item>345</item>
+					<item>363</item>
+					<item>364</item>
 				</oprand_edges>
-				<opcode>sitofp</opcode>
+				<opcode>fmul</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_94">
@@ -3607,10 +3615,10 @@
 					<Obj>
 						<type>0</type>
 						<id>138</id>
-						<name>resultAmplitude_3</name>
+						<name>tmp_12</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3625,50 +3633,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>68</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>resultAmplitude</originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>346</item>
-					<item>347</item>
-				</oprand_edges>
-				<opcode>fmul</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_95">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>139</id>
-						<name>tmp_16</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>71</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>71</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -3682,10 +3647,53 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>348</item>
-					<item>349</item>
+					<item>365</item>
+					<item>366</item>
 				</oprand_edges>
 				<opcode>icmp</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_95">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>139</id>
+						<name>decaySlope_load</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>66</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>66</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>367</item>
+					<item>675</item>
+				</oprand_edges>
+				<opcode>load</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_96">
@@ -3693,10 +3701,10 @@
 					<Obj>
 						<type>0</type>
 						<id>140</id>
-						<name>releaseSlope_load</name>
+						<name>tmp_13</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>72</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3711,7 +3719,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>72</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -3725,10 +3733,10 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>350</item>
-					<item>643</item>
+					<item>368</item>
+					<item>369</item>
 				</oprand_edges>
-				<opcode>load</opcode>
+				<opcode>sub</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_97">
@@ -3736,10 +3744,10 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>tmp_17</name>
+						<name>tmp_14</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>72</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3754,50 +3762,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>72</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>351</item>
-					<item>352</item>
-				</oprand_edges>
-				<opcode>sub</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_98">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>142</id>
-						<name>tmp_18</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>72</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>72</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -3811,9 +3776,52 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>353</item>
+					<item>370</item>
 				</oprand_edges>
 				<opcode>sitofp</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_98">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>142</id>
+						<name>tmp_15</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>66</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>66</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>371</item>
+					<item>372</item>
+				</oprand_edges>
+				<opcode>fmul</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_99">
@@ -3821,10 +3829,10 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>tmp_19</name>
+						<name>tmp_16</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>72</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3839,7 +3847,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>72</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -3853,10 +3861,10 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>354</item>
-					<item>355</item>
+					<item>373</item>
+					<item>374</item>
 				</oprand_edges>
-				<opcode>fmul</opcode>
+				<opcode>fadd</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_100">
@@ -3864,10 +3872,10 @@
 					<Obj>
 						<type>0</type>
 						<id>144</id>
-						<name>tmp_20</name>
+						<name>resultAmplitude_2</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>72</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3882,50 +3890,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>72</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>356</item>
-					<item>357</item>
-				</oprand_edges>
-				<opcode>fadd</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_101">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>145</id>
-						<name>resultAmplitude_4</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>72</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>72</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -3939,10 +3904,53 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>358</item>
-					<item>359</item>
+					<item>375</item>
+					<item>376</item>
 				</oprand_edges>
 				<opcode>fmul</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_101">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>145</id>
+						<name>tmp_17</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>69</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>69</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>377</item>
+					<item>378</item>
+				</oprand_edges>
+				<opcode>icmp</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_102">
@@ -3950,10 +3958,10 @@
 					<Obj>
 						<type>0</type>
 						<id>146</id>
-						<name>not_tmp_s</name>
+						<name>tmp_18</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>59</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3968,7 +3976,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>59</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -3977,15 +3985,14 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>2</count>
+					<count>1</count>
 					<item_version>0</item_version>
-					<item>360</item>
-					<item>361</item>
+					<item>379</item>
 				</oprand_edges>
-				<opcode>xor</opcode>
+				<opcode>sitofp</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_103">
@@ -3993,10 +4000,10 @@
 					<Obj>
 						<type>0</type>
 						<id>147</id>
-						<name>sel_tmp2</name>
+						<name>resultAmplitude_3</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4011,403 +4018,16 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>63</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>resultAmplitude</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>362</item>
-					<item>363</item>
-				</oprand_edges>
-				<opcode>and</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_104">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>148</id>
-						<name>sel_tmp</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>63</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>63</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>364</item>
-					<item>365</item>
-				</oprand_edges>
-				<opcode>xor</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_105">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>149</id>
-						<name>sel_tmp6_demorgan</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>366</item>
-					<item>367</item>
-				</oprand_edges>
-				<opcode>or</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_106">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>150</id>
-						<name>tmp_19_not</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>67</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>67</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>368</item>
-					<item>369</item>
-				</oprand_edges>
-				<opcode>xor</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_107">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>151</id>
-						<name>not_sel_tmp7</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>370</item>
-					<item>371</item>
-				</oprand_edges>
-				<opcode>or</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_108">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>152</id>
-						<name>sel_tmp13_demorgan</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>372</item>
-					<item>373</item>
-				</oprand_edges>
-				<opcode>or</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_109">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>153</id>
-						<name>tmp_21_not</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>71</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>71</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>374</item>
-					<item>375</item>
-				</oprand_edges>
-				<opcode>xor</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_110">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>154</id>
-						<name>not_sel_tmp</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>376</item>
-					<item>377</item>
-				</oprand_edges>
-				<opcode>or</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_111">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>155</id>
-						<name>tmp1</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>378</item>
-					<item>379</item>
-				</oprand_edges>
-				<opcode>and</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_112">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>156</id>
-						<name>sel_tmp8</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>59</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>59</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -4415,18 +4035,18 @@
 					<item>380</item>
 					<item>381</item>
 				</oprand_edges>
-				<opcode>and</opcode>
+				<opcode>fmul</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_113">
+			<item class_id_reference="9" object_id="_104">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>157</id>
-						<name>wait_flag_1</name>
+						<id>148</id>
+						<name>tmp_19</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>73</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4441,7 +4061,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>47</second>
+										<second>73</second>
 									</item>
 								</second>
 							</item>
@@ -4458,18 +4078,18 @@
 					<item>382</item>
 					<item>383</item>
 				</oprand_edges>
-				<opcode>or</opcode>
+				<opcode>icmp</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_114">
+			<item class_id_reference="9" object_id="_105">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>158</id>
-						<name>sel_tmp1</name>
+						<id>149</id>
+						<name>releaseSlope_load</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>59</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4484,7 +4104,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>59</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -4493,26 +4113,26 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>384</item>
-					<item>385</item>
+					<item>677</item>
 				</oprand_edges>
-				<opcode>xor</opcode>
+				<opcode>load</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_115">
+			<item class_id_reference="9" object_id="_106">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>159</id>
-						<name>sel_tmp3</name>
+						<id>150</id>
+						<name>tmp_20</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>67</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4527,7 +4147,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>67</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -4536,26 +4156,26 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
+					<item>385</item>
 					<item>386</item>
-					<item>387</item>
 				</oprand_edges>
-				<opcode>and</opcode>
+				<opcode>sub</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_116">
+			<item class_id_reference="9" object_id="_107">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>160</id>
-						<name>sel_tmp4</name>
+						<id>151</id>
+						<name>tmp_21</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>59</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4570,7 +4190,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>59</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -4579,7 +4199,49 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>387</item>
+				</oprand_edges>
+				<opcode>sitofp</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_108">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>152</id>
+						<name>tmp_22</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>74</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>74</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -4587,18 +4249,18 @@
 					<item>388</item>
 					<item>389</item>
 				</oprand_edges>
-				<opcode>xor</opcode>
+				<opcode>fmul</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_117">
+			<item class_id_reference="9" object_id="_109">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>161</id>
-						<name>sel_tmp5</name>
+						<id>153</id>
+						<name>tmp_23</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>71</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4613,7 +4275,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>71</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
@@ -4622,7 +4284,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -4630,18 +4292,18 @@
 					<item>390</item>
 					<item>391</item>
 				</oprand_edges>
-				<opcode>and</opcode>
+				<opcode>fadd</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_118">
+			<item class_id_reference="9" object_id="_110">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>162</id>
-						<name>or_cond</name>
+						<id>154</id>
+						<name>resultAmplitude_4</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>71</lineNumber>
+						<lineNumber>74</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4656,16 +4318,16 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>71</second>
+										<second>74</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>resultAmplitude</originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>1</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -4673,18 +4335,18 @@
 					<item>392</item>
 					<item>393</item>
 				</oprand_edges>
-				<opcode>or</opcode>
+				<opcode>fmul</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_119">
+			<item class_id_reference="9" object_id="_111">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>163</id>
-						<name>or_cond1</name>
+						<id>155</id>
+						<name>not_tmp_s</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4699,7 +4361,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>63</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -4716,18 +4378,18 @@
 					<item>394</item>
 					<item>395</item>
 				</oprand_edges>
-				<opcode>or</opcode>
+				<opcode>xor</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_120">
+			<item class_id_reference="9" object_id="_112">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>164</id>
-						<name>or_cond2</name>
+						<id>156</id>
+						<name>sel_tmp3</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>71</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4742,7 +4404,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>71</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -4759,18 +4421,18 @@
 					<item>396</item>
 					<item>397</item>
 				</oprand_edges>
-				<opcode>or</opcode>
+				<opcode>and</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_121">
+			<item class_id_reference="9" object_id="_113">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>165</id>
-						<name>not_or_cond</name>
+						<id>157</id>
+						<name>sel_tmp4</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>71</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4785,7 +4447,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>71</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -4805,15 +4467,15 @@
 				<opcode>xor</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_122">
+			<item class_id_reference="9" object_id="_114">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>166</id>
-						<name>resultAmplitude_5</name>
+						<id>158</id>
+						<name>sel_tmp30_demorgan</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>82</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4828,25 +4490,368 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>82</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>resultAmplitude</originalName>
+						<originalName></originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>1</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>3</count>
+					<count>2</count>
 					<item_version>0</item_version>
 					<item>400</item>
 					<item>401</item>
+				</oprand_edges>
+				<opcode>or</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_115">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>159</id>
+						<name>tmp_21_not</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>69</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>69</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>402</item>
 					<item>403</item>
 				</oprand_edges>
-				<opcode>select</opcode>
+				<opcode>xor</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_116">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>160</id>
+						<name>not_sel_tmp</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>61</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>61</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>404</item>
+					<item>405</item>
+				</oprand_edges>
+				<opcode>or</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_117">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>161</id>
+						<name>sel_tmp37_demorgan</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>61</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>61</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>406</item>
+					<item>407</item>
+				</oprand_edges>
+				<opcode>or</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_118">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>162</id>
+						<name>tmp_23_not</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>73</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>73</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>408</item>
+					<item>409</item>
+				</oprand_edges>
+				<opcode>xor</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_119">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>163</id>
+						<name>not_sel_tmp1</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>61</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>61</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>410</item>
+					<item>411</item>
+				</oprand_edges>
+				<opcode>or</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_120">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>164</id>
+						<name>tmp1</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>61</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>61</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>412</item>
+					<item>413</item>
+				</oprand_edges>
+				<opcode>and</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_121">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>165</id>
+						<name>sel_tmp6</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>61</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>61</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>414</item>
+					<item>415</item>
+				</oprand_edges>
+				<opcode>and</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_122">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>166</id>
+						<name>wait_flag_1</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>61</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>61</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>416</item>
+					<item>417</item>
+				</oprand_edges>
+				<opcode>or</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_123">
@@ -4854,10 +4859,10 @@
 					<Obj>
 						<type>0</type>
 						<id>167</id>
-						<name>resultAmplitude_6</name>
+						<name>sel_tmp7</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>82</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4872,25 +4877,24 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>82</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>resultAmplitude</originalName>
+						<originalName></originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>1</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>3</count>
+					<count>2</count>
 					<item_version>0</item_version>
-					<item>404</item>
-					<item>405</item>
-					<item>406</item>
+					<item>418</item>
+					<item>419</item>
 				</oprand_edges>
-				<opcode>select</opcode>
+				<opcode>xor</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_124">
@@ -4898,10 +4902,10 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>resultAmplitude_7</name>
+						<name>sel_tmp8</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>82</lineNumber>
+						<lineNumber>69</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4916,25 +4920,24 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>82</second>
+										<second>69</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName>resultAmplitude</originalName>
+						<originalName></originalName>
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>1</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>3</count>
+					<count>2</count>
 					<item_version>0</item_version>
-					<item>407</item>
-					<item>408</item>
-					<item>409</item>
+					<item>420</item>
+					<item>421</item>
 				</oprand_edges>
-				<opcode>select</opcode>
+				<opcode>and</opcode>
 				<m_Display>0</m_Display>
 			</item>
 			<item class_id_reference="9" object_id="_125">
@@ -4942,7 +4945,441 @@
 					<Obj>
 						<type>0</type>
 						<id>169</id>
+						<name>sel_tmp10</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>61</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>61</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>422</item>
+					<item>423</item>
+				</oprand_edges>
+				<opcode>xor</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_126">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>170</id>
+						<name>sel_tmp11</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>73</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>73</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>424</item>
+					<item>425</item>
+				</oprand_edges>
+				<opcode>and</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_127">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>171</id>
+						<name>or_cond</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>73</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>73</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>426</item>
+					<item>427</item>
+				</oprand_edges>
+				<opcode>or</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_128">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>172</id>
+						<name>or_cond1</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>65</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>65</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>428</item>
+					<item>429</item>
+				</oprand_edges>
+				<opcode>or</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_129">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>173</id>
+						<name>or_cond2</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>73</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>73</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>430</item>
+					<item>431</item>
+				</oprand_edges>
+				<opcode>or</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_130">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>174</id>
+						<name>not_or_cond</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>73</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>73</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>432</item>
+					<item>433</item>
+				</oprand_edges>
+				<opcode>xor</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_131">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>175</id>
+						<name>resultAmplitude_5</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>84</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>84</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>resultAmplitude</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>434</item>
+					<item>435</item>
+					<item>437</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_132">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>176</id>
+						<name>resultAmplitude_6</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>84</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>84</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>resultAmplitude</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>438</item>
+					<item>439</item>
+					<item>440</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_133">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>177</id>
+						<name>resultAmplitude_7</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>84</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>84</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>resultAmplitude</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>441</item>
+					<item>442</item>
+					<item>443</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_134">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>178</id>
 						<name>resultAmplitude</name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>84</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>84</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>resultAmplitude</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>444</item>
+					<item>445</item>
+					<item>446</item>
+				</oprand_edges>
+				<opcode>select</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_135">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>179</id>
+						<name>tmp_24</name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
 						<lineNumber>82</lineNumber>
@@ -4961,50 +5398,6 @@
 											<second>envelope</second>
 										</first>
 										<second>82</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName>resultAmplitude</originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>410</item>
-					<item>411</item>
-					<item>412</item>
-				</oprand_edges>
-				<opcode>select</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_126">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>170</id>
-						<name>tmp_21</name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>80</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>80</second>
 									</item>
 								</second>
 							</item>
@@ -5018,21 +5411,21 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>413</item>
-					<item>414</item>
+					<item>447</item>
+					<item>448</item>
 				</oprand_edges>
 				<opcode>add</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_127">
+			<item class_id_reference="9" object_id="_136">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>171</id>
+						<id>180</id>
 						<name></name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>80</lineNumber>
+						<lineNumber>84</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5047,7 +5440,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>80</second>
+										<second>84</second>
 									</item>
 								</second>
 							</item>
@@ -5061,66 +5454,22 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>415</item>
-					<item>416</item>
-					<item>648</item>
-				</oprand_edges>
-				<opcode>store</opcode>
-				<m_Display>0</m_Display>
-			</item>
-			<item class_id_reference="9" object_id="_128">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>172</id>
-						<name></name>
-						<fileName>src/Envelope.cpp</fileName>
-						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>82</lineNumber>
-						<contextFuncName>envelope</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>src/Envelope.cpp</first>
-											<second>envelope</second>
-										</first>
-										<second>82</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>418</item>
-					<item>419</item>
-					<item>420</item>
+					<item>450</item>
+					<item>451</item>
+					<item>452</item>
 				</oprand_edges>
 				<opcode>write</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_129">
+			<item class_id_reference="9" object_id="_137">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>173</id>
+						<id>181</id>
 						<name></name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>50</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5135,7 +5484,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>47</second>
+										<second>50</second>
 									</item>
 								</second>
 							</item>
@@ -5149,18 +5498,62 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>421</item>
-					<item>422</item>
-					<item>423</item>
+					<item>453</item>
+					<item>454</item>
+					<item>682</item>
+				</oprand_edges>
+				<opcode>store</opcode>
+				<m_Display>0</m_Display>
+			</item>
+			<item class_id_reference="9" object_id="_138">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>182</id>
+						<name></name>
+						<fileName>src/Envelope.cpp</fileName>
+						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
+						<lineNumber>61</lineNumber>
+						<contextFuncName>envelope</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>/home/austin/ECE1373_GhostSynth/modules/Envelope</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>src/Envelope.cpp</first>
+											<second>envelope</second>
+										</first>
+										<second>61</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>455</item>
+					<item>456</item>
+					<item>457</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_130">
+			<item class_id_reference="9" object_id="_139">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>175</id>
+						<id>184</id>
 						<name></name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
@@ -5193,18 +5586,18 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>430</item>
-					<item>431</item>
-					<item>649</item>
+					<item>464</item>
+					<item>465</item>
+					<item>683</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_131">
+			<item class_id_reference="9" object_id="_140">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>176</id>
+						<id>185</id>
 						<name></name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -5223,20 +5616,20 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>432</item>
+					<item>466</item>
 				</oprand_edges>
 				<opcode>br</opcode>
 				<m_Display>0</m_Display>
 			</item>
-			<item class_id_reference="9" object_id="_132">
+			<item class_id_reference="9" object_id="_141">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>178</id>
+						<id>187</id>
 						<name></name>
 						<fileName>src/Envelope.cpp</fileName>
 						<fileDirectory>/home/austin/ECE1373_GhostSynth/modules/Envelope</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>85</lineNumber>
 						<contextFuncName>envelope</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5251,7 +5644,7 @@
 											<first>src/Envelope.cpp</first>
 											<second>envelope</second>
 										</first>
-										<second>83</second>
+										<second>85</second>
 									</item>
 								</second>
 							</item>
@@ -5271,13 +5664,13 @@
 			</item>
 		</nodes>
 		<consts class_id="15" tracking_level="0" version="0">
-			<count>7</count>
+			<count>8</count>
 			<item_version>0</item_version>
-			<item class_id="16" tracking_level="1" version="0" object_id="_133">
+			<item class_id="16" tracking_level="1" version="0" object_id="_142">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>198</id>
+						<id>207</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -5296,11 +5689,11 @@
 				<const_type>1</const_type>
 				<content>2</content>
 			</item>
-			<item class_id_reference="16" object_id="_134">
+			<item class_id_reference="16" object_id="_143">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>203</id>
+						<id>212</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -5319,11 +5712,11 @@
 				<const_type>0</const_type>
 				<content>1</content>
 			</item>
-			<item class_id_reference="16" object_id="_135">
+			<item class_id_reference="16" object_id="_144">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>212</id>
+						<id>221</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -5342,11 +5735,11 @@
 				<const_type>0</const_type>
 				<content>4294967294</content>
 			</item>
-			<item class_id_reference="16" object_id="_136">
+			<item class_id_reference="16" object_id="_145">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>229</id>
+						<id>238</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -5365,11 +5758,11 @@
 				<const_type>0</const_type>
 				<content>0</content>
 			</item>
-			<item class_id_reference="16" object_id="_137">
+			<item class_id_reference="16" object_id="_146">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>253</id>
+						<id>262</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -5388,11 +5781,34 @@
 				<const_type>0</const_type>
 				<content>0</content>
 			</item>
-			<item class_id_reference="16" object_id="_138">
+			<item class_id_reference="16" object_id="_147">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>290</id>
+						<id>305</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>4294967295</content>
+			</item>
+			<item class_id_reference="16" object_id="_148">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>310</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -5411,11 +5827,11 @@
 				<const_type>0</const_type>
 				<content>1</content>
 			</item>
-			<item class_id_reference="16" object_id="_139">
+			<item class_id_reference="16" object_id="_149">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>402</id>
+						<id>436</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -5438,7 +5854,7 @@
 		<blocks class_id="17" tracking_level="0" version="0">
 			<count>17</count>
 			<item_version>0</item_version>
-			<item class_id="18" tracking_level="1" version="0" object_id="_140">
+			<item class_id="18" tracking_level="1" version="0" object_id="_150">
 				<Obj>
 					<type>3</type>
 					<id>47</id>
@@ -5468,7 +5884,7 @@
 					<item>46</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_141">
+			<item class_id_reference="18" object_id="_151">
 				<Obj>
 					<type>3</type>
 					<id>53</id>
@@ -5495,7 +5911,7 @@
 					<item>52</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_142">
+			<item class_id_reference="18" object_id="_152">
 				<Obj>
 					<type>3</type>
 					<id>56</id>
@@ -5519,7 +5935,7 @@
 					<item>55</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_143">
+			<item class_id_reference="18" object_id="_153">
 				<Obj>
 					<type>3</type>
 					<id>65</id>
@@ -5549,11 +5965,11 @@
 					<item>64</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_144">
+			<item class_id_reference="18" object_id="_154">
 				<Obj>
 					<type>3</type>
 					<id>68</id>
-					<name>._crit_edge6</name>
+					<name>._crit_edge5</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5573,7 +5989,7 @@
 					<item>67</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_145">
+			<item class_id_reference="18" object_id="_155">
 				<Obj>
 					<type>3</type>
 					<id>77</id>
@@ -5603,11 +6019,11 @@
 					<item>76</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_146">
+			<item class_id_reference="18" object_id="_156">
 				<Obj>
 					<type>3</type>
 					<id>81</id>
-					<name>._crit_edge7</name>
+					<name>._crit_edge6</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5628,7 +6044,7 @@
 					<item>80</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_147">
+			<item class_id_reference="18" object_id="_157">
 				<Obj>
 					<type>3</type>
 					<id>84</id>
@@ -5652,11 +6068,11 @@
 					<item>83</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_148">
+			<item class_id_reference="18" object_id="_158">
 				<Obj>
 					<type>3</type>
 					<id>90</id>
-					<name>._crit_edge8</name>
+					<name>._crit_edge7</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5679,7 +6095,7 @@
 					<item>89</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_149">
+			<item class_id_reference="18" object_id="_159">
 				<Obj>
 					<type>3</type>
 					<id>93</id>
@@ -5703,11 +6119,11 @@
 					<item>92</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_150">
+			<item class_id_reference="18" object_id="_160">
 				<Obj>
 					<type>3</type>
-					<id>116</id>
-					<name>._crit_edge9_ifconv</name>
+					<id>123</id>
+					<name>._crit_edge8_ifconv</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5721,7 +6137,7 @@
 					<coreName></coreName>
 				</Obj>
 				<node_objs>
-					<count>22</count>
+					<count>29</count>
 					<item_version>0</item_version>
 					<item>94</item>
 					<item>95</item>
@@ -5745,12 +6161,19 @@
 					<item>113</item>
 					<item>114</item>
 					<item>115</item>
+					<item>116</item>
+					<item>117</item>
+					<item>118</item>
+					<item>119</item>
+					<item>120</item>
+					<item>121</item>
+					<item>122</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_151">
+			<item class_id_reference="18" object_id="_161">
 				<Obj>
 					<type>3</type>
-					<id>119</id>
+					<id>126</id>
 					<name>mergeST5</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -5767,15 +6190,15 @@
 				<node_objs>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>117</item>
-					<item>118</item>
+					<item>124</item>
+					<item>125</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_152">
+			<item class_id_reference="18" object_id="_162">
 				<Obj>
 					<type>3</type>
-					<id>121</id>
-					<name>._crit_edge11.new6</name>
+					<id>128</id>
+					<name>._crit_edge10.new6</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5791,13 +6214,13 @@
 				<node_objs>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>120</item>
+					<item>127</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_153">
+			<item class_id_reference="18" object_id="_163">
 				<Obj>
 					<type>3</type>
-					<id>124</id>
+					<id>131</id>
 					<name>mergeST</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -5814,15 +6237,15 @@
 				<node_objs>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>122</item>
-					<item>123</item>
+					<item>129</item>
+					<item>130</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_154">
+			<item class_id_reference="18" object_id="_164">
 				<Obj>
 					<type>3</type>
-					<id>174</id>
-					<name>._crit_edge11.new_ifconv</name>
+					<id>183</id>
+					<name>._crit_edge10.new_ifconv</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -5836,15 +6259,8 @@
 					<coreName></coreName>
 				</Obj>
 				<node_objs>
-					<count>49</count>
+					<count>51</count>
 					<item_version>0</item_version>
-					<item>125</item>
-					<item>126</item>
-					<item>127</item>
-					<item>128</item>
-					<item>129</item>
-					<item>130</item>
-					<item>131</item>
 					<item>132</item>
 					<item>133</item>
 					<item>134</item>
@@ -5887,12 +6303,21 @@
 					<item>171</item>
 					<item>172</item>
 					<item>173</item>
+					<item>174</item>
+					<item>175</item>
+					<item>176</item>
+					<item>177</item>
+					<item>178</item>
+					<item>179</item>
+					<item>180</item>
+					<item>181</item>
+					<item>182</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_155">
+			<item class_id_reference="18" object_id="_165">
 				<Obj>
 					<type>3</type>
-					<id>177</id>
+					<id>186</id>
 					<name>mergeST7</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -5909,14 +6334,14 @@
 				<node_objs>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>175</item>
-					<item>176</item>
+					<item>184</item>
+					<item>185</item>
 				</node_objs>
 			</item>
-			<item class_id_reference="18" object_id="_156">
+			<item class_id_reference="18" object_id="_166">
 				<Obj>
 					<type>3</type>
-					<id>179</id>
+					<id>188</id>
 					<name>.new</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -5933,1645 +6358,1789 @@
 				<node_objs>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>178</item>
+					<item>187</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>271</count>
+			<count>295</count>
 			<item_version>0</item_version>
-			<item class_id="20" tracking_level="1" version="0" object_id="_157">
-				<id>182</id>
+			<item class_id="20" tracking_level="1" version="0" object_id="_167">
+				<id>191</id>
 				<edge_type>1</edge_type>
 				<source_obj>8</source_obj>
 				<sink_obj>30</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_158">
-				<id>184</id>
+			<item class_id_reference="20" object_id="_168">
+				<id>193</id>
 				<edge_type>1</edge_type>
 				<source_obj>7</source_obj>
 				<sink_obj>31</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_159">
-				<id>186</id>
+			<item class_id_reference="20" object_id="_169">
+				<id>195</id>
 				<edge_type>1</edge_type>
 				<source_obj>6</source_obj>
 				<sink_obj>32</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_160">
-				<id>188</id>
+			<item class_id_reference="20" object_id="_170">
+				<id>197</id>
 				<edge_type>1</edge_type>
 				<source_obj>5</source_obj>
 				<sink_obj>33</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_161">
-				<id>190</id>
+			<item class_id_reference="20" object_id="_171">
+				<id>199</id>
 				<edge_type>1</edge_type>
 				<source_obj>4</source_obj>
 				<sink_obj>34</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_162">
-				<id>192</id>
+			<item class_id_reference="20" object_id="_172">
+				<id>201</id>
 				<edge_type>1</edge_type>
 				<source_obj>3</source_obj>
 				<sink_obj>35</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_163">
-				<id>193</id>
+			<item class_id_reference="20" object_id="_173">
+				<id>202</id>
 				<edge_type>1</edge_type>
 				<source_obj>9</source_obj>
 				<sink_obj>45</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_164">
-				<id>194</id>
+			<item class_id_reference="20" object_id="_174">
+				<id>203</id>
 				<edge_type>1</edge_type>
 				<source_obj>45</source_obj>
 				<sink_obj>46</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_165">
-				<id>195</id>
+			<item class_id_reference="20" object_id="_175">
+				<id>204</id>
 				<edge_type>2</edge_type>
 				<source_obj>53</source_obj>
 				<sink_obj>46</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_166">
-				<id>196</id>
+			<item class_id_reference="20" object_id="_176">
+				<id>205</id>
 				<edge_type>2</edge_type>
 				<source_obj>56</source_obj>
 				<sink_obj>46</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_167">
-				<id>197</id>
+			<item class_id_reference="20" object_id="_177">
+				<id>206</id>
 				<edge_type>1</edge_type>
 				<source_obj>34</source_obj>
 				<sink_obj>48</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_168">
-				<id>199</id>
+			<item class_id_reference="20" object_id="_178">
+				<id>208</id>
 				<edge_type>1</edge_type>
-				<source_obj>198</source_obj>
+				<source_obj>207</source_obj>
 				<sink_obj>49</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_169">
-				<id>200</id>
+			<item class_id_reference="20" object_id="_179">
+				<id>209</id>
 				<edge_type>1</edge_type>
 				<source_obj>48</source_obj>
 				<sink_obj>49</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_170">
-				<id>201</id>
+			<item class_id_reference="20" object_id="_180">
+				<id>210</id>
 				<edge_type>1</edge_type>
 				<source_obj>49</source_obj>
 				<sink_obj>50</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_171">
-				<id>202</id>
+			<item class_id_reference="20" object_id="_181">
+				<id>211</id>
 				<edge_type>1</edge_type>
 				<source_obj>10</source_obj>
 				<sink_obj>50</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_172">
-				<id>204</id>
+			<item class_id_reference="20" object_id="_182">
+				<id>213</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
+				<source_obj>212</source_obj>
 				<sink_obj>51</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_173">
-				<id>205</id>
+			<item class_id_reference="20" object_id="_183">
+				<id>214</id>
 				<edge_type>1</edge_type>
 				<source_obj>9</source_obj>
 				<sink_obj>51</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_174">
-				<id>206</id>
+			<item class_id_reference="20" object_id="_184">
+				<id>215</id>
 				<edge_type>2</edge_type>
 				<source_obj>56</source_obj>
 				<sink_obj>52</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_175">
-				<id>207</id>
+			<item class_id_reference="20" object_id="_185">
+				<id>216</id>
 				<edge_type>1</edge_type>
 				<source_obj>11</source_obj>
 				<sink_obj>54</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_176">
-				<id>208</id>
+			<item class_id_reference="20" object_id="_186">
+				<id>217</id>
 				<edge_type>1</edge_type>
 				<source_obj>54</source_obj>
 				<sink_obj>55</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_177">
-				<id>209</id>
+			<item class_id_reference="20" object_id="_187">
+				<id>218</id>
 				<edge_type>2</edge_type>
 				<source_obj>65</source_obj>
 				<sink_obj>55</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_178">
-				<id>210</id>
+			<item class_id_reference="20" object_id="_188">
+				<id>219</id>
 				<edge_type>2</edge_type>
 				<source_obj>68</source_obj>
 				<sink_obj>55</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_179">
-				<id>211</id>
+			<item class_id_reference="20" object_id="_189">
+				<id>220</id>
 				<edge_type>1</edge_type>
 				<source_obj>32</source_obj>
 				<sink_obj>57</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_180">
-				<id>213</id>
+			<item class_id_reference="20" object_id="_190">
+				<id>222</id>
 				<edge_type>1</edge_type>
-				<source_obj>212</source_obj>
+				<source_obj>221</source_obj>
 				<sink_obj>57</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_181">
-				<id>214</id>
+			<item class_id_reference="20" object_id="_191">
+				<id>223</id>
 				<edge_type>1</edge_type>
 				<source_obj>57</source_obj>
 				<sink_obj>58</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_182">
-				<id>215</id>
+			<item class_id_reference="20" object_id="_192">
+				<id>224</id>
 				<edge_type>1</edge_type>
 				<source_obj>33</source_obj>
 				<sink_obj>59</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_183">
-				<id>216</id>
+			<item class_id_reference="20" object_id="_193">
+				<id>225</id>
 				<edge_type>1</edge_type>
 				<source_obj>34</source_obj>
 				<sink_obj>59</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_184">
-				<id>217</id>
+			<item class_id_reference="20" object_id="_194">
+				<id>226</id>
 				<edge_type>1</edge_type>
 				<source_obj>59</source_obj>
 				<sink_obj>60</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_185">
-				<id>218</id>
+			<item class_id_reference="20" object_id="_195">
+				<id>227</id>
 				<edge_type>1</edge_type>
 				<source_obj>58</source_obj>
 				<sink_obj>61</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_186">
-				<id>219</id>
+			<item class_id_reference="20" object_id="_196">
+				<id>228</id>
 				<edge_type>1</edge_type>
 				<source_obj>60</source_obj>
 				<sink_obj>61</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_187">
-				<id>220</id>
+			<item class_id_reference="20" object_id="_197">
+				<id>229</id>
 				<edge_type>1</edge_type>
 				<source_obj>61</source_obj>
 				<sink_obj>62</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_188">
-				<id>221</id>
+			<item class_id_reference="20" object_id="_198">
+				<id>230</id>
 				<edge_type>1</edge_type>
 				<source_obj>12</source_obj>
 				<sink_obj>62</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_189">
-				<id>222</id>
+			<item class_id_reference="20" object_id="_199">
+				<id>231</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
+				<source_obj>212</source_obj>
 				<sink_obj>63</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_190">
-				<id>223</id>
+			<item class_id_reference="20" object_id="_200">
+				<id>232</id>
 				<edge_type>1</edge_type>
 				<source_obj>11</source_obj>
 				<sink_obj>63</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_191">
-				<id>224</id>
+			<item class_id_reference="20" object_id="_201">
+				<id>233</id>
 				<edge_type>2</edge_type>
 				<source_obj>68</source_obj>
 				<sink_obj>64</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_192">
-				<id>225</id>
+			<item class_id_reference="20" object_id="_202">
+				<id>234</id>
 				<edge_type>1</edge_type>
 				<source_obj>13</source_obj>
 				<sink_obj>66</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_193">
-				<id>226</id>
+			<item class_id_reference="20" object_id="_203">
+				<id>235</id>
 				<edge_type>1</edge_type>
 				<source_obj>66</source_obj>
 				<sink_obj>67</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_194">
-				<id>227</id>
+			<item class_id_reference="20" object_id="_204">
+				<id>236</id>
 				<edge_type>2</edge_type>
 				<source_obj>77</source_obj>
 				<sink_obj>67</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_195">
-				<id>228</id>
+			<item class_id_reference="20" object_id="_205">
+				<id>237</id>
 				<edge_type>2</edge_type>
 				<source_obj>81</source_obj>
 				<sink_obj>67</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_196">
-				<id>230</id>
+			<item class_id_reference="20" object_id="_206">
+				<id>239</id>
 				<edge_type>1</edge_type>
-				<source_obj>229</source_obj>
+				<source_obj>238</source_obj>
 				<sink_obj>69</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_197">
-				<id>231</id>
+			<item class_id_reference="20" object_id="_207">
+				<id>240</id>
 				<edge_type>1</edge_type>
 				<source_obj>32</source_obj>
 				<sink_obj>69</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_198">
-				<id>232</id>
+			<item class_id_reference="20" object_id="_208">
+				<id>241</id>
 				<edge_type>1</edge_type>
 				<source_obj>69</source_obj>
 				<sink_obj>70</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_199">
-				<id>233</id>
+			<item class_id_reference="20" object_id="_209">
+				<id>242</id>
 				<edge_type>1</edge_type>
 				<source_obj>30</source_obj>
 				<sink_obj>71</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_200">
-				<id>234</id>
+			<item class_id_reference="20" object_id="_210">
+				<id>243</id>
 				<edge_type>1</edge_type>
 				<source_obj>31</source_obj>
 				<sink_obj>71</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_201">
-				<id>235</id>
+			<item class_id_reference="20" object_id="_211">
+				<id>244</id>
 				<edge_type>1</edge_type>
 				<source_obj>71</source_obj>
 				<sink_obj>72</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_202">
-				<id>236</id>
+			<item class_id_reference="20" object_id="_212">
+				<id>245</id>
 				<edge_type>1</edge_type>
 				<source_obj>70</source_obj>
 				<sink_obj>73</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_203">
-				<id>237</id>
+			<item class_id_reference="20" object_id="_213">
+				<id>246</id>
 				<edge_type>1</edge_type>
 				<source_obj>72</source_obj>
 				<sink_obj>73</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_204">
-				<id>238</id>
+			<item class_id_reference="20" object_id="_214">
+				<id>247</id>
 				<edge_type>1</edge_type>
 				<source_obj>73</source_obj>
 				<sink_obj>74</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_205">
-				<id>239</id>
+			<item class_id_reference="20" object_id="_215">
+				<id>248</id>
 				<edge_type>1</edge_type>
 				<source_obj>14</source_obj>
 				<sink_obj>74</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_206">
-				<id>240</id>
+			<item class_id_reference="20" object_id="_216">
+				<id>249</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
+				<source_obj>212</source_obj>
 				<sink_obj>75</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_207">
-				<id>241</id>
+			<item class_id_reference="20" object_id="_217">
+				<id>250</id>
 				<edge_type>1</edge_type>
 				<source_obj>13</source_obj>
 				<sink_obj>75</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_208">
-				<id>242</id>
+			<item class_id_reference="20" object_id="_218">
+				<id>251</id>
 				<edge_type>2</edge_type>
 				<source_obj>81</source_obj>
 				<sink_obj>76</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_209">
-				<id>243</id>
+			<item class_id_reference="20" object_id="_219">
+				<id>252</id>
 				<edge_type>1</edge_type>
 				<source_obj>15</source_obj>
 				<sink_obj>78</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_210">
-				<id>244</id>
+			<item class_id_reference="20" object_id="_220">
+				<id>253</id>
 				<edge_type>1</edge_type>
 				<source_obj>16</source_obj>
 				<sink_obj>79</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_211">
-				<id>245</id>
+			<item class_id_reference="20" object_id="_221">
+				<id>254</id>
 				<edge_type>1</edge_type>
 				<source_obj>78</source_obj>
 				<sink_obj>80</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_212">
-				<id>246</id>
+			<item class_id_reference="20" object_id="_222">
+				<id>255</id>
 				<edge_type>2</edge_type>
 				<source_obj>84</source_obj>
 				<sink_obj>80</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_213">
-				<id>247</id>
+			<item class_id_reference="20" object_id="_223">
+				<id>256</id>
 				<edge_type>2</edge_type>
 				<source_obj>90</source_obj>
 				<sink_obj>80</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_214">
-				<id>248</id>
+			<item class_id_reference="20" object_id="_224">
+				<id>257</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
+				<source_obj>212</source_obj>
 				<sink_obj>82</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_215">
-				<id>249</id>
+			<item class_id_reference="20" object_id="_225">
+				<id>258</id>
 				<edge_type>1</edge_type>
 				<source_obj>15</source_obj>
 				<sink_obj>82</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_216">
-				<id>250</id>
+			<item class_id_reference="20" object_id="_226">
+				<id>259</id>
 				<edge_type>2</edge_type>
 				<source_obj>90</source_obj>
 				<sink_obj>83</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_217">
-				<id>251</id>
+			<item class_id_reference="20" object_id="_227">
+				<id>260</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
+				<source_obj>212</source_obj>
 				<sink_obj>85</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_218">
-				<id>252</id>
+			<item class_id_reference="20" object_id="_228">
+				<id>261</id>
 				<edge_type>2</edge_type>
 				<source_obj>84</source_obj>
 				<sink_obj>85</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_219">
-				<id>254</id>
+			<item class_id_reference="20" object_id="_229">
+				<id>263</id>
 				<edge_type>1</edge_type>
-				<source_obj>253</source_obj>
+				<source_obj>262</source_obj>
 				<sink_obj>85</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_220">
-				<id>255</id>
+			<item class_id_reference="20" object_id="_230">
+				<id>264</id>
 				<edge_type>2</edge_type>
 				<source_obj>81</source_obj>
 				<sink_obj>85</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_221">
-				<id>256</id>
+			<item class_id_reference="20" object_id="_231">
+				<id>265</id>
 				<edge_type>1</edge_type>
 				<source_obj>30</source_obj>
 				<sink_obj>86</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_222">
-				<id>257</id>
+			<item class_id_reference="20" object_id="_232">
+				<id>266</id>
 				<edge_type>2</edge_type>
 				<source_obj>84</source_obj>
 				<sink_obj>86</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_223">
-				<id>258</id>
+			<item class_id_reference="20" object_id="_233">
+				<id>267</id>
 				<edge_type>1</edge_type>
 				<source_obj>79</source_obj>
 				<sink_obj>86</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_224">
-				<id>259</id>
+			<item class_id_reference="20" object_id="_234">
+				<id>268</id>
 				<edge_type>2</edge_type>
 				<source_obj>81</source_obj>
 				<sink_obj>86</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_225">
-				<id>260</id>
+			<item class_id_reference="20" object_id="_235">
+				<id>269</id>
 				<edge_type>1</edge_type>
 				<source_obj>17</source_obj>
 				<sink_obj>87</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_226">
-				<id>261</id>
+			<item class_id_reference="20" object_id="_236">
+				<id>270</id>
 				<edge_type>1</edge_type>
 				<source_obj>18</source_obj>
 				<sink_obj>88</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_227">
-				<id>262</id>
+			<item class_id_reference="20" object_id="_237">
+				<id>271</id>
 				<edge_type>1</edge_type>
 				<source_obj>87</source_obj>
 				<sink_obj>89</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_228">
-				<id>263</id>
+			<item class_id_reference="20" object_id="_238">
+				<id>272</id>
 				<edge_type>2</edge_type>
 				<source_obj>93</source_obj>
 				<sink_obj>89</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_229">
-				<id>264</id>
+			<item class_id_reference="20" object_id="_239">
+				<id>273</id>
 				<edge_type>2</edge_type>
-				<source_obj>116</source_obj>
+				<source_obj>123</source_obj>
 				<sink_obj>89</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_230">
-				<id>265</id>
+			<item class_id_reference="20" object_id="_240">
+				<id>274</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
+				<source_obj>212</source_obj>
 				<sink_obj>91</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_231">
-				<id>266</id>
+			<item class_id_reference="20" object_id="_241">
+				<id>275</id>
 				<edge_type>1</edge_type>
 				<source_obj>17</source_obj>
 				<sink_obj>91</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_232">
-				<id>267</id>
+			<item class_id_reference="20" object_id="_242">
+				<id>276</id>
 				<edge_type>2</edge_type>
-				<source_obj>116</source_obj>
+				<source_obj>123</source_obj>
 				<sink_obj>92</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_233">
-				<id>268</id>
+			<item class_id_reference="20" object_id="_243">
+				<id>277</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
+				<source_obj>212</source_obj>
 				<sink_obj>94</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_234">
-				<id>269</id>
+			<item class_id_reference="20" object_id="_244">
+				<id>278</id>
 				<edge_type>2</edge_type>
 				<source_obj>93</source_obj>
 				<sink_obj>94</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_235">
-				<id>270</id>
+			<item class_id_reference="20" object_id="_245">
+				<id>279</id>
 				<edge_type>1</edge_type>
-				<source_obj>253</source_obj>
+				<source_obj>262</source_obj>
 				<sink_obj>94</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_236">
-				<id>271</id>
+			<item class_id_reference="20" object_id="_246">
+				<id>280</id>
 				<edge_type>2</edge_type>
 				<source_obj>90</source_obj>
 				<sink_obj>94</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_237">
-				<id>272</id>
+			<item class_id_reference="20" object_id="_247">
+				<id>281</id>
 				<edge_type>1</edge_type>
 				<source_obj>31</source_obj>
 				<sink_obj>95</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_238">
-				<id>273</id>
+			<item class_id_reference="20" object_id="_248">
+				<id>282</id>
 				<edge_type>2</edge_type>
 				<source_obj>93</source_obj>
 				<sink_obj>95</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_239">
-				<id>274</id>
+			<item class_id_reference="20" object_id="_249">
+				<id>283</id>
 				<edge_type>1</edge_type>
 				<source_obj>88</source_obj>
 				<sink_obj>95</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_240">
-				<id>275</id>
+			<item class_id_reference="20" object_id="_250">
+				<id>284</id>
 				<edge_type>2</edge_type>
 				<source_obj>90</source_obj>
 				<sink_obj>95</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_241">
-				<id>278</id>
+			<item class_id_reference="20" object_id="_251">
+				<id>287</id>
 				<edge_type>1</edge_type>
 				<source_obj>1</source_obj>
 				<sink_obj>96</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_242">
-				<id>279</id>
+			<item class_id_reference="20" object_id="_252">
+				<id>288</id>
 				<edge_type>1</edge_type>
-				<source_obj>19</source_obj>
+				<source_obj>35</source_obj>
 				<sink_obj>97</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_243">
-				<id>280</id>
+			<item class_id_reference="20" object_id="_253">
+				<id>289</id>
 				<edge_type>1</edge_type>
-				<source_obj>35</source_obj>
+				<source_obj>238</source_obj>
+				<sink_obj>97</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_254">
+				<id>290</id>
+				<edge_type>1</edge_type>
+				<source_obj>19</source_obj>
 				<sink_obj>98</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_244">
-				<id>281</id>
-				<edge_type>1</edge_type>
-				<source_obj>229</source_obj>
-				<sink_obj>98</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_245">
-				<id>282</id>
-				<edge_type>1</edge_type>
-				<source_obj>35</source_obj>
-				<sink_obj>99</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_246">
-				<id>283</id>
-				<edge_type>1</edge_type>
-				<source_obj>229</source_obj>
-				<sink_obj>99</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_247">
-				<id>284</id>
+			<item class_id_reference="20" object_id="_255">
+				<id>291</id>
 				<edge_type>1</edge_type>
 				<source_obj>20</source_obj>
+				<sink_obj>99</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_256">
+				<id>292</id>
+				<edge_type>1</edge_type>
+				<source_obj>99</source_obj>
 				<sink_obj>100</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_248">
-				<id>285</id>
+			<item class_id_reference="20" object_id="_257">
+				<id>293</id>
+				<edge_type>1</edge_type>
+				<source_obj>95</source_obj>
+				<sink_obj>100</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_258">
+				<id>294</id>
 				<edge_type>1</edge_type>
 				<source_obj>100</source_obj>
 				<sink_obj>101</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_249">
-				<id>286</id>
-				<edge_type>1</edge_type>
-				<source_obj>33</source_obj>
-				<sink_obj>101</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_250">
-				<id>287</id>
-				<edge_type>1</edge_type>
-				<source_obj>99</source_obj>
-				<sink_obj>102</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_251">
-				<id>288</id>
-				<edge_type>1</edge_type>
-				<source_obj>101</source_obj>
-				<sink_obj>102</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_252">
-				<id>289</id>
-				<edge_type>1</edge_type>
-				<source_obj>95</source_obj>
-				<sink_obj>103</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_253">
-				<id>291</id>
-				<edge_type>1</edge_type>
-				<source_obj>290</source_obj>
-				<sink_obj>103</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_254">
-				<id>292</id>
-				<edge_type>1</edge_type>
-				<source_obj>86</source_obj>
-				<sink_obj>104</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_255">
-				<id>293</id>
-				<edge_type>1</edge_type>
-				<source_obj>290</source_obj>
-				<sink_obj>104</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_256">
-				<id>294</id>
-				<edge_type>1</edge_type>
-				<source_obj>102</source_obj>
-				<sink_obj>105</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_257">
+			<item class_id_reference="20" object_id="_259">
 				<id>295</id>
 				<edge_type>1</edge_type>
-				<source_obj>85</source_obj>
-				<sink_obj>105</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_258">
-				<id>296</id>
-				<edge_type>1</edge_type>
-				<source_obj>102</source_obj>
-				<sink_obj>106</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_259">
-				<id>297</id>
-				<edge_type>1</edge_type>
-				<source_obj>104</source_obj>
-				<sink_obj>106</sink_obj>
+				<source_obj>95</source_obj>
+				<sink_obj>101</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_260">
-				<id>298</id>
+				<id>296</id>
 				<edge_type>1</edge_type>
-				<source_obj>30</source_obj>
-				<sink_obj>106</sink_obj>
+				<source_obj>99</source_obj>
+				<sink_obj>101</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_261">
-				<id>299</id>
+				<id>297</id>
 				<edge_type>1</edge_type>
-				<source_obj>102</source_obj>
-				<sink_obj>107</sink_obj>
+				<source_obj>97</source_obj>
+				<sink_obj>102</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_262">
-				<id>300</id>
+				<id>298</id>
 				<edge_type>1</edge_type>
-				<source_obj>104</source_obj>
-				<sink_obj>107</sink_obj>
+				<source_obj>212</source_obj>
+				<sink_obj>102</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_263">
-				<id>301</id>
+				<id>299</id>
 				<edge_type>1</edge_type>
-				<source_obj>86</source_obj>
-				<sink_obj>107</sink_obj>
+				<source_obj>97</source_obj>
+				<sink_obj>103</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_264">
-				<id>302</id>
+				<id>300</id>
 				<edge_type>1</edge_type>
-				<source_obj>102</source_obj>
-				<sink_obj>108</sink_obj>
+				<source_obj>101</source_obj>
+				<sink_obj>103</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_265">
-				<id>303</id>
+				<id>301</id>
 				<edge_type>1</edge_type>
-				<source_obj>94</source_obj>
-				<sink_obj>108</sink_obj>
+				<source_obj>99</source_obj>
+				<sink_obj>103</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_266">
-				<id>304</id>
+				<id>302</id>
 				<edge_type>1</edge_type>
-				<source_obj>102</source_obj>
-				<sink_obj>109</sink_obj>
+				<source_obj>35</source_obj>
+				<sink_obj>104</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_267">
-				<id>305</id>
+				<id>303</id>
 				<edge_type>1</edge_type>
-				<source_obj>103</source_obj>
-				<sink_obj>109</sink_obj>
+				<source_obj>238</source_obj>
+				<sink_obj>104</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_268">
-				<id>306</id>
+				<id>304</id>
 				<edge_type>1</edge_type>
-				<source_obj>31</source_obj>
-				<sink_obj>109</sink_obj>
+				<source_obj>95</source_obj>
+				<sink_obj>105</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_269">
-				<id>307</id>
+				<id>306</id>
 				<edge_type>1</edge_type>
-				<source_obj>102</source_obj>
-				<sink_obj>110</sink_obj>
+				<source_obj>305</source_obj>
+				<sink_obj>105</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_270">
-				<id>308</id>
+				<id>307</id>
 				<edge_type>1</edge_type>
 				<source_obj>103</source_obj>
-				<sink_obj>110</sink_obj>
+				<sink_obj>106</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_271">
+				<id>308</id>
+				<edge_type>1</edge_type>
+				<source_obj>105</source_obj>
+				<sink_obj>106</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_272">
 				<id>309</id>
 				<edge_type>1</edge_type>
 				<source_obj>95</source_obj>
-				<sink_obj>110</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_272">
-				<id>310</id>
-				<edge_type>1</edge_type>
-				<source_obj>97</source_obj>
-				<sink_obj>111</sink_obj>
+				<sink_obj>107</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_273">
 				<id>311</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
-				<sink_obj>111</sink_obj>
+				<source_obj>310</source_obj>
+				<sink_obj>107</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_274">
 				<id>312</id>
 				<edge_type>1</edge_type>
-				<source_obj>98</source_obj>
-				<sink_obj>112</sink_obj>
+				<source_obj>86</source_obj>
+				<sink_obj>108</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_275">
 				<id>313</id>
 				<edge_type>1</edge_type>
-				<source_obj>111</source_obj>
-				<sink_obj>112</sink_obj>
+				<source_obj>310</source_obj>
+				<sink_obj>108</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_276">
 				<id>314</id>
 				<edge_type>1</edge_type>
-				<source_obj>112</source_obj>
-				<sink_obj>113</sink_obj>
+				<source_obj>104</source_obj>
+				<sink_obj>109</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_277">
 				<id>315</id>
 				<edge_type>1</edge_type>
-				<source_obj>100</source_obj>
-				<sink_obj>113</sink_obj>
+				<source_obj>106</source_obj>
+				<sink_obj>109</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_278">
 				<id>316</id>
 				<edge_type>1</edge_type>
-				<source_obj>229</source_obj>
-				<sink_obj>113</sink_obj>
+				<source_obj>85</source_obj>
+				<sink_obj>110</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_279">
 				<id>317</id>
 				<edge_type>1</edge_type>
-				<source_obj>113</source_obj>
-				<sink_obj>114</sink_obj>
+				<source_obj>109</source_obj>
+				<sink_obj>110</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_280">
 				<id>318</id>
 				<edge_type>1</edge_type>
-				<source_obj>34</source_obj>
-				<sink_obj>114</sink_obj>
+				<source_obj>109</source_obj>
+				<sink_obj>111</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_281">
 				<id>319</id>
 				<edge_type>1</edge_type>
 				<source_obj>108</source_obj>
-				<sink_obj>115</sink_obj>
+				<sink_obj>111</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_282">
 				<id>320</id>
-				<edge_type>2</edge_type>
-				<source_obj>121</source_obj>
-				<sink_obj>115</sink_obj>
+				<edge_type>1</edge_type>
+				<source_obj>30</source_obj>
+				<sink_obj>111</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_283">
 				<id>321</id>
-				<edge_type>2</edge_type>
-				<source_obj>119</source_obj>
-				<sink_obj>115</sink_obj>
+				<edge_type>1</edge_type>
+				<source_obj>104</source_obj>
+				<sink_obj>112</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_284">
 				<id>322</id>
 				<edge_type>1</edge_type>
-				<source_obj>106</source_obj>
-				<sink_obj>122</sink_obj>
+				<source_obj>111</source_obj>
+				<sink_obj>112</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_285">
 				<id>323</id>
 				<edge_type>1</edge_type>
-				<source_obj>16</source_obj>
-				<sink_obj>122</sink_obj>
+				<source_obj>30</source_obj>
+				<sink_obj>112</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_286">
 				<id>324</id>
-				<edge_type>2</edge_type>
-				<source_obj>174</source_obj>
-				<sink_obj>123</sink_obj>
+				<edge_type>1</edge_type>
+				<source_obj>109</source_obj>
+				<sink_obj>113</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_287">
 				<id>325</id>
 				<edge_type>1</edge_type>
-				<source_obj>10</source_obj>
-				<sink_obj>125</sink_obj>
+				<source_obj>108</source_obj>
+				<sink_obj>113</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_288">
 				<id>326</id>
 				<edge_type>1</edge_type>
-				<source_obj>113</source_obj>
-				<sink_obj>126</sink_obj>
+				<source_obj>86</source_obj>
+				<sink_obj>113</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_289">
 				<id>327</id>
 				<edge_type>1</edge_type>
-				<source_obj>125</source_obj>
-				<sink_obj>127</sink_obj>
+				<source_obj>104</source_obj>
+				<sink_obj>114</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_290">
 				<id>328</id>
 				<edge_type>1</edge_type>
-				<source_obj>126</source_obj>
-				<sink_obj>127</sink_obj>
+				<source_obj>113</source_obj>
+				<sink_obj>114</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_291">
 				<id>329</id>
 				<edge_type>1</edge_type>
-				<source_obj>96</source_obj>
-				<sink_obj>128</sink_obj>
+				<source_obj>86</source_obj>
+				<sink_obj>114</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_292">
 				<id>330</id>
 				<edge_type>1</edge_type>
-				<source_obj>127</source_obj>
-				<sink_obj>128</sink_obj>
+				<source_obj>94</source_obj>
+				<sink_obj>115</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_293">
 				<id>331</id>
 				<edge_type>1</edge_type>
-				<source_obj>113</source_obj>
-				<sink_obj>129</sink_obj>
+				<source_obj>109</source_obj>
+				<sink_obj>115</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_294">
 				<id>332</id>
 				<edge_type>1</edge_type>
-				<source_obj>33</source_obj>
-				<sink_obj>129</sink_obj>
+				<source_obj>109</source_obj>
+				<sink_obj>116</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_295">
 				<id>333</id>
 				<edge_type>1</edge_type>
-				<source_obj>12</source_obj>
-				<sink_obj>130</sink_obj>
+				<source_obj>107</source_obj>
+				<sink_obj>116</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_296">
 				<id>334</id>
 				<edge_type>1</edge_type>
-				<source_obj>113</source_obj>
-				<sink_obj>131</sink_obj>
+				<source_obj>31</source_obj>
+				<sink_obj>116</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_297">
 				<id>335</id>
 				<edge_type>1</edge_type>
-				<source_obj>34</source_obj>
-				<sink_obj>131</sink_obj>
+				<source_obj>104</source_obj>
+				<sink_obj>117</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_298">
 				<id>336</id>
 				<edge_type>1</edge_type>
-				<source_obj>131</source_obj>
-				<sink_obj>132</sink_obj>
+				<source_obj>116</source_obj>
+				<sink_obj>117</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_299">
 				<id>337</id>
 				<edge_type>1</edge_type>
-				<source_obj>130</source_obj>
-				<sink_obj>133</sink_obj>
+				<source_obj>31</source_obj>
+				<sink_obj>117</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_300">
 				<id>338</id>
 				<edge_type>1</edge_type>
-				<source_obj>132</source_obj>
-				<sink_obj>133</sink_obj>
+				<source_obj>109</source_obj>
+				<sink_obj>118</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_301">
 				<id>339</id>
 				<edge_type>1</edge_type>
-				<source_obj>133</source_obj>
-				<sink_obj>134</sink_obj>
+				<source_obj>107</source_obj>
+				<sink_obj>118</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_302">
 				<id>340</id>
 				<edge_type>1</edge_type>
-				<source_obj>198</source_obj>
-				<sink_obj>134</sink_obj>
+				<source_obj>95</source_obj>
+				<sink_obj>118</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_303">
 				<id>341</id>
 				<edge_type>1</edge_type>
-				<source_obj>96</source_obj>
-				<sink_obj>135</sink_obj>
+				<source_obj>104</source_obj>
+				<sink_obj>119</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_304">
 				<id>342</id>
 				<edge_type>1</edge_type>
-				<source_obj>134</source_obj>
-				<sink_obj>135</sink_obj>
+				<source_obj>118</source_obj>
+				<sink_obj>119</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_305">
 				<id>343</id>
 				<edge_type>1</edge_type>
-				<source_obj>113</source_obj>
-				<sink_obj>136</sink_obj>
+				<source_obj>95</source_obj>
+				<sink_obj>119</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_306">
 				<id>344</id>
 				<edge_type>1</edge_type>
-				<source_obj>110</source_obj>
-				<sink_obj>136</sink_obj>
+				<source_obj>98</source_obj>
+				<sink_obj>120</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_307">
 				<id>345</id>
 				<edge_type>1</edge_type>
-				<source_obj>32</source_obj>
-				<sink_obj>137</sink_obj>
+				<source_obj>212</source_obj>
+				<sink_obj>120</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_308">
 				<id>346</id>
 				<edge_type>1</edge_type>
-				<source_obj>96</source_obj>
-				<sink_obj>138</sink_obj>
+				<source_obj>120</source_obj>
+				<sink_obj>121</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_309">
 				<id>347</id>
 				<edge_type>1</edge_type>
-				<source_obj>137</source_obj>
-				<sink_obj>138</sink_obj>
+				<source_obj>102</source_obj>
+				<sink_obj>121</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_310">
 				<id>348</id>
 				<edge_type>1</edge_type>
-				<source_obj>113</source_obj>
-				<sink_obj>139</sink_obj>
+				<source_obj>115</source_obj>
+				<sink_obj>122</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_311">
 				<id>349</id>
-				<edge_type>1</edge_type>
-				<source_obj>107</source_obj>
-				<sink_obj>139</sink_obj>
+				<edge_type>2</edge_type>
+				<source_obj>128</source_obj>
+				<sink_obj>122</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_312">
 				<id>350</id>
-				<edge_type>1</edge_type>
-				<source_obj>14</source_obj>
-				<sink_obj>140</sink_obj>
+				<edge_type>2</edge_type>
+				<source_obj>126</source_obj>
+				<sink_obj>122</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_313">
 				<id>351</id>
 				<edge_type>1</edge_type>
-				<source_obj>113</source_obj>
-				<sink_obj>141</sink_obj>
+				<source_obj>112</source_obj>
+				<sink_obj>129</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_314">
 				<id>352</id>
 				<edge_type>1</edge_type>
-				<source_obj>110</source_obj>
-				<sink_obj>141</sink_obj>
+				<source_obj>16</source_obj>
+				<sink_obj>129</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_315">
 				<id>353</id>
-				<edge_type>1</edge_type>
-				<source_obj>141</source_obj>
-				<sink_obj>142</sink_obj>
+				<edge_type>2</edge_type>
+				<source_obj>183</source_obj>
+				<sink_obj>130</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_316">
 				<id>354</id>
 				<edge_type>1</edge_type>
-				<source_obj>140</source_obj>
-				<sink_obj>143</sink_obj>
+				<source_obj>121</source_obj>
+				<sink_obj>132</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_317">
 				<id>355</id>
 				<edge_type>1</edge_type>
-				<source_obj>142</source_obj>
-				<sink_obj>143</sink_obj>
+				<source_obj>103</source_obj>
+				<sink_obj>132</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_318">
 				<id>356</id>
 				<edge_type>1</edge_type>
-				<source_obj>143</source_obj>
-				<sink_obj>144</sink_obj>
+				<source_obj>238</source_obj>
+				<sink_obj>132</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_319">
 				<id>357</id>
 				<edge_type>1</edge_type>
-				<source_obj>137</source_obj>
-				<sink_obj>144</sink_obj>
+				<source_obj>132</source_obj>
+				<sink_obj>133</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_320">
 				<id>358</id>
 				<edge_type>1</edge_type>
-				<source_obj>96</source_obj>
-				<sink_obj>145</sink_obj>
+				<source_obj>34</source_obj>
+				<sink_obj>133</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_321">
 				<id>359</id>
 				<edge_type>1</edge_type>
-				<source_obj>144</source_obj>
-				<sink_obj>145</sink_obj>
+				<source_obj>10</source_obj>
+				<sink_obj>134</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_322">
 				<id>360</id>
 				<edge_type>1</edge_type>
-				<source_obj>114</source_obj>
-				<sink_obj>146</sink_obj>
+				<source_obj>132</source_obj>
+				<sink_obj>135</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_323">
 				<id>361</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
-				<sink_obj>146</sink_obj>
+				<source_obj>134</source_obj>
+				<sink_obj>136</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_324">
 				<id>362</id>
 				<edge_type>1</edge_type>
-				<source_obj>129</source_obj>
-				<sink_obj>147</sink_obj>
+				<source_obj>135</source_obj>
+				<sink_obj>136</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_325">
 				<id>363</id>
 				<edge_type>1</edge_type>
-				<source_obj>146</source_obj>
-				<sink_obj>147</sink_obj>
+				<source_obj>96</source_obj>
+				<sink_obj>137</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_326">
 				<id>364</id>
 				<edge_type>1</edge_type>
-				<source_obj>147</source_obj>
-				<sink_obj>148</sink_obj>
+				<source_obj>136</source_obj>
+				<sink_obj>137</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_327">
 				<id>365</id>
 				<edge_type>1</edge_type>
-				<source_obj>146</source_obj>
-				<sink_obj>148</sink_obj>
+				<source_obj>132</source_obj>
+				<sink_obj>138</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_328">
 				<id>366</id>
 				<edge_type>1</edge_type>
-				<source_obj>114</source_obj>
-				<sink_obj>149</sink_obj>
+				<source_obj>33</source_obj>
+				<sink_obj>138</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_329">
 				<id>367</id>
 				<edge_type>1</edge_type>
-				<source_obj>129</source_obj>
-				<sink_obj>149</sink_obj>
+				<source_obj>12</source_obj>
+				<sink_obj>139</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_330">
 				<id>368</id>
 				<edge_type>1</edge_type>
-				<source_obj>136</source_obj>
-				<sink_obj>150</sink_obj>
+				<source_obj>132</source_obj>
+				<sink_obj>140</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_331">
 				<id>369</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
-				<sink_obj>150</sink_obj>
+				<source_obj>34</source_obj>
+				<sink_obj>140</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_332">
 				<id>370</id>
 				<edge_type>1</edge_type>
-				<source_obj>149</source_obj>
-				<sink_obj>151</sink_obj>
+				<source_obj>140</source_obj>
+				<sink_obj>141</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_333">
 				<id>371</id>
 				<edge_type>1</edge_type>
-				<source_obj>150</source_obj>
-				<sink_obj>151</sink_obj>
+				<source_obj>139</source_obj>
+				<sink_obj>142</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_334">
 				<id>372</id>
 				<edge_type>1</edge_type>
-				<source_obj>149</source_obj>
-				<sink_obj>152</sink_obj>
+				<source_obj>141</source_obj>
+				<sink_obj>142</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_335">
 				<id>373</id>
 				<edge_type>1</edge_type>
-				<source_obj>136</source_obj>
-				<sink_obj>152</sink_obj>
+				<source_obj>142</source_obj>
+				<sink_obj>143</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_336">
 				<id>374</id>
 				<edge_type>1</edge_type>
-				<source_obj>139</source_obj>
-				<sink_obj>153</sink_obj>
+				<source_obj>207</source_obj>
+				<sink_obj>143</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_337">
 				<id>375</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
-				<sink_obj>153</sink_obj>
+				<source_obj>96</source_obj>
+				<sink_obj>144</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_338">
 				<id>376</id>
 				<edge_type>1</edge_type>
-				<source_obj>152</source_obj>
-				<sink_obj>154</sink_obj>
+				<source_obj>143</source_obj>
+				<sink_obj>144</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_339">
 				<id>377</id>
 				<edge_type>1</edge_type>
-				<source_obj>153</source_obj>
-				<sink_obj>154</sink_obj>
+				<source_obj>132</source_obj>
+				<sink_obj>145</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_340">
 				<id>378</id>
 				<edge_type>1</edge_type>
-				<source_obj>151</source_obj>
-				<sink_obj>155</sink_obj>
+				<source_obj>119</source_obj>
+				<sink_obj>145</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_341">
 				<id>379</id>
 				<edge_type>1</edge_type>
-				<source_obj>154</source_obj>
-				<sink_obj>155</sink_obj>
+				<source_obj>32</source_obj>
+				<sink_obj>146</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_342">
 				<id>380</id>
 				<edge_type>1</edge_type>
-				<source_obj>155</source_obj>
-				<sink_obj>156</sink_obj>
+				<source_obj>96</source_obj>
+				<sink_obj>147</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_343">
 				<id>381</id>
 				<edge_type>1</edge_type>
-				<source_obj>148</source_obj>
-				<sink_obj>156</sink_obj>
+				<source_obj>146</source_obj>
+				<sink_obj>147</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_344">
 				<id>382</id>
 				<edge_type>1</edge_type>
-				<source_obj>98</source_obj>
-				<sink_obj>157</sink_obj>
+				<source_obj>132</source_obj>
+				<sink_obj>148</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_345">
 				<id>383</id>
 				<edge_type>1</edge_type>
-				<source_obj>156</source_obj>
-				<sink_obj>157</sink_obj>
+				<source_obj>114</source_obj>
+				<sink_obj>148</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_346">
 				<id>384</id>
 				<edge_type>1</edge_type>
-				<source_obj>149</source_obj>
-				<sink_obj>158</sink_obj>
+				<source_obj>14</source_obj>
+				<sink_obj>149</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_347">
 				<id>385</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
-				<sink_obj>158</sink_obj>
+				<source_obj>132</source_obj>
+				<sink_obj>150</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_348">
 				<id>386</id>
 				<edge_type>1</edge_type>
-				<source_obj>136</source_obj>
-				<sink_obj>159</sink_obj>
+				<source_obj>119</source_obj>
+				<sink_obj>150</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_349">
 				<id>387</id>
 				<edge_type>1</edge_type>
-				<source_obj>158</source_obj>
-				<sink_obj>159</sink_obj>
+				<source_obj>150</source_obj>
+				<sink_obj>151</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_350">
 				<id>388</id>
 				<edge_type>1</edge_type>
-				<source_obj>152</source_obj>
-				<sink_obj>160</sink_obj>
+				<source_obj>149</source_obj>
+				<sink_obj>152</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_351">
 				<id>389</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
-				<sink_obj>160</sink_obj>
+				<source_obj>151</source_obj>
+				<sink_obj>152</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_352">
 				<id>390</id>
 				<edge_type>1</edge_type>
-				<source_obj>139</source_obj>
-				<sink_obj>161</sink_obj>
+				<source_obj>152</source_obj>
+				<sink_obj>153</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_353">
 				<id>391</id>
 				<edge_type>1</edge_type>
-				<source_obj>160</source_obj>
-				<sink_obj>161</sink_obj>
+				<source_obj>146</source_obj>
+				<sink_obj>153</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_354">
 				<id>392</id>
 				<edge_type>1</edge_type>
-				<source_obj>161</source_obj>
-				<sink_obj>162</sink_obj>
+				<source_obj>96</source_obj>
+				<sink_obj>154</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_355">
 				<id>393</id>
 				<edge_type>1</edge_type>
-				<source_obj>159</source_obj>
-				<sink_obj>162</sink_obj>
+				<source_obj>153</source_obj>
+				<sink_obj>154</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_356">
 				<id>394</id>
 				<edge_type>1</edge_type>
-				<source_obj>147</source_obj>
-				<sink_obj>163</sink_obj>
+				<source_obj>133</source_obj>
+				<sink_obj>155</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_357">
 				<id>395</id>
 				<edge_type>1</edge_type>
-				<source_obj>114</source_obj>
-				<sink_obj>163</sink_obj>
+				<source_obj>212</source_obj>
+				<sink_obj>155</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_358">
 				<id>396</id>
 				<edge_type>1</edge_type>
-				<source_obj>162</source_obj>
-				<sink_obj>164</sink_obj>
+				<source_obj>138</source_obj>
+				<sink_obj>156</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_359">
 				<id>397</id>
 				<edge_type>1</edge_type>
-				<source_obj>163</source_obj>
-				<sink_obj>164</sink_obj>
+				<source_obj>155</source_obj>
+				<sink_obj>156</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_360">
 				<id>398</id>
 				<edge_type>1</edge_type>
-				<source_obj>164</source_obj>
-				<sink_obj>165</sink_obj>
+				<source_obj>156</source_obj>
+				<sink_obj>157</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_361">
 				<id>399</id>
 				<edge_type>1</edge_type>
-				<source_obj>203</source_obj>
-				<sink_obj>165</sink_obj>
+				<source_obj>155</source_obj>
+				<sink_obj>157</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_362">
 				<id>400</id>
 				<edge_type>1</edge_type>
-				<source_obj>114</source_obj>
-				<sink_obj>166</sink_obj>
+				<source_obj>133</source_obj>
+				<sink_obj>158</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_363">
 				<id>401</id>
 				<edge_type>1</edge_type>
-				<source_obj>128</source_obj>
-				<sink_obj>166</sink_obj>
+				<source_obj>138</source_obj>
+				<sink_obj>158</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_364">
-				<id>403</id>
+				<id>402</id>
 				<edge_type>1</edge_type>
-				<source_obj>402</source_obj>
-				<sink_obj>166</sink_obj>
+				<source_obj>145</source_obj>
+				<sink_obj>159</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_365">
-				<id>404</id>
+				<id>403</id>
 				<edge_type>1</edge_type>
-				<source_obj>147</source_obj>
-				<sink_obj>167</sink_obj>
+				<source_obj>212</source_obj>
+				<sink_obj>159</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_366">
-				<id>405</id>
+				<id>404</id>
 				<edge_type>1</edge_type>
-				<source_obj>135</source_obj>
-				<sink_obj>167</sink_obj>
+				<source_obj>158</source_obj>
+				<sink_obj>160</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_367">
-				<id>406</id>
-				<edge_type>1</edge_type>
-				<source_obj>166</source_obj>
-				<sink_obj>167</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_368">
-				<id>407</id>
+				<id>405</id>
 				<edge_type>1</edge_type>
 				<source_obj>159</source_obj>
-				<sink_obj>168</sink_obj>
+				<sink_obj>160</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_368">
+				<id>406</id>
+				<edge_type>1</edge_type>
+				<source_obj>158</source_obj>
+				<sink_obj>161</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_369">
-				<id>408</id>
+				<id>407</id>
 				<edge_type>1</edge_type>
-				<source_obj>138</source_obj>
-				<sink_obj>168</sink_obj>
+				<source_obj>145</source_obj>
+				<sink_obj>161</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_370">
+				<id>408</id>
+				<edge_type>1</edge_type>
+				<source_obj>148</source_obj>
+				<sink_obj>162</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_371">
 				<id>409</id>
+				<edge_type>1</edge_type>
+				<source_obj>212</source_obj>
+				<sink_obj>162</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_372">
+				<id>410</id>
+				<edge_type>1</edge_type>
+				<source_obj>161</source_obj>
+				<sink_obj>163</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_373">
+				<id>411</id>
+				<edge_type>1</edge_type>
+				<source_obj>162</source_obj>
+				<sink_obj>163</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_374">
+				<id>412</id>
+				<edge_type>1</edge_type>
+				<source_obj>160</source_obj>
+				<sink_obj>164</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_375">
+				<id>413</id>
+				<edge_type>1</edge_type>
+				<source_obj>163</source_obj>
+				<sink_obj>164</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_376">
+				<id>414</id>
+				<edge_type>1</edge_type>
+				<source_obj>164</source_obj>
+				<sink_obj>165</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_377">
+				<id>415</id>
+				<edge_type>1</edge_type>
+				<source_obj>157</source_obj>
+				<sink_obj>165</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_378">
+				<id>416</id>
+				<edge_type>1</edge_type>
+				<source_obj>165</source_obj>
+				<sink_obj>166</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_379">
+				<id>417</id>
+				<edge_type>1</edge_type>
+				<source_obj>102</source_obj>
+				<sink_obj>166</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_380">
+				<id>418</id>
+				<edge_type>1</edge_type>
+				<source_obj>158</source_obj>
+				<sink_obj>167</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_381">
+				<id>419</id>
+				<edge_type>1</edge_type>
+				<source_obj>212</source_obj>
+				<sink_obj>167</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_382">
+				<id>420</id>
+				<edge_type>1</edge_type>
+				<source_obj>145</source_obj>
+				<sink_obj>168</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_383">
+				<id>421</id>
 				<edge_type>1</edge_type>
 				<source_obj>167</source_obj>
 				<sink_obj>168</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_371">
-				<id>410</id>
+			<item class_id_reference="20" object_id="_384">
+				<id>422</id>
 				<edge_type>1</edge_type>
 				<source_obj>161</source_obj>
 				<sink_obj>169</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_372">
-				<id>411</id>
+			<item class_id_reference="20" object_id="_385">
+				<id>423</id>
 				<edge_type>1</edge_type>
-				<source_obj>145</source_obj>
+				<source_obj>212</source_obj>
 				<sink_obj>169</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_373">
-				<id>412</id>
+			<item class_id_reference="20" object_id="_386">
+				<id>424</id>
 				<edge_type>1</edge_type>
-				<source_obj>168</source_obj>
-				<sink_obj>169</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_374">
-				<id>413</id>
-				<edge_type>1</edge_type>
-				<source_obj>113</source_obj>
+				<source_obj>148</source_obj>
 				<sink_obj>170</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_375">
-				<id>414</id>
+			<item class_id_reference="20" object_id="_387">
+				<id>425</id>
 				<edge_type>1</edge_type>
-				<source_obj>290</source_obj>
+				<source_obj>169</source_obj>
 				<sink_obj>170</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_376">
-				<id>415</id>
+			<item class_id_reference="20" object_id="_388">
+				<id>426</id>
 				<edge_type>1</edge_type>
 				<source_obj>170</source_obj>
 				<sink_obj>171</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_377">
-				<id>416</id>
-				<edge_type>1</edge_type>
-				<source_obj>20</source_obj>
-				<sink_obj>171</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_378">
-				<id>419</id>
-				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
-				<sink_obj>172</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_379">
-				<id>420</id>
-				<edge_type>1</edge_type>
-				<source_obj>169</source_obj>
-				<sink_obj>172</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_380">
-				<id>421</id>
-				<edge_type>1</edge_type>
-				<source_obj>157</source_obj>
-				<sink_obj>173</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_381">
-				<id>422</id>
-				<edge_type>2</edge_type>
-				<source_obj>179</source_obj>
-				<sink_obj>173</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_382">
-				<id>423</id>
-				<edge_type>2</edge_type>
-				<source_obj>177</source_obj>
-				<sink_obj>173</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_383">
-				<id>424</id>
-				<edge_type>1</edge_type>
-				<source_obj>109</source_obj>
-				<sink_obj>117</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_384">
-				<id>425</id>
-				<edge_type>1</edge_type>
-				<source_obj>18</source_obj>
-				<sink_obj>117</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_385">
-				<id>426</id>
-				<edge_type>2</edge_type>
-				<source_obj>121</source_obj>
-				<sink_obj>118</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_386">
+			<item class_id_reference="20" object_id="_389">
 				<id>427</id>
 				<edge_type>1</edge_type>
-				<source_obj>105</source_obj>
-				<sink_obj>120</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_387">
-				<id>428</id>
-				<edge_type>2</edge_type>
-				<source_obj>174</source_obj>
-				<sink_obj>120</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_388">
-				<id>429</id>
-				<edge_type>2</edge_type>
-				<source_obj>124</source_obj>
-				<sink_obj>120</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_389">
-				<id>430</id>
-				<edge_type>1</edge_type>
-				<source_obj>165</source_obj>
-				<sink_obj>175</sink_obj>
+				<source_obj>168</source_obj>
+				<sink_obj>171</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_390">
-				<id>431</id>
+				<id>428</id>
 				<edge_type>1</edge_type>
-				<source_obj>19</source_obj>
-				<sink_obj>175</sink_obj>
+				<source_obj>156</source_obj>
+				<sink_obj>172</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_391">
-				<id>432</id>
-				<edge_type>2</edge_type>
-				<source_obj>179</source_obj>
-				<sink_obj>176</sink_obj>
+				<id>429</id>
+				<edge_type>1</edge_type>
+				<source_obj>133</source_obj>
+				<sink_obj>172</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_392">
-				<id>614</id>
+				<id>430</id>
+				<edge_type>1</edge_type>
+				<source_obj>171</source_obj>
+				<sink_obj>173</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_393">
+				<id>431</id>
+				<edge_type>1</edge_type>
+				<source_obj>172</source_obj>
+				<sink_obj>173</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_394">
+				<id>432</id>
+				<edge_type>1</edge_type>
+				<source_obj>173</source_obj>
+				<sink_obj>174</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_395">
+				<id>433</id>
+				<edge_type>1</edge_type>
+				<source_obj>212</source_obj>
+				<sink_obj>174</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_396">
+				<id>434</id>
+				<edge_type>1</edge_type>
+				<source_obj>133</source_obj>
+				<sink_obj>175</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_397">
+				<id>435</id>
+				<edge_type>1</edge_type>
+				<source_obj>137</source_obj>
+				<sink_obj>175</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_398">
+				<id>437</id>
+				<edge_type>1</edge_type>
+				<source_obj>436</source_obj>
+				<sink_obj>175</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_399">
+				<id>438</id>
+				<edge_type>1</edge_type>
+				<source_obj>156</source_obj>
+				<sink_obj>176</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_400">
+				<id>439</id>
+				<edge_type>1</edge_type>
+				<source_obj>144</source_obj>
+				<sink_obj>176</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_401">
+				<id>440</id>
+				<edge_type>1</edge_type>
+				<source_obj>175</source_obj>
+				<sink_obj>176</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_402">
+				<id>441</id>
+				<edge_type>1</edge_type>
+				<source_obj>168</source_obj>
+				<sink_obj>177</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_403">
+				<id>442</id>
+				<edge_type>1</edge_type>
+				<source_obj>147</source_obj>
+				<sink_obj>177</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_404">
+				<id>443</id>
+				<edge_type>1</edge_type>
+				<source_obj>176</source_obj>
+				<sink_obj>177</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_405">
+				<id>444</id>
+				<edge_type>1</edge_type>
+				<source_obj>170</source_obj>
+				<sink_obj>178</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_406">
+				<id>445</id>
+				<edge_type>1</edge_type>
+				<source_obj>154</source_obj>
+				<sink_obj>178</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_407">
+				<id>446</id>
+				<edge_type>1</edge_type>
+				<source_obj>177</source_obj>
+				<sink_obj>178</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_408">
+				<id>447</id>
+				<edge_type>1</edge_type>
+				<source_obj>132</source_obj>
+				<sink_obj>179</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_409">
+				<id>448</id>
+				<edge_type>1</edge_type>
+				<source_obj>310</source_obj>
+				<sink_obj>179</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_410">
+				<id>451</id>
+				<edge_type>1</edge_type>
+				<source_obj>2</source_obj>
+				<sink_obj>180</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_411">
+				<id>452</id>
+				<edge_type>1</edge_type>
+				<source_obj>178</source_obj>
+				<sink_obj>180</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_412">
+				<id>453</id>
+				<edge_type>1</edge_type>
+				<source_obj>179</source_obj>
+				<sink_obj>181</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_413">
+				<id>454</id>
+				<edge_type>1</edge_type>
+				<source_obj>20</source_obj>
+				<sink_obj>181</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_414">
+				<id>455</id>
+				<edge_type>1</edge_type>
+				<source_obj>166</source_obj>
+				<sink_obj>182</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_415">
+				<id>456</id>
+				<edge_type>2</edge_type>
+				<source_obj>188</source_obj>
+				<sink_obj>182</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_416">
+				<id>457</id>
+				<edge_type>2</edge_type>
+				<source_obj>186</source_obj>
+				<sink_obj>182</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_417">
+				<id>458</id>
+				<edge_type>1</edge_type>
+				<source_obj>117</source_obj>
+				<sink_obj>124</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_418">
+				<id>459</id>
+				<edge_type>1</edge_type>
+				<source_obj>18</source_obj>
+				<sink_obj>124</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_419">
+				<id>460</id>
+				<edge_type>2</edge_type>
+				<source_obj>128</source_obj>
+				<sink_obj>125</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_420">
+				<id>461</id>
+				<edge_type>1</edge_type>
+				<source_obj>110</source_obj>
+				<sink_obj>127</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_421">
+				<id>462</id>
+				<edge_type>2</edge_type>
+				<source_obj>183</source_obj>
+				<sink_obj>127</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_422">
+				<id>463</id>
+				<edge_type>2</edge_type>
+				<source_obj>131</source_obj>
+				<sink_obj>127</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_423">
+				<id>464</id>
+				<edge_type>1</edge_type>
+				<source_obj>174</source_obj>
+				<sink_obj>184</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_424">
+				<id>465</id>
+				<edge_type>1</edge_type>
+				<source_obj>19</source_obj>
+				<sink_obj>184</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_425">
+				<id>466</id>
+				<edge_type>2</edge_type>
+				<source_obj>188</source_obj>
+				<sink_obj>185</sink_obj>
+			</item>
+			<item class_id_reference="20" object_id="_426">
+				<id>648</id>
 				<edge_type>2</edge_type>
 				<source_obj>47</source_obj>
 				<sink_obj>56</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_393">
-				<id>615</id>
+			<item class_id_reference="20" object_id="_427">
+				<id>649</id>
 				<edge_type>2</edge_type>
 				<source_obj>47</source_obj>
 				<sink_obj>53</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_394">
-				<id>616</id>
+			<item class_id_reference="20" object_id="_428">
+				<id>650</id>
 				<edge_type>2</edge_type>
 				<source_obj>53</source_obj>
 				<sink_obj>56</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_395">
-				<id>617</id>
+			<item class_id_reference="20" object_id="_429">
+				<id>651</id>
 				<edge_type>2</edge_type>
 				<source_obj>56</source_obj>
 				<sink_obj>68</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_396">
-				<id>618</id>
+			<item class_id_reference="20" object_id="_430">
+				<id>652</id>
 				<edge_type>2</edge_type>
 				<source_obj>56</source_obj>
 				<sink_obj>65</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_397">
-				<id>619</id>
+			<item class_id_reference="20" object_id="_431">
+				<id>653</id>
 				<edge_type>2</edge_type>
 				<source_obj>65</source_obj>
 				<sink_obj>68</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_398">
-				<id>620</id>
+			<item class_id_reference="20" object_id="_432">
+				<id>654</id>
 				<edge_type>2</edge_type>
 				<source_obj>68</source_obj>
 				<sink_obj>81</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_399">
-				<id>621</id>
+			<item class_id_reference="20" object_id="_433">
+				<id>655</id>
 				<edge_type>2</edge_type>
 				<source_obj>68</source_obj>
 				<sink_obj>77</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_400">
-				<id>622</id>
+			<item class_id_reference="20" object_id="_434">
+				<id>656</id>
 				<edge_type>2</edge_type>
 				<source_obj>77</source_obj>
 				<sink_obj>81</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_401">
-				<id>623</id>
+			<item class_id_reference="20" object_id="_435">
+				<id>657</id>
 				<edge_type>2</edge_type>
 				<source_obj>81</source_obj>
 				<sink_obj>90</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_402">
-				<id>624</id>
+			<item class_id_reference="20" object_id="_436">
+				<id>658</id>
 				<edge_type>2</edge_type>
 				<source_obj>81</source_obj>
 				<sink_obj>84</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_403">
-				<id>625</id>
+			<item class_id_reference="20" object_id="_437">
+				<id>659</id>
 				<edge_type>2</edge_type>
 				<source_obj>84</source_obj>
 				<sink_obj>90</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_404">
-				<id>626</id>
+			<item class_id_reference="20" object_id="_438">
+				<id>660</id>
 				<edge_type>2</edge_type>
 				<source_obj>90</source_obj>
-				<sink_obj>116</sink_obj>
+				<sink_obj>123</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_405">
-				<id>627</id>
+			<item class_id_reference="20" object_id="_439">
+				<id>661</id>
 				<edge_type>2</edge_type>
 				<source_obj>90</source_obj>
 				<sink_obj>93</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_406">
-				<id>628</id>
+			<item class_id_reference="20" object_id="_440">
+				<id>662</id>
 				<edge_type>2</edge_type>
 				<source_obj>93</source_obj>
-				<sink_obj>116</sink_obj>
+				<sink_obj>123</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_407">
-				<id>629</id>
+			<item class_id_reference="20" object_id="_441">
+				<id>663</id>
 				<edge_type>2</edge_type>
-				<source_obj>116</source_obj>
-				<sink_obj>119</sink_obj>
+				<source_obj>123</source_obj>
+				<sink_obj>126</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_408">
-				<id>630</id>
+			<item class_id_reference="20" object_id="_442">
+				<id>664</id>
 				<edge_type>2</edge_type>
-				<source_obj>116</source_obj>
-				<sink_obj>121</sink_obj>
+				<source_obj>123</source_obj>
+				<sink_obj>128</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_409">
-				<id>631</id>
+			<item class_id_reference="20" object_id="_443">
+				<id>665</id>
 				<edge_type>2</edge_type>
-				<source_obj>119</source_obj>
-				<sink_obj>121</sink_obj>
+				<source_obj>126</source_obj>
+				<sink_obj>128</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_410">
-				<id>632</id>
+			<item class_id_reference="20" object_id="_444">
+				<id>666</id>
 				<edge_type>2</edge_type>
-				<source_obj>121</source_obj>
-				<sink_obj>124</sink_obj>
+				<source_obj>128</source_obj>
+				<sink_obj>131</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_411">
-				<id>633</id>
+			<item class_id_reference="20" object_id="_445">
+				<id>667</id>
 				<edge_type>2</edge_type>
-				<source_obj>121</source_obj>
-				<sink_obj>174</sink_obj>
+				<source_obj>128</source_obj>
+				<sink_obj>183</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_412">
-				<id>634</id>
+			<item class_id_reference="20" object_id="_446">
+				<id>668</id>
 				<edge_type>2</edge_type>
-				<source_obj>124</source_obj>
-				<sink_obj>174</sink_obj>
+				<source_obj>131</source_obj>
+				<sink_obj>183</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_413">
-				<id>635</id>
+			<item class_id_reference="20" object_id="_447">
+				<id>669</id>
 				<edge_type>2</edge_type>
-				<source_obj>174</source_obj>
-				<sink_obj>177</sink_obj>
+				<source_obj>183</source_obj>
+				<sink_obj>186</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_414">
-				<id>636</id>
+			<item class_id_reference="20" object_id="_448">
+				<id>670</id>
 				<edge_type>2</edge_type>
-				<source_obj>174</source_obj>
-				<sink_obj>179</sink_obj>
+				<source_obj>183</source_obj>
+				<sink_obj>188</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_415">
-				<id>637</id>
+			<item class_id_reference="20" object_id="_449">
+				<id>671</id>
 				<edge_type>2</edge_type>
-				<source_obj>177</source_obj>
-				<sink_obj>179</sink_obj>
+				<source_obj>186</source_obj>
+				<sink_obj>188</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_416">
-				<id>638</id>
+			<item class_id_reference="20" object_id="_450">
+				<id>672</id>
 				<edge_type>4</edge_type>
 				<source_obj>45</source_obj>
 				<sink_obj>51</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_417">
-				<id>639</id>
+			<item class_id_reference="20" object_id="_451">
+				<id>673</id>
 				<edge_type>4</edge_type>
 				<source_obj>50</source_obj>
-				<sink_obj>125</sink_obj>
+				<sink_obj>134</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_418">
-				<id>640</id>
+			<item class_id_reference="20" object_id="_452">
+				<id>674</id>
 				<edge_type>4</edge_type>
 				<source_obj>54</source_obj>
 				<sink_obj>63</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_419">
-				<id>641</id>
+			<item class_id_reference="20" object_id="_453">
+				<id>675</id>
 				<edge_type>4</edge_type>
 				<source_obj>62</source_obj>
-				<sink_obj>130</sink_obj>
+				<sink_obj>139</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_420">
-				<id>642</id>
+			<item class_id_reference="20" object_id="_454">
+				<id>676</id>
 				<edge_type>4</edge_type>
 				<source_obj>66</source_obj>
 				<sink_obj>75</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_421">
-				<id>643</id>
+			<item class_id_reference="20" object_id="_455">
+				<id>677</id>
 				<edge_type>4</edge_type>
 				<source_obj>74</source_obj>
-				<sink_obj>140</sink_obj>
+				<sink_obj>149</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_422">
-				<id>644</id>
+			<item class_id_reference="20" object_id="_456">
+				<id>678</id>
 				<edge_type>4</edge_type>
 				<source_obj>78</source_obj>
 				<sink_obj>82</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_423">
-				<id>645</id>
+			<item class_id_reference="20" object_id="_457">
+				<id>679</id>
 				<edge_type>4</edge_type>
 				<source_obj>79</source_obj>
-				<sink_obj>122</sink_obj>
+				<sink_obj>129</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_424">
-				<id>646</id>
+			<item class_id_reference="20" object_id="_458">
+				<id>680</id>
 				<edge_type>4</edge_type>
 				<source_obj>87</source_obj>
 				<sink_obj>91</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_425">
-				<id>647</id>
+			<item class_id_reference="20" object_id="_459">
+				<id>681</id>
 				<edge_type>4</edge_type>
 				<source_obj>88</source_obj>
-				<sink_obj>117</sink_obj>
+				<sink_obj>124</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_426">
-				<id>648</id>
+			<item class_id_reference="20" object_id="_460">
+				<id>682</id>
 				<edge_type>4</edge_type>
-				<source_obj>100</source_obj>
-				<sink_obj>171</sink_obj>
+				<source_obj>99</source_obj>
+				<sink_obj>181</sink_obj>
 			</item>
-			<item class_id_reference="20" object_id="_427">
-				<id>649</id>
+			<item class_id_reference="20" object_id="_461">
+				<id>683</id>
 				<edge_type>4</edge_type>
-				<source_obj>97</source_obj>
-				<sink_obj>175</sink_obj>
+				<source_obj>98</source_obj>
+				<sink_obj>184</sink_obj>
 			</item>
 		</edges>
 	</cdfg>
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_428">
+		<item class_id="22" tracking_level="1" version="0" object_id="_462">
 			<mId>1</mId>
 			<mTag>envelope</mTag>
 			<mType>0</mType>
@@ -7592,13 +8161,13 @@
 				<item>84</item>
 				<item>90</item>
 				<item>93</item>
-				<item>116</item>
-				<item>119</item>
-				<item>121</item>
-				<item>124</item>
-				<item>174</item>
-				<item>177</item>
-				<item>179</item>
+				<item>123</item>
+				<item>126</item>
+				<item>128</item>
+				<item>131</item>
+				<item>183</item>
+				<item>186</item>
+				<item>188</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
@@ -7613,7 +8182,7 @@
 	<fsm class_id="-1"></fsm>
 	<res class_id="-1"></res>
 	<node_label_latency class_id="26" tracking_level="0" version="0">
-		<count>124</count>
+		<count>133</count>
 		<item_version>0</item_version>
 		<item class_id="27" tracking_level="0" version="0">
 			<first>30</first>
@@ -7940,7 +8509,7 @@
 		<item>
 			<first>95</first>
 			<second>
-				<first>66</first>
+				<first>65</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -7954,14 +8523,14 @@
 		<item>
 			<first>97</first>
 			<second>
-				<first>66</first>
+				<first>65</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>98</first>
 			<second>
-				<first>65</first>
+				<first>66</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -7975,42 +8544,42 @@
 		<item>
 			<first>100</first>
 			<second>
-				<first>66</first>
+				<first>65</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>101</first>
 			<second>
-				<first>66</first>
+				<first>65</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>102</first>
 			<second>
-				<first>66</first>
+				<first>65</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>103</first>
 			<second>
-				<first>66</first>
+				<first>65</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>104</first>
 			<second>
-				<first>66</first>
+				<first>65</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>105</first>
 			<second>
-				<first>66</first>
+				<first>65</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -8085,6 +8654,13 @@
 			</second>
 		</item>
 		<item>
+			<first>116</first>
+			<second>
+				<first>66</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
 			<first>117</first>
 			<second>
 				<first>66</first>
@@ -8099,7 +8675,21 @@
 			</second>
 		</item>
 		<item>
+			<first>119</first>
+			<second>
+				<first>66</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
 			<first>120</first>
+			<second>
+				<first>66</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>121</first>
 			<second>
 				<first>66</first>
 				<second>0</second>
@@ -8113,7 +8703,7 @@
 			</second>
 		</item>
 		<item>
-			<first>123</first>
+			<first>124</first>
 			<second>
 				<first>66</first>
 				<second>0</second>
@@ -8122,29 +8712,15 @@
 		<item>
 			<first>125</first>
 			<second>
-				<first>79</first>
+				<first>66</first>
 				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>126</first>
-			<second>
-				<first>73</first>
-				<second>5</second>
 			</second>
 		</item>
 		<item>
 			<first>127</first>
 			<second>
-				<first>79</first>
-				<second>3</second>
-			</second>
-		</item>
-		<item>
-			<first>128</first>
-			<second>
-				<first>83</first>
-				<second>3</second>
+				<first>66</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
@@ -8157,127 +8733,120 @@
 		<item>
 			<first>130</first>
 			<second>
-				<first>74</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>131</first>
-			<second>
-				<first>67</first>
+				<first>66</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>132</first>
 			<second>
-				<first>68</first>
-				<second>5</second>
+				<first>66</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>133</first>
 			<second>
-				<first>74</first>
-				<second>3</second>
+				<first>66</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>134</first>
 			<second>
-				<first>78</first>
-				<second>4</second>
+				<first>79</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>135</first>
 			<second>
-				<first>83</first>
-				<second>3</second>
+				<first>73</first>
+				<second>5</second>
 			</second>
 		</item>
 		<item>
 			<first>136</first>
 			<second>
-				<first>67</first>
-				<second>0</second>
+				<first>79</first>
+				<second>3</second>
 			</second>
 		</item>
 		<item>
 			<first>137</first>
-			<second>
-				<first>72</first>
-				<second>5</second>
-			</second>
-		</item>
-		<item>
-			<first>138</first>
 			<second>
 				<first>83</first>
 				<second>3</second>
 			</second>
 		</item>
 		<item>
+			<first>138</first>
+			<second>
+				<first>66</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
 			<first>139</first>
 			<second>
-				<first>67</first>
+				<first>74</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>140</first>
 			<second>
-				<first>74</first>
+				<first>67</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>141</first>
 			<second>
-				<first>67</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
-			<first>142</first>
-			<second>
 				<first>68</first>
 				<second>5</second>
 			</second>
 		</item>
 		<item>
-			<first>143</first>
+			<first>142</first>
 			<second>
 				<first>74</first>
 				<second>3</second>
 			</second>
 		</item>
 		<item>
-			<first>144</first>
+			<first>143</first>
 			<second>
 				<first>78</first>
 				<second>4</second>
 			</second>
 		</item>
 		<item>
-			<first>145</first>
+			<first>144</first>
 			<second>
 				<first>83</first>
 				<second>3</second>
 			</second>
 		</item>
 		<item>
-			<first>146</first>
+			<first>145</first>
 			<second>
 				<first>67</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
+			<first>146</first>
+			<second>
+				<first>72</first>
+				<second>5</second>
+			</second>
+		</item>
+		<item>
 			<first>147</first>
 			<second>
-				<first>67</first>
-				<second>0</second>
+				<first>83</first>
+				<second>3</second>
 			</second>
 		</item>
 		<item>
@@ -8290,7 +8859,7 @@
 		<item>
 			<first>149</first>
 			<second>
-				<first>67</first>
+				<first>74</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -8304,29 +8873,29 @@
 		<item>
 			<first>151</first>
 			<second>
-				<first>67</first>
-				<second>0</second>
+				<first>68</first>
+				<second>5</second>
 			</second>
 		</item>
 		<item>
 			<first>152</first>
 			<second>
-				<first>67</first>
-				<second>0</second>
+				<first>74</first>
+				<second>3</second>
 			</second>
 		</item>
 		<item>
 			<first>153</first>
 			<second>
-				<first>67</first>
-				<second>0</second>
+				<first>78</first>
+				<second>4</second>
 			</second>
 		</item>
 		<item>
 			<first>154</first>
 			<second>
-				<first>67</first>
-				<second>0</second>
+				<first>83</first>
+				<second>3</second>
 			</second>
 		</item>
 		<item>
@@ -8346,7 +8915,7 @@
 		<item>
 			<first>157</first>
 			<second>
-				<first>68</first>
+				<first>67</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -8381,103 +8950,166 @@
 		<item>
 			<first>162</first>
 			<second>
-				<first>86</first>
+				<first>67</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>163</first>
 			<second>
-				<first>86</first>
+				<first>67</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>164</first>
 			<second>
-				<first>86</first>
+				<first>67</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>165</first>
 			<second>
-				<first>86</first>
+				<first>67</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>166</first>
 			<second>
-				<first>86</first>
+				<first>68</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>167</first>
 			<second>
-				<first>86</first>
+				<first>67</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>168</first>
 			<second>
-				<first>86</first>
+				<first>67</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>169</first>
 			<second>
-				<first>87</first>
+				<first>67</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>170</first>
 			<second>
-				<first>73</first>
+				<first>67</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>171</first>
 			<second>
-				<first>73</first>
+				<first>86</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>172</first>
 			<second>
-				<first>87</first>
-				<second>1</second>
+				<first>86</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>173</first>
 			<second>
-				<first>88</first>
+				<first>86</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>174</first>
+			<second>
+				<first>86</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>175</first>
 			<second>
-				<first>88</first>
+				<first>86</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>176</first>
 			<second>
-				<first>88</first>
+				<first>86</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>177</first>
+			<second>
+				<first>86</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>178</first>
+			<second>
+				<first>87</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>179</first>
+			<second>
+				<first>73</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>180</first>
+			<second>
+				<first>87</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>181</first>
+			<second>
+				<first>73</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>182</first>
+			<second>
+				<first>88</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>184</first>
+			<second>
+				<first>88</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>185</first>
+			<second>
+				<first>88</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>187</first>
 			<second>
 				<first>88</first>
 				<second>0</second>
@@ -8558,49 +9190,49 @@
 			</second>
 		</item>
 		<item>
-			<first>116</first>
+			<first>123</first>
 			<second>
 				<first>65</first>
 				<second>66</second>
 			</second>
 		</item>
 		<item>
-			<first>119</first>
+			<first>126</first>
 			<second>
 				<first>66</first>
 				<second>66</second>
 			</second>
 		</item>
 		<item>
-			<first>121</first>
+			<first>128</first>
 			<second>
 				<first>66</first>
 				<second>66</second>
 			</second>
 		</item>
 		<item>
-			<first>124</first>
+			<first>131</first>
 			<second>
 				<first>66</first>
 				<second>66</second>
 			</second>
 		</item>
 		<item>
-			<first>174</first>
+			<first>183</first>
 			<second>
 				<first>66</first>
 				<second>88</second>
 			</second>
 		</item>
 		<item>
-			<first>177</first>
+			<first>186</first>
 			<second>
 				<first>88</first>
 				<second>88</second>
 			</second>
 		</item>
 		<item>
-			<first>179</first>
+			<first>188</first>
 			<second>
 				<first>88</first>
 				<second>88</second>

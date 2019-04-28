@@ -1335,8 +1335,8 @@ format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type im
       </xilinx:taxonomies>
       <xilinx:displayName>Envelope</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1904251338</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-04-25T17:38:55Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1904281037</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-04-28T14:37:55Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>

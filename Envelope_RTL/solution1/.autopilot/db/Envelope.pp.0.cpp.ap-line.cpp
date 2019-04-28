@@ -6217,8 +6217,10 @@ void envelope(
 #pragma empty_line
  if(press)
   wait = 0;
+ else if(!press && time < sustainTime)
+  time = sustainTime;
 #pragma empty_line
- if(press >= 1 && time > decayDuration){
+ if(press >= 1 && time == sustainTime - 1){
   sustainTime += 1;
   releaseTime += 1;
  }

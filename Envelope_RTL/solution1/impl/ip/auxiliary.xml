@@ -9,5 +9,5 @@
   <xd:arg xd:name="sustainDuration" xd:originalName="sustainDuration" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
   <xd:arg xd:name="releaseDuration" xd:originalName="releaseDuration" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x38" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
   <xd:latencyEstimates xd:best-case="26" xd:worst-case="88" xd:average-case="58"/>
-  <xd:resourceEstimates xd:LUT="4732" xd:FF="4162" xd:BRAM="0" xd:DSP="5"/>
+  <xd:resourceEstimates xd:LUT="4994" xd:FF="4327" xd:BRAM="0" xd:DSP="5"/>
 </xd:acceleratorMap>

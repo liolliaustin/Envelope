@@ -5,8 +5,8 @@ target triple = "x86_64-unknown-linux-gnu"
 %"class.hls::stream.0" = type { float }
 
 @wait = internal unnamed_addr global i32 0, align 4 ; [#uses=3 type=i32*]
-@time = internal unnamed_addr global i32 0, align 4 ; [#uses=3 type=i32*]
-@sustainTime = internal unnamed_addr global i32 0, align 4 ; [#uses=4 type=i32*]
+@time = internal unnamed_addr global i32 0, align 4 ; [#uses=6 type=i32*]
+@sustainTime = internal unnamed_addr global i32 0, align 4 ; [#uses=5 type=i32*]
 @releaseTime = internal unnamed_addr global i32 0, align 4 ; [#uses=4 type=i32*]
 @releaseSlope = internal unnamed_addr global float 0.000000e+00, align 4 ; [#uses=2 type=float*]
 @"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)sustainTime" = internal unnamed_addr global i8 0 ; [#uses=2 type=i8*]
@@ -33,7 +33,7 @@ declare void @llvm.dbg.declare(metadata, metadata) nounwind readnone
 ; [#uses=0]
 define void @envelope(%"class.hls::stream.0"* %wave_in, %"class.hls::stream.0"* %wave_out, i32 %press, i32 %attackDuration, i32 %decayDuration, i32 %sustainAmplitude, i32 %sustainDuration, i32 %releaseDuration) nounwind uwtable {
   call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @envelope.str) nounwind
-  %tmp.46 = alloca float, align 4                 ; [#uses=2 type=float*]
+  %tmp.47 = alloca float, align 4                 ; [#uses=2 type=float*]
   %tmp.17 = alloca float, align 4                 ; [#uses=2 type=float*]
   call void @llvm.dbg.value(metadata !{%"class.hls::stream.0"* %wave_in}, i64 0, metadata !112), !dbg !113 ; [debug line = 9:23] [debug variable = wave_in]
   call void @llvm.dbg.value(metadata !{%"class.hls::stream.0"* %wave_out}, i64 0, metadata !114), !dbg !115 ; [debug line = 10:23] [debug variable = wave_out]
@@ -66,7 +66,7 @@ codeRepl:                                         ; preds = %0
 ._crit_edge:                                      ; preds = %codeRepl, %0
   %"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)decaySlope.load" = load i8* @"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)decaySlope", align 1, !dbg !139 ; [#uses=1 type=i8] [debug line = 36:90]
   %tmp.3 = icmp eq i8 %"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)decaySlope.load", 0, !dbg !139 ; [#uses=1 type=i1] [debug line = 36:90]
-  br i1 %tmp.3, label %codeRepl13, label %._crit_edge6, !dbg !139 ; [debug line = 36:90]
+  br i1 %tmp.3, label %codeRepl13, label %._crit_edge5, !dbg !139 ; [debug line = 36:90]
 
 codeRepl13:                                       ; preds = %._crit_edge
   %tmp.4 = add nsw i32 %sustainAmplitude, -2, !dbg !139 ; [#uses=1 type=i32] [debug line = 36:90]
@@ -76,14 +76,14 @@ codeRepl13:                                       ; preds = %._crit_edge
   %tmp.8 = fdiv float %tmp.5, %tmp.7, !dbg !139   ; [#uses=1 type=float] [debug line = 36:90]
   store float %tmp.8, float* @decaySlope, align 4, !dbg !139 ; [debug line = 36:90]
   store i8 1, i8* @"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)decaySlope", align 1, !dbg !139 ; [debug line = 36:90]
-  br label %._crit_edge6
+  br label %._crit_edge5
 
-._crit_edge6:                                     ; preds = %codeRepl13, %._crit_edge
+._crit_edge5:                                     ; preds = %codeRepl13, %._crit_edge
   %"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)releaseSlope.load" = load i8* @"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)releaseSlope", align 1, !dbg !140 ; [#uses=1 type=i8] [debug line = 37:91]
   %tmp.9 = icmp eq i8 %"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)releaseSlope.load", 0, !dbg !140 ; [#uses=1 type=i1] [debug line = 37:91]
-  br i1 %tmp.9, label %codeRepl14, label %._crit_edge7, !dbg !140 ; [debug line = 37:91]
+  br i1 %tmp.9, label %codeRepl14, label %._crit_edge6, !dbg !140 ; [debug line = 37:91]
 
-codeRepl14:                                       ; preds = %._crit_edge6
+codeRepl14:                                       ; preds = %._crit_edge5
   %tmp.10 = sub nsw i32 0, %sustainAmplitude, !dbg !140 ; [#uses=1 type=i32] [debug line = 37:91]
   %tmp.11 = sitofp i32 %tmp.10 to float, !dbg !140 ; [#uses=1 type=float] [debug line = 37:91]
   %tmp.12 = sub nsw i32 %releaseDuration, %sustainDuration, !dbg !140 ; [#uses=1 type=i32] [debug line = 37:91]
@@ -91,29 +91,29 @@ codeRepl14:                                       ; preds = %._crit_edge6
   %tmp.14 = fdiv float %tmp.11, %tmp.13, !dbg !140 ; [#uses=1 type=float] [debug line = 37:91]
   store float %tmp.14, float* @releaseSlope, align 4, !dbg !140 ; [debug line = 37:91]
   store i8 1, i8* @"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)releaseSlope", align 1, !dbg !140 ; [debug line = 37:91]
-  br label %._crit_edge7
+  br label %._crit_edge6
 
-._crit_edge7:                                     ; preds = %codeRepl14, %._crit_edge6
+._crit_edge6:                                     ; preds = %codeRepl14, %._crit_edge5
   %"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)releaseTime.load" = load i8* @"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)releaseTime", align 1, !dbg !141 ; [#uses=1 type=i8] [debug line = 41:42]
   %tmp.15 = icmp eq i8 %"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)releaseTime.load", 0, !dbg !141 ; [#uses=1 type=i1] [debug line = 41:42]
-  br i1 %tmp.15, label %codeRepl15, label %._crit_edge8, !dbg !141 ; [debug line = 41:42]
+  br i1 %tmp.15, label %codeRepl15, label %._crit_edge7, !dbg !141 ; [debug line = 41:42]
 
-codeRepl15:                                       ; preds = %._crit_edge7
+codeRepl15:                                       ; preds = %._crit_edge6
   store i32 %releaseDuration, i32* @releaseTime, align 4, !dbg !141 ; [debug line = 41:42]
   store i8 1, i8* @"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)releaseTime", align 1, !dbg !141 ; [debug line = 41:42]
-  br label %._crit_edge8
+  br label %._crit_edge7
 
-._crit_edge8:                                     ; preds = %codeRepl15, %._crit_edge7
+._crit_edge7:                                     ; preds = %codeRepl15, %._crit_edge6
   %"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)sustainTime.load" = load i8* @"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)sustainTime", align 1, !dbg !142 ; [#uses=1 type=i8] [debug line = 42:42]
   %tmp.16 = icmp eq i8 %"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)sustainTime.load", 0, !dbg !142 ; [#uses=1 type=i1] [debug line = 42:42]
-  br i1 %tmp.16, label %codeRepl16, label %._crit_edge9, !dbg !142 ; [debug line = 42:42]
+  br i1 %tmp.16, label %codeRepl16, label %._crit_edge8, !dbg !142 ; [debug line = 42:42]
 
-codeRepl16:                                       ; preds = %._crit_edge8
+codeRepl16:                                       ; preds = %._crit_edge7
   store i32 %sustainDuration, i32* @sustainTime, align 4, !dbg !142 ; [debug line = 42:42]
   store i8 1, i8* @"guard variable for envelope(stream<float>&, stream<float>&, int, int, int, int, int, int)sustainTime", align 1, !dbg !142 ; [debug line = 42:42]
-  br label %._crit_edge9
+  br label %._crit_edge8
 
-._crit_edge9:                                     ; preds = %codeRepl16, %._crit_edge8
+._crit_edge8:                                     ; preds = %codeRepl16, %._crit_edge7
   call void @llvm.dbg.value(metadata !{%"class.hls::stream.0"* %wave_in}, i64 0, metadata !143), !dbg !145 ; [debug line = 101:48@45:2] [debug variable = this]
   call void @llvm.dbg.value(metadata !{%"class.hls::stream.0"* %wave_in}, i64 0, metadata !147), !dbg !148 ; [debug line = 123:48@102:9@45:2] [debug variable = this]
   call void @llvm.dbg.declare(metadata !{float* %tmp.17}, metadata !151) nounwind, !dbg !153 ; [debug line = 124:22@102:9@45:2] [debug variable = tmp]
@@ -133,117 +133,133 @@ codeRepl16:                                       ; preds = %._crit_edge8
   %resultAmplitude = load float* %tmp.17, align 4, !dbg !155 ; [#uses=4 type=float] [debug line = 126:9@102:9@45:2]
   call void @llvm.dbg.value(metadata !{float %resultAmplitude}, i64 0, metadata !156), !dbg !155 ; [debug line = 126:9@102:9@45:2] [debug variable = resultAmplitude]
   %tmp.18 = icmp eq i32 %press, 0, !dbg !157      ; [#uses=1 type=i1] [debug line = 47:2]
-  br i1 %tmp.18, label %._crit_edge10, label %1, !dbg !157 ; [debug line = 47:2]
+  br i1 %tmp.18, label %2, label %1, !dbg !157    ; [debug line = 47:2]
 
-; <label>:1                                       ; preds = %._crit_edge9
+; <label>:1                                       ; preds = %._crit_edge8
   store i32 0, i32* @wait, align 4, !dbg !158     ; [debug line = 48:3]
-  br label %._crit_edge10, !dbg !158              ; [debug line = 48:3]
+  br label %4, !dbg !158                          ; [debug line = 48:3]
 
-._crit_edge10:                                    ; preds = %1, %._crit_edge9
-  %tmp.19 = icmp sgt i32 %press, 0, !dbg !159     ; [#uses=1 type=i1] [debug line = 50:2]
-  %time.load = load i32* @time, align 4, !dbg !159 ; [#uses=2 type=i32] [debug line = 50:2]
-  %tmp.20 = icmp sgt i32 %time.load, %decayDuration, !dbg !159 ; [#uses=1 type=i1] [debug line = 50:2]
-  %or.cond = and i1 %tmp.19, %tmp.20, !dbg !159   ; [#uses=1 type=i1] [debug line = 50:2]
-  br i1 %or.cond, label %2, label %._crit_edge11, !dbg !159 ; [debug line = 50:2]
+; <label>:2                                       ; preds = %._crit_edge8
+  %time.load = load i32* @time, align 4, !dbg !159 ; [#uses=1 type=i32] [debug line = 49:7]
+  %sustainTime.load = load i32* @sustainTime, align 4, !dbg !159 ; [#uses=2 type=i32] [debug line = 49:7]
+  %tmp.19 = icmp slt i32 %time.load, %sustainTime.load, !dbg !159 ; [#uses=1 type=i1] [debug line = 49:7]
+  br i1 %tmp.19, label %3, label %._crit_edge9, !dbg !159 ; [debug line = 49:7]
 
-; <label>:2                                       ; preds = %._crit_edge10
-  %sustainTime.load = load i32* @sustainTime, align 4, !dbg !160 ; [#uses=1 type=i32] [debug line = 51:3]
-  %tmp.21 = add nsw i32 %sustainTime.load, 1, !dbg !160 ; [#uses=1 type=i32] [debug line = 51:3]
-  store i32 %tmp.21, i32* @sustainTime, align 4, !dbg !160 ; [debug line = 51:3]
-  %releaseTime.load = load i32* @releaseTime, align 4, !dbg !162 ; [#uses=1 type=i32] [debug line = 52:3]
-  %tmp.22 = add nsw i32 %releaseTime.load, 1, !dbg !162 ; [#uses=1 type=i32] [debug line = 52:3]
-  store i32 %tmp.22, i32* @releaseTime, align 4, !dbg !162 ; [debug line = 52:3]
-  br label %._crit_edge11, !dbg !163              ; [debug line = 53:2]
+; <label>:3                                       ; preds = %2
+  store i32 %sustainTime.load, i32* @time, align 4, !dbg !160 ; [debug line = 50:3]
+  br label %._crit_edge9, !dbg !160               ; [debug line = 50:3]
 
-._crit_edge11:                                    ; preds = %2, %._crit_edge10
-  %wait.load = load i32* @wait, align 4, !dbg !164 ; [#uses=1 type=i32] [debug line = 55:2]
-  %tmp.23 = icmp eq i32 %wait.load, 0, !dbg !164  ; [#uses=1 type=i1] [debug line = 55:2]
-  br i1 %tmp.23, label %._crit_edge12, label %3, !dbg !164 ; [debug line = 55:2]
+._crit_edge9:                                     ; preds = %3, %2
+  br label %4
 
-; <label>:3                                       ; preds = %._crit_edge11
-  store i32 0, i32* @time, align 4, !dbg !165     ; [debug line = 56:3]
-  br label %._crit_edge12, !dbg !167              ; [debug line = 57:2]
+; <label>:4                                       ; preds = %._crit_edge9, %1
+  %tmp.20 = icmp sgt i32 %press, 0, !dbg !161     ; [#uses=1 type=i1] [debug line = 52:2]
+  br i1 %tmp.20, label %5, label %._crit_edge10, !dbg !161 ; [debug line = 52:2]
 
-._crit_edge12:                                    ; preds = %3, %._crit_edge11
-  %tmp.24 = phi i32 [ 0, %3 ], [ %time.load, %._crit_edge11 ] ; [#uses=8 type=i32]
-  %tmp.25 = icmp slt i32 %tmp.24, %attackDuration, !dbg !168 ; [#uses=1 type=i1] [debug line = 59:2]
-  br i1 %tmp.25, label %4, label %5, !dbg !168    ; [debug line = 59:2]
-
-; <label>:4                                       ; preds = %._crit_edge12
-  %attackSlope.load = load float* @attackSlope, align 4, !dbg !169 ; [#uses=1 type=float] [debug line = 60:3]
-  %tmp.26 = sitofp i32 %tmp.24 to float, !dbg !169 ; [#uses=1 type=float] [debug line = 60:3]
-  %tmp.27 = fmul float %attackSlope.load, %tmp.26, !dbg !169 ; [#uses=1 type=float] [debug line = 60:3]
-  %resultAmplitude.1 = fmul float %resultAmplitude, %tmp.27, !dbg !169 ; [#uses=1 type=float] [debug line = 60:3]
-  call void @llvm.dbg.value(metadata !{float %resultAmplitude.1}, i64 0, metadata !156), !dbg !169 ; [debug line = 60:3] [debug variable = resultAmplitude]
-  br label %12, !dbg !171                         ; [debug line = 61:2]
-
-; <label>:5                                       ; preds = %._crit_edge12
-  %tmp.29 = icmp slt i32 %tmp.24, %decayDuration, !dbg !172 ; [#uses=1 type=i1] [debug line = 63:7]
-  br i1 %tmp.29, label %6, label %7, !dbg !172    ; [debug line = 63:7]
+; <label>:5                                       ; preds = %4
+  %time.load.1 = load i32* @time, align 4, !dbg !161 ; [#uses=1 type=i32] [debug line = 52:2]
+  %sustainTime.load.1 = load i32* @sustainTime, align 4, !dbg !161 ; [#uses=2 type=i32] [debug line = 52:2]
+  %tmp.21 = add nsw i32 %sustainTime.load.1, -1, !dbg !161 ; [#uses=1 type=i32] [debug line = 52:2]
+  %tmp.22 = icmp eq i32 %time.load.1, %tmp.21, !dbg !161 ; [#uses=1 type=i1] [debug line = 52:2]
+  br i1 %tmp.22, label %6, label %._crit_edge10, !dbg !161 ; [debug line = 52:2]
 
 ; <label>:6                                       ; preds = %5
-  %decaySlope.load = load float* @decaySlope, align 4, !dbg !173 ; [#uses=1 type=float] [debug line = 64:3]
-  %tmp.30 = sub nsw i32 %tmp.24, %attackDuration, !dbg !173 ; [#uses=1 type=i32] [debug line = 64:3]
-  %tmp.31 = sitofp i32 %tmp.30 to float, !dbg !173 ; [#uses=1 type=float] [debug line = 64:3]
-  %tmp.32 = fmul float %decaySlope.load, %tmp.31, !dbg !173 ; [#uses=1 type=float] [debug line = 64:3]
-  %tmp.33 = fadd float %tmp.32, 2.000000e+00, !dbg !173 ; [#uses=1 type=float] [debug line = 64:3]
-  %resultAmplitude.2 = fmul float %resultAmplitude, %tmp.33, !dbg !173 ; [#uses=1 type=float] [debug line = 64:3]
-  call void @llvm.dbg.value(metadata !{float %resultAmplitude.2}, i64 0, metadata !156), !dbg !173 ; [debug line = 64:3] [debug variable = resultAmplitude]
-  br label %12, !dbg !175                         ; [debug line = 65:2]
+  %tmp.23 = add nsw i32 %sustainTime.load.1, 1, !dbg !162 ; [#uses=1 type=i32] [debug line = 53:3]
+  store i32 %tmp.23, i32* @sustainTime, align 4, !dbg !162 ; [debug line = 53:3]
+  %releaseTime.load = load i32* @releaseTime, align 4, !dbg !164 ; [#uses=1 type=i32] [debug line = 54:3]
+  %tmp.24 = add nsw i32 %releaseTime.load, 1, !dbg !164 ; [#uses=1 type=i32] [debug line = 54:3]
+  store i32 %tmp.24, i32* @releaseTime, align 4, !dbg !164 ; [debug line = 54:3]
+  br label %._crit_edge10, !dbg !165              ; [debug line = 55:2]
 
-; <label>:7                                       ; preds = %5
-  %sustainTime.load.1 = load i32* @sustainTime, align 4, !dbg !176 ; [#uses=2 type=i32] [debug line = 67:7]
-  %tmp.35 = icmp slt i32 %tmp.24, %sustainTime.load.1, !dbg !176 ; [#uses=1 type=i1] [debug line = 67:7]
-  br i1 %tmp.35, label %8, label %9, !dbg !176    ; [debug line = 67:7]
+._crit_edge10:                                    ; preds = %6, %5, %4
+  %wait.load = load i32* @wait, align 4, !dbg !166 ; [#uses=1 type=i32] [debug line = 57:2]
+  %tmp.25 = icmp eq i32 %wait.load, 0, !dbg !166  ; [#uses=1 type=i1] [debug line = 57:2]
+  br i1 %tmp.25, label %._crit_edge12, label %7, !dbg !166 ; [debug line = 57:2]
 
-; <label>:8                                       ; preds = %7
-  %tmp.36 = sitofp i32 %sustainAmplitude to float, !dbg !177 ; [#uses=1 type=float] [debug line = 68:3]
-  %resultAmplitude.3 = fmul float %resultAmplitude, %tmp.36, !dbg !177 ; [#uses=1 type=float] [debug line = 68:3]
-  call void @llvm.dbg.value(metadata !{float %resultAmplitude.3}, i64 0, metadata !156), !dbg !177 ; [debug line = 68:3] [debug variable = resultAmplitude]
-  br label %12, !dbg !179                         ; [debug line = 69:2]
+; <label>:7                                       ; preds = %._crit_edge10
+  store i32 0, i32* @time, align 4, !dbg !167     ; [debug line = 58:3]
+  br label %._crit_edge12, !dbg !169              ; [debug line = 59:2]
 
-; <label>:9                                       ; preds = %7
-  %releaseTime.load.1 = load i32* @releaseTime, align 4, !dbg !180 ; [#uses=1 type=i32] [debug line = 71:7]
-  %tmp.38 = icmp slt i32 %tmp.24, %releaseTime.load.1, !dbg !180 ; [#uses=1 type=i1] [debug line = 71:7]
-  br i1 %tmp.38, label %10, label %11, !dbg !180  ; [debug line = 71:7]
+._crit_edge12:                                    ; preds = %7, %._crit_edge10
+  %time.load.2 = load i32* @time, align 4, !dbg !170 ; [#uses=8 type=i32] [debug line = 61:2]
+  %tmp.26 = icmp slt i32 %time.load.2, %attackDuration, !dbg !170 ; [#uses=1 type=i1] [debug line = 61:2]
+  br i1 %tmp.26, label %8, label %9, !dbg !170    ; [debug line = 61:2]
+
+; <label>:8                                       ; preds = %._crit_edge12
+  %attackSlope.load = load float* @attackSlope, align 4, !dbg !171 ; [#uses=1 type=float] [debug line = 62:3]
+  %tmp.27 = sitofp i32 %time.load.2 to float, !dbg !171 ; [#uses=1 type=float] [debug line = 62:3]
+  %tmp.28 = fmul float %attackSlope.load, %tmp.27, !dbg !171 ; [#uses=1 type=float] [debug line = 62:3]
+  %resultAmplitude.1 = fmul float %resultAmplitude, %tmp.28, !dbg !171 ; [#uses=1 type=float] [debug line = 62:3]
+  call void @llvm.dbg.value(metadata !{float %resultAmplitude.1}, i64 0, metadata !156), !dbg !171 ; [debug line = 62:3] [debug variable = resultAmplitude]
+  br label %16, !dbg !173                         ; [debug line = 63:2]
+
+; <label>:9                                       ; preds = %._crit_edge12
+  %tmp.30 = icmp slt i32 %time.load.2, %decayDuration, !dbg !174 ; [#uses=1 type=i1] [debug line = 65:7]
+  br i1 %tmp.30, label %10, label %11, !dbg !174  ; [debug line = 65:7]
 
 ; <label>:10                                      ; preds = %9
-  %releaseSlope.load = load float* @releaseSlope, align 4, !dbg !181 ; [#uses=1 type=float] [debug line = 72:3]
-  %tmp.39 = sub nsw i32 %tmp.24, %sustainTime.load.1, !dbg !181 ; [#uses=1 type=i32] [debug line = 72:3]
-  %tmp.40 = sitofp i32 %tmp.39 to float, !dbg !181 ; [#uses=1 type=float] [debug line = 72:3]
-  %tmp.41 = fmul float %releaseSlope.load, %tmp.40, !dbg !181 ; [#uses=1 type=float] [debug line = 72:3]
-  %tmp.42 = sitofp i32 %sustainAmplitude to float, !dbg !181 ; [#uses=1 type=float] [debug line = 72:3]
-  %tmp.43 = fadd float %tmp.41, %tmp.42, !dbg !181 ; [#uses=1 type=float] [debug line = 72:3]
-  %resultAmplitude.4 = fmul float %resultAmplitude, %tmp.43, !dbg !181 ; [#uses=1 type=float] [debug line = 72:3]
-  call void @llvm.dbg.value(metadata !{float %resultAmplitude.4}, i64 0, metadata !156), !dbg !181 ; [debug line = 72:3] [debug variable = resultAmplitude]
-  br label %12, !dbg !183                         ; [debug line = 73:2]
+  %decaySlope.load = load float* @decaySlope, align 4, !dbg !175 ; [#uses=1 type=float] [debug line = 66:3]
+  %tmp.31 = sub nsw i32 %time.load.2, %attackDuration, !dbg !175 ; [#uses=1 type=i32] [debug line = 66:3]
+  %tmp.32 = sitofp i32 %tmp.31 to float, !dbg !175 ; [#uses=1 type=float] [debug line = 66:3]
+  %tmp.33 = fmul float %decaySlope.load, %tmp.32, !dbg !175 ; [#uses=1 type=float] [debug line = 66:3]
+  %tmp.34 = fadd float %tmp.33, 2.000000e+00, !dbg !175 ; [#uses=1 type=float] [debug line = 66:3]
+  %resultAmplitude.2 = fmul float %resultAmplitude, %tmp.34, !dbg !175 ; [#uses=1 type=float] [debug line = 66:3]
+  call void @llvm.dbg.value(metadata !{float %resultAmplitude.2}, i64 0, metadata !156), !dbg !175 ; [debug line = 66:3] [debug variable = resultAmplitude]
+  br label %16, !dbg !177                         ; [debug line = 67:2]
 
 ; <label>:11                                      ; preds = %9
-  store i32 1, i32* @wait, align 4, !dbg !184     ; [debug line = 77:3]
-  br label %12
+  %sustainTime.load.2 = load i32* @sustainTime, align 4, !dbg !178 ; [#uses=2 type=i32] [debug line = 69:7]
+  %tmp.36 = icmp slt i32 %time.load.2, %sustainTime.load.2, !dbg !178 ; [#uses=1 type=i1] [debug line = 69:7]
+  br i1 %tmp.36, label %12, label %13, !dbg !178  ; [debug line = 69:7]
 
-; <label>:12                                      ; preds = %11, %10, %8, %6, %4
-  %tmp.47 = phi float [ %resultAmplitude.1, %4 ], [ %resultAmplitude.2, %6 ], [ %resultAmplitude.3, %8 ], [ %resultAmplitude.4, %10 ], [ 0.000000e+00, %11 ] ; [#uses=1 type=float]
-  %tmp.45 = add nsw i32 %tmp.24, 1, !dbg !186     ; [#uses=1 type=i32] [debug line = 80:2]
-  store i32 %tmp.45, i32* @time, align 4, !dbg !186 ; [debug line = 80:2]
-  call void @llvm.dbg.value(metadata !{%"class.hls::stream.0"* %wave_out}, i64 0, metadata !187), !dbg !188 ; [debug line = 105:48@82:2] [debug variable = this]
-  call void @llvm.dbg.value(metadata !{%"class.hls::stream.0"* %wave_out}, i64 0, metadata !190), !dbg !191 ; [debug line = 144:48@106:9@82:2] [debug variable = this]
-  call void @llvm.dbg.declare(metadata !{float* %tmp.46}, metadata !194) nounwind, !dbg !196 ; [debug line = 145:22@106:9@82:2] [debug variable = tmp]
-  call void @llvm.dbg.value(metadata !{float %tmp.47}, i64 0, metadata !194), !dbg !197 ; [debug line = 145:31@106:9@82:2] [debug variable = tmp]
-  call void @llvm.dbg.value(metadata !{float %tmp.47}, i64 0, metadata !194), !dbg !197 ; [debug line = 145:31@106:9@82:2] [debug variable = tmp]
-  call void @llvm.dbg.value(metadata !{float %tmp.47}, i64 0, metadata !194), !dbg !197 ; [debug line = 145:31@106:9@82:2] [debug variable = tmp]
-  call void @llvm.dbg.value(metadata !{float %tmp.47}, i64 0, metadata !194), !dbg !197 ; [debug line = 145:31@106:9@82:2] [debug variable = tmp]
-  call void @llvm.dbg.value(metadata !{float %tmp.47}, i64 0, metadata !194), !dbg !197 ; [debug line = 145:31@106:9@82:2] [debug variable = tmp]
-  call void @llvm.dbg.value(metadata !{float %tmp.47}, i64 0, metadata !194), !dbg !197 ; [debug line = 145:31@106:9@82:2] [debug variable = tmp]
-  call void @llvm.dbg.value(metadata !{float %tmp.47}, i64 0, metadata !194), !dbg !197 ; [debug line = 145:31@106:9@82:2] [debug variable = tmp]
-  call void @llvm.dbg.value(metadata !{float %tmp.47}, i64 0, metadata !194), !dbg !197 ; [debug line = 145:31@106:9@82:2] [debug variable = tmp]
-  call void @llvm.dbg.value(metadata !{float %tmp.47}, i64 0, metadata !194), !dbg !197 ; [debug line = 145:31@106:9@82:2] [debug variable = tmp]
-  call void @llvm.dbg.value(metadata !{float %tmp.47}, i64 0, metadata !194), !dbg !197 ; [debug line = 145:31@106:9@82:2] [debug variable = tmp]
-  call void @llvm.dbg.value(metadata !{float %tmp.47}, i64 0, metadata !194), !dbg !197 ; [debug line = 145:31@106:9@82:2] [debug variable = tmp]
-  store float %tmp.47, float* %tmp.46, align 4, !dbg !197 ; [debug line = 145:31@106:9@82:2]
-  %wave_out.addr = getelementptr inbounds %"class.hls::stream.0"* %wave_out, i64 0, i32 0, !dbg !198 ; [#uses=1 type=float*] [debug line = 146:9@106:9@82:2]
-  call void @_ssdm_op_IfWrite.Stream.floatP.floatP(float* %wave_out.addr, float* %tmp.46) nounwind, !dbg !198 ; [debug line = 146:9@106:9@82:2]
-  ret void, !dbg !199                             ; [debug line = 83:1]
+; <label>:12                                      ; preds = %11
+  %tmp.37 = sitofp i32 %sustainAmplitude to float, !dbg !179 ; [#uses=1 type=float] [debug line = 70:3]
+  %resultAmplitude.3 = fmul float %resultAmplitude, %tmp.37, !dbg !179 ; [#uses=1 type=float] [debug line = 70:3]
+  call void @llvm.dbg.value(metadata !{float %resultAmplitude.3}, i64 0, metadata !156), !dbg !179 ; [debug line = 70:3] [debug variable = resultAmplitude]
+  br label %16, !dbg !181                         ; [debug line = 71:2]
+
+; <label>:13                                      ; preds = %11
+  %releaseTime.load.1 = load i32* @releaseTime, align 4, !dbg !182 ; [#uses=1 type=i32] [debug line = 73:7]
+  %tmp.39 = icmp slt i32 %time.load.2, %releaseTime.load.1, !dbg !182 ; [#uses=1 type=i1] [debug line = 73:7]
+  br i1 %tmp.39, label %14, label %15, !dbg !182  ; [debug line = 73:7]
+
+; <label>:14                                      ; preds = %13
+  %releaseSlope.load = load float* @releaseSlope, align 4, !dbg !183 ; [#uses=1 type=float] [debug line = 74:3]
+  %tmp.40 = sub nsw i32 %time.load.2, %sustainTime.load.2, !dbg !183 ; [#uses=1 type=i32] [debug line = 74:3]
+  %tmp.41 = sitofp i32 %tmp.40 to float, !dbg !183 ; [#uses=1 type=float] [debug line = 74:3]
+  %tmp.42 = fmul float %releaseSlope.load, %tmp.41, !dbg !183 ; [#uses=1 type=float] [debug line = 74:3]
+  %tmp.43 = sitofp i32 %sustainAmplitude to float, !dbg !183 ; [#uses=1 type=float] [debug line = 74:3]
+  %tmp.44 = fadd float %tmp.42, %tmp.43, !dbg !183 ; [#uses=1 type=float] [debug line = 74:3]
+  %resultAmplitude.4 = fmul float %resultAmplitude, %tmp.44, !dbg !183 ; [#uses=1 type=float] [debug line = 74:3]
+  call void @llvm.dbg.value(metadata !{float %resultAmplitude.4}, i64 0, metadata !156), !dbg !183 ; [debug line = 74:3] [debug variable = resultAmplitude]
+  br label %16, !dbg !185                         ; [debug line = 75:2]
+
+; <label>:15                                      ; preds = %13
+  store i32 1, i32* @wait, align 4, !dbg !186     ; [debug line = 79:3]
+  br label %16
+
+; <label>:16                                      ; preds = %15, %14, %12, %10, %8
+  %tmp.48 = phi float [ %resultAmplitude.1, %8 ], [ %resultAmplitude.2, %10 ], [ %resultAmplitude.3, %12 ], [ %resultAmplitude.4, %14 ], [ 0.000000e+00, %15 ] ; [#uses=1 type=float]
+  %tmp.46 = add nsw i32 %time.load.2, 1, !dbg !188 ; [#uses=1 type=i32] [debug line = 82:2]
+  store i32 %tmp.46, i32* @time, align 4, !dbg !188 ; [debug line = 82:2]
+  call void @llvm.dbg.value(metadata !{%"class.hls::stream.0"* %wave_out}, i64 0, metadata !189), !dbg !190 ; [debug line = 105:48@84:2] [debug variable = this]
+  call void @llvm.dbg.value(metadata !{%"class.hls::stream.0"* %wave_out}, i64 0, metadata !192), !dbg !193 ; [debug line = 144:48@106:9@84:2] [debug variable = this]
+  call void @llvm.dbg.declare(metadata !{float* %tmp.47}, metadata !196) nounwind, !dbg !198 ; [debug line = 145:22@106:9@84:2] [debug variable = tmp]
+  call void @llvm.dbg.value(metadata !{float %tmp.48}, i64 0, metadata !196), !dbg !199 ; [debug line = 145:31@106:9@84:2] [debug variable = tmp]
+  call void @llvm.dbg.value(metadata !{float %tmp.48}, i64 0, metadata !196), !dbg !199 ; [debug line = 145:31@106:9@84:2] [debug variable = tmp]
+  call void @llvm.dbg.value(metadata !{float %tmp.48}, i64 0, metadata !196), !dbg !199 ; [debug line = 145:31@106:9@84:2] [debug variable = tmp]
+  call void @llvm.dbg.value(metadata !{float %tmp.48}, i64 0, metadata !196), !dbg !199 ; [debug line = 145:31@106:9@84:2] [debug variable = tmp]
+  call void @llvm.dbg.value(metadata !{float %tmp.48}, i64 0, metadata !196), !dbg !199 ; [debug line = 145:31@106:9@84:2] [debug variable = tmp]
+  call void @llvm.dbg.value(metadata !{float %tmp.48}, i64 0, metadata !196), !dbg !199 ; [debug line = 145:31@106:9@84:2] [debug variable = tmp]
+  call void @llvm.dbg.value(metadata !{float %tmp.48}, i64 0, metadata !196), !dbg !199 ; [debug line = 145:31@106:9@84:2] [debug variable = tmp]
+  call void @llvm.dbg.value(metadata !{float %tmp.48}, i64 0, metadata !196), !dbg !199 ; [debug line = 145:31@106:9@84:2] [debug variable = tmp]
+  call void @llvm.dbg.value(metadata !{float %tmp.48}, i64 0, metadata !196), !dbg !199 ; [debug line = 145:31@106:9@84:2] [debug variable = tmp]
+  call void @llvm.dbg.value(metadata !{float %tmp.48}, i64 0, metadata !196), !dbg !199 ; [debug line = 145:31@106:9@84:2] [debug variable = tmp]
+  call void @llvm.dbg.value(metadata !{float %tmp.48}, i64 0, metadata !196), !dbg !199 ; [debug line = 145:31@106:9@84:2] [debug variable = tmp]
+  store float %tmp.48, float* %tmp.47, align 4, !dbg !199 ; [debug line = 145:31@106:9@84:2]
+  %wave_out.addr = getelementptr inbounds %"class.hls::stream.0"* %wave_out, i64 0, i32 0, !dbg !200 ; [#uses=1 type=float*] [debug line = 146:9@106:9@84:2]
+  call void @_ssdm_op_IfWrite.Stream.floatP.floatP(float* %wave_out.addr, float* %tmp.47) nounwind, !dbg !200 ; [debug line = 146:9@106:9@84:2]
+  ret void, !dbg !201                             ; [debug line = 85:1]
 }
 
 ; [#uses=1]
@@ -421,44 +437,46 @@ declare void @_ssdm_op_IfRead.Stream.floatP.floatP(float*, float*)
 !156 = metadata !{i32 786688, metadata !129, metadata !"resultAmplitude", metadata !6, i32 39, metadata !15, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
 !157 = metadata !{i32 47, i32 2, metadata !129, null}
 !158 = metadata !{i32 48, i32 3, metadata !129, null}
-!159 = metadata !{i32 50, i32 2, metadata !129, null}
-!160 = metadata !{i32 51, i32 3, metadata !161, null}
-!161 = metadata !{i32 786443, metadata !129, i32 50, i32 40, metadata !6, i32 1} ; [ DW_TAG_lexical_block ]
-!162 = metadata !{i32 52, i32 3, metadata !161, null}
-!163 = metadata !{i32 53, i32 2, metadata !161, null}
-!164 = metadata !{i32 55, i32 2, metadata !129, null}
-!165 = metadata !{i32 56, i32 3, metadata !166, null}
-!166 = metadata !{i32 786443, metadata !129, i32 55, i32 10, metadata !6, i32 2} ; [ DW_TAG_lexical_block ]
-!167 = metadata !{i32 57, i32 2, metadata !166, null}
-!168 = metadata !{i32 59, i32 2, metadata !129, null}
-!169 = metadata !{i32 60, i32 3, metadata !170, null}
-!170 = metadata !{i32 786443, metadata !129, i32 59, i32 27, metadata !6, i32 3} ; [ DW_TAG_lexical_block ]
-!171 = metadata !{i32 61, i32 2, metadata !170, null}
-!172 = metadata !{i32 63, i32 7, metadata !129, null}
-!173 = metadata !{i32 64, i32 3, metadata !174, null}
-!174 = metadata !{i32 786443, metadata !129, i32 63, i32 31, metadata !6, i32 4} ; [ DW_TAG_lexical_block ]
-!175 = metadata !{i32 65, i32 2, metadata !174, null}
-!176 = metadata !{i32 67, i32 7, metadata !129, null}
-!177 = metadata !{i32 68, i32 3, metadata !178, null}
-!178 = metadata !{i32 786443, metadata !129, i32 67, i32 30, metadata !6, i32 5} ; [ DW_TAG_lexical_block ]
-!179 = metadata !{i32 69, i32 2, metadata !178, null}
-!180 = metadata !{i32 71, i32 7, metadata !129, null}
-!181 = metadata !{i32 72, i32 3, metadata !182, null}
-!182 = metadata !{i32 786443, metadata !129, i32 71, i32 29, metadata !6, i32 6} ; [ DW_TAG_lexical_block ]
-!183 = metadata !{i32 73, i32 2, metadata !182, null}
-!184 = metadata !{i32 77, i32 3, metadata !185, null}
-!185 = metadata !{i32 786443, metadata !129, i32 75, i32 7, metadata !6, i32 7} ; [ DW_TAG_lexical_block ]
-!186 = metadata !{i32 80, i32 2, metadata !129, null}
-!187 = metadata !{i32 786689, metadata !69, metadata !"this", metadata !12, i32 16777321, metadata !144, i32 64, i32 0} ; [ DW_TAG_arg_variable ]
-!188 = metadata !{i32 105, i32 48, metadata !69, metadata !189}
-!189 = metadata !{i32 82, i32 2, metadata !129, null}
-!190 = metadata !{i32 786689, metadata !70, metadata !"this", metadata !12, i32 16777360, metadata !144, i32 64, i32 0} ; [ DW_TAG_arg_variable ]
-!191 = metadata !{i32 144, i32 48, metadata !70, metadata !192}
-!192 = metadata !{i32 106, i32 9, metadata !193, metadata !189}
-!193 = metadata !{i32 786443, metadata !69, i32 105, i32 88, metadata !12, i32 8} ; [ DW_TAG_lexical_block ]
-!194 = metadata !{i32 786688, metadata !195, metadata !"tmp", metadata !12, i32 145, metadata !15, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
-!195 = metadata !{i32 786443, metadata !70, i32 144, i32 79, metadata !12, i32 9} ; [ DW_TAG_lexical_block ]
-!196 = metadata !{i32 145, i32 22, metadata !195, metadata !192}
-!197 = metadata !{i32 145, i32 31, metadata !195, metadata !192}
-!198 = metadata !{i32 146, i32 9, metadata !195, metadata !192}
-!199 = metadata !{i32 83, i32 1, metadata !129, null}
+!159 = metadata !{i32 49, i32 7, metadata !129, null}
+!160 = metadata !{i32 50, i32 3, metadata !129, null}
+!161 = metadata !{i32 52, i32 2, metadata !129, null}
+!162 = metadata !{i32 53, i32 3, metadata !163, null}
+!163 = metadata !{i32 786443, metadata !129, i32 52, i32 43, metadata !6, i32 1} ; [ DW_TAG_lexical_block ]
+!164 = metadata !{i32 54, i32 3, metadata !163, null}
+!165 = metadata !{i32 55, i32 2, metadata !163, null}
+!166 = metadata !{i32 57, i32 2, metadata !129, null}
+!167 = metadata !{i32 58, i32 3, metadata !168, null}
+!168 = metadata !{i32 786443, metadata !129, i32 57, i32 10, metadata !6, i32 2} ; [ DW_TAG_lexical_block ]
+!169 = metadata !{i32 59, i32 2, metadata !168, null}
+!170 = metadata !{i32 61, i32 2, metadata !129, null}
+!171 = metadata !{i32 62, i32 3, metadata !172, null}
+!172 = metadata !{i32 786443, metadata !129, i32 61, i32 27, metadata !6, i32 3} ; [ DW_TAG_lexical_block ]
+!173 = metadata !{i32 63, i32 2, metadata !172, null}
+!174 = metadata !{i32 65, i32 7, metadata !129, null}
+!175 = metadata !{i32 66, i32 3, metadata !176, null}
+!176 = metadata !{i32 786443, metadata !129, i32 65, i32 31, metadata !6, i32 4} ; [ DW_TAG_lexical_block ]
+!177 = metadata !{i32 67, i32 2, metadata !176, null}
+!178 = metadata !{i32 69, i32 7, metadata !129, null}
+!179 = metadata !{i32 70, i32 3, metadata !180, null}
+!180 = metadata !{i32 786443, metadata !129, i32 69, i32 30, metadata !6, i32 5} ; [ DW_TAG_lexical_block ]
+!181 = metadata !{i32 71, i32 2, metadata !180, null}
+!182 = metadata !{i32 73, i32 7, metadata !129, null}
+!183 = metadata !{i32 74, i32 3, metadata !184, null}
+!184 = metadata !{i32 786443, metadata !129, i32 73, i32 29, metadata !6, i32 6} ; [ DW_TAG_lexical_block ]
+!185 = metadata !{i32 75, i32 2, metadata !184, null}
+!186 = metadata !{i32 79, i32 3, metadata !187, null}
+!187 = metadata !{i32 786443, metadata !129, i32 77, i32 7, metadata !6, i32 7} ; [ DW_TAG_lexical_block ]
+!188 = metadata !{i32 82, i32 2, metadata !129, null}
+!189 = metadata !{i32 786689, metadata !69, metadata !"this", metadata !12, i32 16777321, metadata !144, i32 64, i32 0} ; [ DW_TAG_arg_variable ]
+!190 = metadata !{i32 105, i32 48, metadata !69, metadata !191}
+!191 = metadata !{i32 84, i32 2, metadata !129, null}
+!192 = metadata !{i32 786689, metadata !70, metadata !"this", metadata !12, i32 16777360, metadata !144, i32 64, i32 0} ; [ DW_TAG_arg_variable ]
+!193 = metadata !{i32 144, i32 48, metadata !70, metadata !194}
+!194 = metadata !{i32 106, i32 9, metadata !195, metadata !191}
+!195 = metadata !{i32 786443, metadata !69, i32 105, i32 88, metadata !12, i32 8} ; [ DW_TAG_lexical_block ]
+!196 = metadata !{i32 786688, metadata !197, metadata !"tmp", metadata !12, i32 145, metadata !15, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
+!197 = metadata !{i32 786443, metadata !70, i32 144, i32 79, metadata !12, i32 9} ; [ DW_TAG_lexical_block ]
+!198 = metadata !{i32 145, i32 22, metadata !197, metadata !194}
+!199 = metadata !{i32 145, i32 31, metadata !197, metadata !194}
+!200 = metadata !{i32 146, i32 9, metadata !197, metadata !194}
+!201 = metadata !{i32 85, i32 1, metadata !129, null}
