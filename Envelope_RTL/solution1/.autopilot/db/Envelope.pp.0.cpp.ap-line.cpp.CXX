@@ -234,4 +234,4 @@
 #pragma line 67 "/home/austin/Desktop/Vivado_HLS/2017.2/common/technology/autopilot/hls_stream.h" 2 ::: 6047
 #pragma line 5 "src/Envelope.cpp" 2 ::: 6153
 #pragma line 1 "src/Envelope.h" 1 ::: 6154
-#pragma line 6 "src/Envelope.cpp" 2 ::: 6175
+#pragma line 6 "src/Envelope.cpp" 2 ::: 6174

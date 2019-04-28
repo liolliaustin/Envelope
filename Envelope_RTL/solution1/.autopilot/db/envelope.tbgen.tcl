@@ -1,5 +1,5 @@
 set C_TypeInfoList {{ 
-"envelope" : [[], { "return": [[], "void"]} , [{"ExternC" : 0}], [ {"wave_in": [[], {"reference": "0"}] }, {"wave_out": [[], {"reference": "0"}] }, {"press": [[], {"scalar": "int"}] }, {"attackDuration": [[], {"scalar": "int"}] }, {"decayDuration": [[], {"scalar": "int"}] }, {"sustainAmplitude": [[], {"scalar": "int"}] }, {"sustainDuration": [[], {"scalar": "int"}] }, {"releaseDuration": [[], {"scalar": "int"}] }],[],""], 
+"envelope" : [[], { "return": [[], "void"]} , [{"ExternC" : 0}], [ {"wave_in": [[], {"reference": "0"}] }, {"wave_out": [[], {"reference": "0"}] }, {"press": [[], {"scalar": "int"}] }, {"attackDuration": [[], {"scalar": "int"}] }, {"decayDuration": [[], {"scalar": "int"}] }, {"sustainAmplitude": [[], {"scalar": "float"}] }, {"releaseDuration": [[], {"scalar": "int"}] }],[],""], 
 "0": [ "stream<float>", {"hls_type": {"stream": [[[[], {"scalar": "float"}]],"1"]}}],
 "1": ["hls", ""]
 }}
@@ -20,8 +20,7 @@ set C_modelArgList {
 	{ press int 32 regular {axi_slave 0}  }
 	{ attackDuration int 32 regular {axi_slave 0}  }
 	{ decayDuration int 32 regular {axi_slave 0}  }
-	{ sustainAmplitude int 32 regular {axi_slave 0}  }
-	{ sustainDuration int 32 regular {axi_slave 0}  }
+	{ sustainAmplitude float 32 regular {axi_slave 0}  }
 	{ releaseDuration int 32 regular {axi_slave 0}  }
 }
 set C_modelArgMapList {[ 
@@ -30,9 +29,8 @@ set C_modelArgMapList {[
  	{ "Name" : "press", "interface" : "axi_slave", "bundle":"CTRL_BUS","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "press","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":16}, "offset_end" : {"in":23}} , 
  	{ "Name" : "attackDuration", "interface" : "axi_slave", "bundle":"CTRL_BUS","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "attackDuration","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":24}, "offset_end" : {"in":31}} , 
  	{ "Name" : "decayDuration", "interface" : "axi_slave", "bundle":"CTRL_BUS","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "decayDuration","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":32}, "offset_end" : {"in":39}} , 
- 	{ "Name" : "sustainAmplitude", "interface" : "axi_slave", "bundle":"CTRL_BUS","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "sustainAmplitude","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":40}, "offset_end" : {"in":47}} , 
- 	{ "Name" : "sustainDuration", "interface" : "axi_slave", "bundle":"CTRL_BUS","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "sustainDuration","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":48}, "offset_end" : {"in":55}} , 
- 	{ "Name" : "releaseDuration", "interface" : "axi_slave", "bundle":"CTRL_BUS","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "releaseDuration","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":56}, "offset_end" : {"in":63}} ]}
+ 	{ "Name" : "sustainAmplitude", "interface" : "axi_slave", "bundle":"CTRL_BUS","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "sustainAmplitude","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":40}, "offset_end" : {"in":47}} , 
+ 	{ "Name" : "releaseDuration", "interface" : "axi_slave", "bundle":"CTRL_BUS","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "releaseDuration","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":48}, "offset_end" : {"in":55}} ]}
 # RTL Port declarations: 
 set portNum 25
 set portList { 
@@ -63,7 +61,7 @@ set portList {
 	{ s_axi_CTRL_BUS_BRESP sc_out sc_lv 2 signal -1 } 
 }
 set NewPortList {[ 
-	{ "name": "s_axi_CTRL_BUS_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "CTRL_BUS", "role": "AWADDR" },"address":[{"name":"press","role":"data","value":"16"},{"name":"attackDuration","role":"data","value":"24"},{"name":"decayDuration","role":"data","value":"32"},{"name":"sustainAmplitude","role":"data","value":"40"},{"name":"sustainDuration","role":"data","value":"48"},{"name":"releaseDuration","role":"data","value":"56"}] },
+	{ "name": "s_axi_CTRL_BUS_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "CTRL_BUS", "role": "AWADDR" },"address":[{"name":"press","role":"data","value":"16"},{"name":"attackDuration","role":"data","value":"24"},{"name":"decayDuration","role":"data","value":"32"},{"name":"sustainAmplitude","role":"data","value":"40"},{"name":"releaseDuration","role":"data","value":"48"}] },
 	{ "name": "s_axi_CTRL_BUS_AWVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "CTRL_BUS", "role": "AWVALID" } },
 	{ "name": "s_axi_CTRL_BUS_AWREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "CTRL_BUS", "role": "AWREADY" } },
 	{ "name": "s_axi_CTRL_BUS_WVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "CTRL_BUS", "role": "WVALID" } },
@@ -90,7 +88,7 @@ set NewPortList {[
  	{ "name": "wave_out_V_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "wave_out_V", "role": "TREADY" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5"],
 		"CDFG" : "envelope",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"Pipeline" : "None", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -109,7 +107,6 @@ set RtlHierarchyInfo {[
 			{"Name" : "attackDuration", "Type" : "None", "Direction" : "I"},
 			{"Name" : "decayDuration", "Type" : "None", "Direction" : "I"},
 			{"Name" : "sustainAmplitude", "Type" : "None", "Direction" : "I"},
-			{"Name" : "sustainDuration", "Type" : "None", "Direction" : "I"},
 			{"Name" : "releaseDuration", "Type" : "None", "Direction" : "I"},
 			{"Name" : "guard_variable_for_e_4", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "attackSlope", "Type" : "OVld", "Direction" : "IO"},
@@ -127,8 +124,7 @@ set RtlHierarchyInfo {[
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fadd_32nbkb_U1", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fmul_32ncud_U2", "Parent" : "0"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fdiv_32ndEe_U3", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U4", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U5", "Parent" : "0"}]}
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U4", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -139,7 +135,6 @@ set ArgLastReadFirstWriteLatency {
 		attackDuration {Type I LastRead 0 FirstWrite -1}
 		decayDuration {Type I LastRead 0 FirstWrite -1}
 		sustainAmplitude {Type I LastRead 0 FirstWrite -1}
-		sustainDuration {Type I LastRead 0 FirstWrite -1}
 		releaseDuration {Type I LastRead 0 FirstWrite -1}
 		guard_variable_for_e_4 {Type IO LastRead -1 FirstWrite -1}
 		attackSlope {Type IO LastRead -1 FirstWrite -1}

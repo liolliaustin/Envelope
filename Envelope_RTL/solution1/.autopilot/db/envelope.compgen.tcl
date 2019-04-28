@@ -308,21 +308,13 @@ sustainAmplitude {
 	offset 40
 	offset_end 47
 }
-sustainDuration { 
+releaseDuration { 
 	dir I
 	width 32
 	depth 1
 	mode ap_none
 	offset 48
 	offset_end 55
-}
-releaseDuration { 
-	dir I
-	width 32
-	depth 1
-	mode ap_none
-	offset 56
-	offset_end 63
 }
 }
 
@@ -331,7 +323,7 @@ releaseDuration {
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 6 \
+			id 5 \
 			corename envelope_CTRL_BUS_axilite \
 			name envelope_CTRL_BUS_s_axi \
 			ports {$port_CTRL_BUS} \
@@ -350,7 +342,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 7 \
+    id 6 \
     name wave_in_V \
     reset_level 0 \
     sync_rst true \
@@ -369,7 +361,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 8 \
+    id 7 \
     name wave_out_V \
     reset_level 0 \
     sync_rst true \

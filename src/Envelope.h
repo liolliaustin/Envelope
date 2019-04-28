@@ -13,8 +13,7 @@ void envelope(
 	int press,
 	int attackDuration,
 	int decayDuration, 
-	int sustainAmplitude, 
-	int sustainDuration,
+	float sustainAmplitude,
 	int releaseDuration
 
 );

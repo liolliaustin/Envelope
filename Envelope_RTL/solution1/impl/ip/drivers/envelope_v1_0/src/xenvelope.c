@@ -89,23 +89,6 @@ u32 XEnvelope_Get_sustainAmplitude(XEnvelope *InstancePtr) {
     return Data;
 }
 
-void XEnvelope_Set_sustainDuration(XEnvelope *InstancePtr, u32 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XEnvelope_WriteReg(InstancePtr->Ctrl_bus_BaseAddress, XENVELOPE_CTRL_BUS_ADDR_SUSTAINDURATION_DATA, Data);
-}
-
-u32 XEnvelope_Get_sustainDuration(XEnvelope *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XEnvelope_ReadReg(InstancePtr->Ctrl_bus_BaseAddress, XENVELOPE_CTRL_BUS_ADDR_SUSTAINDURATION_DATA);
-    return Data;
-}
-
 void XEnvelope_Set_releaseDuration(XEnvelope *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

@@ -37,7 +37,6 @@ module envelope_CTRL_BUS_s_axi
     output wire [31:0]                   attackDuration,
     output wire [31:0]                   decayDuration,
     output wire [31:0]                   sustainAmplitude,
-    output wire [31:0]                   sustainDuration,
     output wire [31:0]                   releaseDuration
 );
 //------------------------Address Info-------------------
@@ -57,12 +56,9 @@ module envelope_CTRL_BUS_s_axi
 // 0x28 : Data signal of sustainAmplitude
 //        bit 31~0 - sustainAmplitude[31:0] (Read/Write)
 // 0x2c : reserved
-// 0x30 : Data signal of sustainDuration
-//        bit 31~0 - sustainDuration[31:0] (Read/Write)
-// 0x34 : reserved
-// 0x38 : Data signal of releaseDuration
+// 0x30 : Data signal of releaseDuration
 //        bit 31~0 - releaseDuration[31:0] (Read/Write)
-// 0x3c : reserved
+// 0x34 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
@@ -75,10 +71,8 @@ localparam
     ADDR_DECAYDURATION_CTRL      = 6'h24,
     ADDR_SUSTAINAMPLITUDE_DATA_0 = 6'h28,
     ADDR_SUSTAINAMPLITUDE_CTRL   = 6'h2c,
-    ADDR_SUSTAINDURATION_DATA_0  = 6'h30,
-    ADDR_SUSTAINDURATION_CTRL    = 6'h34,
-    ADDR_RELEASEDURATION_DATA_0  = 6'h38,
-    ADDR_RELEASEDURATION_CTRL    = 6'h3c,
+    ADDR_RELEASEDURATION_DATA_0  = 6'h30,
+    ADDR_RELEASEDURATION_CTRL    = 6'h34,
     WRIDLE                       = 2'd0,
     WRDATA                       = 2'd1,
     WRRESP                       = 2'd2,
@@ -105,7 +99,6 @@ localparam
     reg  [31:0]                   int_attackDuration = 'b0;
     reg  [31:0]                   int_decayDuration = 'b0;
     reg  [31:0]                   int_sustainAmplitude = 'b0;
-    reg  [31:0]                   int_sustainDuration = 'b0;
     reg  [31:0]                   int_releaseDuration = 'b0;
 
 //------------------------Instantiation------------------
@@ -210,9 +203,6 @@ always @(posedge ACLK) begin
                 ADDR_SUSTAINAMPLITUDE_DATA_0: begin
                     rdata <= int_sustainAmplitude[31:0];
                 end
-                ADDR_SUSTAINDURATION_DATA_0: begin
-                    rdata <= int_sustainDuration[31:0];
-                end
                 ADDR_RELEASEDURATION_DATA_0: begin
                     rdata <= int_releaseDuration[31:0];
                 end
@@ -227,7 +217,6 @@ assign press            = int_press;
 assign attackDuration   = int_attackDuration;
 assign decayDuration    = int_decayDuration;
 assign sustainAmplitude = int_sustainAmplitude;
-assign sustainDuration  = int_sustainDuration;
 assign releaseDuration  = int_releaseDuration;
 // int_press[31:0]
 always @(posedge ACLK) begin
@@ -266,16 +255,6 @@ always @(posedge ACLK) begin
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_SUSTAINAMPLITUDE_DATA_0)
             int_sustainAmplitude[31:0] <= (WDATA[31:0] & wmask) | (int_sustainAmplitude[31:0] & ~wmask);
-    end
-end
-
-// int_sustainDuration[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_sustainDuration[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_SUSTAINDURATION_DATA_0)
-            int_sustainDuration[31:0] <= (WDATA[31:0] & wmask) | (int_sustainDuration[31:0] & ~wmask);
     end
 end
 

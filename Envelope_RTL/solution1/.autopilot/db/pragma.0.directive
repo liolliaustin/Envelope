@@ -56,13 +56,6 @@
 <directive functionLabel="" functionName="envelope" label="">
 <pragma name="INTERFACE">
 <option name="s_axilite" positionalBoolean="mode" value=""/>
-<option name="port" positionalBoolean="4" value="sustainDuration"/>
-<option name="bundle" value="CTRL_BUS"/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="envelope" label="">
-<pragma name="INTERFACE">
-<option name="s_axilite" positionalBoolean="mode" value=""/>
 <option name="port" positionalBoolean="4" value="releaseDuration"/>
 <option name="bundle" value="CTRL_BUS"/>
 </pragma>

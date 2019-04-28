@@ -40,7 +40,6 @@ port (
     attackDuration        :out  STD_LOGIC_VECTOR(31 downto 0);
     decayDuration         :out  STD_LOGIC_VECTOR(31 downto 0);
     sustainAmplitude      :out  STD_LOGIC_VECTOR(31 downto 0);
-    sustainDuration       :out  STD_LOGIC_VECTOR(31 downto 0);
     releaseDuration       :out  STD_LOGIC_VECTOR(31 downto 0)
 );
 end entity envelope_CTRL_BUS_s_axi;
@@ -62,12 +61,9 @@ end entity envelope_CTRL_BUS_s_axi;
 -- 0x28 : Data signal of sustainAmplitude
 --        bit 31~0 - sustainAmplitude[31:0] (Read/Write)
 -- 0x2c : reserved
--- 0x30 : Data signal of sustainDuration
---        bit 31~0 - sustainDuration[31:0] (Read/Write)
--- 0x34 : reserved
--- 0x38 : Data signal of releaseDuration
+-- 0x30 : Data signal of releaseDuration
 --        bit 31~0 - releaseDuration[31:0] (Read/Write)
--- 0x3c : reserved
+-- 0x34 : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of envelope_CTRL_BUS_s_axi is
@@ -83,10 +79,8 @@ architecture behave of envelope_CTRL_BUS_s_axi is
     constant ADDR_DECAYDURATION_CTRL      : INTEGER := 16#24#;
     constant ADDR_SUSTAINAMPLITUDE_DATA_0 : INTEGER := 16#28#;
     constant ADDR_SUSTAINAMPLITUDE_CTRL   : INTEGER := 16#2c#;
-    constant ADDR_SUSTAINDURATION_DATA_0  : INTEGER := 16#30#;
-    constant ADDR_SUSTAINDURATION_CTRL    : INTEGER := 16#34#;
-    constant ADDR_RELEASEDURATION_DATA_0  : INTEGER := 16#38#;
-    constant ADDR_RELEASEDURATION_CTRL    : INTEGER := 16#3c#;
+    constant ADDR_RELEASEDURATION_DATA_0  : INTEGER := 16#30#;
+    constant ADDR_RELEASEDURATION_CTRL    : INTEGER := 16#34#;
     constant ADDR_BITS         : INTEGER := 6;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
@@ -105,7 +99,6 @@ architecture behave of envelope_CTRL_BUS_s_axi is
     signal int_attackDuration  : UNSIGNED(31 downto 0) := (others => '0');
     signal int_decayDuration   : UNSIGNED(31 downto 0) := (others => '0');
     signal int_sustainAmplitude : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_sustainDuration : UNSIGNED(31 downto 0) := (others => '0');
     signal int_releaseDuration : UNSIGNED(31 downto 0) := (others => '0');
 
 
@@ -228,8 +221,6 @@ begin
                         rdata_data <= RESIZE(int_decayDuration(31 downto 0), 32);
                     when ADDR_SUSTAINAMPLITUDE_DATA_0 =>
                         rdata_data <= RESIZE(int_sustainAmplitude(31 downto 0), 32);
-                    when ADDR_SUSTAINDURATION_DATA_0 =>
-                        rdata_data <= RESIZE(int_sustainDuration(31 downto 0), 32);
                     when ADDR_RELEASEDURATION_DATA_0 =>
                         rdata_data <= RESIZE(int_releaseDuration(31 downto 0), 32);
                     when others =>
@@ -245,7 +236,6 @@ begin
     attackDuration       <= STD_LOGIC_VECTOR(int_attackDuration);
     decayDuration        <= STD_LOGIC_VECTOR(int_decayDuration);
     sustainAmplitude     <= STD_LOGIC_VECTOR(int_sustainAmplitude);
-    sustainDuration      <= STD_LOGIC_VECTOR(int_sustainDuration);
     releaseDuration      <= STD_LOGIC_VECTOR(int_releaseDuration);
 
     process (ACLK)
@@ -287,17 +277,6 @@ begin
             if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_SUSTAINAMPLITUDE_DATA_0) then
                     int_sustainAmplitude(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_sustainAmplitude(31 downto 0));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_SUSTAINDURATION_DATA_0) then
-                    int_sustainDuration(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_sustainDuration(31 downto 0));
                 end if;
             end if;
         end if;

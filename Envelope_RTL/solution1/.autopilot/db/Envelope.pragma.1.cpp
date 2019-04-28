@@ -6176,8 +6176,7 @@ void envelope(
  int press,
  int attackDuration,
  int decayDuration,
- int sustainAmplitude,
- int sustainDuration,
+ float sustainAmplitude,
  int releaseDuration
 
 );
@@ -6191,8 +6190,7 @@ void envelope(
  int press,
  int attackDuration,
  int decayDuration,
- int sustainAmplitude,
- int sustainDuration,
+ float sustainAmplitude,
  int releaseDuration
 
 ){
@@ -6207,34 +6205,31 @@ _ssdm_op_SpecInterface(press, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0
 _ssdm_op_SpecInterface(attackDuration, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(decayDuration, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(sustainAmplitude, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(sustainDuration, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(releaseDuration, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
 
  static int time = 0;
  static float attackSlope = (float)2/attackDuration;
  static float decaySlope = (float)(sustainAmplitude - 2)/(decayDuration - attackDuration);
- static float releaseSlope=(float)(0-sustainAmplitude)/(releaseDuration - sustainDuration);
+ static float releaseSlope=(float)(0-sustainAmplitude)/(releaseDuration - decayDuration);
 
  float resultAmplitude;
 
  static int releaseTime = releaseDuration;
- static int sustainTime = sustainDuration;
+ static int sustainTime = decayDuration+1;
  static int wait = 0;
 
  wave_in >> resultAmplitude;
 
- if(press)
+ if(press){
   wait = 0;
- else if(!press && time < sustainTime)
-  time = sustainTime;
-
- if(press >= 1 && time == sustainTime - 1){
   sustainTime += 1;
   releaseTime += 1;
  }
 
  if(wait){
   time = 0;
+  releaseTime = releaseDuration;
+  sustainTime = decayDuration+1;
  }
 
  if(time < attackDuration){

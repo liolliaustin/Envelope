@@ -455,33 +455,10 @@ format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type im
           </spirit:field>
         </spirit:register>
         <spirit:register>
-          <spirit:name>sustainDuration</spirit:name>
-          <spirit:displayName>sustainDuration</spirit:displayName>
-          <spirit:description>Data signal of sustainDuration</spirit:description>
-          <spirit:addressOffset>48</spirit:addressOffset>
-          <spirit:size spirit:format="long">32</spirit:size>
-          <spirit:access>write-only</spirit:access>
-          <spirit:reset>
-            <spirit:value spirit:format="long">0</spirit:value>
-          </spirit:reset>
-          <spirit:field>
-            <spirit:name>sustainDuration</spirit:name>
-            <spirit:description>Bit 31 to 0 Data signal of sustainDuration</spirit:description>
-            <spirit:bitOffset>0</spirit:bitOffset>
-            <spirit:bitWidth spirit:format="long">32</spirit:bitWidth>
-            <spirit:access>write-only</spirit:access>
-            <spirit:writeValueConstraint>
-              <spirit:minimum>0</spirit:minimum>
-              <spirit:maximum>0</spirit:maximum>
-            </spirit:writeValueConstraint>
-            <spirit:testable spirit:testConstraint="unconstrained">false</spirit:testable>
-          </spirit:field>
-        </spirit:register>
-        <spirit:register>
           <spirit:name>releaseDuration</spirit:name>
           <spirit:displayName>releaseDuration</spirit:displayName>
           <spirit:description>Data signal of releaseDuration</spirit:description>
-          <spirit:addressOffset>56</spirit:addressOffset>
+          <spirit:addressOffset>48</spirit:addressOffset>
           <spirit:size spirit:format="long">32</spirit:size>
           <spirit:access>write-only</spirit:access>
           <spirit:reset>
@@ -1148,7 +1125,7 @@ format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type im
       <spirit:file>
         <spirit:name>hdl/vhdl/envelope_CTRL_BUS_s_axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_394f43c8</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_6d89a245</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1335,8 +1312,8 @@ format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type im
       </xilinx:taxonomies>
       <xilinx:displayName>Envelope</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1904281037</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-04-28T14:37:55Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1904281052</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-04-28T14:52:42Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>

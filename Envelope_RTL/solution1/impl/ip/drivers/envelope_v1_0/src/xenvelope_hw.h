@@ -22,12 +22,9 @@
 // 0x28 : Data signal of sustainAmplitude
 //        bit 31~0 - sustainAmplitude[31:0] (Read/Write)
 // 0x2c : reserved
-// 0x30 : Data signal of sustainDuration
-//        bit 31~0 - sustainDuration[31:0] (Read/Write)
-// 0x34 : reserved
-// 0x38 : Data signal of releaseDuration
+// 0x30 : Data signal of releaseDuration
 //        bit 31~0 - releaseDuration[31:0] (Read/Write)
-// 0x3c : reserved
+// 0x34 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 #define XENVELOPE_CTRL_BUS_ADDR_PRESS_DATA            0x10
@@ -38,8 +35,6 @@
 #define XENVELOPE_CTRL_BUS_BITS_DECAYDURATION_DATA    32
 #define XENVELOPE_CTRL_BUS_ADDR_SUSTAINAMPLITUDE_DATA 0x28
 #define XENVELOPE_CTRL_BUS_BITS_SUSTAINAMPLITUDE_DATA 32
-#define XENVELOPE_CTRL_BUS_ADDR_SUSTAINDURATION_DATA  0x30
-#define XENVELOPE_CTRL_BUS_BITS_SUSTAINDURATION_DATA  32
-#define XENVELOPE_CTRL_BUS_ADDR_RELEASEDURATION_DATA  0x38
+#define XENVELOPE_CTRL_BUS_ADDR_RELEASEDURATION_DATA  0x30
 #define XENVELOPE_CTRL_BUS_BITS_RELEASEDURATION_DATA  32
 

@@ -89,8 +89,6 @@ void XEnvelope_Set_decayDuration(XEnvelope *InstancePtr, u32 Data);
 u32 XEnvelope_Get_decayDuration(XEnvelope *InstancePtr);
 void XEnvelope_Set_sustainAmplitude(XEnvelope *InstancePtr, u32 Data);
 u32 XEnvelope_Get_sustainAmplitude(XEnvelope *InstancePtr);
-void XEnvelope_Set_sustainDuration(XEnvelope *InstancePtr, u32 Data);
-u32 XEnvelope_Get_sustainDuration(XEnvelope *InstancePtr);
 void XEnvelope_Set_releaseDuration(XEnvelope *InstancePtr, u32 Data);
 u32 XEnvelope_Get_releaseDuration(XEnvelope *InstancePtr);
 

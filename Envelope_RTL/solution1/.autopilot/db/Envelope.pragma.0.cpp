@@ -6176,8 +6176,7 @@ void envelope(
  int press,
  int attackDuration,
  int decayDuration,
- int sustainAmplitude,
- int sustainDuration,
+ float sustainAmplitude,
  int releaseDuration
 
 );
@@ -6191,8 +6190,7 @@ void envelope(
  int press,
  int attackDuration,
  int decayDuration,
- int sustainAmplitude,
- int sustainDuration,
+ float sustainAmplitude,
  int releaseDuration
 
 ){
@@ -6207,34 +6205,31 @@ void envelope(
 #pragma HLS INTERFACE s_axilite port=attackDuration bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=decayDuration bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=sustainAmplitude bundle=CTRL_BUS
-#pragma HLS INTERFACE s_axilite port=sustainDuration bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=releaseDuration bundle=CTRL_BUS
 
  static int time = 0;
  static float attackSlope = (float)2/attackDuration;
  static float decaySlope = (float)(sustainAmplitude - 2)/(decayDuration - attackDuration);
- static float releaseSlope=(float)(0-sustainAmplitude)/(releaseDuration - sustainDuration);
+ static float releaseSlope=(float)(0-sustainAmplitude)/(releaseDuration - decayDuration);
 
  float resultAmplitude;
 
  static int releaseTime = releaseDuration;
- static int sustainTime = sustainDuration;
+ static int sustainTime = decayDuration+1;
  static int wait = 0;
 
  wave_in >> resultAmplitude;
 
- if(press)
+ if(press){
   wait = 0;
- else if(!press && time < sustainTime)
-  time = sustainTime;
-
- if(press >= 1 && time == sustainTime - 1){
   sustainTime += 1;
   releaseTime += 1;
  }
 
  if(wait){
   time = 0;
+  releaseTime = releaseDuration;
+  sustainTime = decayDuration+1;
  }
 
  if(time < attackDuration){
