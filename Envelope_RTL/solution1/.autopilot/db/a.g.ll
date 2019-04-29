@@ -36,7 +36,7 @@ define void @_Z8envelopeRN3hls6streamIfEES2_iiifi(%"class.hls::stream"* %wave_in
   %3 = alloca i32, align 4                        ; [#uses=3 type=i32*]
   %4 = alloca i32, align 4                        ; [#uses=6 type=i32*]
   %5 = alloca i32, align 4                        ; [#uses=7 type=i32*]
-  %6 = alloca float, align 4                      ; [#uses=6 type=float*]
+  %6 = alloca float, align 4                      ; [#uses=8 type=float*]
   %7 = alloca i32, align 4                        ; [#uses=5 type=i32*]
   %resultAmplitude = alloca float, align 4        ; [#uses=11 type=float*]
   store %"class.hls::stream"* %wave_in, %"class.hls::stream"** %1, align 8
@@ -77,7 +77,7 @@ define void @_Z8envelopeRN3hls6streamIfEES2_iiifi(%"class.hls::stream"* %wave_in
 ; <label>:18                                      ; preds = %0
   %19 = load i32* %4, align 4, !dbg !136          ; [#uses=1 type=i32] [debug line = 33:52]
   %20 = sitofp i32 %19 to float, !dbg !136        ; [#uses=1 type=float] [debug line = 33:52]
-  %21 = fdiv float 2.000000e+00, %20, !dbg !136   ; [#uses=1 type=float] [debug line = 33:52]
+  %21 = fdiv float 1.000000e+00, %20, !dbg !136   ; [#uses=1 type=float] [debug line = 33:52]
   store float %21, float* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11attackSlope, align 4, !dbg !136 ; [debug line = 33:52]
   store i8 1, i8* @_ZGVZ8envelopeRN3hls6streamIfEES2_iiifiE11attackSlope, !dbg !136 ; [debug line = 33:52]
   br label %22, !dbg !136                         ; [debug line = 33:52]
@@ -89,7 +89,7 @@ define void @_Z8envelopeRN3hls6streamIfEES2_iiifi(%"class.hls::stream"* %wave_in
 
 ; <label>:25                                      ; preds = %22
   %26 = load float* %6, align 4, !dbg !137        ; [#uses=1 type=float] [debug line = 34:90]
-  %27 = fsub float %26, 2.000000e+00, !dbg !137   ; [#uses=1 type=float] [debug line = 34:90]
+  %27 = fsub float %26, 1.000000e+00, !dbg !137   ; [#uses=1 type=float] [debug line = 34:90]
   %28 = load i32* %5, align 4, !dbg !137          ; [#uses=1 type=i32] [debug line = 34:90]
   %29 = load i32* %4, align 4, !dbg !137          ; [#uses=1 type=i32] [debug line = 34:90]
   %30 = sub nsw i32 %28, %29, !dbg !137           ; [#uses=1 type=i32] [debug line = 34:90]
@@ -118,148 +118,158 @@ define void @_Z8envelopeRN3hls6streamIfEES2_iiifi(%"class.hls::stream"* %wave_in
 
 ; <label>:44                                      ; preds = %36, %33
   call void @llvm.dbg.declare(metadata !{float* %resultAmplitude}, metadata !139), !dbg !140 ; [debug line = 37:8] [debug variable = resultAmplitude]
-  %45 = load i8* @_ZGVZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, align 1, !dbg !141 ; [#uses=1 type=i8] [debug line = 39:42]
-  %46 = icmp eq i8 %45, 0, !dbg !141              ; [#uses=1 type=i1] [debug line = 39:42]
-  br i1 %46, label %47, label %49, !dbg !141      ; [debug line = 39:42]
+  %45 = load float* %6, align 4, !dbg !141        ; [#uses=1 type=float] [debug line = 39:2]
+  %46 = fpext float %45 to double, !dbg !141      ; [#uses=1 type=double] [debug line = 39:2]
+  %47 = fcmp ogt double %46, 1.000000e+00, !dbg !141 ; [#uses=1 type=i1] [debug line = 39:2]
+  br i1 %47, label %48, label %49, !dbg !141      ; [debug line = 39:2]
 
-; <label>:47                                      ; preds = %44
-  %48 = load i32* %7, align 4, !dbg !141          ; [#uses=1 type=i32] [debug line = 39:42]
-  store i32 %48, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, align 4, !dbg !141 ; [debug line = 39:42]
-  store i8 1, i8* @_ZGVZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, !dbg !141 ; [debug line = 39:42]
-  br label %49, !dbg !141                         ; [debug line = 39:42]
+; <label>:48                                      ; preds = %44
+  store float 1.000000e+00, float* %6, align 4, !dbg !142 ; [debug line = 40:3]
+  br label %49, !dbg !142                         ; [debug line = 40:3]
 
-; <label>:49                                      ; preds = %47, %44
-  %50 = load i8* @_ZGVZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 1, !dbg !142 ; [#uses=1 type=i8] [debug line = 40:42]
-  %51 = icmp eq i8 %50, 0, !dbg !142              ; [#uses=1 type=i1] [debug line = 40:42]
-  br i1 %51, label %52, label %55, !dbg !142      ; [debug line = 40:42]
+; <label>:49                                      ; preds = %48, %44
+  %50 = load i8* @_ZGVZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, align 1, !dbg !143 ; [#uses=1 type=i8] [debug line = 42:42]
+  %51 = icmp eq i8 %50, 0, !dbg !143              ; [#uses=1 type=i1] [debug line = 42:42]
+  br i1 %51, label %52, label %54, !dbg !143      ; [debug line = 42:42]
 
 ; <label>:52                                      ; preds = %49
-  %53 = load i32* %5, align 4, !dbg !142          ; [#uses=1 type=i32] [debug line = 40:42]
-  %54 = add nsw i32 %53, 1, !dbg !142             ; [#uses=1 type=i32] [debug line = 40:42]
-  store i32 %54, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 4, !dbg !142 ; [debug line = 40:42]
-  store i8 1, i8* @_ZGVZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, !dbg !142 ; [debug line = 40:42]
-  br label %55, !dbg !142                         ; [debug line = 40:42]
+  %53 = load i32* %7, align 4, !dbg !143          ; [#uses=1 type=i32] [debug line = 42:42]
+  store i32 %53, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, align 4, !dbg !143 ; [debug line = 42:42]
+  store i8 1, i8* @_ZGVZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, !dbg !143 ; [debug line = 42:42]
+  br label %54, !dbg !143                         ; [debug line = 42:42]
 
-; <label>:55                                      ; preds = %52, %49
-  %56 = load %"class.hls::stream"** %1, align 8, !dbg !143 ; [#uses=1 type=%"class.hls::stream"*] [debug line = 43:2]
-  call void @_ZN3hls6streamIfErsERf(%"class.hls::stream"* %56, float* %resultAmplitude), !dbg !143 ; [debug line = 43:2]
-  %57 = load i32* %3, align 4, !dbg !144          ; [#uses=1 type=i32] [debug line = 45:2]
-  %58 = icmp ne i32 %57, 0, !dbg !144             ; [#uses=1 type=i1] [debug line = 45:2]
-  br i1 %58, label %59, label %64, !dbg !144      ; [debug line = 45:2]
+; <label>:54                                      ; preds = %52, %49
+  %55 = load i8* @_ZGVZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 1, !dbg !144 ; [#uses=1 type=i8] [debug line = 43:42]
+  %56 = icmp eq i8 %55, 0, !dbg !144              ; [#uses=1 type=i1] [debug line = 43:42]
+  br i1 %56, label %57, label %60, !dbg !144      ; [debug line = 43:42]
 
-; <label>:59                                      ; preds = %55
-  store i32 0, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4wait, align 4, !dbg !145 ; [debug line = 46:3]
-  %60 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 4, !dbg !147 ; [#uses=1 type=i32] [debug line = 47:3]
-  %61 = add nsw i32 %60, 1, !dbg !147             ; [#uses=1 type=i32] [debug line = 47:3]
-  store i32 %61, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 4, !dbg !147 ; [debug line = 47:3]
-  %62 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, align 4, !dbg !148 ; [#uses=1 type=i32] [debug line = 48:3]
-  %63 = add nsw i32 %62, 1, !dbg !148             ; [#uses=1 type=i32] [debug line = 48:3]
-  store i32 %63, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, align 4, !dbg !148 ; [debug line = 48:3]
-  br label %64, !dbg !149                         ; [debug line = 49:2]
+; <label>:57                                      ; preds = %54
+  %58 = load i32* %5, align 4, !dbg !144          ; [#uses=1 type=i32] [debug line = 43:42]
+  %59 = add nsw i32 %58, 1, !dbg !144             ; [#uses=1 type=i32] [debug line = 43:42]
+  store i32 %59, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 4, !dbg !144 ; [debug line = 43:42]
+  store i8 1, i8* @_ZGVZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, !dbg !144 ; [debug line = 43:42]
+  br label %60, !dbg !144                         ; [debug line = 43:42]
 
-; <label>:64                                      ; preds = %59, %55
-  %65 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4wait, align 4, !dbg !150 ; [#uses=1 type=i32] [debug line = 51:2]
-  %66 = icmp ne i32 %65, 0, !dbg !150             ; [#uses=1 type=i1] [debug line = 51:2]
-  br i1 %66, label %67, label %71, !dbg !150      ; [debug line = 51:2]
+; <label>:60                                      ; preds = %57, %54
+  %61 = load %"class.hls::stream"** %1, align 8, !dbg !145 ; [#uses=1 type=%"class.hls::stream"*] [debug line = 46:2]
+  call void @_ZN3hls6streamIfErsERf(%"class.hls::stream"* %61, float* %resultAmplitude), !dbg !145 ; [debug line = 46:2]
+  %62 = load i32* %3, align 4, !dbg !146          ; [#uses=1 type=i32] [debug line = 48:2]
+  %63 = icmp ne i32 %62, 0, !dbg !146             ; [#uses=1 type=i1] [debug line = 48:2]
+  br i1 %63, label %64, label %69, !dbg !146      ; [debug line = 48:2]
 
-; <label>:67                                      ; preds = %64
-  store i32 0, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !151 ; [debug line = 52:3]
-  %68 = load i32* %7, align 4, !dbg !153          ; [#uses=1 type=i32] [debug line = 53:3]
-  store i32 %68, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, align 4, !dbg !153 ; [debug line = 53:3]
-  %69 = load i32* %5, align 4, !dbg !154          ; [#uses=1 type=i32] [debug line = 54:3]
-  %70 = add nsw i32 %69, 1, !dbg !154             ; [#uses=1 type=i32] [debug line = 54:3]
-  store i32 %70, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 4, !dbg !154 ; [debug line = 54:3]
-  br label %71, !dbg !155                         ; [debug line = 55:2]
+; <label>:64                                      ; preds = %60
+  store i32 0, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4wait, align 4, !dbg !147 ; [debug line = 49:3]
+  %65 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 4, !dbg !149 ; [#uses=1 type=i32] [debug line = 50:3]
+  %66 = add nsw i32 %65, 1, !dbg !149             ; [#uses=1 type=i32] [debug line = 50:3]
+  store i32 %66, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 4, !dbg !149 ; [debug line = 50:3]
+  %67 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, align 4, !dbg !150 ; [#uses=1 type=i32] [debug line = 51:3]
+  %68 = add nsw i32 %67, 1, !dbg !150             ; [#uses=1 type=i32] [debug line = 51:3]
+  store i32 %68, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, align 4, !dbg !150 ; [debug line = 51:3]
+  br label %69, !dbg !151                         ; [debug line = 52:2]
 
-; <label>:71                                      ; preds = %67, %64
-  %72 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !156 ; [#uses=1 type=i32] [debug line = 57:2]
-  %73 = load i32* %4, align 4, !dbg !156          ; [#uses=1 type=i32] [debug line = 57:2]
-  %74 = icmp slt i32 %72, %73, !dbg !156          ; [#uses=1 type=i1] [debug line = 57:2]
-  br i1 %74, label %75, label %82, !dbg !156      ; [debug line = 57:2]
+; <label>:69                                      ; preds = %64, %60
+  %70 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4wait, align 4, !dbg !152 ; [#uses=1 type=i32] [debug line = 54:2]
+  %71 = icmp ne i32 %70, 0, !dbg !152             ; [#uses=1 type=i1] [debug line = 54:2]
+  br i1 %71, label %72, label %76, !dbg !152      ; [debug line = 54:2]
 
-; <label>:75                                      ; preds = %71
-  %76 = load float* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11attackSlope, align 4, !dbg !157 ; [#uses=1 type=float] [debug line = 58:3]
-  %77 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !157 ; [#uses=1 type=i32] [debug line = 58:3]
-  %78 = sitofp i32 %77 to float, !dbg !157        ; [#uses=1 type=float] [debug line = 58:3]
-  %79 = fmul float %76, %78, !dbg !157            ; [#uses=1 type=float] [debug line = 58:3]
-  %80 = load float* %resultAmplitude, align 4, !dbg !157 ; [#uses=1 type=float] [debug line = 58:3]
-  %81 = fmul float %80, %79, !dbg !157            ; [#uses=1 type=float] [debug line = 58:3]
-  store float %81, float* %resultAmplitude, align 4, !dbg !157 ; [debug line = 58:3]
-  br label %123, !dbg !159                        ; [debug line = 59:2]
+; <label>:72                                      ; preds = %69
+  store i32 0, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !153 ; [debug line = 55:3]
+  %73 = load i32* %7, align 4, !dbg !155          ; [#uses=1 type=i32] [debug line = 56:3]
+  store i32 %73, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, align 4, !dbg !155 ; [debug line = 56:3]
+  %74 = load i32* %5, align 4, !dbg !156          ; [#uses=1 type=i32] [debug line = 57:3]
+  %75 = add nsw i32 %74, 1, !dbg !156             ; [#uses=1 type=i32] [debug line = 57:3]
+  store i32 %75, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 4, !dbg !156 ; [debug line = 57:3]
+  br label %76, !dbg !157                         ; [debug line = 58:2]
 
-; <label>:82                                      ; preds = %71
-  %83 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !160 ; [#uses=1 type=i32] [debug line = 61:7]
-  %84 = load i32* %5, align 4, !dbg !160          ; [#uses=1 type=i32] [debug line = 61:7]
-  %85 = icmp slt i32 %83, %84, !dbg !160          ; [#uses=1 type=i1] [debug line = 61:7]
-  br i1 %85, label %86, label %96, !dbg !160      ; [debug line = 61:7]
+; <label>:76                                      ; preds = %72, %69
+  %77 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !158 ; [#uses=1 type=i32] [debug line = 60:2]
+  %78 = load i32* %4, align 4, !dbg !158          ; [#uses=1 type=i32] [debug line = 60:2]
+  %79 = icmp slt i32 %77, %78, !dbg !158          ; [#uses=1 type=i1] [debug line = 60:2]
+  br i1 %79, label %80, label %87, !dbg !158      ; [debug line = 60:2]
 
-; <label>:86                                      ; preds = %82
-  %87 = load float* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE10decaySlope, align 4, !dbg !161 ; [#uses=1 type=float] [debug line = 62:3]
-  %88 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !161 ; [#uses=1 type=i32] [debug line = 62:3]
-  %89 = load i32* %4, align 4, !dbg !161          ; [#uses=1 type=i32] [debug line = 62:3]
-  %90 = sub nsw i32 %88, %89, !dbg !161           ; [#uses=1 type=i32] [debug line = 62:3]
-  %91 = sitofp i32 %90 to float, !dbg !161        ; [#uses=1 type=float] [debug line = 62:3]
-  %92 = fmul float %87, %91, !dbg !161            ; [#uses=1 type=float] [debug line = 62:3]
-  %93 = fadd float %92, 2.000000e+00, !dbg !161   ; [#uses=1 type=float] [debug line = 62:3]
-  %94 = load float* %resultAmplitude, align 4, !dbg !161 ; [#uses=1 type=float] [debug line = 62:3]
-  %95 = fmul float %94, %93, !dbg !161            ; [#uses=1 type=float] [debug line = 62:3]
-  store float %95, float* %resultAmplitude, align 4, !dbg !161 ; [debug line = 62:3]
-  br label %122, !dbg !163                        ; [debug line = 63:2]
+; <label>:80                                      ; preds = %76
+  %81 = load float* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11attackSlope, align 4, !dbg !159 ; [#uses=1 type=float] [debug line = 61:3]
+  %82 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !159 ; [#uses=1 type=i32] [debug line = 61:3]
+  %83 = sitofp i32 %82 to float, !dbg !159        ; [#uses=1 type=float] [debug line = 61:3]
+  %84 = fmul float %81, %83, !dbg !159            ; [#uses=1 type=float] [debug line = 61:3]
+  %85 = load float* %resultAmplitude, align 4, !dbg !159 ; [#uses=1 type=float] [debug line = 61:3]
+  %86 = fmul float %85, %84, !dbg !159            ; [#uses=1 type=float] [debug line = 61:3]
+  store float %86, float* %resultAmplitude, align 4, !dbg !159 ; [debug line = 61:3]
+  br label %128, !dbg !161                        ; [debug line = 62:2]
 
-; <label>:96                                      ; preds = %82
-  %97 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !164 ; [#uses=1 type=i32] [debug line = 65:7]
-  %98 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 4, !dbg !164 ; [#uses=1 type=i32] [debug line = 65:7]
-  %99 = icmp slt i32 %97, %98, !dbg !164          ; [#uses=1 type=i1] [debug line = 65:7]
-  br i1 %99, label %100, label %104, !dbg !164    ; [debug line = 65:7]
+; <label>:87                                      ; preds = %76
+  %88 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !162 ; [#uses=1 type=i32] [debug line = 64:7]
+  %89 = load i32* %5, align 4, !dbg !162          ; [#uses=1 type=i32] [debug line = 64:7]
+  %90 = icmp slt i32 %88, %89, !dbg !162          ; [#uses=1 type=i1] [debug line = 64:7]
+  br i1 %90, label %91, label %101, !dbg !162     ; [debug line = 64:7]
 
-; <label>:100                                     ; preds = %96
-  %101 = load float* %6, align 4, !dbg !165       ; [#uses=1 type=float] [debug line = 66:3]
-  %102 = load float* %resultAmplitude, align 4, !dbg !165 ; [#uses=1 type=float] [debug line = 66:3]
-  %103 = fmul float %102, %101, !dbg !165         ; [#uses=1 type=float] [debug line = 66:3]
-  store float %103, float* %resultAmplitude, align 4, !dbg !165 ; [debug line = 66:3]
-  br label %121, !dbg !167                        ; [debug line = 67:2]
+; <label>:91                                      ; preds = %87
+  %92 = load float* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE10decaySlope, align 4, !dbg !163 ; [#uses=1 type=float] [debug line = 65:3]
+  %93 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !163 ; [#uses=1 type=i32] [debug line = 65:3]
+  %94 = load i32* %4, align 4, !dbg !163          ; [#uses=1 type=i32] [debug line = 65:3]
+  %95 = sub nsw i32 %93, %94, !dbg !163           ; [#uses=1 type=i32] [debug line = 65:3]
+  %96 = sitofp i32 %95 to float, !dbg !163        ; [#uses=1 type=float] [debug line = 65:3]
+  %97 = fmul float %92, %96, !dbg !163            ; [#uses=1 type=float] [debug line = 65:3]
+  %98 = fadd float %97, 1.000000e+00, !dbg !163   ; [#uses=1 type=float] [debug line = 65:3]
+  %99 = load float* %resultAmplitude, align 4, !dbg !163 ; [#uses=1 type=float] [debug line = 65:3]
+  %100 = fmul float %99, %98, !dbg !163           ; [#uses=1 type=float] [debug line = 65:3]
+  store float %100, float* %resultAmplitude, align 4, !dbg !163 ; [debug line = 65:3]
+  br label %127, !dbg !165                        ; [debug line = 66:2]
 
-; <label>:104                                     ; preds = %96
-  %105 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !168 ; [#uses=1 type=i32] [debug line = 69:7]
-  %106 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, align 4, !dbg !168 ; [#uses=1 type=i32] [debug line = 69:7]
-  %107 = icmp slt i32 %105, %106, !dbg !168       ; [#uses=1 type=i1] [debug line = 69:7]
-  br i1 %107, label %108, label %119, !dbg !168   ; [debug line = 69:7]
+; <label>:101                                     ; preds = %87
+  %102 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !166 ; [#uses=1 type=i32] [debug line = 68:7]
+  %103 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 4, !dbg !166 ; [#uses=1 type=i32] [debug line = 68:7]
+  %104 = icmp slt i32 %102, %103, !dbg !166       ; [#uses=1 type=i1] [debug line = 68:7]
+  br i1 %104, label %105, label %109, !dbg !166   ; [debug line = 68:7]
 
-; <label>:108                                     ; preds = %104
-  %109 = load float* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE12releaseSlope, align 4, !dbg !169 ; [#uses=1 type=float] [debug line = 70:3]
-  %110 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !169 ; [#uses=1 type=i32] [debug line = 70:3]
-  %111 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 4, !dbg !169 ; [#uses=1 type=i32] [debug line = 70:3]
-  %112 = sub nsw i32 %110, %111, !dbg !169        ; [#uses=1 type=i32] [debug line = 70:3]
-  %113 = sitofp i32 %112 to float, !dbg !169      ; [#uses=1 type=float] [debug line = 70:3]
-  %114 = fmul float %109, %113, !dbg !169         ; [#uses=1 type=float] [debug line = 70:3]
-  %115 = load float* %6, align 4, !dbg !169       ; [#uses=1 type=float] [debug line = 70:3]
-  %116 = fadd float %114, %115, !dbg !169         ; [#uses=1 type=float] [debug line = 70:3]
-  %117 = load float* %resultAmplitude, align 4, !dbg !169 ; [#uses=1 type=float] [debug line = 70:3]
-  %118 = fmul float %117, %116, !dbg !169         ; [#uses=1 type=float] [debug line = 70:3]
-  store float %118, float* %resultAmplitude, align 4, !dbg !169 ; [debug line = 70:3]
-  br label %120, !dbg !171                        ; [debug line = 71:2]
+; <label>:105                                     ; preds = %101
+  %106 = load float* %6, align 4, !dbg !167       ; [#uses=1 type=float] [debug line = 69:3]
+  %107 = load float* %resultAmplitude, align 4, !dbg !167 ; [#uses=1 type=float] [debug line = 69:3]
+  %108 = fmul float %107, %106, !dbg !167         ; [#uses=1 type=float] [debug line = 69:3]
+  store float %108, float* %resultAmplitude, align 4, !dbg !167 ; [debug line = 69:3]
+  br label %126, !dbg !169                        ; [debug line = 70:2]
 
-; <label>:119                                     ; preds = %104
-  store float 0.000000e+00, float* %resultAmplitude, align 4, !dbg !172 ; [debug line = 74:3]
-  store i32 1, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4wait, align 4, !dbg !174 ; [debug line = 75:3]
-  br label %120
+; <label>:109                                     ; preds = %101
+  %110 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !170 ; [#uses=1 type=i32] [debug line = 72:7]
+  %111 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime, align 4, !dbg !170 ; [#uses=1 type=i32] [debug line = 72:7]
+  %112 = icmp slt i32 %110, %111, !dbg !170       ; [#uses=1 type=i1] [debug line = 72:7]
+  br i1 %112, label %113, label %124, !dbg !170   ; [debug line = 72:7]
 
-; <label>:120                                     ; preds = %119, %108
-  br label %121
+; <label>:113                                     ; preds = %109
+  %114 = load float* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE12releaseSlope, align 4, !dbg !171 ; [#uses=1 type=float] [debug line = 73:3]
+  %115 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !171 ; [#uses=1 type=i32] [debug line = 73:3]
+  %116 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime, align 4, !dbg !171 ; [#uses=1 type=i32] [debug line = 73:3]
+  %117 = sub nsw i32 %115, %116, !dbg !171        ; [#uses=1 type=i32] [debug line = 73:3]
+  %118 = sitofp i32 %117 to float, !dbg !171      ; [#uses=1 type=float] [debug line = 73:3]
+  %119 = fmul float %114, %118, !dbg !171         ; [#uses=1 type=float] [debug line = 73:3]
+  %120 = load float* %6, align 4, !dbg !171       ; [#uses=1 type=float] [debug line = 73:3]
+  %121 = fadd float %119, %120, !dbg !171         ; [#uses=1 type=float] [debug line = 73:3]
+  %122 = load float* %resultAmplitude, align 4, !dbg !171 ; [#uses=1 type=float] [debug line = 73:3]
+  %123 = fmul float %122, %121, !dbg !171         ; [#uses=1 type=float] [debug line = 73:3]
+  store float %123, float* %resultAmplitude, align 4, !dbg !171 ; [debug line = 73:3]
+  br label %125, !dbg !173                        ; [debug line = 74:2]
 
-; <label>:121                                     ; preds = %120, %100
-  br label %122
+; <label>:124                                     ; preds = %109
+  store float 0.000000e+00, float* %resultAmplitude, align 4, !dbg !174 ; [debug line = 77:3]
+  store i32 1, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4wait, align 4, !dbg !176 ; [debug line = 78:3]
+  br label %125
 
-; <label>:122                                     ; preds = %121, %86
-  br label %123
+; <label>:125                                     ; preds = %124, %113
+  br label %126
 
-; <label>:123                                     ; preds = %122, %75
-  %124 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !175 ; [#uses=1 type=i32] [debug line = 78:2]
-  %125 = add nsw i32 %124, 1, !dbg !175           ; [#uses=1 type=i32] [debug line = 78:2]
-  store i32 %125, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !175 ; [debug line = 78:2]
-  %126 = load %"class.hls::stream"** %2, align 8, !dbg !176 ; [#uses=1 type=%"class.hls::stream"*] [debug line = 80:2]
-  call void @_ZN3hls6streamIfElsERKf(%"class.hls::stream"* %126, float* %resultAmplitude), !dbg !176 ; [debug line = 80:2]
-  ret void, !dbg !177                             ; [debug line = 81:1]
+; <label>:126                                     ; preds = %125, %105
+  br label %127
+
+; <label>:127                                     ; preds = %126, %91
+  br label %128
+
+; <label>:128                                     ; preds = %127, %80
+  %129 = load i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !177 ; [#uses=1 type=i32] [debug line = 81:2]
+  %130 = add nsw i32 %129, 1, !dbg !177           ; [#uses=1 type=i32] [debug line = 81:2]
+  store i32 %130, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4time, align 4, !dbg !177 ; [debug line = 81:2]
+  %131 = load %"class.hls::stream"** %2, align 8, !dbg !178 ; [#uses=1 type=%"class.hls::stream"*] [debug line = 83:2]
+  call void @_ZN3hls6streamIfElsERKf(%"class.hls::stream"* %131, float* %resultAmplitude), !dbg !178 ; [debug line = 83:2]
+  ret void, !dbg !179                             ; [debug line = 84:1]
 }
 
 ; [#uses=18]
@@ -276,13 +286,13 @@ define linkonce_odr void @_ZN3hls6streamIfErsERf(%"class.hls::stream"* %this, fl
   %1 = alloca %"class.hls::stream"*, align 8      ; [#uses=2 type=%"class.hls::stream"**]
   %2 = alloca float*, align 8                     ; [#uses=2 type=float**]
   store %"class.hls::stream"* %this, %"class.hls::stream"** %1, align 8
-  call void @llvm.dbg.declare(metadata !{%"class.hls::stream"** %1}, metadata !178), !dbg !180 ; [debug line = 101:48] [debug variable = this]
+  call void @llvm.dbg.declare(metadata !{%"class.hls::stream"** %1}, metadata !180), !dbg !182 ; [debug line = 101:48] [debug variable = this]
   store float* %rdata, float** %2, align 8
-  call void @llvm.dbg.declare(metadata !{float** %2}, metadata !181), !dbg !182 ; [debug line = 101:75] [debug variable = rdata]
+  call void @llvm.dbg.declare(metadata !{float** %2}, metadata !183), !dbg !184 ; [debug line = 101:75] [debug variable = rdata]
   %3 = load %"class.hls::stream"** %1             ; [#uses=1 type=%"class.hls::stream"*]
-  %4 = load float** %2, align 8, !dbg !183        ; [#uses=1 type=float*] [debug line = 102:9]
-  call void @_ZN3hls6streamIfE4readERf(%"class.hls::stream"* %3, float* %4), !dbg !183 ; [debug line = 102:9]
-  ret void, !dbg !185                             ; [debug line = 103:5]
+  %4 = load float** %2, align 8, !dbg !185        ; [#uses=1 type=float*] [debug line = 102:9]
+  call void @_ZN3hls6streamIfE4readERf(%"class.hls::stream"* %3, float* %4), !dbg !185 ; [debug line = 102:9]
+  ret void, !dbg !187                             ; [debug line = 103:5]
 }
 
 ; [#uses=1]
@@ -290,13 +300,13 @@ define linkonce_odr void @_ZN3hls6streamIfElsERKf(%"class.hls::stream"* %this, f
   %1 = alloca %"class.hls::stream"*, align 8      ; [#uses=2 type=%"class.hls::stream"**]
   %2 = alloca float*, align 8                     ; [#uses=2 type=float**]
   store %"class.hls::stream"* %this, %"class.hls::stream"** %1, align 8
-  call void @llvm.dbg.declare(metadata !{%"class.hls::stream"** %1}, metadata !186), !dbg !187 ; [debug line = 105:48] [debug variable = this]
+  call void @llvm.dbg.declare(metadata !{%"class.hls::stream"** %1}, metadata !188), !dbg !189 ; [debug line = 105:48] [debug variable = this]
   store float* %wdata, float** %2, align 8
-  call void @llvm.dbg.declare(metadata !{float** %2}, metadata !188), !dbg !189 ; [debug line = 105:81] [debug variable = wdata]
+  call void @llvm.dbg.declare(metadata !{float** %2}, metadata !190), !dbg !191 ; [debug line = 105:81] [debug variable = wdata]
   %3 = load %"class.hls::stream"** %1             ; [#uses=1 type=%"class.hls::stream"*]
-  %4 = load float** %2, align 8, !dbg !190        ; [#uses=1 type=float*] [debug line = 106:9]
-  call void @_ZN3hls6streamIfE5writeERKf(%"class.hls::stream"* %3, float* %4), !dbg !190 ; [debug line = 106:9]
-  ret void, !dbg !192                             ; [debug line = 107:5]
+  %4 = load float** %2, align 8, !dbg !192        ; [#uses=1 type=float*] [debug line = 106:9]
+  call void @_ZN3hls6streamIfE5writeERKf(%"class.hls::stream"* %3, float* %4), !dbg !192 ; [debug line = 106:9]
+  ret void, !dbg !194                             ; [debug line = 107:5]
 }
 
 ; [#uses=1]
@@ -305,17 +315,17 @@ define linkonce_odr void @_ZN3hls6streamIfE5writeERKf(%"class.hls::stream"* %thi
   %2 = alloca float*, align 8                     ; [#uses=2 type=float**]
   %tmp = alloca float, align 4                    ; [#uses=2 type=float*]
   store %"class.hls::stream"* %this, %"class.hls::stream"** %1, align 8
-  call void @llvm.dbg.declare(metadata !{%"class.hls::stream"** %1}, metadata !193), !dbg !194 ; [debug line = 144:48] [debug variable = this]
+  call void @llvm.dbg.declare(metadata !{%"class.hls::stream"** %1}, metadata !195), !dbg !196 ; [debug line = 144:48] [debug variable = this]
   store float* %din, float** %2, align 8
-  call void @llvm.dbg.declare(metadata !{float** %2}, metadata !195), !dbg !196 ; [debug line = 144:74] [debug variable = din]
+  call void @llvm.dbg.declare(metadata !{float** %2}, metadata !197), !dbg !198 ; [debug line = 144:74] [debug variable = din]
   %3 = load %"class.hls::stream"** %1             ; [#uses=1 type=%"class.hls::stream"*]
-  call void @llvm.dbg.declare(metadata !{float* %tmp}, metadata !197), !dbg !199 ; [debug line = 145:22] [debug variable = tmp]
-  %4 = load float** %2, align 8, !dbg !200        ; [#uses=1 type=float*] [debug line = 145:31]
-  %5 = load float* %4, align 4, !dbg !200         ; [#uses=1 type=float] [debug line = 145:31]
-  store float %5, float* %tmp, align 4, !dbg !200 ; [debug line = 145:31]
-  %6 = getelementptr inbounds %"class.hls::stream"* %3, i32 0, i32 0, !dbg !201 ; [#uses=1 type=float*] [debug line = 146:9]
-  call void (...)* @_ssdm_StreamWrite(float* %6, float* %tmp) nounwind, !dbg !201 ; [debug line = 146:9]
-  ret void, !dbg !202                             ; [debug line = 147:5]
+  call void @llvm.dbg.declare(metadata !{float* %tmp}, metadata !199), !dbg !201 ; [debug line = 145:22] [debug variable = tmp]
+  %4 = load float** %2, align 8, !dbg !202        ; [#uses=1 type=float*] [debug line = 145:31]
+  %5 = load float* %4, align 4, !dbg !202         ; [#uses=1 type=float] [debug line = 145:31]
+  store float %5, float* %tmp, align 4, !dbg !202 ; [debug line = 145:31]
+  %6 = getelementptr inbounds %"class.hls::stream"* %3, i32 0, i32 0, !dbg !203 ; [#uses=1 type=float*] [debug line = 146:9]
+  call void (...)* @_ssdm_StreamWrite(float* %6, float* %tmp) nounwind, !dbg !203 ; [debug line = 146:9]
+  ret void, !dbg !204                             ; [debug line = 147:5]
 }
 
 ; [#uses=1]
@@ -327,17 +337,17 @@ define linkonce_odr void @_ZN3hls6streamIfE4readERf(%"class.hls::stream"* %this,
   %2 = alloca float*, align 8                     ; [#uses=2 type=float**]
   %tmp = alloca float, align 4                    ; [#uses=2 type=float*]
   store %"class.hls::stream"* %this, %"class.hls::stream"** %1, align 8
-  call void @llvm.dbg.declare(metadata !{%"class.hls::stream"** %1}, metadata !203), !dbg !204 ; [debug line = 123:48] [debug variable = this]
+  call void @llvm.dbg.declare(metadata !{%"class.hls::stream"** %1}, metadata !205), !dbg !206 ; [debug line = 123:48] [debug variable = this]
   store float* %dout, float** %2, align 8
-  call void @llvm.dbg.declare(metadata !{float** %2}, metadata !205), !dbg !206 ; [debug line = 123:67] [debug variable = dout]
+  call void @llvm.dbg.declare(metadata !{float** %2}, metadata !207), !dbg !208 ; [debug line = 123:67] [debug variable = dout]
   %3 = load %"class.hls::stream"** %1             ; [#uses=1 type=%"class.hls::stream"*]
-  call void @llvm.dbg.declare(metadata !{float* %tmp}, metadata !207), !dbg !209 ; [debug line = 124:22] [debug variable = tmp]
-  %4 = getelementptr inbounds %"class.hls::stream"* %3, i32 0, i32 0, !dbg !210 ; [#uses=1 type=float*] [debug line = 125:9]
-  call void (...)* @_ssdm_StreamRead(float* %4, float* %tmp) nounwind, !dbg !210 ; [debug line = 125:9]
-  %5 = load float* %tmp, align 4, !dbg !211       ; [#uses=1 type=float] [debug line = 126:9]
-  %6 = load float** %2, align 8, !dbg !211        ; [#uses=1 type=float*] [debug line = 126:9]
-  store float %5, float* %6, align 4, !dbg !211   ; [debug line = 126:9]
-  ret void, !dbg !212                             ; [debug line = 127:5]
+  call void @llvm.dbg.declare(metadata !{float* %tmp}, metadata !209), !dbg !211 ; [debug line = 124:22] [debug variable = tmp]
+  %4 = getelementptr inbounds %"class.hls::stream"* %3, i32 0, i32 0, !dbg !212 ; [#uses=1 type=float*] [debug line = 125:9]
+  call void (...)* @_ssdm_StreamRead(float* %4, float* %tmp) nounwind, !dbg !212 ; [debug line = 125:9]
+  %5 = load float* %tmp, align 4, !dbg !213       ; [#uses=1 type=float] [debug line = 126:9]
+  %6 = load float** %2, align 8, !dbg !213        ; [#uses=1 type=float*] [debug line = 126:9]
+  store float %5, float* %6, align 4, !dbg !213   ; [debug line = 126:9]
+  ret void, !dbg !214                             ; [debug line = 127:5]
 }
 
 ; [#uses=1]
@@ -426,9 +436,9 @@ declare void @_ssdm_StreamRead(...) nounwind
 !76 = metadata !{i32 786484, i32 0, metadata !5, metadata !"attackSlope", metadata !"attackSlope", metadata !"", metadata !6, i32 33, metadata !15, i32 1, i32 1, float* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11attackSlope} ; [ DW_TAG_variable ]
 !77 = metadata !{i32 786484, i32 0, metadata !5, metadata !"decaySlope", metadata !"decaySlope", metadata !"", metadata !6, i32 34, metadata !15, i32 1, i32 1, float* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE10decaySlope} ; [ DW_TAG_variable ]
 !78 = metadata !{i32 786484, i32 0, metadata !5, metadata !"releaseSlope", metadata !"releaseSlope", metadata !"", metadata !6, i32 35, metadata !15, i32 1, i32 1, float* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE12releaseSlope} ; [ DW_TAG_variable ]
-!79 = metadata !{i32 786484, i32 0, metadata !5, metadata !"releaseTime", metadata !"releaseTime", metadata !"", metadata !6, i32 39, metadata !68, i32 1, i32 1, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime} ; [ DW_TAG_variable ]
-!80 = metadata !{i32 786484, i32 0, metadata !5, metadata !"sustainTime", metadata !"sustainTime", metadata !"", metadata !6, i32 40, metadata !68, i32 1, i32 1, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime} ; [ DW_TAG_variable ]
-!81 = metadata !{i32 786484, i32 0, metadata !5, metadata !"wait", metadata !"wait", metadata !"", metadata !6, i32 41, metadata !68, i32 1, i32 1, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4wait} ; [ DW_TAG_variable ]
+!79 = metadata !{i32 786484, i32 0, metadata !5, metadata !"releaseTime", metadata !"releaseTime", metadata !"", metadata !6, i32 42, metadata !68, i32 1, i32 1, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11releaseTime} ; [ DW_TAG_variable ]
+!80 = metadata !{i32 786484, i32 0, metadata !5, metadata !"sustainTime", metadata !"sustainTime", metadata !"", metadata !6, i32 43, metadata !68, i32 1, i32 1, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE11sustainTime} ; [ DW_TAG_variable ]
+!81 = metadata !{i32 786484, i32 0, metadata !5, metadata !"wait", metadata !"wait", metadata !"", metadata !6, i32 44, metadata !68, i32 1, i32 1, i32* @_ZZ8envelopeRN3hls6streamIfEES2_iiifiE4wait} ; [ DW_TAG_variable ]
 !82 = metadata !{i32 786484, i32 0, null, metadata !"_IO_2_1_stdin_", metadata !"_IO_2_1_stdin_", metadata !"", metadata !83, i32 315, metadata !84, i32 0, i32 1, %"class.hls::stream"* @_IO_2_1_stdin_} ; [ DW_TAG_variable ]
 !83 = metadata !{i32 786473, metadata !"/usr/include/libio.h", metadata !"/home/austin/ECE1373_GhostSynth/modules/Envelope", null} ; [ DW_TAG_file_type ]
 !84 = metadata !{i32 786434, null, metadata !"_IO_FILE_plus", metadata !83, i32 313, i32 0, i32 0, i32 0, i32 4, null, null, i32 0} ; [ DW_TAG_class_type ]
@@ -488,75 +498,77 @@ declare void @_ssdm_StreamRead(...) nounwind
 !138 = metadata !{i32 35, i32 89, metadata !127, null}
 !139 = metadata !{i32 786688, metadata !127, metadata !"resultAmplitude", metadata !6, i32 37, metadata !15, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
 !140 = metadata !{i32 37, i32 8, metadata !127, null}
-!141 = metadata !{i32 39, i32 42, metadata !127, null}
-!142 = metadata !{i32 40, i32 42, metadata !127, null}
-!143 = metadata !{i32 43, i32 2, metadata !127, null}
-!144 = metadata !{i32 45, i32 2, metadata !127, null}
-!145 = metadata !{i32 46, i32 3, metadata !146, null}
-!146 = metadata !{i32 786443, metadata !127, i32 45, i32 11, metadata !6, i32 1} ; [ DW_TAG_lexical_block ]
-!147 = metadata !{i32 47, i32 3, metadata !146, null}
-!148 = metadata !{i32 48, i32 3, metadata !146, null}
-!149 = metadata !{i32 49, i32 2, metadata !146, null}
-!150 = metadata !{i32 51, i32 2, metadata !127, null}
-!151 = metadata !{i32 52, i32 3, metadata !152, null}
-!152 = metadata !{i32 786443, metadata !127, i32 51, i32 10, metadata !6, i32 2} ; [ DW_TAG_lexical_block ]
-!153 = metadata !{i32 53, i32 3, metadata !152, null}
-!154 = metadata !{i32 54, i32 3, metadata !152, null}
-!155 = metadata !{i32 55, i32 2, metadata !152, null}
-!156 = metadata !{i32 57, i32 2, metadata !127, null}
-!157 = metadata !{i32 58, i32 3, metadata !158, null}
-!158 = metadata !{i32 786443, metadata !127, i32 57, i32 27, metadata !6, i32 3} ; [ DW_TAG_lexical_block ]
-!159 = metadata !{i32 59, i32 2, metadata !158, null}
-!160 = metadata !{i32 61, i32 7, metadata !127, null}
-!161 = metadata !{i32 62, i32 3, metadata !162, null}
-!162 = metadata !{i32 786443, metadata !127, i32 61, i32 31, metadata !6, i32 4} ; [ DW_TAG_lexical_block ]
-!163 = metadata !{i32 63, i32 2, metadata !162, null}
-!164 = metadata !{i32 65, i32 7, metadata !127, null}
-!165 = metadata !{i32 66, i32 3, metadata !166, null}
-!166 = metadata !{i32 786443, metadata !127, i32 65, i32 30, metadata !6, i32 5} ; [ DW_TAG_lexical_block ]
-!167 = metadata !{i32 67, i32 2, metadata !166, null}
-!168 = metadata !{i32 69, i32 7, metadata !127, null}
-!169 = metadata !{i32 70, i32 3, metadata !170, null}
-!170 = metadata !{i32 786443, metadata !127, i32 69, i32 29, metadata !6, i32 6} ; [ DW_TAG_lexical_block ]
-!171 = metadata !{i32 71, i32 2, metadata !170, null}
-!172 = metadata !{i32 74, i32 3, metadata !173, null}
-!173 = metadata !{i32 786443, metadata !127, i32 73, i32 7, metadata !6, i32 7} ; [ DW_TAG_lexical_block ]
-!174 = metadata !{i32 75, i32 3, metadata !173, null}
-!175 = metadata !{i32 78, i32 2, metadata !127, null}
-!176 = metadata !{i32 80, i32 2, metadata !127, null}
-!177 = metadata !{i32 81, i32 1, metadata !127, null}
-!178 = metadata !{i32 786689, metadata !71, metadata !"this", metadata !12, i32 16777317, metadata !179, i32 64, i32 0} ; [ DW_TAG_arg_variable ]
-!179 = metadata !{i32 786447, null, metadata !"", null, i32 0, i64 64, i64 64, i64 0, i32 0, metadata !10} ; [ DW_TAG_pointer_type ]
-!180 = metadata !{i32 101, i32 48, metadata !71, null}
-!181 = metadata !{i32 786689, metadata !71, metadata !"rdata", metadata !12, i32 33554533, metadata !39, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
-!182 = metadata !{i32 101, i32 75, metadata !71, null}
-!183 = metadata !{i32 102, i32 9, metadata !184, null}
-!184 = metadata !{i32 786443, metadata !71, i32 101, i32 82, metadata !12, i32 10} ; [ DW_TAG_lexical_block ]
-!185 = metadata !{i32 103, i32 5, metadata !184, null}
-!186 = metadata !{i32 786689, metadata !69, metadata !"this", metadata !12, i32 16777321, metadata !179, i32 64, i32 0} ; [ DW_TAG_arg_variable ]
-!187 = metadata !{i32 105, i32 48, metadata !69, null}
-!188 = metadata !{i32 786689, metadata !69, metadata !"wdata", metadata !12, i32 33554537, metadata !43, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
-!189 = metadata !{i32 105, i32 81, metadata !69, null}
-!190 = metadata !{i32 106, i32 9, metadata !191, null}
-!191 = metadata !{i32 786443, metadata !69, i32 105, i32 88, metadata !12, i32 8} ; [ DW_TAG_lexical_block ]
-!192 = metadata !{i32 107, i32 5, metadata !191, null}
-!193 = metadata !{i32 786689, metadata !70, metadata !"this", metadata !12, i32 16777360, metadata !179, i32 64, i32 0} ; [ DW_TAG_arg_variable ]
-!194 = metadata !{i32 144, i32 48, metadata !70, null}
-!195 = metadata !{i32 786689, metadata !70, metadata !"din", metadata !12, i32 33554576, metadata !43, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
-!196 = metadata !{i32 144, i32 74, metadata !70, null}
-!197 = metadata !{i32 786688, metadata !198, metadata !"tmp", metadata !12, i32 145, metadata !15, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
-!198 = metadata !{i32 786443, metadata !70, i32 144, i32 79, metadata !12, i32 9} ; [ DW_TAG_lexical_block ]
-!199 = metadata !{i32 145, i32 22, metadata !198, null}
-!200 = metadata !{i32 145, i32 31, metadata !198, null}
-!201 = metadata !{i32 146, i32 9, metadata !198, null}
-!202 = metadata !{i32 147, i32 5, metadata !198, null}
-!203 = metadata !{i32 786689, metadata !72, metadata !"this", metadata !12, i32 16777339, metadata !179, i32 64, i32 0} ; [ DW_TAG_arg_variable ]
-!204 = metadata !{i32 123, i32 48, metadata !72, null}
-!205 = metadata !{i32 786689, metadata !72, metadata !"dout", metadata !12, i32 33554555, metadata !39, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
-!206 = metadata !{i32 123, i32 67, metadata !72, null}
-!207 = metadata !{i32 786688, metadata !208, metadata !"tmp", metadata !12, i32 124, metadata !15, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
-!208 = metadata !{i32 786443, metadata !72, i32 123, i32 73, metadata !12, i32 11} ; [ DW_TAG_lexical_block ]
-!209 = metadata !{i32 124, i32 22, metadata !208, null}
-!210 = metadata !{i32 125, i32 9, metadata !208, null}
-!211 = metadata !{i32 126, i32 9, metadata !208, null}
-!212 = metadata !{i32 127, i32 5, metadata !208, null}
+!141 = metadata !{i32 39, i32 2, metadata !127, null}
+!142 = metadata !{i32 40, i32 3, metadata !127, null}
+!143 = metadata !{i32 42, i32 42, metadata !127, null}
+!144 = metadata !{i32 43, i32 42, metadata !127, null}
+!145 = metadata !{i32 46, i32 2, metadata !127, null}
+!146 = metadata !{i32 48, i32 2, metadata !127, null}
+!147 = metadata !{i32 49, i32 3, metadata !148, null}
+!148 = metadata !{i32 786443, metadata !127, i32 48, i32 11, metadata !6, i32 1} ; [ DW_TAG_lexical_block ]
+!149 = metadata !{i32 50, i32 3, metadata !148, null}
+!150 = metadata !{i32 51, i32 3, metadata !148, null}
+!151 = metadata !{i32 52, i32 2, metadata !148, null}
+!152 = metadata !{i32 54, i32 2, metadata !127, null}
+!153 = metadata !{i32 55, i32 3, metadata !154, null}
+!154 = metadata !{i32 786443, metadata !127, i32 54, i32 10, metadata !6, i32 2} ; [ DW_TAG_lexical_block ]
+!155 = metadata !{i32 56, i32 3, metadata !154, null}
+!156 = metadata !{i32 57, i32 3, metadata !154, null}
+!157 = metadata !{i32 58, i32 2, metadata !154, null}
+!158 = metadata !{i32 60, i32 2, metadata !127, null}
+!159 = metadata !{i32 61, i32 3, metadata !160, null}
+!160 = metadata !{i32 786443, metadata !127, i32 60, i32 27, metadata !6, i32 3} ; [ DW_TAG_lexical_block ]
+!161 = metadata !{i32 62, i32 2, metadata !160, null}
+!162 = metadata !{i32 64, i32 7, metadata !127, null}
+!163 = metadata !{i32 65, i32 3, metadata !164, null}
+!164 = metadata !{i32 786443, metadata !127, i32 64, i32 31, metadata !6, i32 4} ; [ DW_TAG_lexical_block ]
+!165 = metadata !{i32 66, i32 2, metadata !164, null}
+!166 = metadata !{i32 68, i32 7, metadata !127, null}
+!167 = metadata !{i32 69, i32 3, metadata !168, null}
+!168 = metadata !{i32 786443, metadata !127, i32 68, i32 30, metadata !6, i32 5} ; [ DW_TAG_lexical_block ]
+!169 = metadata !{i32 70, i32 2, metadata !168, null}
+!170 = metadata !{i32 72, i32 7, metadata !127, null}
+!171 = metadata !{i32 73, i32 3, metadata !172, null}
+!172 = metadata !{i32 786443, metadata !127, i32 72, i32 29, metadata !6, i32 6} ; [ DW_TAG_lexical_block ]
+!173 = metadata !{i32 74, i32 2, metadata !172, null}
+!174 = metadata !{i32 77, i32 3, metadata !175, null}
+!175 = metadata !{i32 786443, metadata !127, i32 76, i32 7, metadata !6, i32 7} ; [ DW_TAG_lexical_block ]
+!176 = metadata !{i32 78, i32 3, metadata !175, null}
+!177 = metadata !{i32 81, i32 2, metadata !127, null}
+!178 = metadata !{i32 83, i32 2, metadata !127, null}
+!179 = metadata !{i32 84, i32 1, metadata !127, null}
+!180 = metadata !{i32 786689, metadata !71, metadata !"this", metadata !12, i32 16777317, metadata !181, i32 64, i32 0} ; [ DW_TAG_arg_variable ]
+!181 = metadata !{i32 786447, null, metadata !"", null, i32 0, i64 64, i64 64, i64 0, i32 0, metadata !10} ; [ DW_TAG_pointer_type ]
+!182 = metadata !{i32 101, i32 48, metadata !71, null}
+!183 = metadata !{i32 786689, metadata !71, metadata !"rdata", metadata !12, i32 33554533, metadata !39, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
+!184 = metadata !{i32 101, i32 75, metadata !71, null}
+!185 = metadata !{i32 102, i32 9, metadata !186, null}
+!186 = metadata !{i32 786443, metadata !71, i32 101, i32 82, metadata !12, i32 10} ; [ DW_TAG_lexical_block ]
+!187 = metadata !{i32 103, i32 5, metadata !186, null}
+!188 = metadata !{i32 786689, metadata !69, metadata !"this", metadata !12, i32 16777321, metadata !181, i32 64, i32 0} ; [ DW_TAG_arg_variable ]
+!189 = metadata !{i32 105, i32 48, metadata !69, null}
+!190 = metadata !{i32 786689, metadata !69, metadata !"wdata", metadata !12, i32 33554537, metadata !43, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
+!191 = metadata !{i32 105, i32 81, metadata !69, null}
+!192 = metadata !{i32 106, i32 9, metadata !193, null}
+!193 = metadata !{i32 786443, metadata !69, i32 105, i32 88, metadata !12, i32 8} ; [ DW_TAG_lexical_block ]
+!194 = metadata !{i32 107, i32 5, metadata !193, null}
+!195 = metadata !{i32 786689, metadata !70, metadata !"this", metadata !12, i32 16777360, metadata !181, i32 64, i32 0} ; [ DW_TAG_arg_variable ]
+!196 = metadata !{i32 144, i32 48, metadata !70, null}
+!197 = metadata !{i32 786689, metadata !70, metadata !"din", metadata !12, i32 33554576, metadata !43, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
+!198 = metadata !{i32 144, i32 74, metadata !70, null}
+!199 = metadata !{i32 786688, metadata !200, metadata !"tmp", metadata !12, i32 145, metadata !15, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
+!200 = metadata !{i32 786443, metadata !70, i32 144, i32 79, metadata !12, i32 9} ; [ DW_TAG_lexical_block ]
+!201 = metadata !{i32 145, i32 22, metadata !200, null}
+!202 = metadata !{i32 145, i32 31, metadata !200, null}
+!203 = metadata !{i32 146, i32 9, metadata !200, null}
+!204 = metadata !{i32 147, i32 5, metadata !200, null}
+!205 = metadata !{i32 786689, metadata !72, metadata !"this", metadata !12, i32 16777339, metadata !181, i32 64, i32 0} ; [ DW_TAG_arg_variable ]
+!206 = metadata !{i32 123, i32 48, metadata !72, null}
+!207 = metadata !{i32 786689, metadata !72, metadata !"dout", metadata !12, i32 33554555, metadata !39, i32 0, i32 0} ; [ DW_TAG_arg_variable ]
+!208 = metadata !{i32 123, i32 67, metadata !72, null}
+!209 = metadata !{i32 786688, metadata !210, metadata !"tmp", metadata !12, i32 124, metadata !15, i32 0, i32 0} ; [ DW_TAG_auto_variable ]
+!210 = metadata !{i32 786443, metadata !72, i32 123, i32 73, metadata !12, i32 11} ; [ DW_TAG_lexical_block ]
+!211 = metadata !{i32 124, i32 22, metadata !210, null}
+!212 = metadata !{i32 125, i32 9, metadata !210, null}
+!213 = metadata !{i32 126, i32 9, metadata !210, null}
+!214 = metadata !{i32 127, i32 5, metadata !210, null}

@@ -6200,11 +6200,14 @@ void envelope(
 #pragma HLS INTERFACE s_axilite port=releaseDuration bundle=CTRL_BUS
 
  static int time = 0;
- static float attackSlope = (float)2/attackDuration;
- static float decaySlope = (float)(sustainAmplitude - 2)/(decayDuration - attackDuration);
+ static float attackSlope = (float)1/attackDuration;
+ static float decaySlope = (float)(sustainAmplitude - 1)/(decayDuration - attackDuration);
  static float releaseSlope=(float)(0-sustainAmplitude)/(releaseDuration - decayDuration);
 
  float resultAmplitude;
+
+ if(sustainAmplitude > 1.0)
+  sustainAmplitude = 1.0;
 
  static int releaseTime = releaseDuration;
  static int sustainTime = decayDuration+1;
@@ -6229,7 +6232,7 @@ void envelope(
  }
 
  else if(time < decayDuration){
-  resultAmplitude *= decaySlope*(time- attackDuration) + 2 ;
+  resultAmplitude *= decaySlope*(time- attackDuration) + 1 ;
  }
 
  else if( time < sustainTime){

@@ -6,7 +6,7 @@
 <Project Version="7" Minor="20" Path="/home/austin/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/impl/verilog/project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="f6b7db0432cd48ef9d19efb7ef622cb5"/>
+    <Option Name="Id" Val="98fd880861374b0398b8520c24a2c9c5"/>
     <Option Name="Part" Val="xc7z100ffg900-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -79,6 +79,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/envelope_fcmp_32nfYi.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/envelope_sitofp_3eOg.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -87,6 +94,13 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/envelope_fdiv_32ndEe.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/envelope_ap_fcmp_0_no_dsp_32/envelope_ap_fcmp_0_no_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

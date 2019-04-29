@@ -36,6 +36,9 @@ void envelope(
 
 	float resultAmplitude;
 
+	if(sustainAmplitude > 1.0)
+		sustainAmplitude = 1.0;
+
 	static int releaseTime = releaseDuration;
 	static int sustainTime = decayDuration+1;
 	static int wait = 0;

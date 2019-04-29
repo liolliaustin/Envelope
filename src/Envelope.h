@@ -3,7 +3,7 @@
 
 #include <hls_stream.h>
 
-#define MAX_ATTACK 2
+#define MAX_ATTACK 1
 
 void envelope(
 

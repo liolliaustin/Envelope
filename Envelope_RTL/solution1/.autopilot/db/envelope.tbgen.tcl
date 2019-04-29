@@ -88,7 +88,7 @@ set NewPortList {[
  	{ "name": "wave_out_V_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "wave_out_V", "role": "TREADY" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6"],
 		"CDFG" : "envelope",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"Pipeline" : "None", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -124,13 +124,14 @@ set RtlHierarchyInfo {[
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fadd_32nbkb_U1", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fmul_32ncud_U2", "Parent" : "0"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fdiv_32ndEe_U3", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U4", "Parent" : "0"}]}
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U4", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fcmp_32nfYi_U5", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	envelope {
-		wave_in_V {Type I LastRead 65 FirstWrite -1}
-		wave_out_V {Type O LastRead -1 FirstWrite 87}
+		wave_in_V {Type I LastRead 66 FirstWrite -1}
+		wave_out_V {Type O LastRead -1 FirstWrite 88}
 		press {Type I LastRead 0 FirstWrite -1}
 		attackDuration {Type I LastRead 0 FirstWrite -1}
 		decayDuration {Type I LastRead 0 FirstWrite -1}
@@ -152,8 +153,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "26", "Max" : "88"}
-	, {"Name" : "Interval", "Min" : "27", "Max" : "89"}
+	{"Name" : "Latency", "Min" : "27", "Max" : "89"}
+	, {"Name" : "Interval", "Min" : "28", "Max" : "90"}
 ]}
 
 set PipelineEnableSignalInfo {[
