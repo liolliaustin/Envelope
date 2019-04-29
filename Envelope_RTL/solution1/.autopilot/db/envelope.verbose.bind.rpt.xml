@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'envelope'" level="0">
-<item name = "Date">Mon Apr 29 21:42:45 2019
+<item name = "Date">Mon Apr 29 23:29:37 2019
 </item>
 <item name = "Version">2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)</item>
 <item name = "Project">Envelope_RTL</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">45, 45, 46, 46, none</column>
+<column name="">46, 67, 47, 68, none</column>
 </table>
 </item>
 <item name = "Detail">

@@ -1151,7 +1151,7 @@ format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type im
       <spirit:file>
         <spirit:name>hdl/vhdl/envelope.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_f348932e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_de246435</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1331,7 +1331,7 @@ format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type im
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">45</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">46</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
@@ -1348,8 +1348,8 @@ format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type im
       </xilinx:taxonomies>
       <xilinx:displayName>Envelope</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1904292143</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-04-29T21:43:19Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1904292329</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-04-29T23:30:02Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>

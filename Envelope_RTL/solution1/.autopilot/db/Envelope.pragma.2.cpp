@@ -6440,7 +6440,7 @@ _ssdm_op_SpecInterface(releaseDuration, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS",
  static int lastpress = 0;
  float attackSlope = (float)1/attackDuration;
  float decaySlope = (float)(sustainAmplitude - 1)/(decayDuration - attackDuration);
- float releaseSlope=(float)(0-sustainAmplitude)/(releaseDuration - decayDuration);
+ static float releaseSlope= 0;
 
  float resultAmplitude;
 
@@ -6454,6 +6454,7 @@ _ssdm_op_SpecInterface(releaseDuration, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS",
  if (lastpress == 0 && press != 0) {
   releaseTime = releaseDuration;
   sustainTime = decayDuration+1;
+  releaseSlope = (float)(0-sustainAmplitude)/(releaseDuration - decayDuration);
  }
 
  lastpress = press;

@@ -11,34 +11,28 @@ int main() {
 	hls::stream<float> wave_out("wave_out");
 
 	int press = 1;
-	int change = 0;
 
-
-	for(float j=0; j<2*3.14; j+=0.006283){
-
-		wave_in << cos(j);
-	}
 
 
 
 
 	int i = 0;
-	while (i < 1000) {
-
+	while (i < 10000) {
+		wave_in << 1;
 		envelope(
 
 			wave_in,
 			wave_out,
 
 			press,
-			50,
-			70,
-			1.0,
-			150
+			1000,
+			2000,
+			0.6,
+			3000
 
 		);
 
-		if(i==500)
+		if(i==4)
 			press = 0;
 
 		float tmp;

@@ -10,7 +10,7 @@
 
 module envelope_fcmp_32nfYi
 #(parameter
-    ID         = 9,
+    ID         = 7,
     NUM_STAGE  = 1,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

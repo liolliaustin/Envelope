@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity envelope_fcmp_32nfYi is
     generic (
-        ID         : integer := 9;
+        ID         : integer := 7;
         NUM_STAGE  : integer := 1;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;

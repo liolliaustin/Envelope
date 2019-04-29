@@ -6,6 +6,7 @@ target triple = "x86_64-unknown-linux-gnu"
 @time_r = internal unnamed_addr global i32 0, align 4
 @sustainTime = internal unnamed_addr global i32 0, align 4
 @releaseTime = internal unnamed_addr global i32 0, align 4
+@releaseSlope = internal unnamed_addr global float 0.000000e+00, align 4
 @lastpress = internal unnamed_addr global i32 0, align 4
 @envelope_str = internal unnamed_addr constant [9 x i8] c"envelope\00"
 @p_str5 = private unnamed_addr constant [9 x i8] c"CTRL_BUS\00", align 1
@@ -20,7 +21,6 @@ declare i32 @llvm.part.select.i32(i32, i32, i32) nounwind readnone
 declare void @llvm.dbg.value(metadata, i64, metadata) nounwind readnone
 
 define void @envelope(float* %wave_in_V, float* %wave_out_V, i32 %press, i32 %attackDuration, i32 %decayDuration, float %sustainAmplitude, i32 %releaseDuration) {
-._crit_edge_ifconv:
   call void (...)* @_ssdm_op_SpecBitsMap(float* %wave_in_V), !map !20
   call void (...)* @_ssdm_op_SpecBitsMap(float* %wave_out_V), !map !26
   call void (...)* @_ssdm_op_SpecBitsMap(i32 %press), !map !30
@@ -48,98 +48,106 @@ define void @envelope(float* %wave_in_V, float* %wave_out_V, i32 %press, i32 %at
   %tmp_3 = sub nsw i32 %decayDuration_read, %attackDuration_read
   %tmp_4 = sitofp i32 %tmp_3 to float
   %decaySlope = fdiv float %tmp_2, %tmp_4
-  %tmp_5_to_int = bitcast float %sustainAmplitude_rea to i32
-  %tmp_5_neg = xor i32 %tmp_5_to_int, -2147483648
-  %tmp_5 = bitcast i32 %tmp_5_neg to float
-  %tmp_6 = sub nsw i32 %releaseDuration_read, %decayDuration_read
-  %tmp_7 = sitofp i32 %tmp_6 to float
-  %releaseSlope = fdiv float %tmp_5, %tmp_7
-  %tmp_8 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_5_to_int, i32 23, i32 30)
-  %tmp = trunc i32 %tmp_5_to_int to i23
-  %notlhs = icmp ne i8 %tmp_8, -1
+  %sustainAmplitude_to_s = bitcast float %sustainAmplitude_rea to i32
+  %tmp_5 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %sustainAmplitude_to_s, i32 23, i32 30)
+  %tmp = trunc i32 %sustainAmplitude_to_s to i23
+  %notlhs = icmp ne i8 %tmp_5, -1
   %notrhs = icmp eq i23 %tmp, 0
-  %tmp_28 = or i1 %notrhs, %notlhs
-  %tmp_30 = fcmp ogt float %sustainAmplitude_rea, 1.000000e+00
-  %tmp_31 = and i1 %tmp_28, %tmp_30
-  %sustainAmplitude_ass = select i1 %tmp_31, float 1.000000e+00, float %sustainAmplitude_rea
+  %tmp_30 = or i1 %notrhs, %notlhs
+  %tmp_32 = fcmp ogt float %sustainAmplitude_rea, 1.000000e+00
+  %tmp_33 = and i1 %tmp_30, %tmp_32
+  %sustainAmplitude_ass = select i1 %tmp_33, float 1.000000e+00, float %sustainAmplitude_rea
   %lastpress_load = load i32* @lastpress, align 4
-  %tmp_9 = icmp ne i32 %lastpress_load, 0
-  %tmp_s = icmp eq i32 %press_read, 0
-  %or_cond_4 = or i1 %tmp_9, %tmp_s
+  %tmp_6 = icmp ne i32 %lastpress_load, 0
+  %tmp_7 = icmp eq i32 %press_read, 0
+  %or_cond_4 = or i1 %tmp_6, %tmp_7
   %releaseTime_load = load i32* @releaseTime, align 4
   %sustainTime_load = load i32* @sustainTime, align 4
-  %tmp_10 = add nsw i32 1, %decayDuration_read
-  %releaseTime_load_rel = select i1 %or_cond_4, i32 %releaseTime_load, i32 %releaseDuration_read
-  %sustainTime_load_tmp = select i1 %or_cond_4, i32 %sustainTime_load, i32 %tmp_10
+  br i1 %or_cond_4, label %._crit_edge_ifconv, label %1
+
+; <label>:1                                       ; preds = %0
+  %tmp_8 = add nsw i32 %decayDuration_read, 1
+  %tmp_9_to_int = bitcast float %sustainAmplitude_ass to i32
+  %tmp_9_neg = xor i32 %tmp_9_to_int, -2147483648
+  %tmp_9 = bitcast i32 %tmp_9_neg to float
+  %tmp_s = sub nsw i32 %releaseDuration_read, %decayDuration_read
+  %tmp_10 = sitofp i32 %tmp_s to float
+  %tmp_11 = fdiv float %tmp_9, %tmp_10
+  store float %tmp_11, float* @releaseSlope, align 4
+  br label %._crit_edge_ifconv
+
+._crit_edge_ifconv:                               ; preds = %1, %0
+  %releaseTime_flag = phi i1 [ false, %0 ], [ true, %1 ]
+  %releaseTime_loc = phi i32 [ %releaseTime_load, %0 ], [ %releaseDuration_read, %1 ]
+  %sustainTime_loc = phi i32 [ %sustainTime_load, %0 ], [ %tmp_8, %1 ]
   store i32 %press_read, i32* @lastpress, align 4
-  %tmp_38 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %wave_in_V)
+  %tmp_36 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %wave_in_V)
   %wait_load = load i1* @wait_r, align 1
-  %tmp_11 = add nsw i32 1, %sustainTime_load_tmp
-  %tmp_12 = add nsw i32 1, %releaseTime_load_rel
-  %releaseTime_new_1 = select i1 %tmp_s, i32 %releaseDuration_read, i32 %tmp_12
-  %releaseTime_loc_1 = select i1 %tmp_s, i32 %releaseTime_load, i32 %tmp_12
-  %sustainTime_new_1 = select i1 %tmp_s, i32 %sustainTime_load, i32 %tmp_11
-  %not_tmp_s = xor i1 %tmp_s, true
-  %tmp_32 = xor i1 %wait_load, true
-  %tmp_13 = or i1 %tmp_32, %not_tmp_s
+  %tmp_12 = add nsw i32 %sustainTime_loc, 1
+  %tmp_13 = add nsw i32 %releaseTime_loc, 1
+  %not_tmp_7 = xor i1 %tmp_7, true
+  %releaseTime_new_1 = select i1 %tmp_7, i32 %releaseDuration_read, i32 %tmp_13
+  %releaseTime_loc_1 = select i1 %tmp_7, i32 %releaseTime_loc, i32 %tmp_13
+  %sustainTime_new_1 = select i1 %tmp_7, i32 %sustainTime_loc, i32 %tmp_12
+  %tmp_34 = xor i1 %wait_load, true
+  %tmp_14 = or i1 %tmp_34, %not_tmp_7
   %time_load = load i32* @time_r, align 4
-  %tmp_33 = trunc i32 %press_read to i1
-  %tmp_34 = or i1 %tmp_33, %wait_load
-  %tmp_35 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %press_read, i32 1, i32 31)
-  %tmp_36 = call i32 @_ssdm_op_BitConcatenate.i32.i31.i1(i31 %tmp_35, i1 %tmp_34)
-  %releaseTime_flag_1_s = icmp eq i32 %tmp_36, 0
-  %releaseTime_new_1_re = select i1 %tmp_13, i32 %releaseTime_new_1, i32 %releaseDuration_read
-  %releaseTime_loc_1_re = select i1 %tmp_13, i32 %releaseTime_loc_1, i32 %releaseDuration_read
-  %sustainTime_new_1_tm = select i1 %tmp_13, i32 %sustainTime_new_1, i32 %tmp_10
-  %time_load_s = select i1 %tmp_13, i32 %time_load, i32 0
-  %tmp_14 = icmp slt i32 %time_load_s, %attackDuration_read
-  br i1 %releaseTime_flag_1_s, label %._crit_edge8.new_ifconv, label %mergeST1
+  %tmp_15 = add nsw i32 %decayDuration_read, 1
+  %tmp1 = or i1 %wait_load, %not_tmp_7
+  %releaseTime_flag_1_s = or i1 %tmp1, %releaseTime_flag
+  %releaseTime_new_1_re = select i1 %tmp_14, i32 %releaseTime_new_1, i32 %releaseDuration_read
+  %releaseTime_loc_1_re = select i1 %tmp_14, i32 %releaseTime_loc_1, i32 %releaseDuration_read
+  %sustainTime_new_1_tm = select i1 %tmp_14, i32 %sustainTime_new_1, i32 %tmp_15
+  %time_load_s = select i1 %tmp_14, i32 %time_load, i32 0
+  %tmp_16 = icmp slt i32 %time_load_s, %attackDuration_read
+  br i1 %releaseTime_flag_1_s, label %mergeST1, label %._crit_edge8.new_ifconv
 
 ._crit_edge8.new_ifconv:                          ; preds = %mergeST1, %._crit_edge_ifconv
-  %tmp_15 = sitofp i32 %time_load_s to float
-  %tmp_16 = fmul float %attackSlope, %tmp_15
-  %resultAmplitude_1 = fmul float %tmp_38, %tmp_16
-  %tmp_17 = icmp slt i32 %time_load_s, %decayDuration_read
-  %tmp_18 = sub nsw i32 %time_load_s, %attackDuration_read
-  %tmp_19 = sitofp i32 %tmp_18 to float
-  %tmp_20 = fmul float %decaySlope, %tmp_19
-  %tmp_21 = fadd float %tmp_20, 1.000000e+00
-  %resultAmplitude_2 = fmul float %tmp_38, %tmp_21
-  %tmp_22 = icmp slt i32 %time_load_s, %sustainTime_new_1_tm
-  %resultAmplitude_3 = fmul float %tmp_38, %sustainAmplitude_ass
-  %tmp_23 = icmp slt i32 %time_load_s, %releaseTime_loc_1_re
-  %tmp_24 = sub nsw i32 %time_load_s, %sustainTime_new_1_tm
-  %tmp_25 = sitofp i32 %tmp_24 to float
-  %tmp_26 = fmul float %releaseSlope, %tmp_25
-  %tmp_27 = fadd float %tmp_26, %sustainAmplitude_ass
-  %resultAmplitude_4 = fmul float %tmp_38, %tmp_27
-  %not_tmp_1 = xor i1 %tmp_14, true
-  %sel_tmp2 = and i1 %tmp_17, %not_tmp_1
-  %sel_tmp = xor i1 %sel_tmp2, %not_tmp_1
-  %sel_tmp6_demorgan = or i1 %tmp_14, %tmp_17
-  %tmp_22_not = xor i1 %tmp_22, true
-  %not_sel_tmp7 = or i1 %sel_tmp6_demorgan, %tmp_22_not
-  %sel_tmp13_demorgan = or i1 %sel_tmp6_demorgan, %tmp_22
-  %tmp_23_not = xor i1 %tmp_23, true
-  %not_sel_tmp = or i1 %sel_tmp13_demorgan, %tmp_23_not
-  %tmp1 = and i1 %not_sel_tmp7, %not_sel_tmp
-  %sel_tmp8 = and i1 %tmp1, %sel_tmp
-  %wait_flag_1 = or i1 %sel_tmp8, %not_tmp_s
+  %tmp_17 = sitofp i32 %time_load_s to float
+  %tmp_18 = fmul float %attackSlope, %tmp_17
+  %resultAmplitude_1 = fmul float %tmp_36, %tmp_18
+  %tmp_19 = icmp slt i32 %time_load_s, %decayDuration_read
+  %tmp_20 = sub nsw i32 %time_load_s, %attackDuration_read
+  %tmp_21 = sitofp i32 %tmp_20 to float
+  %tmp_22 = fmul float %decaySlope, %tmp_21
+  %tmp_23 = fadd float %tmp_22, 1.000000e+00
+  %resultAmplitude_2 = fmul float %tmp_36, %tmp_23
+  %tmp_24 = icmp slt i32 %time_load_s, %sustainTime_new_1_tm
+  %resultAmplitude_3 = fmul float %tmp_36, %sustainAmplitude_ass
+  %tmp_25 = icmp slt i32 %time_load_s, %releaseTime_loc_1_re
+  %releaseSlope_load = load float* @releaseSlope, align 4
+  %tmp_26 = sub nsw i32 %time_load_s, %sustainTime_new_1_tm
+  %tmp_27 = sitofp i32 %tmp_26 to float
+  %tmp_28 = fmul float %releaseSlope_load, %tmp_27
+  %tmp_29 = fadd float %tmp_28, %sustainAmplitude_ass
+  %resultAmplitude_4 = fmul float %tmp_36, %tmp_29
+  %not_tmp_s = xor i1 %tmp_16, true
+  %sel_tmp2 = and i1 %tmp_19, %not_tmp_s
+  %sel_tmp = xor i1 %sel_tmp2, %not_tmp_s
+  %sel_tmp6_demorgan = or i1 %tmp_16, %tmp_19
+  %tmp_24_not = xor i1 %tmp_24, true
+  %not_sel_tmp7 = or i1 %sel_tmp6_demorgan, %tmp_24_not
+  %sel_tmp13_demorgan = or i1 %sel_tmp6_demorgan, %tmp_24
+  %tmp_25_not = xor i1 %tmp_25, true
+  %not_sel_tmp = or i1 %sel_tmp13_demorgan, %tmp_25_not
+  %tmp2 = and i1 %not_sel_tmp7, %not_sel_tmp
+  %sel_tmp8 = and i1 %tmp2, %sel_tmp
+  %wait_flag_1 = or i1 %sel_tmp8, %not_tmp_7
   %sel_tmp1 = xor i1 %sel_tmp6_demorgan, true
-  %sel_tmp3 = and i1 %tmp_22, %sel_tmp1
+  %sel_tmp3 = and i1 %tmp_24, %sel_tmp1
   %sel_tmp4 = xor i1 %sel_tmp13_demorgan, true
-  %sel_tmp5 = and i1 %tmp_23, %sel_tmp4
+  %sel_tmp5 = and i1 %tmp_25, %sel_tmp4
   %or_cond = or i1 %sel_tmp5, %sel_tmp3
-  %or_cond1 = or i1 %sel_tmp2, %tmp_14
+  %or_cond1 = or i1 %sel_tmp2, %tmp_16
   %or_cond2 = or i1 %or_cond, %or_cond1
   %not_or_cond = xor i1 %or_cond2, true
-  %resultAmplitude_5 = select i1 %tmp_14, float %resultAmplitude_1, float 0.000000e+00
+  %resultAmplitude_5 = select i1 %tmp_16, float %resultAmplitude_1, float 0.000000e+00
   %resultAmplitude_6 = select i1 %sel_tmp2, float %resultAmplitude_2, float %resultAmplitude_5
   %resultAmplitude_7 = select i1 %sel_tmp3, float %resultAmplitude_3, float %resultAmplitude_6
   %resultAmplitude = select i1 %sel_tmp5, float %resultAmplitude_4, float %resultAmplitude_7
-  %tmp_29 = add nsw i32 %time_load_s, 1
+  %tmp_31 = add nsw i32 %time_load_s, 1
   call void @_ssdm_op_Write.axis.volatile.floatP(float* %wave_out_V, float %resultAmplitude)
-  store i32 %tmp_29, i32* @time_r, align 4
+  store i32 %tmp_31, i32* @time_r, align 4
   br i1 %wait_flag_1, label %mergeST3, label %.new
 
 mergeST1:                                         ; preds = %._crit_edge_ifconv
@@ -199,25 +207,7 @@ entry:
   ret i8 %empty_5
 }
 
-define weak i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32, i32, i32) nounwind readnone {
-entry:
-  %empty = call i32 @llvm.part.select.i32(i32 %0, i32 %1, i32 %2)
-  %empty_6 = trunc i32 %empty to i31
-  ret i31 %empty_6
-}
-
 declare i23 @_ssdm_op_PartSelect.i23.i32.i32.i32(i32, i32, i32) nounwind readnone
-
-declare i1 @_ssdm_op_PartSelect.i1.i32.i32.i32(i32, i32, i32) nounwind readnone
-
-define weak i32 @_ssdm_op_BitConcatenate.i32.i31.i1(i31, i1) nounwind readnone {
-entry:
-  %empty = zext i31 %0 to i32
-  %empty_7 = zext i1 %1 to i32
-  %empty_8 = shl i32 %empty, 1
-  %empty_9 = or i32 %empty_8, %empty_7
-  ret i32 %empty_9
-}
 
 !opencl.kernels = !{!0, !7, !13, !15, !18}
 !hls.encrypted.func = !{}

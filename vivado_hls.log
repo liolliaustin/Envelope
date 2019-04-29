@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2017.2/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'root' on host '0027fb2bf205' (Linux_x86_64 version 4.14.109-1-MANJARO) on Mon Apr 29 21:42:59 UTC 2019
+INFO: [HLS 200-10] For user 'root' on host '0027fb2bf205' (Linux_x86_64 version 4.14.109-1-MANJARO) on Mon Apr 29 23:29:41 UTC 2019
 INFO: [HLS 200-10] In directory '/root/repo/new/ECE1373_GhostSynth/modules/Envelope'
 INFO: [HLS 200-10] Opening project '/root/repo/new/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL'.
 INFO: [HLS 200-10] Opening solution '/root/repo/new/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1'.
@@ -34,4 +34,4 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'envelope_ap_fadd_
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 21:43:19 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 23:30:02 2019...

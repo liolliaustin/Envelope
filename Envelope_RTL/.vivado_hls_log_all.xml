@@ -12,22 +12,23 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Register 'time_r' is power-on initialization." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T21:42:46.174+0000" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'wait_r' is power-on initialization." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T21:42:46.169+0000" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'sustainTime' is power-on initialization." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T21:42:46.143+0000" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'releaseTime' is power-on initialization." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T21:42:46.138+0000" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'lastpress' is power-on initialization." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T21:42:46.124+0000" type="Warning"/>
-        <logs message="WARNING: [SYN 201-107] Renaming port name 'envelope/time' to 'envelope/time_r' to avoid the conflict with HDL keywords or other object names." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T21:42:45.738+0000" type="Warning"/>
-        <logs message="WARNING: [SYN 201-107] Renaming port name 'envelope/wait' to 'envelope/wait_r' to avoid the conflict with HDL keywords or other object names." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T21:42:45.723+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'time_r' is power-on initialization." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:29:37.496+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'wait_r' is power-on initialization." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:29:37.490+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'releaseSlope' is power-on initialization." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:29:37.484+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'sustainTime' is power-on initialization." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:29:37.475+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'releaseTime' is power-on initialization." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:29:37.470+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lastpress' is power-on initialization." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:29:37.457+0000" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'envelope/time' to 'envelope/time_r' to avoid the conflict with HDL keywords or other object names." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:29:37.064+0000" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'envelope/wait' to 'envelope/wait_r' to avoid the conflict with HDL keywords or other object names." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:29:37.055+0000" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>
       <packageLog>
-        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'envelope_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T21:43:18.382+0000" type="Warning"/>
-        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'envelope_ap_fmul_2_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T21:43:17.156+0000" type="Warning"/>
-        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'envelope_ap_fdiv_14_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T21:43:15.600+0000" type="Warning"/>
-        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'envelope_ap_sitofp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T21:43:14.317+0000" type="Warning"/>
-        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'envelope_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T21:43:12.537+0000" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'envelope_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:30:02.007+0000" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'envelope_ap_fmul_2_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:30:00.639+0000" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'envelope_ap_fdiv_14_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:29:58.917+0000" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'envelope_ap_sitofp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:29:57.577+0000" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'envelope_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="Envelope_RTL" solutionName="solution1" date="2019-04-29T23:29:55.745+0000" type="Warning"/>
       </packageLog>
       <csimLog/>
     </logs>

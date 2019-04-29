@@ -6,7 +6,7 @@
 <Project Version="7" Minor="20" Path="/root/repo/new/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/impl/verilog/project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="1dd8f140fc244d328279ff0e61f33f7c"/>
+    <Option Name="Id" Val="8d3397a7505c4f06bdc325952e426150"/>
     <Option Name="Part" Val="xc7z100ffg900-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>

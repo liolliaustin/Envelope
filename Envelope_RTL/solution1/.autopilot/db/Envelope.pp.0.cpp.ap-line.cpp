@@ -6203,7 +6203,7 @@ void envelope(
  static int lastpress = 0;
  float attackSlope = (float)1/attackDuration;
  float decaySlope = (float)(sustainAmplitude - 1)/(decayDuration - attackDuration);
- float releaseSlope=(float)(0-sustainAmplitude)/(releaseDuration - decayDuration);
+ static float releaseSlope= 0;
 #pragma empty_line
  float resultAmplitude;
 #pragma empty_line
@@ -6217,6 +6217,7 @@ void envelope(
  if (lastpress == 0 && press != 0) {
   releaseTime = releaseDuration;
   sustainTime = decayDuration+1;
+  releaseSlope = (float)(0-sustainAmplitude)/(releaseDuration - decayDuration);
  }
 #pragma empty_line
  lastpress = press;

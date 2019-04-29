@@ -88,7 +88,7 @@ set NewPortList {[
  	{ "name": "wave_out_V_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "wave_out_V", "role": "TREADY" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8"],
 		"CDFG" : "envelope",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"Pipeline" : "None", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -111,6 +111,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "lastpress", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "releaseTime", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "sustainTime", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "releaseSlope", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "wait_r", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "time_r", "Type" : "OVld", "Direction" : "IO"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_CTRL_BUS_s_axi_U", "Parent" : "0"},
@@ -118,17 +119,15 @@ set RtlHierarchyInfo {[
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fmul_32ncud_U2", "Parent" : "0"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fdiv_32ndEe_U3", "Parent" : "0"},
 	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fdiv_32ndEe_U4", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fdiv_32ndEe_U5", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U5", "Parent" : "0"},
 	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U6", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U7", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U8", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fcmp_32nfYi_U9", "Parent" : "0"}]}
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fcmp_32nfYi_U7", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	envelope {
-		wave_in_V {Type I LastRead 0 FirstWrite -1}
-		wave_out_V {Type O LastRead -1 FirstWrite 44}
+		wave_in_V {Type I LastRead 44 FirstWrite -1}
+		wave_out_V {Type O LastRead -1 FirstWrite 66}
 		press {Type I LastRead 0 FirstWrite -1}
 		attackDuration {Type I LastRead 0 FirstWrite -1}
 		decayDuration {Type I LastRead 0 FirstWrite -1}
@@ -137,14 +136,15 @@ set ArgLastReadFirstWriteLatency {
 		lastpress {Type IO LastRead -1 FirstWrite -1}
 		releaseTime {Type IO LastRead -1 FirstWrite -1}
 		sustainTime {Type IO LastRead -1 FirstWrite -1}
+		releaseSlope {Type IO LastRead -1 FirstWrite -1}
 		wait_r {Type IO LastRead -1 FirstWrite -1}
 		time_r {Type IO LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "45", "Max" : "45"}
-	, {"Name" : "Interval", "Min" : "46", "Max" : "46"}
+	{"Name" : "Latency", "Min" : "46", "Max" : "67"}
+	, {"Name" : "Interval", "Min" : "47", "Max" : "68"}
 ]}
 
 set PipelineEnableSignalInfo {[
