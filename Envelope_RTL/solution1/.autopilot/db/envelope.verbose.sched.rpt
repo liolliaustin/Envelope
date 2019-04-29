@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'envelope'
 ================================================================
-* Date:           Mon Apr 29 11:14:18 2019
+* Date:           Mon Apr 29 21:42:45 2019
 
 * Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
 * Project:        Envelope_RTL
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline|
     | min | max | min | max |   Type  |
     +-----+-----+-----+-----+---------+
-    |   27|   89|   28|   90|   none  |
+    |   45|   45|   46|   46|   none  |
     +-----+-----+-----+-----+---------+
 
     + Detail: 
@@ -65,14 +65,13 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states: 90
+* Number of FSM states: 46
 * Pipeline: 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 
-	2  / (!guard_variable_for_e)
-	22  / (guard_variable_for_e)
+	2  / true
 2 --> 
 	3  / true
 3 --> 
@@ -114,8 +113,7 @@ IsGatedGlobalClock: 0
 21 --> 
 	22  / true
 22 --> 
-	23  / (!guard_variable_for_e_1)
-	44  / (guard_variable_for_e_1)
+	23  / true
 23 --> 
 	24  / true
 24 --> 
@@ -159,1058 +157,803 @@ IsGatedGlobalClock: 0
 43 --> 
 	44  / true
 44 --> 
-	45  / (!guard_variable_for_e_2)
-	66  / (guard_variable_for_e_2)
+	45  / true
 45 --> 
 	46  / true
 46 --> 
-	47  / true
-47 --> 
-	48  / true
-48 --> 
-	49  / true
-49 --> 
-	50  / true
-50 --> 
-	51  / true
-51 --> 
-	52  / true
-52 --> 
-	53  / true
-53 --> 
-	54  / true
-54 --> 
-	55  / true
-55 --> 
-	56  / true
-56 --> 
-	57  / true
-57 --> 
-	58  / true
-58 --> 
-	59  / true
-59 --> 
-	60  / true
-60 --> 
-	61  / true
-61 --> 
-	62  / true
-62 --> 
-	63  / true
-63 --> 
-	64  / true
-64 --> 
-	65  / true
-65 --> 
-	66  / true
-66 --> 
-	67  / true
-67 --> 
-	68  / true
-68 --> 
-	69  / true
-69 --> 
-	70  / true
-70 --> 
-	71  / true
-71 --> 
-	72  / true
-72 --> 
-	73  / true
-73 --> 
-	74  / true
-74 --> 
-	75  / true
-75 --> 
-	76  / true
-76 --> 
-	77  / true
-77 --> 
-	78  / true
-78 --> 
-	79  / true
-79 --> 
-	80  / true
-80 --> 
-	81  / true
-81 --> 
-	82  / true
-82 --> 
-	83  / true
-83 --> 
-	84  / true
-84 --> 
-	85  / true
-85 --> 
-	86  / true
-86 --> 
-	87  / true
-87 --> 
-	88  / true
-88 --> 
-	89  / true
-89 --> 
-	90  / true
-90 --> 
 * FSM state operations: 
 
- <State 1>: 7.41ns
-ST_1: StgValue_91 (20)  [1/1] 0.00ns
-:0  call void (...)* @_ssdm_op_SpecBitsMap(float* %wave_in_V), !map !20
+ <State 1>: 6.33ns
+ST_1: releaseDuration_read (21)  [1/1] 1.00ns
+._crit_edge_ifconv:8  %releaseDuration_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %releaseDuration)
 
-ST_1: StgValue_92 (21)  [1/1] 0.00ns
-:1  call void (...)* @_ssdm_op_SpecBitsMap(float* %wave_out_V), !map !26
+ST_1: sustainAmplitude_rea (22)  [1/1] 1.00ns
+._crit_edge_ifconv:9  %sustainAmplitude_rea = call float @_ssdm_op_Read.s_axilite.float(float %sustainAmplitude)
 
-ST_1: StgValue_93 (22)  [1/1] 0.00ns
-:2  call void (...)* @_ssdm_op_SpecBitsMap(i32 %press), !map !30
+ST_1: decayDuration_read (23)  [1/1] 1.00ns
+._crit_edge_ifconv:10  %decayDuration_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %decayDuration)
 
-ST_1: StgValue_94 (23)  [1/1] 0.00ns
-:3  call void (...)* @_ssdm_op_SpecBitsMap(i32 %attackDuration), !map !36
+ST_1: attackDuration_read (24)  [1/1] 1.00ns
+._crit_edge_ifconv:11  %attackDuration_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %attackDuration)
 
-ST_1: StgValue_95 (24)  [1/1] 0.00ns
-:4  call void (...)* @_ssdm_op_SpecBitsMap(i32 %decayDuration), !map !40
+ST_1: press_read (25)  [1/1] 1.00ns
+._crit_edge_ifconv:12  %press_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %press)
 
-ST_1: StgValue_96 (25)  [1/1] 0.00ns
-:5  call void (...)* @_ssdm_op_SpecBitsMap(float %sustainAmplitude), !map !44
+ST_1: lastpress_load (54)  [1/1] 0.00ns  loc: src/Envelope.cpp:47
+._crit_edge_ifconv:41  %lastpress_load = load i32* @lastpress, align 4
 
-ST_1: StgValue_97 (26)  [1/1] 0.00ns
-:6  call void (...)* @_ssdm_op_SpecBitsMap(i32 %releaseDuration), !map !48
+ST_1: tmp_9 (55)  [1/1] 3.26ns  loc: src/Envelope.cpp:47
+._crit_edge_ifconv:42  %tmp_9 = icmp ne i32 %lastpress_load, 0
 
-ST_1: StgValue_98 (27)  [1/1] 0.00ns
-:7  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @envelope_str) nounwind
+ST_1: tmp_s (56)  [1/1] 3.26ns  loc: src/Envelope.cpp:47
+._crit_edge_ifconv:43  %tmp_s = icmp eq i32 %press_read, 0
 
-ST_1: releaseDuration_read (28)  [1/1] 1.00ns
-:8  %releaseDuration_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %releaseDuration)
+ST_1: StgValue_55 (63)  [1/1] 0.00ns  loc: src/Envelope.cpp:52
+._crit_edge_ifconv:50  store i32 %press_read, i32* @lastpress, align 4
 
-ST_1: sustainAmplitude_rea (29)  [1/1] 1.00ns
-:9  %sustainAmplitude_rea = call float @_ssdm_op_Read.s_axilite.float(float %sustainAmplitude)
+ST_1: tmp_38 (64)  [2/2] 0.00ns  loc: src/Envelope.cpp:57
+._crit_edge_ifconv:51  %tmp_38 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %wave_in_V)
 
-ST_1: decayDuration_read (30)  [1/1] 1.00ns
-:10  %decayDuration_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %decayDuration)
+ST_1: wait_load (65)  [1/1] 0.00ns
+._crit_edge_ifconv:52  %wait_load = load i1* @wait_r, align 1
 
-ST_1: attackDuration_read (31)  [1/1] 1.00ns
-:11  %attackDuration_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %attackDuration)
+ST_1: not_tmp_s (71)  [1/1] 2.07ns  loc: src/Envelope.cpp:47
+._crit_edge_ifconv:58  %not_tmp_s = xor i1 %tmp_s, true
 
-ST_1: press_read (32)  [1/1] 1.00ns
-:12  %press_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %press)
+ST_1: tmp_33 (75)  [1/1] 0.00ns (grouped into LUT with out node releaseTime_flag_1_s)
+._crit_edge_ifconv:62  %tmp_33 = trunc i32 %press_read to i1
 
-ST_1: StgValue_104 (33)  [1/1] 0.00ns  loc: src/Envelope.cpp:21
-:13  call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+ST_1: tmp_34 (76)  [1/1] 0.00ns (grouped into LUT with out node releaseTime_flag_1_s)
+._crit_edge_ifconv:63  %tmp_34 = or i1 %tmp_33, %wait_load
 
-ST_1: StgValue_105 (34)  [1/1] 0.00ns  loc: src/Envelope.cpp:23
-:14  call void (...)* @_ssdm_op_SpecInterface(float* %wave_in_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+ST_1: tmp_35 (77)  [1/1] 0.00ns (grouped into LUT with out node releaseTime_flag_1_s)
+._crit_edge_ifconv:64  %tmp_35 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %press_read, i32 1, i32 31)
 
-ST_1: StgValue_106 (35)  [1/1] 0.00ns  loc: src/Envelope.cpp:24
-:15  call void (...)* @_ssdm_op_SpecInterface(float* %wave_out_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+ST_1: tmp_36 (78)  [1/1] 0.00ns  loc: src/Envelope.cpp:65 (grouped into LUT with out node releaseTime_flag_1_s)
+._crit_edge_ifconv:65  %tmp_36 = call i32 @_ssdm_op_BitConcatenate.i32.i31.i1(i31 %tmp_35, i1 %tmp_34)
 
-ST_1: StgValue_107 (36)  [1/1] 0.00ns  loc: src/Envelope.cpp:26
-:16  call void (...)* @_ssdm_op_SpecInterface(i32 %press, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str5, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
-
-ST_1: StgValue_108 (37)  [1/1] 0.00ns  loc: src/Envelope.cpp:27
-:17  call void (...)* @_ssdm_op_SpecInterface(i32 %attackDuration, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str5, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
-
-ST_1: StgValue_109 (38)  [1/1] 0.00ns  loc: src/Envelope.cpp:28
-:18  call void (...)* @_ssdm_op_SpecInterface(i32 %decayDuration, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str5, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
-
-ST_1: StgValue_110 (39)  [1/1] 0.00ns  loc: src/Envelope.cpp:29
-:19  call void (...)* @_ssdm_op_SpecInterface(float %sustainAmplitude, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str5, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
-
-ST_1: StgValue_111 (40)  [1/1] 0.00ns  loc: src/Envelope.cpp:30
-:20  call void (...)* @_ssdm_op_SpecInterface(i32 %releaseDuration, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str5, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
-
-ST_1: guard_variable_for_e (41)  [1/1] 0.00ns
-:21  %guard_variable_for_e = load i1* @guard_variable_for_e_4, align 1
-
-ST_1: StgValue_113 (42)  [1/1] 0.00ns  loc: src/Envelope.cpp:33
-:22  br i1 %guard_variable_for_e, label %._crit_edge, label %codeRepl1
-
-ST_1: tmp_2_i (44)  [6/6] 6.41ns  loc: src/Envelope.cpp:33
-codeRepl1:0  %tmp_2_i = sitofp i32 %attackDuration_read to float
-
-ST_1: StgValue_115 (47)  [1/1] 0.00ns  loc: src/Envelope.cpp:33
-codeRepl1:3  store i1 true, i1* @guard_variable_for_e_4, align 1
+ST_1: releaseTime_flag_1_s (79)  [1/1] 3.26ns  loc: src/Envelope.cpp:65 (out node of the LUT)
+._crit_edge_ifconv:66  %releaseTime_flag_1_s = icmp eq i32 %tmp_36, 0
 
 
- <State 2>: 6.41ns
-ST_2: tmp_2_i (44)  [5/6] 6.41ns  loc: src/Envelope.cpp:33
-codeRepl1:0  %tmp_2_i = sitofp i32 %attackDuration_read to float
+ <State 2>: 7.40ns
+ST_2: tmp_3 (37)  [1/1] 2.90ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:24  %tmp_3 = sub nsw i32 %decayDuration_read, %attackDuration_read
+
+ST_2: tmp_6 (43)  [1/1] 2.90ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:30  %tmp_6 = sub nsw i32 %releaseDuration_read, %decayDuration_read
+
+ST_2: tmp_38 (64)  [1/2] 0.00ns  loc: src/Envelope.cpp:57
+._crit_edge_ifconv:51  %tmp_38 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %wave_in_V)
+
+ST_2: tmp_32 (72)  [1/1] 0.00ns  loc: src/Envelope.cpp:65 (grouped into LUT with out node tmp_13)
+._crit_edge_ifconv:59  %tmp_32 = xor i1 %wait_load, true
+
+ST_2: tmp_13 (73)  [1/1] 2.07ns  loc: src/Envelope.cpp:65 (out node of the LUT)
+._crit_edge_ifconv:60  %tmp_13 = or i1 %tmp_32, %not_tmp_s
+
+ST_2: time_load (74)  [1/1] 0.00ns  loc: src/Envelope.cpp:71
+._crit_edge_ifconv:61  %time_load = load i32* @time_r, align 4
+
+ST_2: time_load_s (83)  [1/1] 2.07ns  loc: src/Envelope.cpp:65
+._crit_edge_ifconv:70  %time_load_s = select i1 %tmp_13, i32 %time_load, i32 0
+
+ST_2: tmp_14 (84)  [1/1] 3.26ns  loc: src/Envelope.cpp:71
+._crit_edge_ifconv:71  %tmp_14 = icmp slt i32 %time_load_s, %attackDuration_read
 
 
  <State 3>: 6.41ns
-ST_3: tmp_2_i (44)  [4/6] 6.41ns  loc: src/Envelope.cpp:33
-codeRepl1:0  %tmp_2_i = sitofp i32 %attackDuration_read to float
+ST_3: tmp_1 (34)  [6/6] 6.41ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:21  %tmp_1 = sitofp i32 %attackDuration_read to float
+
+ST_3: tmp_4 (38)  [6/6] 6.41ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:25  %tmp_4 = sitofp i32 %tmp_3 to float
+
+ST_3: tmp_7 (44)  [6/6] 6.41ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:31  %tmp_7 = sitofp i32 %tmp_6 to float
 
 
- <State 4>: 6.41ns
-ST_4: tmp_2_i (44)  [3/6] 6.41ns  loc: src/Envelope.cpp:33
-codeRepl1:0  %tmp_2_i = sitofp i32 %attackDuration_read to float
+ <State 4>: 7.26ns
+ST_4: tmp_1 (34)  [5/6] 6.41ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:21  %tmp_1 = sitofp i32 %attackDuration_read to float
+
+ST_4: tmp_2 (36)  [5/5] 7.26ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:23  %tmp_2 = fadd float %sustainAmplitude_rea, -1.000000e+00
+
+ST_4: tmp_4 (38)  [5/6] 6.41ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:25  %tmp_4 = sitofp i32 %tmp_3 to float
+
+ST_4: tmp_7 (44)  [5/6] 6.41ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:31  %tmp_7 = sitofp i32 %tmp_6 to float
 
 
- <State 5>: 6.41ns
-ST_5: tmp_2_i (44)  [2/6] 6.41ns  loc: src/Envelope.cpp:33
-codeRepl1:0  %tmp_2_i = sitofp i32 %attackDuration_read to float
+ <State 5>: 7.26ns
+ST_5: tmp_1 (34)  [4/6] 6.41ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:21  %tmp_1 = sitofp i32 %attackDuration_read to float
+
+ST_5: tmp_2 (36)  [4/5] 7.26ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:23  %tmp_2 = fadd float %sustainAmplitude_rea, -1.000000e+00
+
+ST_5: tmp_4 (38)  [4/6] 6.41ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:25  %tmp_4 = sitofp i32 %tmp_3 to float
+
+ST_5: tmp_7 (44)  [4/6] 6.41ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:31  %tmp_7 = sitofp i32 %tmp_6 to float
 
 
- <State 6>: 6.41ns
-ST_6: tmp_2_i (44)  [1/6] 6.41ns  loc: src/Envelope.cpp:33
-codeRepl1:0  %tmp_2_i = sitofp i32 %attackDuration_read to float
+ <State 6>: 7.26ns
+ST_6: tmp_1 (34)  [3/6] 6.41ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:21  %tmp_1 = sitofp i32 %attackDuration_read to float
+
+ST_6: tmp_2 (36)  [3/5] 7.26ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:23  %tmp_2 = fadd float %sustainAmplitude_rea, -1.000000e+00
+
+ST_6: tmp_4 (38)  [3/6] 6.41ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:25  %tmp_4 = sitofp i32 %tmp_3 to float
+
+ST_6: tmp_7 (44)  [3/6] 6.41ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:31  %tmp_7 = sitofp i32 %tmp_6 to float
 
 
- <State 7>: 6.08ns
-ST_7: tmp_3_i (45)  [16/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ <State 7>: 7.26ns
+ST_7: tmp_1 (34)  [2/6] 6.41ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:21  %tmp_1 = sitofp i32 %attackDuration_read to float
+
+ST_7: tmp_2 (36)  [2/5] 7.26ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:23  %tmp_2 = fadd float %sustainAmplitude_rea, -1.000000e+00
+
+ST_7: tmp_4 (38)  [2/6] 6.41ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:25  %tmp_4 = sitofp i32 %tmp_3 to float
+
+ST_7: tmp_7 (44)  [2/6] 6.41ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:31  %tmp_7 = sitofp i32 %tmp_6 to float
 
 
- <State 8>: 6.08ns
-ST_8: tmp_3_i (45)  [15/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ <State 8>: 7.26ns
+ST_8: tmp_1 (34)  [1/6] 6.41ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:21  %tmp_1 = sitofp i32 %attackDuration_read to float
+
+ST_8: tmp_2 (36)  [1/5] 7.26ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:23  %tmp_2 = fadd float %sustainAmplitude_rea, -1.000000e+00
+
+ST_8: tmp_4 (38)  [1/6] 6.41ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:25  %tmp_4 = sitofp i32 %tmp_3 to float
+
+ST_8: tmp_7 (44)  [1/6] 6.41ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:31  %tmp_7 = sitofp i32 %tmp_6 to float
+
+ST_8: tmp_30 (51)  [1/1] 6.79ns  loc: src/Envelope.cpp:40
+._crit_edge_ifconv:38  %tmp_30 = fcmp ogt float %sustainAmplitude_rea, 1.000000e+00
 
 
- <State 9>: 6.08ns
-ST_9: tmp_3_i (45)  [14/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ <State 9>: 8.14ns
+ST_9: attackSlope (35)  [16/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_9: decaySlope (39)  [16/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_9: tmp_5_to_int (40)  [1/1] 0.00ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:27  %tmp_5_to_int = bitcast float %sustainAmplitude_rea to i32
+
+ST_9: tmp_5_neg (41)  [1/1] 2.07ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:28  %tmp_5_neg = xor i32 %tmp_5_to_int, -2147483648
+
+ST_9: tmp_5 (42)  [1/1] 0.00ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:29  %tmp_5 = bitcast i32 %tmp_5_neg to float
+
+ST_9: releaseSlope (45)  [16/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
+
+ST_9: tmp_8 (46)  [1/1] 0.00ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:33  %tmp_8 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_5_to_int, i32 23, i32 30)
+
+ST_9: tmp (47)  [1/1] 0.00ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:34  %tmp = trunc i32 %tmp_5_to_int to i23
+
+ST_9: notlhs (48)  [1/1] 2.91ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:35  %notlhs = icmp ne i8 %tmp_8, -1
+
+ST_9: notrhs (49)  [1/1] 3.20ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:36  %notrhs = icmp eq i23 %tmp, 0
+
+ST_9: tmp_28 (50)  [1/1] 0.00ns  loc: src/Envelope.cpp:36 (grouped into LUT with out node sustainAmplitude_ass)
+._crit_edge_ifconv:37  %tmp_28 = or i1 %notrhs, %notlhs
+
+ST_9: tmp_31 (52)  [1/1] 0.00ns  loc: src/Envelope.cpp:40 (grouped into LUT with out node sustainAmplitude_ass)
+._crit_edge_ifconv:39  %tmp_31 = and i1 %tmp_28, %tmp_30
+
+ST_9: sustainAmplitude_ass (53)  [1/1] 2.07ns  loc: src/Envelope.cpp:40 (out node of the LUT)
+._crit_edge_ifconv:40  %sustainAmplitude_ass = select i1 %tmp_31, float 1.000000e+00, float %sustainAmplitude_rea
 
 
  <State 10>: 6.08ns
-ST_10: tmp_3_i (45)  [13/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_10: attackSlope (35)  [15/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_10: decaySlope (39)  [15/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_10: releaseSlope (45)  [15/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
 
  <State 11>: 6.08ns
-ST_11: tmp_3_i (45)  [12/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_11: attackSlope (35)  [14/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_11: decaySlope (39)  [14/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_11: releaseSlope (45)  [14/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
 
  <State 12>: 6.08ns
-ST_12: tmp_3_i (45)  [11/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_12: attackSlope (35)  [13/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_12: decaySlope (39)  [13/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_12: releaseSlope (45)  [13/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
 
  <State 13>: 6.08ns
-ST_13: tmp_3_i (45)  [10/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_13: attackSlope (35)  [12/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_13: decaySlope (39)  [12/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_13: releaseSlope (45)  [12/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
 
  <State 14>: 6.08ns
-ST_14: tmp_3_i (45)  [9/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_14: attackSlope (35)  [11/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_14: decaySlope (39)  [11/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_14: releaseSlope (45)  [11/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
 
  <State 15>: 6.08ns
-ST_15: tmp_3_i (45)  [8/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_15: attackSlope (35)  [10/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_15: decaySlope (39)  [10/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_15: releaseSlope (45)  [10/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
 
  <State 16>: 6.08ns
-ST_16: tmp_3_i (45)  [7/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_16: attackSlope (35)  [9/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_16: decaySlope (39)  [9/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_16: releaseSlope (45)  [9/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
 
  <State 17>: 6.08ns
-ST_17: tmp_3_i (45)  [6/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_17: attackSlope (35)  [8/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_17: decaySlope (39)  [8/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_17: releaseSlope (45)  [8/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
 
  <State 18>: 6.08ns
-ST_18: tmp_3_i (45)  [5/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_18: attackSlope (35)  [7/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_18: decaySlope (39)  [7/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_18: releaseSlope (45)  [7/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
 
  <State 19>: 6.08ns
-ST_19: tmp_3_i (45)  [4/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_19: attackSlope (35)  [6/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_19: decaySlope (39)  [6/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_19: releaseSlope (45)  [6/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
 
  <State 20>: 6.08ns
-ST_20: tmp_3_i (45)  [3/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_20: attackSlope (35)  [5/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_20: decaySlope (39)  [5/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_20: releaseSlope (45)  [5/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
 
  <State 21>: 6.08ns
-ST_21: tmp_3_i (45)  [2/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_21: attackSlope (35)  [4/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
+
+ST_21: decaySlope (39)  [4/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
+
+ST_21: releaseSlope (45)  [4/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
 
  <State 22>: 6.08ns
-ST_22: tmp_3_i (45)  [1/16] 6.08ns  loc: src/Envelope.cpp:33
-codeRepl1:1  %tmp_3_i = fdiv float 1.000000e+00, %tmp_2_i
+ST_22: attackSlope (35)  [3/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
 
-ST_22: StgValue_137 (46)  [1/1] 0.00ns  loc: src/Envelope.cpp:33
-codeRepl1:2  store float %tmp_3_i, float* @attackSlope, align 4
+ST_22: decaySlope (39)  [3/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
 
-ST_22: StgValue_138 (48)  [1/1] 0.00ns
-codeRepl1:4  br label %._crit_edge
+ST_22: releaseSlope (45)  [3/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
-ST_22: guard_variable_for_e_1 (50)  [1/1] 0.00ns
-._crit_edge:0  %guard_variable_for_e_1 = load i1* @guard_variable_for_e_3, align 1
 
-ST_22: StgValue_140 (51)  [1/1] 0.00ns  loc: src/Envelope.cpp:34
-._crit_edge:1  br i1 %guard_variable_for_e_1, label %._crit_edge7, label %codeRepl
+ <State 23>: 6.08ns
+ST_23: attackSlope (35)  [2/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
 
-ST_22: tmp_6_i (54)  [1/1] 2.90ns  loc: src/Envelope.cpp:34
-codeRepl:1  %tmp_6_i = sub nsw i32 %decayDuration_read, %attackDuration_read
+ST_23: decaySlope (39)  [2/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
 
-ST_22: StgValue_142 (58)  [1/1] 0.00ns  loc: src/Envelope.cpp:34
-codeRepl:5  store i1 true, i1* @guard_variable_for_e_3, align 1
+ST_23: releaseSlope (45)  [2/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
+ST_23: or_cond_4 (57)  [1/1] 2.07ns  loc: src/Envelope.cpp:47
+._crit_edge_ifconv:44  %or_cond_4 = or i1 %tmp_9, %tmp_s
 
- <State 23>: 6.41ns
-ST_23: tmp_7_i (55)  [6/6] 6.41ns  loc: src/Envelope.cpp:34
-codeRepl:2  %tmp_7_i = sitofp i32 %tmp_6_i to float
 
+ <State 24>: 8.23ns
+ST_24: StgValue_152 (13)  [1/1] 0.00ns
+._crit_edge_ifconv:0  call void (...)* @_ssdm_op_SpecBitsMap(float* %wave_in_V), !map !20
 
- <State 24>: 7.26ns
-ST_24: tmp_5_i (53)  [5/5] 7.26ns  loc: src/Envelope.cpp:34
-codeRepl:0  %tmp_5_i = fadd float %sustainAmplitude_rea, -1.000000e+00
+ST_24: StgValue_153 (14)  [1/1] 0.00ns
+._crit_edge_ifconv:1  call void (...)* @_ssdm_op_SpecBitsMap(float* %wave_out_V), !map !26
 
-ST_24: tmp_7_i (55)  [5/6] 6.41ns  loc: src/Envelope.cpp:34
-codeRepl:2  %tmp_7_i = sitofp i32 %tmp_6_i to float
+ST_24: StgValue_154 (15)  [1/1] 0.00ns
+._crit_edge_ifconv:2  call void (...)* @_ssdm_op_SpecBitsMap(i32 %press), !map !30
 
+ST_24: StgValue_155 (16)  [1/1] 0.00ns
+._crit_edge_ifconv:3  call void (...)* @_ssdm_op_SpecBitsMap(i32 %attackDuration), !map !36
 
- <State 25>: 7.26ns
-ST_25: tmp_5_i (53)  [4/5] 7.26ns  loc: src/Envelope.cpp:34
-codeRepl:0  %tmp_5_i = fadd float %sustainAmplitude_rea, -1.000000e+00
+ST_24: StgValue_156 (17)  [1/1] 0.00ns
+._crit_edge_ifconv:4  call void (...)* @_ssdm_op_SpecBitsMap(i32 %decayDuration), !map !40
 
-ST_25: tmp_7_i (55)  [4/6] 6.41ns  loc: src/Envelope.cpp:34
-codeRepl:2  %tmp_7_i = sitofp i32 %tmp_6_i to float
+ST_24: StgValue_157 (18)  [1/1] 0.00ns
+._crit_edge_ifconv:5  call void (...)* @_ssdm_op_SpecBitsMap(float %sustainAmplitude), !map !44
 
+ST_24: StgValue_158 (19)  [1/1] 0.00ns
+._crit_edge_ifconv:6  call void (...)* @_ssdm_op_SpecBitsMap(i32 %releaseDuration), !map !48
 
- <State 26>: 7.26ns
-ST_26: tmp_5_i (53)  [3/5] 7.26ns  loc: src/Envelope.cpp:34
-codeRepl:0  %tmp_5_i = fadd float %sustainAmplitude_rea, -1.000000e+00
+ST_24: StgValue_159 (20)  [1/1] 0.00ns
+._crit_edge_ifconv:7  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @envelope_str) nounwind
 
-ST_26: tmp_7_i (55)  [3/6] 6.41ns  loc: src/Envelope.cpp:34
-codeRepl:2  %tmp_7_i = sitofp i32 %tmp_6_i to float
+ST_24: StgValue_160 (26)  [1/1] 0.00ns  loc: src/Envelope.cpp:21
+._crit_edge_ifconv:13  call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
+ST_24: StgValue_161 (27)  [1/1] 0.00ns  loc: src/Envelope.cpp:23
+._crit_edge_ifconv:14  call void (...)* @_ssdm_op_SpecInterface(float* %wave_in_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
- <State 27>: 7.26ns
-ST_27: tmp_5_i (53)  [2/5] 7.26ns  loc: src/Envelope.cpp:34
-codeRepl:0  %tmp_5_i = fadd float %sustainAmplitude_rea, -1.000000e+00
+ST_24: StgValue_162 (28)  [1/1] 0.00ns  loc: src/Envelope.cpp:24
+._crit_edge_ifconv:15  call void (...)* @_ssdm_op_SpecInterface(float* %wave_out_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
-ST_27: tmp_7_i (55)  [2/6] 6.41ns  loc: src/Envelope.cpp:34
-codeRepl:2  %tmp_7_i = sitofp i32 %tmp_6_i to float
+ST_24: StgValue_163 (29)  [1/1] 0.00ns  loc: src/Envelope.cpp:26
+._crit_edge_ifconv:16  call void (...)* @_ssdm_op_SpecInterface(i32 %press, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str5, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
+ST_24: StgValue_164 (30)  [1/1] 0.00ns  loc: src/Envelope.cpp:27
+._crit_edge_ifconv:17  call void (...)* @_ssdm_op_SpecInterface(i32 %attackDuration, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str5, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
- <State 28>: 7.26ns
-ST_28: tmp_5_i (53)  [1/5] 7.26ns  loc: src/Envelope.cpp:34
-codeRepl:0  %tmp_5_i = fadd float %sustainAmplitude_rea, -1.000000e+00
+ST_24: StgValue_165 (31)  [1/1] 0.00ns  loc: src/Envelope.cpp:28
+._crit_edge_ifconv:18  call void (...)* @_ssdm_op_SpecInterface(i32 %decayDuration, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str5, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
-ST_28: tmp_7_i (55)  [1/6] 6.41ns  loc: src/Envelope.cpp:34
-codeRepl:2  %tmp_7_i = sitofp i32 %tmp_6_i to float
+ST_24: StgValue_166 (32)  [1/1] 0.00ns  loc: src/Envelope.cpp:29
+._crit_edge_ifconv:19  call void (...)* @_ssdm_op_SpecInterface(float %sustainAmplitude, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str5, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
+ST_24: StgValue_167 (33)  [1/1] 0.00ns  loc: src/Envelope.cpp:30
+._crit_edge_ifconv:20  call void (...)* @_ssdm_op_SpecInterface(i32 %releaseDuration, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str5, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
 
- <State 29>: 6.08ns
-ST_29: tmp_8_i (56)  [16/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_24: attackSlope (35)  [1/16] 6.08ns  loc: src/Envelope.cpp:34
+._crit_edge_ifconv:22  %attackSlope = fdiv float 1.000000e+00, %tmp_1
 
+ST_24: decaySlope (39)  [1/16] 6.08ns  loc: src/Envelope.cpp:35
+._crit_edge_ifconv:26  %decaySlope = fdiv float %tmp_2, %tmp_4
 
- <State 30>: 6.08ns
-ST_30: tmp_8_i (56)  [15/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_24: releaseSlope (45)  [1/16] 6.08ns  loc: src/Envelope.cpp:36
+._crit_edge_ifconv:32  %releaseSlope = fdiv float %tmp_5, %tmp_7
 
+ST_24: releaseTime_load (58)  [1/1] 0.00ns  loc: src/Envelope.cpp:62
+._crit_edge_ifconv:45  %releaseTime_load = load i32* @releaseTime, align 4
 
- <State 31>: 6.08ns
-ST_31: tmp_8_i (56)  [14/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_24: sustainTime_load (59)  [1/1] 0.00ns  loc: src/Envelope.cpp:61
+._crit_edge_ifconv:46  %sustainTime_load = load i32* @sustainTime, align 4
 
+ST_24: tmp_10 (60)  [1/1] 2.90ns  loc: src/Envelope.cpp:49
+._crit_edge_ifconv:47  %tmp_10 = add nsw i32 1, %decayDuration_read
 
- <State 32>: 6.08ns
-ST_32: tmp_8_i (56)  [13/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_24: releaseTime_load_rel (61)  [1/1] 0.00ns  loc: src/Envelope.cpp:47 (grouped into LUT with out node tmp_12)
+._crit_edge_ifconv:48  %releaseTime_load_rel = select i1 %or_cond_4, i32 %releaseTime_load, i32 %releaseDuration_read
 
+ST_24: sustainTime_load_tmp (62)  [1/1] 0.00ns  loc: src/Envelope.cpp:47 (grouped into LUT with out node tmp_11)
+._crit_edge_ifconv:49  %sustainTime_load_tmp = select i1 %or_cond_4, i32 %sustainTime_load, i32 %tmp_10
 
- <State 33>: 6.08ns
-ST_33: tmp_8_i (56)  [12/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_24: tmp_11 (66)  [1/1] 2.90ns  loc: src/Envelope.cpp:61 (out node of the LUT)
+._crit_edge_ifconv:53  %tmp_11 = add nsw i32 1, %sustainTime_load_tmp
 
+ST_24: tmp_12 (67)  [1/1] 2.90ns  loc: src/Envelope.cpp:62 (out node of the LUT)
+._crit_edge_ifconv:54  %tmp_12 = add nsw i32 1, %releaseTime_load_rel
 
- <State 34>: 6.08ns
-ST_34: tmp_8_i (56)  [11/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_24: releaseTime_new_1 (68)  [1/1] 0.00ns  loc: src/Envelope.cpp:47 (grouped into LUT with out node releaseTime_new_1_re)
+._crit_edge_ifconv:55  %releaseTime_new_1 = select i1 %tmp_s, i32 %releaseDuration_read, i32 %tmp_12
 
+ST_24: releaseTime_loc_1 (69)  [1/1] 0.00ns  loc: src/Envelope.cpp:47 (grouped into LUT with out node releaseTime_loc_1_re)
+._crit_edge_ifconv:56  %releaseTime_loc_1 = select i1 %tmp_s, i32 %releaseTime_load, i32 %tmp_12
 
- <State 35>: 6.08ns
-ST_35: tmp_8_i (56)  [10/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_24: sustainTime_new_1 (70)  [1/1] 0.00ns  loc: src/Envelope.cpp:47 (grouped into LUT with out node sustainTime_new_1_tm)
+._crit_edge_ifconv:57  %sustainTime_new_1 = select i1 %tmp_s, i32 %sustainTime_load, i32 %tmp_11
 
+ST_24: releaseTime_new_1_re (80)  [1/1] 2.07ns  loc: src/Envelope.cpp:65 (out node of the LUT)
+._crit_edge_ifconv:67  %releaseTime_new_1_re = select i1 %tmp_13, i32 %releaseTime_new_1, i32 %releaseDuration_read
 
- <State 36>: 6.08ns
-ST_36: tmp_8_i (56)  [9/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_24: releaseTime_loc_1_re (81)  [1/1] 2.07ns  loc: src/Envelope.cpp:65 (out node of the LUT)
+._crit_edge_ifconv:68  %releaseTime_loc_1_re = select i1 %tmp_13, i32 %releaseTime_loc_1, i32 %releaseDuration_read
 
+ST_24: sustainTime_new_1_tm (82)  [1/1] 2.07ns  loc: src/Envelope.cpp:65 (out node of the LUT)
+._crit_edge_ifconv:69  %sustainTime_new_1_tm = select i1 %tmp_13, i32 %sustainTime_new_1, i32 %tmp_10
 
- <State 37>: 6.08ns
-ST_37: tmp_8_i (56)  [8/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_24: StgValue_184 (85)  [1/1] 0.00ns  loc: src/Envelope.cpp:65
+._crit_edge_ifconv:72  br i1 %releaseTime_flag_1_s, label %._crit_edge8.new_ifconv, label %mergeST1
 
+ST_24: StgValue_185 (87)  [1/1] 0.00ns  loc: src/Envelope.cpp:49
+mergeST1:0  store i32 %sustainTime_new_1_tm, i32* @sustainTime, align 4
 
- <State 38>: 6.08ns
-ST_38: tmp_8_i (56)  [7/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_24: StgValue_186 (88)  [1/1] 0.00ns  loc: src/Envelope.cpp:48
+mergeST1:1  store i32 %releaseTime_new_1_re, i32* @releaseTime, align 4
 
+ST_24: StgValue_187 (89)  [1/1] 0.00ns
+mergeST1:2  br label %._crit_edge8.new_ifconv
 
- <State 39>: 6.08ns
-ST_39: tmp_8_i (56)  [6/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_24: tmp_17 (94)  [1/1] 3.26ns  loc: src/Envelope.cpp:75
+._crit_edge8.new_ifconv:3  %tmp_17 = icmp slt i32 %time_load_s, %decayDuration_read
 
+ST_24: tmp_23 (102)  [1/1] 3.26ns  loc: src/Envelope.cpp:83
+._crit_edge8.new_ifconv:11  %tmp_23 = icmp slt i32 %time_load_s, %releaseTime_loc_1_re
 
- <State 40>: 6.08ns
-ST_40: tmp_8_i (56)  [5/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
 
+ <State 25>: 7.40ns
+ST_25: tmp_18 (95)  [1/1] 2.90ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:4  %tmp_18 = sub nsw i32 %time_load_s, %attackDuration_read
 
- <State 41>: 6.08ns
-ST_41: tmp_8_i (56)  [4/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_25: tmp_22 (100)  [1/1] 3.26ns  loc: src/Envelope.cpp:79
+._crit_edge8.new_ifconv:9  %tmp_22 = icmp slt i32 %time_load_s, %sustainTime_new_1_tm
 
+ST_25: tmp_24 (103)  [1/1] 2.90ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:12  %tmp_24 = sub nsw i32 %time_load_s, %sustainTime_new_1_tm
 
- <State 42>: 6.08ns
-ST_42: tmp_8_i (56)  [3/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_25: not_tmp_1 (108)  [1/1] 2.07ns  loc: src/Envelope.cpp:71
+._crit_edge8.new_ifconv:17  %not_tmp_1 = xor i1 %tmp_14, true
 
+ST_25: sel_tmp2 (109)  [1/1] 2.07ns  loc: src/Envelope.cpp:75
+._crit_edge8.new_ifconv:18  %sel_tmp2 = and i1 %tmp_17, %not_tmp_1
 
- <State 43>: 6.08ns
-ST_43: tmp_8_i (56)  [2/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_25: sel_tmp (110)  [1/1] 0.00ns  loc: src/Envelope.cpp:75 (grouped into LUT with out node sel_tmp8)
+._crit_edge8.new_ifconv:19  %sel_tmp = xor i1 %sel_tmp2, %not_tmp_1
 
+ST_25: sel_tmp6_demorgan (111)  [1/1] 2.07ns  loc: src/Envelope.cpp:71
+._crit_edge8.new_ifconv:20  %sel_tmp6_demorgan = or i1 %tmp_14, %tmp_17
 
- <State 44>: 6.08ns
-ST_44: tmp_8_i (56)  [1/16] 6.08ns  loc: src/Envelope.cpp:34
-codeRepl:3  %tmp_8_i = fdiv float %tmp_5_i, %tmp_7_i
+ST_25: tmp_22_not (112)  [1/1] 0.00ns  loc: src/Envelope.cpp:79 (grouped into LUT with out node sel_tmp8)
+._crit_edge8.new_ifconv:21  %tmp_22_not = xor i1 %tmp_22, true
 
-ST_44: StgValue_170 (57)  [1/1] 0.00ns  loc: src/Envelope.cpp:34
-codeRepl:4  store float %tmp_8_i, float* @decaySlope, align 4
+ST_25: not_sel_tmp7 (113)  [1/1] 0.00ns  loc: src/Envelope.cpp:71 (grouped into LUT with out node sel_tmp8)
+._crit_edge8.new_ifconv:22  %not_sel_tmp7 = or i1 %sel_tmp6_demorgan, %tmp_22_not
 
-ST_44: StgValue_171 (59)  [1/1] 0.00ns
-codeRepl:6  br label %._crit_edge7
+ST_25: sel_tmp13_demorgan (114)  [1/1] 2.07ns  loc: src/Envelope.cpp:71
+._crit_edge8.new_ifconv:23  %sel_tmp13_demorgan = or i1 %sel_tmp6_demorgan, %tmp_22
 
-ST_44: guard_variable_for_e_2 (61)  [1/1] 0.00ns
-._crit_edge7:0  %guard_variable_for_e_2 = load i1* @guard_variable_for_e_2, align 1
+ST_25: tmp_23_not (115)  [1/1] 0.00ns  loc: src/Envelope.cpp:83 (grouped into LUT with out node sel_tmp8)
+._crit_edge8.new_ifconv:24  %tmp_23_not = xor i1 %tmp_23, true
 
-ST_44: StgValue_173 (62)  [1/1] 0.00ns  loc: src/Envelope.cpp:35
-._crit_edge7:1  br i1 %guard_variable_for_e_2, label %._crit_edge8, label %codeRepl2
+ST_25: not_sel_tmp (116)  [1/1] 0.00ns  loc: src/Envelope.cpp:71 (grouped into LUT with out node sel_tmp8)
+._crit_edge8.new_ifconv:25  %not_sel_tmp = or i1 %sel_tmp13_demorgan, %tmp_23_not
 
-ST_44: tmp_10_i (67)  [1/1] 2.90ns  loc: src/Envelope.cpp:35
-codeRepl2:3  %tmp_10_i = sub nsw i32 %releaseDuration_read, %decayDuration_read
+ST_25: tmp1 (117)  [1/1] 0.00ns  loc: src/Envelope.cpp:71 (grouped into LUT with out node sel_tmp8)
+._crit_edge8.new_ifconv:26  %tmp1 = and i1 %not_sel_tmp7, %not_sel_tmp
 
-ST_44: StgValue_175 (71)  [1/1] 0.00ns  loc: src/Envelope.cpp:35
-codeRepl2:7  store i1 true, i1* @guard_variable_for_e_2, align 1
+ST_25: sel_tmp8 (118)  [1/1] 2.07ns  loc: src/Envelope.cpp:71 (out node of the LUT)
+._crit_edge8.new_ifconv:27  %sel_tmp8 = and i1 %tmp1, %sel_tmp
 
+ST_25: sel_tmp1 (120)  [1/1] 0.00ns  loc: src/Envelope.cpp:71 (grouped into LUT with out node sel_tmp3)
+._crit_edge8.new_ifconv:29  %sel_tmp1 = xor i1 %sel_tmp6_demorgan, true
 
- <State 45>: 6.41ns
-ST_45: tmp_11_i (68)  [6/6] 6.41ns  loc: src/Envelope.cpp:35
-codeRepl2:4  %tmp_11_i = sitofp i32 %tmp_10_i to float
+ST_25: sel_tmp3 (121)  [1/1] 2.07ns  loc: src/Envelope.cpp:79 (out node of the LUT)
+._crit_edge8.new_ifconv:30  %sel_tmp3 = and i1 %tmp_22, %sel_tmp1
 
+ST_25: sel_tmp4 (122)  [1/1] 0.00ns  loc: src/Envelope.cpp:71 (grouped into LUT with out node sel_tmp5)
+._crit_edge8.new_ifconv:31  %sel_tmp4 = xor i1 %sel_tmp13_demorgan, true
 
- <State 46>: 6.41ns
-ST_46: tmp_11_i (68)  [5/6] 6.41ns  loc: src/Envelope.cpp:35
-codeRepl2:4  %tmp_11_i = sitofp i32 %tmp_10_i to float
+ST_25: sel_tmp5 (123)  [1/1] 2.07ns  loc: src/Envelope.cpp:83 (out node of the LUT)
+._crit_edge8.new_ifconv:32  %sel_tmp5 = and i1 %tmp_23, %sel_tmp4
 
 
- <State 47>: 6.41ns
-ST_47: tmp_11_i (68)  [4/6] 6.41ns  loc: src/Envelope.cpp:35
-codeRepl2:4  %tmp_11_i = sitofp i32 %tmp_10_i to float
+ <State 26>: 6.41ns
+ST_26: tmp_15 (91)  [6/6] 6.41ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:0  %tmp_15 = sitofp i32 %time_load_s to float
 
+ST_26: tmp_19 (96)  [6/6] 6.41ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:5  %tmp_19 = sitofp i32 %tmp_18 to float
 
- <State 48>: 6.41ns
-ST_48: tmp_11_i (68)  [3/6] 6.41ns  loc: src/Envelope.cpp:35
-codeRepl2:4  %tmp_11_i = sitofp i32 %tmp_10_i to float
+ST_26: tmp_25 (104)  [6/6] 6.41ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:13  %tmp_25 = sitofp i32 %tmp_24 to float
 
+ST_26: wait_flag_1 (119)  [1/1] 2.07ns  loc: src/Envelope.cpp:71 (out node of the LUT)
+._crit_edge8.new_ifconv:28  %wait_flag_1 = or i1 %sel_tmp8, %not_tmp_s
 
- <State 49>: 6.41ns
-ST_49: tmp_11_i (68)  [2/6] 6.41ns  loc: src/Envelope.cpp:35
-codeRepl2:4  %tmp_11_i = sitofp i32 %tmp_10_i to float
+ST_26: tmp_29 (132)  [1/1] 2.90ns  loc: src/Envelope.cpp:92
+._crit_edge8.new_ifconv:41  %tmp_29 = add nsw i32 %time_load_s, 1
 
+ST_26: StgValue_213 (134)  [1/1] 0.00ns  loc: src/Envelope.cpp:66
+._crit_edge8.new_ifconv:43  store i32 %tmp_29, i32* @time_r, align 4
 
- <State 50>: 6.41ns
-ST_50: tmp_11_i (68)  [1/6] 6.41ns  loc: src/Envelope.cpp:35
-codeRepl2:4  %tmp_11_i = sitofp i32 %tmp_10_i to float
 
+ <State 27>: 6.41ns
+ST_27: tmp_15 (91)  [5/6] 6.41ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:0  %tmp_15 = sitofp i32 %time_load_s to float
 
- <State 51>: 8.14ns
-ST_51: tmp_i_to_int (64)  [1/1] 0.00ns  loc: src/Envelope.cpp:35
-codeRepl2:0  %tmp_i_to_int = bitcast float %sustainAmplitude_rea to i32
+ST_27: tmp_19 (96)  [5/6] 6.41ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:5  %tmp_19 = sitofp i32 %tmp_18 to float
 
-ST_51: tmp_i_neg (65)  [1/1] 2.07ns  loc: src/Envelope.cpp:35
-codeRepl2:1  %tmp_i_neg = xor i32 %tmp_i_to_int, -2147483648
+ST_27: tmp_25 (104)  [5/6] 6.41ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:13  %tmp_25 = sitofp i32 %tmp_24 to float
 
-ST_51: tmp_i (66)  [1/1] 0.00ns  loc: src/Envelope.cpp:35
-codeRepl2:2  %tmp_i = bitcast i32 %tmp_i_neg to float
 
-ST_51: tmp_12_i (69)  [16/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ <State 28>: 6.41ns
+ST_28: tmp_15 (91)  [4/6] 6.41ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:0  %tmp_15 = sitofp i32 %time_load_s to float
 
+ST_28: tmp_19 (96)  [4/6] 6.41ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:5  %tmp_19 = sitofp i32 %tmp_18 to float
 
- <State 52>: 6.08ns
-ST_52: tmp_12_i (69)  [15/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ST_28: tmp_25 (104)  [4/6] 6.41ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:13  %tmp_25 = sitofp i32 %tmp_24 to float
 
 
- <State 53>: 6.08ns
-ST_53: tmp_12_i (69)  [14/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ <State 29>: 6.41ns
+ST_29: tmp_15 (91)  [3/6] 6.41ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:0  %tmp_15 = sitofp i32 %time_load_s to float
 
+ST_29: tmp_19 (96)  [3/6] 6.41ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:5  %tmp_19 = sitofp i32 %tmp_18 to float
 
- <State 54>: 6.08ns
-ST_54: tmp_12_i (69)  [13/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ST_29: tmp_25 (104)  [3/6] 6.41ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:13  %tmp_25 = sitofp i32 %tmp_24 to float
 
 
- <State 55>: 6.08ns
-ST_55: tmp_12_i (69)  [12/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ <State 30>: 6.41ns
+ST_30: tmp_15 (91)  [2/6] 6.41ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:0  %tmp_15 = sitofp i32 %time_load_s to float
 
+ST_30: tmp_19 (96)  [2/6] 6.41ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:5  %tmp_19 = sitofp i32 %tmp_18 to float
 
- <State 56>: 6.08ns
-ST_56: tmp_12_i (69)  [11/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ST_30: tmp_25 (104)  [2/6] 6.41ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:13  %tmp_25 = sitofp i32 %tmp_24 to float
 
 
- <State 57>: 6.08ns
-ST_57: tmp_12_i (69)  [10/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ <State 31>: 6.41ns
+ST_31: tmp_15 (91)  [1/6] 6.41ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:0  %tmp_15 = sitofp i32 %time_load_s to float
 
+ST_31: tmp_19 (96)  [1/6] 6.41ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:5  %tmp_19 = sitofp i32 %tmp_18 to float
 
- <State 58>: 6.08ns
-ST_58: tmp_12_i (69)  [9/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ST_31: tmp_25 (104)  [1/6] 6.41ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:13  %tmp_25 = sitofp i32 %tmp_24 to float
 
 
- <State 59>: 6.08ns
-ST_59: tmp_12_i (69)  [8/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ <State 32>: 5.70ns
+ST_32: tmp_16 (92)  [4/4] 5.70ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:1  %tmp_16 = fmul float %attackSlope, %tmp_15
 
+ST_32: tmp_20 (97)  [4/4] 5.70ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:6  %tmp_20 = fmul float %decaySlope, %tmp_19
 
- <State 60>: 6.08ns
-ST_60: tmp_12_i (69)  [7/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ST_32: tmp_26 (105)  [4/4] 5.70ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:14  %tmp_26 = fmul float %releaseSlope, %tmp_25
 
 
- <State 61>: 6.08ns
-ST_61: tmp_12_i (69)  [6/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ <State 33>: 5.70ns
+ST_33: tmp_16 (92)  [3/4] 5.70ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:1  %tmp_16 = fmul float %attackSlope, %tmp_15
 
+ST_33: tmp_20 (97)  [3/4] 5.70ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:6  %tmp_20 = fmul float %decaySlope, %tmp_19
 
- <State 62>: 6.08ns
-ST_62: tmp_12_i (69)  [5/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ST_33: tmp_26 (105)  [3/4] 5.70ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:14  %tmp_26 = fmul float %releaseSlope, %tmp_25
 
 
- <State 63>: 6.08ns
-ST_63: tmp_12_i (69)  [4/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ <State 34>: 5.70ns
+ST_34: tmp_16 (92)  [2/4] 5.70ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:1  %tmp_16 = fmul float %attackSlope, %tmp_15
 
+ST_34: tmp_20 (97)  [2/4] 5.70ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:6  %tmp_20 = fmul float %decaySlope, %tmp_19
 
- <State 64>: 6.08ns
-ST_64: tmp_12_i (69)  [3/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ST_34: tmp_26 (105)  [2/4] 5.70ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:14  %tmp_26 = fmul float %releaseSlope, %tmp_25
 
 
- <State 65>: 6.08ns
-ST_65: tmp_12_i (69)  [2/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ <State 35>: 5.70ns
+ST_35: tmp_16 (92)  [1/4] 5.70ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:1  %tmp_16 = fmul float %attackSlope, %tmp_15
 
+ST_35: tmp_20 (97)  [1/4] 5.70ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:6  %tmp_20 = fmul float %decaySlope, %tmp_19
 
- <State 66>: 6.79ns
-ST_66: tmp_12_i (69)  [1/16] 6.08ns  loc: src/Envelope.cpp:35
-codeRepl2:5  %tmp_12_i = fdiv float %tmp_i, %tmp_11_i
+ST_35: tmp_26 (105)  [1/4] 5.70ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:14  %tmp_26 = fmul float %releaseSlope, %tmp_25
 
-ST_66: StgValue_201 (70)  [1/1] 0.00ns  loc: src/Envelope.cpp:35
-codeRepl2:6  store float %tmp_12_i, float* @releaseSlope, align 4
 
-ST_66: StgValue_202 (72)  [1/1] 0.00ns
-codeRepl2:8  br label %._crit_edge8
+ <State 36>: 7.26ns
+ST_36: tmp_21 (98)  [5/5] 7.26ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:7  %tmp_21 = fadd float %tmp_20, 1.000000e+00
 
-ST_66: tmp_4 (80)  [1/1] 6.79ns  loc: src/Envelope.cpp:39
-._crit_edge8:6  %tmp_4 = fcmp ogt float %sustainAmplitude_rea, 1.000000e+00
+ST_36: tmp_27 (106)  [5/5] 7.26ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:15  %tmp_27 = fadd float %tmp_26, %sustainAmplitude_ass
 
 
- <State 67>: 5.33ns
-ST_67: sustainAmplitude_to_s (74)  [1/1] 0.00ns
-._crit_edge8:0  %sustainAmplitude_to_s = bitcast float %sustainAmplitude_rea to i32
+ <State 37>: 7.26ns
+ST_37: tmp_21 (98)  [4/5] 7.26ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:7  %tmp_21 = fadd float %tmp_20, 1.000000e+00
 
-ST_67: tmp_1 (75)  [1/1] 0.00ns
-._crit_edge8:1  %tmp_1 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %sustainAmplitude_to_s, i32 23, i32 30)
+ST_37: tmp_27 (106)  [4/5] 7.26ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:15  %tmp_27 = fadd float %tmp_26, %sustainAmplitude_ass
 
-ST_67: tmp (76)  [1/1] 0.00ns
-._crit_edge8:2  %tmp = trunc i32 %sustainAmplitude_to_s to i23
 
-ST_67: notlhs (77)  [1/1] 2.91ns
-._crit_edge8:3  %notlhs = icmp ne i8 %tmp_1, -1
+ <State 38>: 7.26ns
+ST_38: tmp_21 (98)  [3/5] 7.26ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:7  %tmp_21 = fadd float %tmp_20, 1.000000e+00
 
-ST_67: notrhs (78)  [1/1] 3.20ns
-._crit_edge8:4  %notrhs = icmp eq i23 %tmp, 0
+ST_38: tmp_27 (106)  [3/5] 7.26ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:15  %tmp_27 = fadd float %tmp_26, %sustainAmplitude_ass
 
-ST_67: tmp_3 (79)  [1/1] 0.00ns (grouped into LUT with out node sustainAmplitude_ass)
-._crit_edge8:5  %tmp_3 = or i1 %notrhs, %notlhs
 
-ST_67: tmp_9 (81)  [1/1] 0.00ns  loc: src/Envelope.cpp:39 (grouped into LUT with out node sustainAmplitude_ass)
-._crit_edge8:7  %tmp_9 = and i1 %tmp_3, %tmp_4
+ <State 39>: 7.26ns
+ST_39: tmp_21 (98)  [2/5] 7.26ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:7  %tmp_21 = fadd float %tmp_20, 1.000000e+00
 
-ST_67: sustainAmplitude_ass (82)  [1/1] 2.07ns  loc: src/Envelope.cpp:39 (out node of the LUT)
-._crit_edge8:8  %sustainAmplitude_ass = select i1 %tmp_9, float 1.000000e+00, float %sustainAmplitude_rea
+ST_39: tmp_27 (106)  [2/5] 7.26ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:15  %tmp_27 = fadd float %tmp_26, %sustainAmplitude_ass
 
-ST_67: guard_variable_for_e_3 (83)  [1/1] 0.00ns
-._crit_edge8:9  %guard_variable_for_e_3 = load i1* @guard_variable_for_e_1, align 1
 
-ST_67: releaseTime_load (84)  [1/1] 0.00ns  loc: src/Envelope.cpp:51
-._crit_edge8:10  %releaseTime_load = load i32* @releaseTime, align 4
+ <State 40>: 7.26ns
+ST_40: tmp_21 (98)  [1/5] 7.26ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:7  %tmp_21 = fadd float %tmp_20, 1.000000e+00
 
-ST_67: StgValue_214 (85)  [1/1] 1.59ns  loc: src/Envelope.cpp:42
-._crit_edge8:11  br i1 %guard_variable_for_e_3, label %._crit_edge9, label %codeRepl3
+ST_40: tmp_27 (106)  [1/5] 7.26ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:15  %tmp_27 = fadd float %tmp_26, %sustainAmplitude_ass
 
-ST_67: StgValue_215 (87)  [1/1] 0.00ns  loc: src/Envelope.cpp:42
-codeRepl3:0  store i1 true, i1* @guard_variable_for_e_1, align 1
 
-ST_67: StgValue_216 (88)  [1/1] 1.59ns
-codeRepl3:1  br label %._crit_edge9
+ <State 41>: 5.70ns
+ST_41: resultAmplitude_1 (93)  [4/4] 5.70ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:2  %resultAmplitude_1 = fmul float %tmp_38, %tmp_16
 
-ST_67: releaseTime_flag (90)  [1/1] 0.00ns
-._crit_edge9:0  %releaseTime_flag = phi i1 [ true, %codeRepl3 ], [ false, %._crit_edge8 ]
+ST_41: resultAmplitude_2 (99)  [4/4] 5.70ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:8  %resultAmplitude_2 = fmul float %tmp_38, %tmp_21
 
-ST_67: releaseTime_loc (91)  [1/1] 0.00ns  loc: src/Envelope.cpp:51
-._crit_edge9:1  %releaseTime_loc = phi i32 [ %releaseDuration_read, %codeRepl3 ], [ %releaseTime_load, %._crit_edge8 ]
+ST_41: resultAmplitude_3 (101)  [4/4] 5.70ns  loc: src/Envelope.cpp:80
+._crit_edge8.new_ifconv:10  %resultAmplitude_3 = fmul float %tmp_38, %sustainAmplitude_ass
 
-ST_67: guard_variable_for_e_4 (92)  [1/1] 0.00ns
-._crit_edge9:2  %guard_variable_for_e_4 = load i1* @guard_variable_for_e, align 1
+ST_41: resultAmplitude_4 (107)  [4/4] 5.70ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:16  %resultAmplitude_4 = fmul float %tmp_38, %tmp_27
 
-ST_67: sustainTime_load (93)  [1/1] 0.00ns  loc: src/Envelope.cpp:50
-._crit_edge9:3  %sustainTime_load = load i32* @sustainTime, align 4
 
-ST_67: StgValue_221 (94)  [1/1] 1.59ns  loc: src/Envelope.cpp:43
-._crit_edge9:4  br i1 %guard_variable_for_e_4, label %._crit_edge10_ifconv, label %codeRepl4
+ <State 42>: 5.70ns
+ST_42: resultAmplitude_1 (93)  [3/4] 5.70ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:2  %resultAmplitude_1 = fmul float %tmp_38, %tmp_16
 
-ST_67: tmp_16_i (96)  [1/1] 2.90ns  loc: src/Envelope.cpp:43
-codeRepl4:0  %tmp_16_i = add nsw i32 %decayDuration_read, 1
+ST_42: resultAmplitude_2 (99)  [3/4] 5.70ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:8  %resultAmplitude_2 = fmul float %tmp_38, %tmp_21
 
-ST_67: StgValue_223 (97)  [1/1] 0.00ns  loc: src/Envelope.cpp:43
-codeRepl4:1  store i1 true, i1* @guard_variable_for_e, align 1
+ST_42: resultAmplitude_3 (101)  [3/4] 5.70ns  loc: src/Envelope.cpp:80
+._crit_edge8.new_ifconv:10  %resultAmplitude_3 = fmul float %tmp_38, %sustainAmplitude_ass
 
-ST_67: StgValue_224 (98)  [1/1] 1.59ns
-codeRepl4:2  br label %._crit_edge10_ifconv
+ST_42: resultAmplitude_4 (107)  [3/4] 5.70ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:16  %resultAmplitude_4 = fmul float %tmp_38, %tmp_27
 
-ST_67: tmp_26 (102)  [2/2] 0.00ns  loc: src/Envelope.cpp:46
-._crit_edge10_ifconv:2  %tmp_26 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %wave_in_V)
 
-ST_67: tmp_5 (103)  [1/1] 3.26ns  loc: src/Envelope.cpp:48
-._crit_edge10_ifconv:3  %tmp_5 = icmp eq i32 %press_read, 0
+ <State 43>: 5.70ns
+ST_43: resultAmplitude_1 (93)  [2/4] 5.70ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:2  %resultAmplitude_1 = fmul float %tmp_38, %tmp_16
 
-ST_67: not_tmp_5 (107)  [1/1] 2.07ns  loc: src/Envelope.cpp:48
-._crit_edge10_ifconv:7  %not_tmp_5 = xor i1 %tmp_5, true
+ST_43: resultAmplitude_2 (99)  [2/4] 5.70ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:8  %resultAmplitude_2 = fmul float %tmp_38, %tmp_21
 
+ST_43: resultAmplitude_3 (101)  [2/4] 5.70ns  loc: src/Envelope.cpp:80
+._crit_edge8.new_ifconv:10  %resultAmplitude_3 = fmul float %tmp_38, %sustainAmplitude_ass
 
- <State 68>: 8.23ns
-ST_68: sustainTime_flag (100)  [1/1] 0.00ns (grouped into LUT with out node sustainTime_flag_1_s)
-._crit_edge10_ifconv:0  %sustainTime_flag = phi i1 [ true, %codeRepl4 ], [ false, %._crit_edge9 ]
+ST_43: resultAmplitude_4 (107)  [2/4] 5.70ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:16  %resultAmplitude_4 = fmul float %tmp_38, %tmp_27
 
-ST_68: sustainTime_loc (101)  [1/1] 0.00ns  loc: src/Envelope.cpp:43
-._crit_edge10_ifconv:1  %sustainTime_loc = phi i32 [ %tmp_16_i, %codeRepl4 ], [ %sustainTime_load, %._crit_edge9 ]
 
-ST_68: tmp_26 (102)  [1/2] 0.00ns  loc: src/Envelope.cpp:46
-._crit_edge10_ifconv:2  %tmp_26 = call float @_ssdm_op_Read.axis.volatile.floatP(float* %wave_in_V)
+ <State 44>: 7.77ns
+ST_44: resultAmplitude_1 (93)  [1/4] 5.70ns  loc: src/Envelope.cpp:72
+._crit_edge8.new_ifconv:2  %resultAmplitude_1 = fmul float %tmp_38, %tmp_16
 
-ST_68: wait_load (104)  [1/1] 0.00ns
-._crit_edge10_ifconv:4  %wait_load = load i1* @wait_r, align 1
+ST_44: resultAmplitude_2 (99)  [1/4] 5.70ns  loc: src/Envelope.cpp:76
+._crit_edge8.new_ifconv:8  %resultAmplitude_2 = fmul float %tmp_38, %tmp_21
 
-ST_68: tmp_6 (105)  [1/1] 2.90ns  loc: src/Envelope.cpp:50
-._crit_edge10_ifconv:5  %tmp_6 = add nsw i32 %sustainTime_loc, 1
+ST_44: resultAmplitude_3 (101)  [1/4] 5.70ns  loc: src/Envelope.cpp:80
+._crit_edge8.new_ifconv:10  %resultAmplitude_3 = fmul float %tmp_38, %sustainAmplitude_ass
 
-ST_68: tmp_7 (106)  [1/1] 2.90ns  loc: src/Envelope.cpp:51
-._crit_edge10_ifconv:6  %tmp_7 = add nsw i32 %releaseTime_loc, 1
+ST_44: resultAmplitude_4 (107)  [1/4] 5.70ns  loc: src/Envelope.cpp:84
+._crit_edge8.new_ifconv:16  %resultAmplitude_4 = fmul float %tmp_38, %tmp_27
 
-ST_68: releaseTime_new_1 (108)  [1/1] 0.00ns  loc: src/Envelope.cpp:48 (grouped into LUT with out node releaseTime_new_1_re)
-._crit_edge10_ifconv:8  %releaseTime_new_1 = select i1 %tmp_5, i32 %releaseDuration_read, i32 %tmp_7
+ST_44: or_cond (124)  [1/1] 0.00ns  loc: src/Envelope.cpp:83 (grouped into LUT with out node not_or_cond)
+._crit_edge8.new_ifconv:33  %or_cond = or i1 %sel_tmp5, %sel_tmp3
 
-ST_68: releaseTime_loc_1 (109)  [1/1] 0.00ns  loc: src/Envelope.cpp:48 (grouped into LUT with out node releaseTime_loc_1_re)
-._crit_edge10_ifconv:9  %releaseTime_loc_1 = select i1 %tmp_5, i32 %releaseTime_loc, i32 %tmp_7
+ST_44: or_cond1 (125)  [1/1] 0.00ns  loc: src/Envelope.cpp:75 (grouped into LUT with out node not_or_cond)
+._crit_edge8.new_ifconv:34  %or_cond1 = or i1 %sel_tmp2, %tmp_14
 
-ST_68: sustainTime_new_1 (110)  [1/1] 0.00ns  loc: src/Envelope.cpp:48 (grouped into LUT with out node sustainTime_new_1_tm)
-._crit_edge10_ifconv:10  %sustainTime_new_1 = select i1 %tmp_5, i32 %sustainTime_loc, i32 %tmp_6
+ST_44: or_cond2 (126)  [1/1] 0.00ns  loc: src/Envelope.cpp:83 (grouped into LUT with out node not_or_cond)
+._crit_edge8.new_ifconv:35  %or_cond2 = or i1 %or_cond, %or_cond1
 
-ST_68: tmp_s (111)  [1/1] 0.00ns  loc: src/Envelope.cpp:54 (grouped into LUT with out node tmp_8)
-._crit_edge10_ifconv:11  %tmp_s = xor i1 %wait_load, true
+ST_44: not_or_cond (127)  [1/1] 2.07ns  loc: src/Envelope.cpp:83 (out node of the LUT)
+._crit_edge8.new_ifconv:36  %not_or_cond = xor i1 %or_cond2, true
 
-ST_68: tmp_8 (112)  [1/1] 2.07ns  loc: src/Envelope.cpp:54 (out node of the LUT)
-._crit_edge10_ifconv:12  %tmp_8 = or i1 %tmp_s, %not_tmp_5
+ST_44: resultAmplitude_5 (128)  [1/1] 0.00ns  loc: src/Envelope.cpp:94 (grouped into LUT with out node resultAmplitude_7)
+._crit_edge8.new_ifconv:37  %resultAmplitude_5 = select i1 %tmp_14, float %resultAmplitude_1, float 0.000000e+00
 
-ST_68: time_load (113)  [1/1] 0.00ns  loc: src/Envelope.cpp:60
-._crit_edge10_ifconv:13  %time_load = load i32* @time_r, align 4
+ST_44: resultAmplitude_6 (129)  [1/1] 0.00ns  loc: src/Envelope.cpp:94 (grouped into LUT with out node resultAmplitude_7)
+._crit_edge8.new_ifconv:38  %resultAmplitude_6 = select i1 %sel_tmp2, float %resultAmplitude_2, float %resultAmplitude_5
 
-ST_68: tmp_2 (114)  [1/1] 2.90ns  loc: src/Envelope.cpp:57
-._crit_edge10_ifconv:14  %tmp_2 = add nsw i32 %decayDuration_read, 1
+ST_44: resultAmplitude_7 (130)  [1/1] 2.07ns  loc: src/Envelope.cpp:94 (out node of the LUT)
+._crit_edge8.new_ifconv:39  %resultAmplitude_7 = select i1 %sel_tmp3, float %resultAmplitude_3, float %resultAmplitude_6
 
-ST_68: tmp1 (115)  [1/1] 2.07ns  loc: src/Envelope.cpp:54
-._crit_edge10_ifconv:15  %tmp1 = or i1 %wait_load, %not_tmp_5
 
-ST_68: releaseTime_flag_1_s (116)  [1/1] 2.07ns  loc: src/Envelope.cpp:54
-._crit_edge10_ifconv:16  %releaseTime_flag_1_s = or i1 %tmp1, %releaseTime_flag
+ <State 45>: 2.07ns
+ST_45: resultAmplitude (131)  [1/1] 2.07ns  loc: src/Envelope.cpp:94 (out node of the LUT)
+._crit_edge8.new_ifconv:40  %resultAmplitude = select i1 %sel_tmp5, float %resultAmplitude_4, float %resultAmplitude_7
 
-ST_68: releaseTime_new_1_re (117)  [1/1] 2.07ns  loc: src/Envelope.cpp:54 (out node of the LUT)
-._crit_edge10_ifconv:17  %releaseTime_new_1_re = select i1 %tmp_8, i32 %releaseTime_new_1, i32 %releaseDuration_read
+ST_45: StgValue_275 (133)  [2/2] 0.00ns  loc: src/Envelope.cpp:94
+._crit_edge8.new_ifconv:42  call void @_ssdm_op_Write.axis.volatile.floatP(float* %wave_out_V, float %resultAmplitude)
 
-ST_68: releaseTime_loc_1_re (118)  [1/1] 2.07ns  loc: src/Envelope.cpp:54 (out node of the LUT)
-._crit_edge10_ifconv:18  %releaseTime_loc_1_re = select i1 %tmp_8, i32 %releaseTime_loc_1, i32 %releaseDuration_read
 
-ST_68: sustainTime_flag_1_s (119)  [1/1] 2.07ns  loc: src/Envelope.cpp:54 (out node of the LUT)
-._crit_edge10_ifconv:19  %sustainTime_flag_1_s = or i1 %tmp1, %sustainTime_flag
+ <State 46>: 0.00ns
+ST_46: StgValue_276 (133)  [1/2] 0.00ns  loc: src/Envelope.cpp:94
+._crit_edge8.new_ifconv:42  call void @_ssdm_op_Write.axis.volatile.floatP(float* %wave_out_V, float %resultAmplitude)
 
-ST_68: sustainTime_new_1_tm (120)  [1/1] 2.07ns  loc: src/Envelope.cpp:54 (out node of the LUT)
-._crit_edge10_ifconv:20  %sustainTime_new_1_tm = select i1 %tmp_8, i32 %sustainTime_new_1, i32 %tmp_2
+ST_46: StgValue_277 (135)  [1/1] 0.00ns  loc: src/Envelope.cpp:71
+._crit_edge8.new_ifconv:44  br i1 %wait_flag_1, label %mergeST3, label %.new
 
-ST_68: time_load_s (121)  [1/1] 2.07ns  loc: src/Envelope.cpp:54
-._crit_edge10_ifconv:21  %time_load_s = select i1 %tmp_8, i32 %time_load, i32 0
+ST_46: StgValue_278 (137)  [1/1] 0.00ns  loc: src/Envelope.cpp:60
+mergeST3:0  store i1 %not_or_cond, i1* @wait_r, align 1
 
-ST_68: tmp_10 (122)  [1/1] 3.26ns  loc: src/Envelope.cpp:60
-._crit_edge10_ifconv:22  %tmp_10 = icmp slt i32 %time_load_s, %attackDuration_read
+ST_46: StgValue_279 (138)  [1/1] 0.00ns
+mergeST3:1  br label %.new
 
-ST_68: StgValue_249 (123)  [1/1] 0.00ns  loc: src/Envelope.cpp:54
-._crit_edge10_ifconv:23  br i1 %sustainTime_flag_1_s, label %mergeST5, label %._crit_edge12.new6
-
-ST_68: StgValue_250 (125)  [1/1] 0.00ns  loc: src/Envelope.cpp:43
-mergeST5:0  store i32 %sustainTime_new_1_tm, i32* @sustainTime, align 4
-
-ST_68: StgValue_251 (126)  [1/1] 0.00ns
-mergeST5:1  br label %._crit_edge12.new6
-
-ST_68: StgValue_252 (128)  [1/1] 0.00ns  loc: src/Envelope.cpp:54
-._crit_edge12.new6:0  br i1 %releaseTime_flag_1_s, label %mergeST, label %._crit_edge12.new_ifconv
-
-ST_68: StgValue_253 (130)  [1/1] 0.00ns  loc: src/Envelope.cpp:42
-mergeST:0  store i32 %releaseTime_new_1_re, i32* @releaseTime, align 4
-
-ST_68: StgValue_254 (131)  [1/1] 0.00ns
-mergeST:1  br label %._crit_edge12.new_ifconv
-
-ST_68: tmp_13 (137)  [1/1] 3.26ns  loc: src/Envelope.cpp:64
-._crit_edge12.new_ifconv:4  %tmp_13 = icmp slt i32 %time_load_s, %decayDuration_read
-
-ST_68: tmp_19 (146)  [1/1] 3.26ns  loc: src/Envelope.cpp:72
-._crit_edge12.new_ifconv:13  %tmp_19 = icmp slt i32 %time_load_s, %releaseTime_loc_1_re
-
-
- <State 69>: 7.40ns
-ST_69: tmp_14 (139)  [1/1] 2.90ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:6  %tmp_14 = sub nsw i32 %time_load_s, %attackDuration_read
-
-ST_69: tmp_18 (144)  [1/1] 3.26ns  loc: src/Envelope.cpp:68
-._crit_edge12.new_ifconv:11  %tmp_18 = icmp slt i32 %time_load_s, %sustainTime_new_1_tm
-
-ST_69: tmp_20 (148)  [1/1] 2.90ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:15  %tmp_20 = sub nsw i32 %time_load_s, %sustainTime_new_1_tm
-
-ST_69: not_tmp_s (153)  [1/1] 2.07ns  loc: src/Envelope.cpp:60
-._crit_edge12.new_ifconv:20  %not_tmp_s = xor i1 %tmp_10, true
-
-ST_69: sel_tmp2 (154)  [1/1] 2.07ns  loc: src/Envelope.cpp:64
-._crit_edge12.new_ifconv:21  %sel_tmp2 = and i1 %tmp_13, %not_tmp_s
-
-ST_69: sel_tmp (155)  [1/1] 0.00ns  loc: src/Envelope.cpp:64 (grouped into LUT with out node sel_tmp8)
-._crit_edge12.new_ifconv:22  %sel_tmp = xor i1 %sel_tmp2, %not_tmp_s
-
-ST_69: sel_tmp6_demorgan (156)  [1/1] 2.07ns  loc: src/Envelope.cpp:60
-._crit_edge12.new_ifconv:23  %sel_tmp6_demorgan = or i1 %tmp_10, %tmp_13
-
-ST_69: tmp_19_not (157)  [1/1] 0.00ns  loc: src/Envelope.cpp:68 (grouped into LUT with out node sel_tmp8)
-._crit_edge12.new_ifconv:24  %tmp_19_not = xor i1 %tmp_18, true
-
-ST_69: not_sel_tmp7 (158)  [1/1] 0.00ns  loc: src/Envelope.cpp:60 (grouped into LUT with out node sel_tmp8)
-._crit_edge12.new_ifconv:25  %not_sel_tmp7 = or i1 %sel_tmp6_demorgan, %tmp_19_not
-
-ST_69: sel_tmp13_demorgan (159)  [1/1] 2.07ns  loc: src/Envelope.cpp:60
-._crit_edge12.new_ifconv:26  %sel_tmp13_demorgan = or i1 %sel_tmp6_demorgan, %tmp_18
-
-ST_69: tmp_20_not (160)  [1/1] 0.00ns  loc: src/Envelope.cpp:72 (grouped into LUT with out node sel_tmp8)
-._crit_edge12.new_ifconv:27  %tmp_20_not = xor i1 %tmp_19, true
-
-ST_69: not_sel_tmp (161)  [1/1] 0.00ns  loc: src/Envelope.cpp:60 (grouped into LUT with out node sel_tmp8)
-._crit_edge12.new_ifconv:28  %not_sel_tmp = or i1 %sel_tmp13_demorgan, %tmp_20_not
-
-ST_69: tmp2 (162)  [1/1] 0.00ns  loc: src/Envelope.cpp:60 (grouped into LUT with out node sel_tmp8)
-._crit_edge12.new_ifconv:29  %tmp2 = and i1 %not_sel_tmp7, %not_sel_tmp
-
-ST_69: sel_tmp8 (163)  [1/1] 2.07ns  loc: src/Envelope.cpp:60 (out node of the LUT)
-._crit_edge12.new_ifconv:30  %sel_tmp8 = and i1 %tmp2, %sel_tmp
-
-ST_69: sel_tmp1 (165)  [1/1] 0.00ns  loc: src/Envelope.cpp:60 (grouped into LUT with out node sel_tmp3)
-._crit_edge12.new_ifconv:32  %sel_tmp1 = xor i1 %sel_tmp6_demorgan, true
-
-ST_69: sel_tmp3 (166)  [1/1] 2.07ns  loc: src/Envelope.cpp:68 (out node of the LUT)
-._crit_edge12.new_ifconv:33  %sel_tmp3 = and i1 %tmp_18, %sel_tmp1
-
-ST_69: sel_tmp4 (167)  [1/1] 0.00ns  loc: src/Envelope.cpp:60 (grouped into LUT with out node sel_tmp5)
-._crit_edge12.new_ifconv:34  %sel_tmp4 = xor i1 %sel_tmp13_demorgan, true
-
-ST_69: sel_tmp5 (168)  [1/1] 2.07ns  loc: src/Envelope.cpp:72 (out node of the LUT)
-._crit_edge12.new_ifconv:35  %sel_tmp5 = and i1 %tmp_19, %sel_tmp4
-
-
- <State 70>: 6.41ns
-ST_70: tmp_15 (140)  [6/6] 6.41ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:7  %tmp_15 = sitofp i32 %tmp_14 to float
-
-ST_70: tmp_21 (149)  [6/6] 6.41ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:16  %tmp_21 = sitofp i32 %tmp_20 to float
-
-ST_70: wait_flag_1 (164)  [1/1] 2.07ns  loc: src/Envelope.cpp:60 (out node of the LUT)
-._crit_edge12.new_ifconv:31  %wait_flag_1 = or i1 %sel_tmp8, %not_tmp_5
-
-
- <State 71>: 6.41ns
-ST_71: tmp_15 (140)  [5/6] 6.41ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:7  %tmp_15 = sitofp i32 %tmp_14 to float
-
-ST_71: tmp_21 (149)  [5/6] 6.41ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:16  %tmp_21 = sitofp i32 %tmp_20 to float
-
-
- <State 72>: 6.41ns
-ST_72: tmp_15 (140)  [4/6] 6.41ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:7  %tmp_15 = sitofp i32 %tmp_14 to float
-
-ST_72: tmp_21 (149)  [4/6] 6.41ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:16  %tmp_21 = sitofp i32 %tmp_20 to float
-
-
- <State 73>: 6.41ns
-ST_73: tmp_15 (140)  [3/6] 6.41ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:7  %tmp_15 = sitofp i32 %tmp_14 to float
-
-ST_73: tmp_21 (149)  [3/6] 6.41ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:16  %tmp_21 = sitofp i32 %tmp_20 to float
-
-
- <State 74>: 6.41ns
-ST_74: tmp_15 (140)  [2/6] 6.41ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:7  %tmp_15 = sitofp i32 %tmp_14 to float
-
-ST_74: tmp_21 (149)  [2/6] 6.41ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:16  %tmp_21 = sitofp i32 %tmp_20 to float
-
-
- <State 75>: 6.41ns
-ST_75: tmp_11 (134)  [6/6] 6.41ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:1  %tmp_11 = sitofp i32 %time_load_s to float
-
-ST_75: tmp_15 (140)  [1/6] 6.41ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:7  %tmp_15 = sitofp i32 %tmp_14 to float
-
-ST_75: tmp_21 (149)  [1/6] 6.41ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:16  %tmp_21 = sitofp i32 %tmp_20 to float
-
-ST_75: tmp_24 (177)  [1/1] 2.90ns  loc: src/Envelope.cpp:81
-._crit_edge12.new_ifconv:44  %tmp_24 = add nsw i32 %time_load_s, 1
-
-ST_75: StgValue_290 (179)  [1/1] 0.00ns  loc: src/Envelope.cpp:55
-._crit_edge12.new_ifconv:46  store i32 %tmp_24, i32* @time_r, align 4
-
-
- <State 76>: 6.41ns
-ST_76: tmp_11 (134)  [5/6] 6.41ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:1  %tmp_11 = sitofp i32 %time_load_s to float
-
-ST_76: decaySlope_load (138)  [1/1] 0.00ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:5  %decaySlope_load = load float* @decaySlope, align 4
-
-ST_76: tmp_16 (141)  [4/4] 5.70ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:8  %tmp_16 = fmul float %decaySlope_load, %tmp_15
-
-ST_76: releaseSlope_load (147)  [1/1] 0.00ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:14  %releaseSlope_load = load float* @releaseSlope, align 4
-
-ST_76: tmp_22 (150)  [4/4] 5.70ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:17  %tmp_22 = fmul float %releaseSlope_load, %tmp_21
-
-
- <State 77>: 6.41ns
-ST_77: tmp_11 (134)  [4/6] 6.41ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:1  %tmp_11 = sitofp i32 %time_load_s to float
-
-ST_77: tmp_16 (141)  [3/4] 5.70ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:8  %tmp_16 = fmul float %decaySlope_load, %tmp_15
-
-ST_77: tmp_22 (150)  [3/4] 5.70ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:17  %tmp_22 = fmul float %releaseSlope_load, %tmp_21
-
-
- <State 78>: 6.41ns
-ST_78: tmp_11 (134)  [3/6] 6.41ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:1  %tmp_11 = sitofp i32 %time_load_s to float
-
-ST_78: tmp_16 (141)  [2/4] 5.70ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:8  %tmp_16 = fmul float %decaySlope_load, %tmp_15
-
-ST_78: tmp_22 (150)  [2/4] 5.70ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:17  %tmp_22 = fmul float %releaseSlope_load, %tmp_21
-
-
- <State 79>: 6.41ns
-ST_79: tmp_11 (134)  [2/6] 6.41ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:1  %tmp_11 = sitofp i32 %time_load_s to float
-
-ST_79: tmp_16 (141)  [1/4] 5.70ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:8  %tmp_16 = fmul float %decaySlope_load, %tmp_15
-
-ST_79: tmp_22 (150)  [1/4] 5.70ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:17  %tmp_22 = fmul float %releaseSlope_load, %tmp_21
-
-
- <State 80>: 7.26ns
-ST_80: tmp_11 (134)  [1/6] 6.41ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:1  %tmp_11 = sitofp i32 %time_load_s to float
-
-ST_80: tmp_17 (142)  [5/5] 7.26ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:9  %tmp_17 = fadd float %tmp_16, 1.000000e+00
-
-ST_80: tmp_23 (151)  [5/5] 7.26ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:18  %tmp_23 = fadd float %tmp_22, %sustainAmplitude_ass
-
-
- <State 81>: 7.26ns
-ST_81: attackSlope_load (133)  [1/1] 0.00ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:0  %attackSlope_load = load float* @attackSlope, align 4
-
-ST_81: tmp_12 (135)  [4/4] 5.70ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:2  %tmp_12 = fmul float %attackSlope_load, %tmp_11
-
-ST_81: tmp_17 (142)  [4/5] 7.26ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:9  %tmp_17 = fadd float %tmp_16, 1.000000e+00
-
-ST_81: tmp_23 (151)  [4/5] 7.26ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:18  %tmp_23 = fadd float %tmp_22, %sustainAmplitude_ass
-
-
- <State 82>: 7.26ns
-ST_82: tmp_12 (135)  [3/4] 5.70ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:2  %tmp_12 = fmul float %attackSlope_load, %tmp_11
-
-ST_82: tmp_17 (142)  [3/5] 7.26ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:9  %tmp_17 = fadd float %tmp_16, 1.000000e+00
-
-ST_82: tmp_23 (151)  [3/5] 7.26ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:18  %tmp_23 = fadd float %tmp_22, %sustainAmplitude_ass
-
-
- <State 83>: 7.26ns
-ST_83: tmp_12 (135)  [2/4] 5.70ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:2  %tmp_12 = fmul float %attackSlope_load, %tmp_11
-
-ST_83: tmp_17 (142)  [2/5] 7.26ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:9  %tmp_17 = fadd float %tmp_16, 1.000000e+00
-
-ST_83: tmp_23 (151)  [2/5] 7.26ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:18  %tmp_23 = fadd float %tmp_22, %sustainAmplitude_ass
-
-
- <State 84>: 7.26ns
-ST_84: tmp_12 (135)  [1/4] 5.70ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:2  %tmp_12 = fmul float %attackSlope_load, %tmp_11
-
-ST_84: tmp_17 (142)  [1/5] 7.26ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:9  %tmp_17 = fadd float %tmp_16, 1.000000e+00
-
-ST_84: tmp_23 (151)  [1/5] 7.26ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:18  %tmp_23 = fadd float %tmp_22, %sustainAmplitude_ass
-
-
- <State 85>: 5.70ns
-ST_85: resultAmplitude_1 (136)  [4/4] 5.70ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:3  %resultAmplitude_1 = fmul float %tmp_26, %tmp_12
-
-ST_85: resultAmplitude_2 (143)  [4/4] 5.70ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:10  %resultAmplitude_2 = fmul float %tmp_26, %tmp_17
-
-ST_85: resultAmplitude_3 (145)  [4/4] 5.70ns  loc: src/Envelope.cpp:69
-._crit_edge12.new_ifconv:12  %resultAmplitude_3 = fmul float %tmp_26, %sustainAmplitude_ass
-
-ST_85: resultAmplitude_4 (152)  [4/4] 5.70ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:19  %resultAmplitude_4 = fmul float %tmp_26, %tmp_23
-
-
- <State 86>: 5.70ns
-ST_86: resultAmplitude_1 (136)  [3/4] 5.70ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:3  %resultAmplitude_1 = fmul float %tmp_26, %tmp_12
-
-ST_86: resultAmplitude_2 (143)  [3/4] 5.70ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:10  %resultAmplitude_2 = fmul float %tmp_26, %tmp_17
-
-ST_86: resultAmplitude_3 (145)  [3/4] 5.70ns  loc: src/Envelope.cpp:69
-._crit_edge12.new_ifconv:12  %resultAmplitude_3 = fmul float %tmp_26, %sustainAmplitude_ass
-
-ST_86: resultAmplitude_4 (152)  [3/4] 5.70ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:19  %resultAmplitude_4 = fmul float %tmp_26, %tmp_23
-
-
- <State 87>: 5.70ns
-ST_87: resultAmplitude_1 (136)  [2/4] 5.70ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:3  %resultAmplitude_1 = fmul float %tmp_26, %tmp_12
-
-ST_87: resultAmplitude_2 (143)  [2/4] 5.70ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:10  %resultAmplitude_2 = fmul float %tmp_26, %tmp_17
-
-ST_87: resultAmplitude_3 (145)  [2/4] 5.70ns  loc: src/Envelope.cpp:69
-._crit_edge12.new_ifconv:12  %resultAmplitude_3 = fmul float %tmp_26, %sustainAmplitude_ass
-
-ST_87: resultAmplitude_4 (152)  [2/4] 5.70ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:19  %resultAmplitude_4 = fmul float %tmp_26, %tmp_23
-
-
- <State 88>: 7.77ns
-ST_88: resultAmplitude_1 (136)  [1/4] 5.70ns  loc: src/Envelope.cpp:61
-._crit_edge12.new_ifconv:3  %resultAmplitude_1 = fmul float %tmp_26, %tmp_12
-
-ST_88: resultAmplitude_2 (143)  [1/4] 5.70ns  loc: src/Envelope.cpp:65
-._crit_edge12.new_ifconv:10  %resultAmplitude_2 = fmul float %tmp_26, %tmp_17
-
-ST_88: resultAmplitude_3 (145)  [1/4] 5.70ns  loc: src/Envelope.cpp:69
-._crit_edge12.new_ifconv:12  %resultAmplitude_3 = fmul float %tmp_26, %sustainAmplitude_ass
-
-ST_88: resultAmplitude_4 (152)  [1/4] 5.70ns  loc: src/Envelope.cpp:73
-._crit_edge12.new_ifconv:19  %resultAmplitude_4 = fmul float %tmp_26, %tmp_23
-
-ST_88: or_cond (169)  [1/1] 0.00ns  loc: src/Envelope.cpp:72 (grouped into LUT with out node not_or_cond)
-._crit_edge12.new_ifconv:36  %or_cond = or i1 %sel_tmp5, %sel_tmp3
-
-ST_88: or_cond1 (170)  [1/1] 0.00ns  loc: src/Envelope.cpp:64 (grouped into LUT with out node not_or_cond)
-._crit_edge12.new_ifconv:37  %or_cond1 = or i1 %sel_tmp2, %tmp_10
-
-ST_88: or_cond2 (171)  [1/1] 0.00ns  loc: src/Envelope.cpp:72 (grouped into LUT with out node not_or_cond)
-._crit_edge12.new_ifconv:38  %or_cond2 = or i1 %or_cond, %or_cond1
-
-ST_88: not_or_cond (172)  [1/1] 2.07ns  loc: src/Envelope.cpp:72 (out node of the LUT)
-._crit_edge12.new_ifconv:39  %not_or_cond = xor i1 %or_cond2, true
-
-ST_88: resultAmplitude_5 (173)  [1/1] 0.00ns  loc: src/Envelope.cpp:83 (grouped into LUT with out node resultAmplitude_7)
-._crit_edge12.new_ifconv:40  %resultAmplitude_5 = select i1 %tmp_10, float %resultAmplitude_1, float 0.000000e+00
-
-ST_88: resultAmplitude_6 (174)  [1/1] 0.00ns  loc: src/Envelope.cpp:83 (grouped into LUT with out node resultAmplitude_7)
-._crit_edge12.new_ifconv:41  %resultAmplitude_6 = select i1 %sel_tmp2, float %resultAmplitude_2, float %resultAmplitude_5
-
-ST_88: resultAmplitude_7 (175)  [1/1] 2.07ns  loc: src/Envelope.cpp:83 (out node of the LUT)
-._crit_edge12.new_ifconv:42  %resultAmplitude_7 = select i1 %sel_tmp3, float %resultAmplitude_3, float %resultAmplitude_6
-
-
- <State 89>: 2.07ns
-ST_89: resultAmplitude (176)  [1/1] 2.07ns  loc: src/Envelope.cpp:83 (out node of the LUT)
-._crit_edge12.new_ifconv:43  %resultAmplitude = select i1 %sel_tmp5, float %resultAmplitude_4, float %resultAmplitude_7
-
-ST_89: StgValue_345 (178)  [2/2] 0.00ns  loc: src/Envelope.cpp:83
-._crit_edge12.new_ifconv:45  call void @_ssdm_op_Write.axis.volatile.floatP(float* %wave_out_V, float %resultAmplitude)
-
-
- <State 90>: 0.00ns
-ST_90: StgValue_346 (178)  [1/2] 0.00ns  loc: src/Envelope.cpp:83
-._crit_edge12.new_ifconv:45  call void @_ssdm_op_Write.axis.volatile.floatP(float* %wave_out_V, float %resultAmplitude)
-
-ST_90: StgValue_347 (180)  [1/1] 0.00ns  loc: src/Envelope.cpp:60
-._crit_edge12.new_ifconv:47  br i1 %wait_flag_1, label %mergeST7, label %.new
-
-ST_90: StgValue_348 (182)  [1/1] 0.00ns  loc: src/Envelope.cpp:49
-mergeST7:0  store i1 %not_or_cond, i1* @wait_r, align 1
-
-ST_90: StgValue_349 (183)  [1/1] 0.00ns
-mergeST7:1  br label %.new
-
-ST_90: StgValue_350 (185)  [1/1] 0.00ns  loc: src/Envelope.cpp:84
+ST_46: StgValue_280 (140)  [1/1] 0.00ns  loc: src/Envelope.cpp:95
 .new:0  ret void
 
 
@@ -1220,377 +963,205 @@ ST_90: StgValue_350 (185)  [1/1] 0.00ns  loc: src/Envelope.cpp:84
 ============================================================
 Target clock period: 10ns, clock uncertainty: 1.25ns.
 
- <State 1>: 7.41ns
+ <State 1>: 6.33ns
 The critical path consists of the following:
-	s_axi read on port 'attackDuration' [31]  (1 ns)
-	'sitofp' operation ('tmp_2_i', src/Envelope.cpp:33) [44]  (6.41 ns)
+	s_axi read on port 'press' [25]  (1 ns)
+	'icmp' operation ('tmp_s', src/Envelope.cpp:47) [56]  (3.26 ns)
+	'xor' operation ('not_tmp_s', src/Envelope.cpp:47) [71]  (2.07 ns)
 
- <State 2>: 6.41ns
+ <State 2>: 7.4ns
 The critical path consists of the following:
-	'sitofp' operation ('tmp_2_i', src/Envelope.cpp:33) [44]  (6.41 ns)
+	'xor' operation ('tmp_32', src/Envelope.cpp:65) [72]  (0 ns)
+	'or' operation ('tmp_13', src/Envelope.cpp:65) [73]  (2.07 ns)
+	'select' operation ('time_load_s', src/Envelope.cpp:65) [83]  (2.07 ns)
+	'icmp' operation ('tmp_14', src/Envelope.cpp:71) [84]  (3.26 ns)
 
  <State 3>: 6.41ns
 The critical path consists of the following:
-	'sitofp' operation ('tmp_2_i', src/Envelope.cpp:33) [44]  (6.41 ns)
+	'sitofp' operation ('tmp_1', src/Envelope.cpp:34) [34]  (6.41 ns)
 
- <State 4>: 6.41ns
+ <State 4>: 7.26ns
 The critical path consists of the following:
-	'sitofp' operation ('tmp_2_i', src/Envelope.cpp:33) [44]  (6.41 ns)
+	'fadd' operation ('tmp_2', src/Envelope.cpp:35) [36]  (7.26 ns)
 
- <State 5>: 6.41ns
+ <State 5>: 7.26ns
 The critical path consists of the following:
-	'sitofp' operation ('tmp_2_i', src/Envelope.cpp:33) [44]  (6.41 ns)
+	'fadd' operation ('tmp_2', src/Envelope.cpp:35) [36]  (7.26 ns)
 
- <State 6>: 6.41ns
+ <State 6>: 7.26ns
 The critical path consists of the following:
-	'sitofp' operation ('tmp_2_i', src/Envelope.cpp:33) [44]  (6.41 ns)
+	'fadd' operation ('tmp_2', src/Envelope.cpp:35) [36]  (7.26 ns)
 
- <State 7>: 6.08ns
+ <State 7>: 7.26ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fadd' operation ('tmp_2', src/Envelope.cpp:35) [36]  (7.26 ns)
 
- <State 8>: 6.08ns
+ <State 8>: 7.26ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fadd' operation ('tmp_2', src/Envelope.cpp:35) [36]  (7.26 ns)
 
- <State 9>: 6.08ns
+ <State 9>: 8.14ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'xor' operation ('tmp_5_neg', src/Envelope.cpp:36) [41]  (2.07 ns)
+	'fdiv' operation ('releaseSlope', src/Envelope.cpp:36) [45]  (6.08 ns)
 
  <State 10>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
  <State 11>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
  <State 12>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
  <State 13>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
  <State 14>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
  <State 15>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
  <State 16>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
  <State 17>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
  <State 18>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
  <State 19>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
  <State 20>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
  <State 21>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
  <State 22>: 6.08ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_3_i', src/Envelope.cpp:33) [45]  (6.08 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
- <State 23>: 6.41ns
+ <State 23>: 6.08ns
 The critical path consists of the following:
-	'sitofp' operation ('tmp_7_i', src/Envelope.cpp:34) [55]  (6.41 ns)
+	'fdiv' operation ('attackSlope', src/Envelope.cpp:34) [35]  (6.08 ns)
 
- <State 24>: 7.26ns
+ <State 24>: 8.23ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_5_i', src/Envelope.cpp:34) [53]  (7.26 ns)
+	'load' operation ('releaseTime_load', src/Envelope.cpp:62) on static variable 'releaseTime' [58]  (0 ns)
+	'select' operation ('releaseTime_load_rel', src/Envelope.cpp:47) [61]  (0 ns)
+	'add' operation ('tmp_12', src/Envelope.cpp:62) [67]  (2.9 ns)
+	'select' operation ('releaseTime_loc_1', src/Envelope.cpp:47) [69]  (0 ns)
+	'select' operation ('releaseTime_loc_1_re', src/Envelope.cpp:65) [81]  (2.07 ns)
+	'icmp' operation ('tmp_23', src/Envelope.cpp:83) [102]  (3.26 ns)
 
- <State 25>: 7.26ns
+ <State 25>: 7.4ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_5_i', src/Envelope.cpp:34) [53]  (7.26 ns)
+	'icmp' operation ('tmp_22', src/Envelope.cpp:79) [100]  (3.26 ns)
+	'or' operation ('sel_tmp13_demorgan', src/Envelope.cpp:71) [114]  (2.07 ns)
+	'or' operation ('not_sel_tmp', src/Envelope.cpp:71) [116]  (0 ns)
+	'and' operation ('tmp1', src/Envelope.cpp:71) [117]  (0 ns)
+	'and' operation ('sel_tmp8', src/Envelope.cpp:71) [118]  (2.07 ns)
 
- <State 26>: 7.26ns
+ <State 26>: 6.41ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_5_i', src/Envelope.cpp:34) [53]  (7.26 ns)
+	'sitofp' operation ('tmp_15', src/Envelope.cpp:72) [91]  (6.41 ns)
 
- <State 27>: 7.26ns
+ <State 27>: 6.41ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_5_i', src/Envelope.cpp:34) [53]  (7.26 ns)
+	'sitofp' operation ('tmp_15', src/Envelope.cpp:72) [91]  (6.41 ns)
 
- <State 28>: 7.26ns
+ <State 28>: 6.41ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_5_i', src/Envelope.cpp:34) [53]  (7.26 ns)
+	'sitofp' operation ('tmp_15', src/Envelope.cpp:72) [91]  (6.41 ns)
 
- <State 29>: 6.08ns
+ <State 29>: 6.41ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'sitofp' operation ('tmp_15', src/Envelope.cpp:72) [91]  (6.41 ns)
 
- <State 30>: 6.08ns
+ <State 30>: 6.41ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'sitofp' operation ('tmp_15', src/Envelope.cpp:72) [91]  (6.41 ns)
 
- <State 31>: 6.08ns
+ <State 31>: 6.41ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'sitofp' operation ('tmp_15', src/Envelope.cpp:72) [91]  (6.41 ns)
 
- <State 32>: 6.08ns
+ <State 32>: 5.7ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'fmul' operation ('tmp_16', src/Envelope.cpp:72) [92]  (5.7 ns)
 
- <State 33>: 6.08ns
+ <State 33>: 5.7ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'fmul' operation ('tmp_16', src/Envelope.cpp:72) [92]  (5.7 ns)
 
- <State 34>: 6.08ns
+ <State 34>: 5.7ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'fmul' operation ('tmp_16', src/Envelope.cpp:72) [92]  (5.7 ns)
 
- <State 35>: 6.08ns
+ <State 35>: 5.7ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'fmul' operation ('tmp_16', src/Envelope.cpp:72) [92]  (5.7 ns)
 
- <State 36>: 6.08ns
+ <State 36>: 7.26ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'fadd' operation ('tmp_21', src/Envelope.cpp:76) [98]  (7.26 ns)
 
- <State 37>: 6.08ns
+ <State 37>: 7.26ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'fadd' operation ('tmp_21', src/Envelope.cpp:76) [98]  (7.26 ns)
 
- <State 38>: 6.08ns
+ <State 38>: 7.26ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'fadd' operation ('tmp_21', src/Envelope.cpp:76) [98]  (7.26 ns)
 
- <State 39>: 6.08ns
+ <State 39>: 7.26ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'fadd' operation ('tmp_21', src/Envelope.cpp:76) [98]  (7.26 ns)
 
- <State 40>: 6.08ns
+ <State 40>: 7.26ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'fadd' operation ('tmp_21', src/Envelope.cpp:76) [98]  (7.26 ns)
 
- <State 41>: 6.08ns
+ <State 41>: 5.7ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'fmul' operation ('resultAmplitude', src/Envelope.cpp:72) [93]  (5.7 ns)
 
- <State 42>: 6.08ns
+ <State 42>: 5.7ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'fmul' operation ('resultAmplitude', src/Envelope.cpp:72) [93]  (5.7 ns)
 
- <State 43>: 6.08ns
+ <State 43>: 5.7ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
+	'fmul' operation ('resultAmplitude', src/Envelope.cpp:72) [93]  (5.7 ns)
 
- <State 44>: 6.08ns
+ <State 44>: 7.77ns
 The critical path consists of the following:
-	'fdiv' operation ('tmp_8_i', src/Envelope.cpp:34) [56]  (6.08 ns)
-	'store' operation (src/Envelope.cpp:34) of variable 'tmp_8_i', src/Envelope.cpp:34 on static variable 'decaySlope' [57]  (0 ns)
+	'fmul' operation ('resultAmplitude', src/Envelope.cpp:72) [93]  (5.7 ns)
+	'select' operation ('resultAmplitude', src/Envelope.cpp:94) [128]  (0 ns)
+	'select' operation ('resultAmplitude', src/Envelope.cpp:94) [129]  (0 ns)
+	'select' operation ('resultAmplitude', src/Envelope.cpp:94) [130]  (2.07 ns)
 
- <State 45>: 6.41ns
+ <State 45>: 2.07ns
 The critical path consists of the following:
-	'sitofp' operation ('tmp_11_i', src/Envelope.cpp:35) [68]  (6.41 ns)
+	'select' operation ('resultAmplitude', src/Envelope.cpp:94) [131]  (2.07 ns)
 
- <State 46>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_11_i', src/Envelope.cpp:35) [68]  (6.41 ns)
-
- <State 47>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_11_i', src/Envelope.cpp:35) [68]  (6.41 ns)
-
- <State 48>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_11_i', src/Envelope.cpp:35) [68]  (6.41 ns)
-
- <State 49>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_11_i', src/Envelope.cpp:35) [68]  (6.41 ns)
-
- <State 50>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_11_i', src/Envelope.cpp:35) [68]  (6.41 ns)
-
- <State 51>: 8.14ns
-The critical path consists of the following:
-	'xor' operation ('tmp_i_neg', src/Envelope.cpp:35) [65]  (2.07 ns)
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 52>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 53>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 54>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 55>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 56>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 57>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 58>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 59>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 60>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 61>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 62>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 63>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 64>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 65>: 6.08ns
-The critical path consists of the following:
-	'fdiv' operation ('tmp_12_i', src/Envelope.cpp:35) [69]  (6.08 ns)
-
- <State 66>: 6.79ns
-The critical path consists of the following:
-	'fcmp' operation ('tmp_4', src/Envelope.cpp:39) [80]  (6.79 ns)
-
- <State 67>: 5.33ns
-The critical path consists of the following:
-	'icmp' operation ('tmp_5', src/Envelope.cpp:48) [103]  (3.26 ns)
-	'xor' operation ('not_tmp_5', src/Envelope.cpp:48) [107]  (2.07 ns)
-
- <State 68>: 8.23ns
-The critical path consists of the following:
-	'add' operation ('tmp_7', src/Envelope.cpp:51) [106]  (2.9 ns)
-	'select' operation ('releaseTime_loc_1', src/Envelope.cpp:48) [109]  (0 ns)
-	'select' operation ('releaseTime_loc_1_re', src/Envelope.cpp:54) [118]  (2.07 ns)
-	'icmp' operation ('tmp_19', src/Envelope.cpp:72) [146]  (3.26 ns)
-
- <State 69>: 7.4ns
-The critical path consists of the following:
-	'icmp' operation ('tmp_18', src/Envelope.cpp:68) [144]  (3.26 ns)
-	'or' operation ('sel_tmp13_demorgan', src/Envelope.cpp:60) [159]  (2.07 ns)
-	'or' operation ('not_sel_tmp', src/Envelope.cpp:60) [161]  (0 ns)
-	'and' operation ('tmp2', src/Envelope.cpp:60) [162]  (0 ns)
-	'and' operation ('sel_tmp8', src/Envelope.cpp:60) [163]  (2.07 ns)
-
- <State 70>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_15', src/Envelope.cpp:65) [140]  (6.41 ns)
-
- <State 71>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_15', src/Envelope.cpp:65) [140]  (6.41 ns)
-
- <State 72>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_15', src/Envelope.cpp:65) [140]  (6.41 ns)
-
- <State 73>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_15', src/Envelope.cpp:65) [140]  (6.41 ns)
-
- <State 74>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_15', src/Envelope.cpp:65) [140]  (6.41 ns)
-
- <State 75>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_11', src/Envelope.cpp:61) [134]  (6.41 ns)
-
- <State 76>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_11', src/Envelope.cpp:61) [134]  (6.41 ns)
-
- <State 77>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_11', src/Envelope.cpp:61) [134]  (6.41 ns)
-
- <State 78>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_11', src/Envelope.cpp:61) [134]  (6.41 ns)
-
- <State 79>: 6.41ns
-The critical path consists of the following:
-	'sitofp' operation ('tmp_11', src/Envelope.cpp:61) [134]  (6.41 ns)
-
- <State 80>: 7.26ns
-The critical path consists of the following:
-	'fadd' operation ('tmp_17', src/Envelope.cpp:65) [142]  (7.26 ns)
-
- <State 81>: 7.26ns
-The critical path consists of the following:
-	'fadd' operation ('tmp_17', src/Envelope.cpp:65) [142]  (7.26 ns)
-
- <State 82>: 7.26ns
-The critical path consists of the following:
-	'fadd' operation ('tmp_17', src/Envelope.cpp:65) [142]  (7.26 ns)
-
- <State 83>: 7.26ns
-The critical path consists of the following:
-	'fadd' operation ('tmp_17', src/Envelope.cpp:65) [142]  (7.26 ns)
-
- <State 84>: 7.26ns
-The critical path consists of the following:
-	'fadd' operation ('tmp_17', src/Envelope.cpp:65) [142]  (7.26 ns)
-
- <State 85>: 5.7ns
-The critical path consists of the following:
-	'fmul' operation ('resultAmplitude', src/Envelope.cpp:61) [136]  (5.7 ns)
-
- <State 86>: 5.7ns
-The critical path consists of the following:
-	'fmul' operation ('resultAmplitude', src/Envelope.cpp:61) [136]  (5.7 ns)
-
- <State 87>: 5.7ns
-The critical path consists of the following:
-	'fmul' operation ('resultAmplitude', src/Envelope.cpp:61) [136]  (5.7 ns)
-
- <State 88>: 7.77ns
-The critical path consists of the following:
-	'fmul' operation ('resultAmplitude', src/Envelope.cpp:61) [136]  (5.7 ns)
-	'select' operation ('resultAmplitude', src/Envelope.cpp:83) [173]  (0 ns)
-	'select' operation ('resultAmplitude', src/Envelope.cpp:83) [174]  (0 ns)
-	'select' operation ('resultAmplitude', src/Envelope.cpp:83) [175]  (2.07 ns)
-
- <State 89>: 2.07ns
-The critical path consists of the following:
-	'select' operation ('resultAmplitude', src/Envelope.cpp:83) [176]  (2.07 ns)
-
- <State 90>: 0ns
+ <State 46>: 0ns
 The critical path consists of the following:
 
 
@@ -1648,50 +1219,6 @@ N/A
 	State 44
 	State 45
 	State 46
-	State 47
-	State 48
-	State 49
-	State 50
-	State 51
-	State 52
-	State 53
-	State 54
-	State 55
-	State 56
-	State 57
-	State 58
-	State 59
-	State 60
-	State 61
-	State 62
-	State 63
-	State 64
-	State 65
-	State 66
-	State 67
-	State 68
-	State 69
-	State 70
-	State 71
-	State 72
-	State 73
-	State 74
-	State 75
-	State 76
-	State 77
-	State 78
-	State 79
-	State 80
-	State 81
-	State 82
-	State 83
-	State 84
-	State 85
-	State 86
-	State 87
-	State 88
-	State 89
-	State 90
 
 
 ============================================================

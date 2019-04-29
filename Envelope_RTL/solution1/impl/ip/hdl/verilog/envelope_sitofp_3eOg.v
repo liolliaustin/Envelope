@@ -10,7 +10,7 @@
 
 module envelope_sitofp_3eOg
 #(parameter
-    ID         = 4,
+    ID         = 6,
     NUM_STAGE  = 6,
     din0_WIDTH = 32,
     dout_WIDTH = 32

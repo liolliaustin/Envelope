@@ -43,7 +43,7 @@ set SCTraceOption "all"
 set TargetInfo "xc7z100:ffg900:-1"
 set SourceFiles {sc {} c ../../src/Envelope.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile {/home/austin/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/solution1.directive}
+set DirectiveFile {/root/repo/new/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/solution1.directive}
 set TBFiles {verilog ../../src/Envelope_test.cpp bc ../../src/Envelope_test.cpp vhdl ../../src/Envelope_test.cpp sc ../../src/Envelope_test.cpp cas ../../src/Envelope_test.cpp c {}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

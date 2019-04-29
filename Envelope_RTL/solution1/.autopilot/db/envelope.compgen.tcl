@@ -207,7 +207,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 4
+set id 6
 set name envelope_sitofp_3eOg
 set corename simcore_sitofp
 set op sitofp
@@ -268,7 +268,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 5
+set id 9
 set name envelope_fcmp_32nfYi
 set corename simcore_fcmp
 set op fcmp
@@ -390,7 +390,7 @@ releaseDuration {
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 6 \
+			id 10 \
 			corename envelope_CTRL_BUS_axilite \
 			name envelope_CTRL_BUS_s_axi \
 			ports {$port_CTRL_BUS} \
@@ -409,7 +409,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 7 \
+    id 11 \
     name wave_in_V \
     reset_level 0 \
     sync_rst true \
@@ -428,7 +428,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 8 \
+    id 12 \
     name wave_out_V \
     reset_level 0 \
     sync_rst true \

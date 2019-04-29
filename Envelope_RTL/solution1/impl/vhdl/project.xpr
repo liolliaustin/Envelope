@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="/home/austin/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/impl/vhdl/project.xpr">
+<Project Version="7" Minor="20" Path="/root/repo/new/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/impl/vhdl/project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="7f386e249d1a4d60b1229b51775de63e"/>
+    <Option Name="Id" Val="dd780a819624452f8156097ba33d688c"/>
     <Option Name="Part" Val="xc7z100ffg900-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -52,13 +52,7 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/envelope.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/envelope_fmul_32ncud.vhd">
+      <File Path="$PPRDIR/envelope_fdiv_32ndEe.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -76,7 +70,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/envelope_fdiv_32ndEe.vhd">
+      <File Path="$PPRDIR/envelope_CTRL_BUS_s_axi.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -88,7 +82,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/envelope_CTRL_BUS_s_axi.vhd">
+      <File Path="$PPRDIR/envelope_fmul_32ncud.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/envelope.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -101,14 +101,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/envelope_ap_fdiv_14_no_dsp_32/envelope_ap_fdiv_14_no_dsp_32.xci">
+      <File Path="$PSRCDIR/sources_1/ip/envelope_ap_sitofp_4_no_dsp_32/envelope_ap_sitofp_4_no_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/envelope_ap_sitofp_4_no_dsp_32/envelope_ap_sitofp_4_no_dsp_32.xci">
+      <File Path="$PSRCDIR/sources_1/ip/envelope_ap_fdiv_14_no_dsp_32/envelope_ap_fdiv_14_no_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

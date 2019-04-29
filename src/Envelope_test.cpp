@@ -38,19 +38,8 @@ int main() {
 
 		);
 
-		if(i==700)
+		if(i==500)
 			press = 0;
-
-		if(i==900){
-			change = 1;
-		}
-		if(i==901){
-			change = 0;
-			press = 1;
-		}
-
-
-
 
 		float tmp;
 		wave_out >> tmp;

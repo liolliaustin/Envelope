@@ -25,7 +25,7 @@ HLS_SOURCES = ../../../../src/Envelope_test.cpp ../../../../src/Envelope.cpp
 
 TARGET := csim.exe
 
-AUTOPILOT_ROOT := /home/austin/Desktop/Vivado_HLS/2017.2
+AUTOPILOT_ROOT := /opt/Xilinx/Vivado_HLS/2017.2
 AUTOPILOT_MACH := lnx64
 ifdef AP_GCC_M32
   AUTOPILOT_MACH := Linux_x86
@@ -33,7 +33,7 @@ ifdef AP_GCC_M32
 endif
 IFLAG += -fPIC
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := /home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/gcc/bin
+  AP_GCC_PATH := /opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/gcc/bin
 endif
 AUTOPILOT_TOOL := ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AP_CLANG_PATH := ${AUTOPILOT_TOOL}/clang-3.9/bin
@@ -48,7 +48,6 @@ IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC"
 IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC/AESL_FP_comp"
 IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC/AESL_comp"
 IFLAG += -I "${AUTOPILOT_TOOL}/auto_cc/include"
-IFLAG += -I "/usr/include/x86_64-linux-gnu"
 IFLAG += -D__SIM_FPO__
 
 IFLAG += -D__SIM_OPENCV__

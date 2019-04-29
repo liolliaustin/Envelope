@@ -9,7 +9,7 @@
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
-#pragma line 1 "/home/austin/Desktop/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
 /* autopilot_ssdm_op.h*/
 /*
 #-  (c) Copyright 2011-2017 Xilinx, Inc. All rights reserved.
@@ -62,10 +62,10 @@
  *
  * $Id$
  */
-#pragma line 145 "/home/austin/Desktop/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+#pragma line 145 "/opt/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
 /*#define AP_SPEC_ATTR __attribute__ ((pure))*/
 //adu: patched
-#pragma line 156 "/home/austin/Desktop/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+#pragma line 156 "/opt/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
 extern "C" {
 #pragma empty_line
     /****** SSDM Intrinsics: OPERATIONS ***/
@@ -195,10 +195,10 @@ extern "C" {
 #pragma empty_line
 #pragma empty_line
 }
-#pragma line 413 "/home/austin/Desktop/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+#pragma line 413 "/opt/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
 /*#define _ssdm_op_WaitUntil(X) while (!(X)) _ssdm_op_Wait(1);
 #define _ssdm_op_Delayed(X) X */
-#pragma line 427 "/home/austin/Desktop/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+#pragma line 427 "/opt/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_ssdm_op.h"
 // 67d7842dbbe25473c3c32b93c0da8047785f30d78e8a024de1b57352245f9689
 #pragma line 7 "<command line>" 2
 #pragma line 1 "<built-in>" 2
@@ -748,7 +748,7 @@ extern "C" {
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
-#pragma line 1 "/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 /*===---- stddef.h - Basic type definitions --------------------------------===
  *
  * Copyright (c) 2008 Eli Friedman
@@ -784,7 +784,7 @@ typedef __typeof__(((int*)0)-((int*)0)) ptrdiff_t;
 #pragma empty_line
 #pragma empty_line
 typedef __typeof__(sizeof(int)) size_t;
-#pragma line 56 "/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
+#pragma line 56 "/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
 /* Some C libraries expect to see a wint_t here. Others (notably MinGW) will use
 __WINT_TYPE__ directly; accommodate both by requiring __need_wint_t */
 #pragma line 34 "/usr/include/stdio.h" 2 3 4
@@ -1058,7 +1058,7 @@ typedef struct _IO_FILE __FILE;
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
-#pragma line 1 "/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 /*===---- stddef.h - Basic type definitions --------------------------------===
  *
  * Copyright (c) 2008 Eli Friedman
@@ -1083,7 +1083,7 @@ typedef struct _IO_FILE __FILE;
  *
  *===-----------------------------------------------------------------------===
  */
-#pragma line 56 "/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
+#pragma line 56 "/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
 /* Some C libraries expect to see a wint_t here. Others (notably MinGW) will use
 __WINT_TYPE__ directly; accommodate both by requiring __need_wint_t */
 #pragma line 16 "/usr/include/_G_config.h" 2 3 4
@@ -1164,7 +1164,7 @@ typedef struct
 /* This define avoids name pollution if we're using GNU stdarg.h */
 #pragma empty_line
 #pragma empty_line
-#pragma line 1 "/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdarg.h" 1 3 4
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdarg.h" 1 3 4
 /*===---- stdarg.h - Variable argument handling ----------------------------===
  *
  * Copyright (c) 2008 Eli Friedman
@@ -2210,7 +2210,7 @@ extern void funlockfile (FILE *__stream) throw ();
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
-#pragma line 1 "/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 /*===---- stddef.h - Basic type definitions --------------------------------===
  *
  * Copyright (c) 2008 Eli Friedman
@@ -2235,7 +2235,7 @@ extern void funlockfile (FILE *__stream) throw ();
  *
  *===-----------------------------------------------------------------------===
  */
-#pragma line 56 "/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
+#pragma line 56 "/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
 /* Some C libraries expect to see a wint_t here. Others (notably MinGW) will use
 __WINT_TYPE__ directly; accommodate both by requiring __need_wint_t */
 #pragma line 33 "/usr/include/stdlib.h" 2 3 4
@@ -2890,7 +2890,7 @@ typedef __suseconds_t suseconds_t;
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
-#pragma line 1 "/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 /*===---- stddef.h - Basic type definitions --------------------------------===
  *
  * Copyright (c) 2008 Eli Friedman
@@ -2915,7 +2915,7 @@ typedef __suseconds_t suseconds_t;
  *
  *===-----------------------------------------------------------------------===
  */
-#pragma line 56 "/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
+#pragma line 56 "/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
 /* Some C libraries expect to see a wint_t here. Others (notably MinGW) will use
 __WINT_TYPE__ directly; accommodate both by requiring __need_wint_t */
 #pragma line 147 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
@@ -3687,7 +3687,7 @@ extern void cfree (void *__ptr) throw ();
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
-#pragma line 1 "/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4
 /*===---- stddef.h - Basic type definitions --------------------------------===
  *
  * Copyright (c) 2008 Eli Friedman
@@ -3712,7 +3712,7 @@ extern void cfree (void *__ptr) throw ();
  *
  *===-----------------------------------------------------------------------===
  */
-#pragma line 56 "/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
+#pragma line 56 "/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4
 /* Some C libraries expect to see a wint_t here. Others (notably MinGW) will use
 __WINT_TYPE__ directly; accommodate both by requiring __need_wint_t */
 #pragma line 25 "/usr/include/alloca.h" 2 3 4
@@ -5851,7 +5851,7 @@ extern int matherr (struct __exception *__exc) throw ();
 }
 #pragma line 4 "src/Envelope.cpp"
 
-#pragma line 1 "/home/austin/Desktop/Vivado_HLS/2017.2/common/technology/autopilot/hls_stream.h" 1
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/hls_stream.h" 1
 /* -*- c++ -*-*/
 /*
 #-  (c) Copyright 2011-2017 Xilinx, Inc. All rights reserved.
@@ -5918,7 +5918,7 @@ extern int matherr (struct __exception *__exc) throw ();
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
-#pragma line 1 "/home/austin/Desktop/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_enum.h" 1
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/etc/autopilot_enum.h" 1
 /*
 #-  (c) Copyright 2011-2017 Xilinx, Inc. All rights reserved.
 #-
@@ -6053,7 +6053,7 @@ enum SsdmRegionTypes {
 #pragma empty_line
 #pragma empty_line
 // 67d7842dbbe25473c3c32b93c0da8047785f30d78e8a024de1b57352245f9689
-#pragma line 67 "/home/austin/Desktop/Vivado_HLS/2017.2/common/technology/autopilot/hls_stream.h" 2
+#pragma line 67 "/opt/Xilinx/Vivado_HLS/2017.2/common/technology/autopilot/hls_stream.h" 2
 #pragma empty_line
 #pragma empty_line
 namespace hls {
@@ -6208,22 +6208,33 @@ void envelope(
 #pragma HLS INTERFACE s_axilite port=releaseDuration bundle=CTRL_BUS
 #pragma empty_line
  static int time = 0;
- static float attackSlope = (float)1/attackDuration;
- static float decaySlope = (float)(sustainAmplitude - 1)/(decayDuration - attackDuration);
- static float releaseSlope=(float)(0-sustainAmplitude)/(releaseDuration - decayDuration);
+ static int lastpress = 0;
+ float attackSlope = (float)1/attackDuration;
+ float decaySlope = (float)(sustainAmplitude - 1)/(decayDuration - attackDuration);
+ float releaseSlope=(float)(0-sustainAmplitude)/(releaseDuration - decayDuration);
 #pragma empty_line
  float resultAmplitude;
 #pragma empty_line
  if(sustainAmplitude > 1.0)
   sustainAmplitude = 1.0;
 #pragma empty_line
- static int releaseTime = releaseDuration;
- static int sustainTime = decayDuration+1;
+ static int releaseTime;// = releaseDuration;
+ static int sustainTime;// = decayDuration+1;
+#pragma empty_line
+ //Catch rising edge (i.e. new note)
+ if (lastpress == 0 && press != 0) {
+  releaseTime = releaseDuration;
+  sustainTime = decayDuration+1;
+ }
+#pragma empty_line
+ lastpress = press;
+#pragma empty_line
+#pragma empty_line
  static int wait = 0;
 #pragma empty_line
  wave_in >> resultAmplitude;
 #pragma empty_line
- if(press){
+ if(press != 0){
   wait = 0;
   sustainTime += 1;
   releaseTime += 1;

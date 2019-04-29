@@ -30,22 +30,33 @@ void envelope(
 #pragma HLS INTERFACE s_axilite port=releaseDuration bundle=CTRL_BUS
 
 	static int time = 0;
-	static float attackSlope = (float)MAX_ATTACK/attackDuration;
-	static float decaySlope = (float)(sustainAmplitude - MAX_ATTACK)/(decayDuration - attackDuration);
-	static float releaseSlope=(float)(0-sustainAmplitude)/(releaseDuration - decayDuration);
+	static int lastpress = 0;
+	float attackSlope = (float)MAX_ATTACK/attackDuration;
+	float decaySlope = (float)(sustainAmplitude - MAX_ATTACK)/(decayDuration - attackDuration);
+	float releaseSlope=(float)(0-sustainAmplitude)/(releaseDuration - decayDuration);
 
 	float resultAmplitude;
 
 	if(sustainAmplitude > 1.0)
 		sustainAmplitude = 1.0;
 
-	static int releaseTime = releaseDuration;
-	static int sustainTime = decayDuration+1;
+	static int releaseTime;// = releaseDuration;
+	static int sustainTime;// = decayDuration+1;
+
+	//Catch rising edge (i.e. new note)
+	if (lastpress == 0 && press != 0) {
+		releaseTime = releaseDuration;
+		sustainTime = decayDuration+1;
+	}
+
+	lastpress = press;
+
+
 	static int wait = 0;
 
 	wave_in >> resultAmplitude;
 
-	if(press){
+	if(press != 0){
 		wait = 0;
 		sustainTime += 1;
 		releaseTime += 1;

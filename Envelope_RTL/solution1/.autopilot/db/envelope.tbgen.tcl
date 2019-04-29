@@ -88,7 +88,7 @@ set NewPortList {[
  	{ "name": "wave_out_V_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "wave_out_V", "role": "TREADY" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
 		"CDFG" : "envelope",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"Pipeline" : "None", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -108,15 +108,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "decayDuration", "Type" : "None", "Direction" : "I"},
 			{"Name" : "sustainAmplitude", "Type" : "None", "Direction" : "I"},
 			{"Name" : "releaseDuration", "Type" : "None", "Direction" : "I"},
-			{"Name" : "guard_variable_for_e_4", "Type" : "OVld", "Direction" : "IO"},
-			{"Name" : "attackSlope", "Type" : "OVld", "Direction" : "IO"},
-			{"Name" : "guard_variable_for_e_3", "Type" : "OVld", "Direction" : "IO"},
-			{"Name" : "decaySlope", "Type" : "OVld", "Direction" : "IO"},
-			{"Name" : "guard_variable_for_e_2", "Type" : "OVld", "Direction" : "IO"},
-			{"Name" : "releaseSlope", "Type" : "OVld", "Direction" : "IO"},
-			{"Name" : "guard_variable_for_e_1", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "lastpress", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "releaseTime", "Type" : "OVld", "Direction" : "IO"},
-			{"Name" : "guard_variable_for_e", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "sustainTime", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "wait_r", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "time_r", "Type" : "OVld", "Direction" : "IO"}]},
@@ -124,28 +117,25 @@ set RtlHierarchyInfo {[
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fadd_32nbkb_U1", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fmul_32ncud_U2", "Parent" : "0"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fdiv_32ndEe_U3", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U4", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fcmp_32nfYi_U5", "Parent" : "0"}]}
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fdiv_32ndEe_U4", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fdiv_32ndEe_U5", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U6", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U7", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_sitofp_3eOg_U8", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.envelope_fcmp_32nfYi_U9", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	envelope {
-		wave_in_V {Type I LastRead 66 FirstWrite -1}
-		wave_out_V {Type O LastRead -1 FirstWrite 88}
+		wave_in_V {Type I LastRead 0 FirstWrite -1}
+		wave_out_V {Type O LastRead -1 FirstWrite 44}
 		press {Type I LastRead 0 FirstWrite -1}
 		attackDuration {Type I LastRead 0 FirstWrite -1}
 		decayDuration {Type I LastRead 0 FirstWrite -1}
 		sustainAmplitude {Type I LastRead 0 FirstWrite -1}
 		releaseDuration {Type I LastRead 0 FirstWrite -1}
-		guard_variable_for_e_4 {Type IO LastRead -1 FirstWrite -1}
-		attackSlope {Type IO LastRead -1 FirstWrite -1}
-		guard_variable_for_e_3 {Type IO LastRead -1 FirstWrite -1}
-		decaySlope {Type IO LastRead -1 FirstWrite -1}
-		guard_variable_for_e_2 {Type IO LastRead -1 FirstWrite -1}
-		releaseSlope {Type IO LastRead -1 FirstWrite -1}
-		guard_variable_for_e_1 {Type IO LastRead -1 FirstWrite -1}
+		lastpress {Type IO LastRead -1 FirstWrite -1}
 		releaseTime {Type IO LastRead -1 FirstWrite -1}
-		guard_variable_for_e {Type IO LastRead -1 FirstWrite -1}
 		sustainTime {Type IO LastRead -1 FirstWrite -1}
 		wait_r {Type IO LastRead -1 FirstWrite -1}
 		time_r {Type IO LastRead -1 FirstWrite -1}}}
@@ -153,8 +143,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "27", "Max" : "89"}
-	, {"Name" : "Interval", "Min" : "28", "Max" : "90"}
+	{"Name" : "Latency", "Min" : "45", "Max" : "45"}
+	, {"Name" : "Interval", "Min" : "46", "Max" : "46"}
 ]}
 
 set PipelineEnableSignalInfo {[

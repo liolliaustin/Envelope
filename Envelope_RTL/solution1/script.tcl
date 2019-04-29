@@ -5,8 +5,8 @@
 ############################################################
 open_project Envelope_RTL
 set_top envelope
-add_files src/Envelope.cpp
 add_files src/Envelope.h
+add_files src/Envelope.cpp
 add_files -tb src/Envelope_test.cpp
 open_solution "solution1"
 set_part {xc7z100ffg900-1} -tool vivado

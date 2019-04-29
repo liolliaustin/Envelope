@@ -25,12 +25,12 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.1944341716" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.1191411083" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1482780488" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/include"/>
 									<listOptionValue builtIn="false" value="/home/austin/ECE1373_GhostSynth/modules/Envelope"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/include/etc"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/include/ap_sysc"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/include"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/include/etc"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/include/ap_sysc"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1110106804" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="AESL_TB"/>
@@ -43,12 +43,12 @@
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.exe.debug.option.optimization.level.2093783573" name="Optimization Level" superClass="gnu.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.exe.debug.option.debugging.level.630765530" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1172134293" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/include"/>
 									<listOptionValue builtIn="false" value="/home/austin/ECE1373_GhostSynth/modules/Envelope"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/include/etc"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/include/ap_sysc"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/include"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/include/etc"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/include/ap_sysc"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1743562018" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="AESL_TB"/>
@@ -59,14 +59,14 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.1338239569" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug">
 								<option id="gnu.c.link.option.paths.894291319" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/systemc/lib"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/systemc/lib"/>
 								</option>
 								<option id="gnu.c.link.option.libs.1331203270" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
 								<option id="gnu.c.link.option.ldflags.1085642774" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1328994262" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
 								<option id="gnu.cpp.link.option.paths.54197152" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/systemc/lib"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/systemc/lib"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.1546202542" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
 								<option id="gnu.cpp.link.option.flags.1179352601" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
@@ -111,12 +111,12 @@
 								<option id="gnu.cpp.compiler.exe.release.option.optimization.level.749570950" name="Optimization Level" superClass="gnu.cpp.compiler.exe.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.release.option.debugging.level.789038769" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.45198158" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/include"/>
 									<listOptionValue builtIn="false" value="/home/austin/ECE1373_GhostSynth/modules/Envelope"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/include/etc"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/include/ap_sysc"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/include"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/include/etc"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/include/ap_sysc"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1398421734" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -124,25 +124,25 @@
 								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.exe.release.option.optimization.level.325108045" name="Optimization Level" superClass="gnu.c.compiler.exe.release.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.exe.release.option.debugging.level.180901356" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1267140115" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/auto_cc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/include"/>
 									<listOptionValue builtIn="false" value="/home/austin/ECE1373_GhostSynth/modules/Envelope"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/include/etc"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/include/ap_sysc"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/include"/>
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/include/etc"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/include/ap_sysc"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.685625584" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.release.1998143137" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.release">
 								<option id="gnu.c.link.option.paths.886756270" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/systemc/lib"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/systemc/lib"/>
 								</option>
 								<option id="gnu.c.link.option.libs.722435451" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
 								<option id="gnu.c.link.option.ldflags.1662034747" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.1742004896" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.release">
 								<option id="gnu.cpp.link.option.paths.1380615205" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="/home/austin/Desktop/Vivado_HLS/2017.2/lnx64/tools/systemc/lib"/>
+									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2017.2/lnx64/tools/systemc/lib"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.712388113" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
 								<option id="gnu.cpp.link.option.flags.1568016208" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>

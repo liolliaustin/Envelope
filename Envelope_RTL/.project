@@ -29,47 +29,47 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/austin/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/.apc/.src</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/austin/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/.apc/.tb</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/austin/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/.tcls</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/Envelope.cpp</name>
 			<type>1</type>
-			<location>/home/austin/ECE1373_GhostSynth/modules/Envelope/src/Envelope.cpp</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/Envelope/src/Envelope.cpp</location>
 		</link>
 		<link>
 			<name>source/Envelope.h</name>
 			<type>1</type>
-			<location>/home/austin/ECE1373_GhostSynth/modules/Envelope/src/Envelope.h</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/Envelope/src/Envelope.h</location>
 		</link>
 		<link>
 			<name>testbench/Envelope_test.cpp</name>
 			<type>1</type>
-			<location>/home/austin/ECE1373_GhostSynth/modules/Envelope/src/Envelope_test.cpp</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/Envelope/src/Envelope_test.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/austin/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/solution1.directive</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/austin/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/directives.tcl</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/austin/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/script.tcl</location>
+			<location>/root/repo/new/ECE1373_GhostSynth/modules/Envelope/Envelope_RTL/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
